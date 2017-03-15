@@ -1,0 +1,36 @@
+.hero {
+	background-image: url('images/map.png');
+	background-position: 135% 100%;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	padding-top: 132px;
+	position: absolute;
+	display: flex;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+
+	.container {
+		display: inline-flex;
+		align-items: center;
+		align-self: center;
+	}
+
+	h1 {
+		@include hyphens();
+		font-size: 3.6rem;
+		font-weight: 300;
+	}
+
+	p {
+		font-size: 2rem;
+	}
+}
+
+
+html.svgasimg {
+	.hero {
+		background-image: url('images/map.svg');
+	}
+}

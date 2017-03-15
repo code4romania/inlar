@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+// Fonts
+
+// Colors
+$gradient:			(from: #1C1218, to: #181C26);
+
+// Grid
+$container-width:	1200px;
+$num-cols:			12;
+
+// Breakpoints
+$breakpoints: (
+	null: 			null,
+	small:			600px,
+	medium:			768px,
+	large:			960px
+);
