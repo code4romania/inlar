@@ -36,6 +36,14 @@ class Post_Type_Framework {
 
 		register_post_type($this->post_type_name, $this->post_type_args);
 
+		add_rewrite_tag('%ptf_filter%','([^&]+)');
+
+		add_rewrite_rule(
+			'^([a-z]{2}/)?json/([a-z0-9]+)',
+			'index.php?ptf_filter=$matches[2]',
+			'top'
+		);
+
 		if (empty($this->post_type_taxonomy_name) || empty($this->post_type_taxonomy_args))
 			return;
 
@@ -53,8 +61,32 @@ class Post_Type_Framework {
 		update_post_meta($post_id, "_ptf_{$this->post_type_name}_meta", $values);
 	}
 
+	function render_meta_box_field($name, $options = array(), $value = '') {
+		switch ($options['type']) {
+			case 'hidden':
+				printf('<input type="hidden" name="ptf[%1$s][%2$s]" id="ptf_%2$s" value="%3$s">',
+					$this->post_type_name, $name, $value
+				);
+				break;
+
+			case 'textarea':
+				printf('<tr class="ptf_meta"><th><label for="ptf_%2$s">%3$s</label></th><td><textarea  name="ptf[%1$s][%2$s]" id="ptf_%2$s" class="widefat%6$s" rows="%4$s">%5$s</textarea></td></tr>',
+					$this->post_type_name, $name, $options['label'], $options['rows'], $value,
+					(!!$options['i18n'] ? ' '.$options['i18n'] : '')
+				);
+				break;
+			
+			default:
+				printf('<tr class="ptf_meta"><th><label for="ptf_%2$s">%4$s</label></th><td><input type="%3$s" name="ptf[%1$s][%2$s]" id="ptf_%2$s" class="widefat%6$s" value="%5$s"></td></tr>',
+					$this->post_type_name, $name, $options['type'], $options['label'], esc_attr($value),
+					(!!$options['i18n'] ? ' '.$options['i18n'] : '')
+				);
+				break;
+		}
+	}
+
 	function load_assets() {
-		wp_enqueue_style('ptf-backend', plugins_url('post-type-framework/assets/ptf-backend.css', __FILE__), false, null);
+		// wp_enqueue_style('ptf-backend', plugins_url('post-type-framework/assets/ptf-backend.css', __FILE__), false, null);
 	}
 
 	/**

@@ -13,15 +13,12 @@ class Post_Type_Partner extends Post_Type_Framework {
 		$this->setup();
 
 		// Hook into the actual registration process
-		add_action('init'									, array($this, 'register_post_type'));
-		add_action('add_meta_boxes_'.$this->post_type_name	, array($this, 'add_meta_box'));
-		add_action('save_post'								, array($this, 'save_meta_box_values'));
-
-		add_filter('manage_'.$this->post_type_name.'_posts_columns'	, array($this, 'manage_posts_columns'));
-		add_action('manage_'.$this->post_type_name.'_posts_custom_column'	, array($this, 'manage_posts_custom_column'));
+		add_action('init', array($this, 'register_post_type'));
+		add_action('add_meta_boxes_'.$this->post_type_name, array($this, 'add_meta_box'));
+		add_action('save_post', array($this, 'save_meta_box_values'));
 
 		// Register custom post types into the dashboard glance widget
-		add_filter('dashboard_glance_items'					, array($this, 'dashboard_glance_items'));
+		add_filter('dashboard_glance_items', array($this, 'dashboard_glance_items'));
 	}
 
 	/**
@@ -44,7 +41,7 @@ class Post_Type_Partner extends Post_Type_Framework {
 				'not_found_in_trash'	=> __('No partners found in Trash', 'ptf'),
 				'menu_name'				=> __('Partners', 'ptf')
 			),
-			'menu_icon'				=> 'dashicons-location-alt',
+			'menu_icon'				=> 'dashicons-groups',
 			'hierarchical'			=> false,
 			'supports'				=> array('title', 'editor', 'excerpt', 'thumbnail'),
 			'public'				=> true,
@@ -56,33 +53,9 @@ class Post_Type_Partner extends Post_Type_Framework {
 			'has_archive'			=> true,
 			'query_var'				=> true,
 			'can_export'			=> true,
-			'rewrite'				=> array('slug' => 'indicator', 'with_front' => false),
+			'rewrite'				=> array('slug' => $this->post_type_name, 'with_front' => false),
 			'capability_type'		=> 'post'
 		);
-
-		$this->post_type_taxonomy_name = 'country';
-		$this->post_type_taxonomy_args = array(
-			'labels'			=> array(
-				'name'				=> __('Countries', 'ptf'),
-				'singular_name'		=> __('Country', 'ptf'),
-				'search_items'		=> __('Search Countries', 'ptf'),
-				'all_items'			=> __('All Countries', 'ptf'),
-				'edit_item'			=> __('Edit Country', 'ptf'),
-				'update_item'		=> __('Update Country', 'ptf'),
-				'add_new_item'		=> __('Add new Country', 'ptf'),
-				'new_item_name'		=> __('New Country', 'ptf'),
-				'not_found'			=> __('No categories found.', 'ptf'),
-				'menu_name'			=> __('Countries', 'ptf')
-			),
-			'hierarchical'		=> true,
-			'show_ui'			=> true,
-			'show_admin_column'	=> true,
-			'query_var'			=> true,
-			'rewrite'			=> array('slug' => 'country', 'with_front' => false)
-		);
-
-		$this->post_type_args['taxonomies'] = array($this->post_type_taxonomy_name);
-
 	} 
 
 	/**
@@ -112,49 +85,12 @@ class Post_Type_Partner extends Post_Type_Framework {
 
 	function get_meta_box_fields() {
 		return array(
-			'chart_id'	=> __('ID Chart', 'ptf'),
 		);
 	}
 
 	function get_default_values() {
-		$defaults = array(
-			'chart_id'	=> 0,
+		return array(
 		);
-
-		return $defaults;
-	}
-
-	function build_dropdown_options($type = '', $selected = 0) {
-		$types = array(
-			'chart_id'	=> 'chart',
-		);
-		$options = '';
-
-		switch ($types[$type]) {
-			case 'chart':
-			case 'indicator':
-
-				if (!post_type_exists($types[$type]))
-					return $options;
-
-				$options.= sprintf('<option value="0">%s</option>', __('Select&hellip;', 'ptf'));
-
-				$posts = get_posts(array(
-					'posts_per_page'	=> -1,
-					'post_type'			=> $types[$type],
-					'post_status'		=> 'publish',
-				));
-
-				foreach ($posts as $post) {
-					$options.= sprintf('<option value="%1$s"%4$s>%2$s (%3$s)</option>',
-						$post->ID, $post->post_title, get_the_date('', $post->ID),
-						selected($selected, $post->ID, false)
-					);
-				}
-				break;
-		}
-
-		return $options;
 	}
 
 	/**
@@ -191,10 +127,8 @@ class Post_Type_Partner extends Post_Type_Framework {
 
 
 		print('<table class="form-table cmb_metabox">');
-		foreach ($fields as $key => $label) {
-			printf('<tr class="cmb-type-text ptf_meta"><th><label for="ptf_%1$s">%2$s</label></th><td><select name="ptf[%4$s][%1$s]" id="ptf_%1$s" class="widefat">%3$s</select></td></tr>',
-				$key, $label, $this->build_dropdown_options($key, $values[$key]), $this->post_type_name
-			);
+		foreach ($fields as $name => $options) {
+			parent::render_meta_box_field($name, $options, $values[$name]);
 		}
 		print('</table>');
 	}
@@ -234,26 +168,79 @@ class Post_Type_Partner extends Post_Type_Framework {
 		// parent::save_meta_box_values($post_id, $values);
 	}
 
-	function manage_posts_columns($columns) {
-		$columns = array(
-			'cb'		=> '<input type="checkbox" />',
-			'thumb'		=> __('Image', 'ptf'),
-			'title'		=> __('Title'),
-			'taxonomy-indicator_category'	=> $columns['taxonomy-indicator_category'],
-			'author'	=> __('Author'),
-			'date'		=> __('Date')
+	function get_countries_conf() {
+		return array(
+			'name'      => $this->post_type_taxonomy_name . '_flag',
+			'term'		=> '_ptf_flag_id',
+			'label'     => __('Flag', 'ptf'),
+			'countries' => apply_filters('countries_helper_get_list', null),
+			'url'		=> sprintf('%s/assets/images/flags/%%s.png',
+				get_template_directory_uri()
+			)
 		);
-
-		return $columns;
 	}
 
-	function manage_posts_custom_column($column) {
-		global $post;
+	function add_term_fields($taxonomy) {
+		$conf = $this->get_countries_conf();
 
-		switch ($column) {
-			case 'thumb':
-				the_post_thumbnail('thumbnail');
-				break;
+		if (empty($conf['countries']))
+			return;
+
+		printf('<div class="form-field term-country-wrap">'.
+			'<label for="%1$s">%2$s</label>'.
+			'<select name="%1$s" id="%1$s">',
+			$conf['name'], $conf['label']
+		);
+
+		printf('<option value="">%s</option>', __('-- Select --', 'ptf'));
+		foreach ($conf['countries'] as $iso => $name) {
+			printf('<option value="%1$s">%2$s</option>',
+				$iso, $name
+			);
+		}
+
+		print ('</select>');
+
+		printf('<img src="" alt="%s" id="flag_preview">',
+			$conf['label']
+		);
+
+		print ('</div>');
+	}
+
+	function edit_term_fields($term) {
+		$conf = $this->get_countries_conf();
+		$flag = get_term_meta($term->term_id, $conf['term'], true);
+
+		print ('<tr class="form-field">');
+		printf('<th scope="row" valign="top"><label for="%s">%s</label></th>',
+			$conf['name'], $conf['label']
+		);
+		printf('<td><select name="%1$s" id="%1$s">', $conf['name']);
+
+		printf('<option value=""%2$s>%1$s</option>',
+			__('-- Select --', 'ptf'),
+			selected($flag, '', false)
+		);
+		foreach ($conf['countries'] as $iso => $name) {
+			printf('<option value="%1$s"%3$s>%2$s</option>',
+				$iso, $name, selected($flag, $iso, false)
+			);
+		}
+
+		print ('</select>');
+		$flag_src = (!$flag ?: sprintf($conf['url'], $flag));
+		printf('<img src="%2$s" alt="%1$s" id="flag_preview">',
+			$conf['label'], $flag_src
+		);
+		print ('</td></tr>');
+	}
+
+	function save_term_fields($term_id) {
+		$conf = $this->get_countries_conf();
+
+		if (isset($_POST[ $conf['name'] ])) {
+			update_term_meta($term_id, $conf['term'], sanitize_key( $_POST[ $conf['name'] ] ));
 		}
 	}
 

@@ -67,7 +67,7 @@ gulp.task('js', ['modernizr'], function() {
 		return gulp.src(path.join(src, dir, '/**/*.js'))
 			.pipe(!isprod ? sourcemaps.init() : gutil.noop())
 			.pipe(concat(dir + '.js'))
-			.pipe(header(banner, opts.banner))
+			.pipe(isprod ? header(banner, opts.banner) : gutil.noop())
 			.pipe(uglify(opts.uglify))
 			.pipe(!isprod ? sourcemaps.write('') : gutil.noop())
 			.pipe(gulp.dest(basedir));
@@ -90,7 +90,7 @@ gulp.task('css', function() {
 	return gulp.src(path.join(src, '/*.scss'))
 		.pipe(!isprod ? sourcemaps.init() : gutil.noop())
 		.pipe(sass(opts.sass))
-		.pipe(header(banner, opts.banner))
+		.pipe(isprod ? header(banner, opts.banner) : gutil.noop())
 		.pipe(!isprod ? sourcemaps.write('') : gutil.noop())
 		.pipe(gulp.dest(basedir));
 });
