@@ -1,17 +1,28 @@
+"use strict";
 jQuery(window).load(function() {
-	
-	var basemap = L.tileLayer('//cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+
+	var basemap = L.tileLayer(mapconfig.template.nolabels, {
+		attribution: mapconfig.attribution,
 		subdomains: 'abcd',
 		maxZoom: 19
 	});
 
 	var map = L.map('map', {
-		center: [48.0988048, 4.1474343], // Center to Europe by default
-		zoom: 4,
+		center: mapconfig.center,
 		scrollWheelZoom: false,
 		layers: [basemap],
+		zoom: 4,
 	});
+
+	var mu = new maputils();
 
 	// .addTo(map);
 });
+
+(function($) {
+	var url = "/json/ngos";
+
+	$.getJSON(url, function(response) {
+		window.mapconfig.data = response.data;
+	})
+})(jQuery);

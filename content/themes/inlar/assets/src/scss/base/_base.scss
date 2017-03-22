@@ -2,3 +2,59 @@ body {
 	position: relative;
 	font-weight: 300;
 }
+
+a, button, .button, input:focus,
+input[type="button"], input[type="reset"],
+input[type="submit"], textarea:focus {
+	@include transition(all .15s ease-in-out);
+}
+	
+button, .button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: transparent;
+	border: 1px solid rgba(255,255,255, 0.3);
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1.4rem;
+	line-height: 1.2;
+	cursor: pointer;
+	padding: 16px;
+	color: #FFF;
+	width: auto;
+
+	&:hover {
+		background-color: transparent;
+		// border-color: map-get($colors, 1);
+		// color: map-get($colors, 1);
+		text-decoration: none;
+	}
+}
+.button {
+	display: inline-block;
+}
+
+.button.button-block {
+	display: block;
+	width: 100%;
+}
+
+.button.button-large {
+	font-size: 26px;
+	padding: 15px 40px;
+}
+
+.button.button-small,
+.button.button-small.button-invert:hover {
+	font-size: 14px;
+	padding: 15px 20px;
+}
+
+.button.button-mini {
+	font-size: 11px;
+	padding: 5px 8px;
+}

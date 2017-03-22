@@ -1,5 +1,8 @@
 <?php
 
+// Includes
+require_once('includes/map.php');
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -33,17 +36,28 @@ function inlar_theme_setup() {
 }
 
 // Enqueue theme CSS & JS
-add_action('wp_enqueue_scripts', 'inlar_enqueue_styles');
-function inlar_enqueue_styles() {
+add_action('wp_enqueue_scripts', 'inlar_enqueue_frontend_scripts');
+function inlar_enqueue_frontend_scripts() {
 	$assets = get_template_directory_uri() . '/assets';
 
 	// CSS
 	wp_enqueue_style('app', $assets . '/app.css', array(), null, 'all');
 
 	// JS
-	wp_enqueue_script('modernizr', $assets . '/modernizr.js', array(), null, false);
-	wp_enqueue_script('pluggable', $assets . '/pluggable.js', array(), null, false);
-	wp_enqueue_script('app', $assets . '/app.js', array('jquery'), null, true);
+	wp_enqueue_script('inlar-modernizr', $assets . '/modernizr.js', array(), null, false);
+	wp_enqueue_script('inlar-common', $assets . '/common.js', array(), null, false);
+	wp_enqueue_script('inlar-app', $assets . '/app.js', array('jquery'), null, true);
+}
+
+// Enqueue theme backend CSS & JS
+add_action('admin_enqueue_scripts', 'inlar_enqueue_backend_scripts');
+function inlar_enqueue_backend_scripts() {
+	$assets = get_template_directory_uri() . '/assets';
+
+	wp_enqueue_style('inlar-backend', $assets . '/backend.css');
+
+	wp_enqueue_script('inlar-common', $assets . '/common.js', array(), null, false);
+	wp_enqueue_script('inlar-backend', $assets . '/backend.js', array('jquery'), null, true);
 }
 
 ?>
