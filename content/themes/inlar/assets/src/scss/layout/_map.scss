@@ -25,6 +25,38 @@
 	}
 }
 
+#country-control {
+	pointer-events: none;
+	position: relative;
+	z-index: 999;
+
+	.current, .dropdown {
+		pointer-events: auto;
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+	.current {
+		background-color: rgba(#000, 0.7);
+		border-color: rgba(#FFF, 0.7);
+		cursor: default;
+	}
+
+	.dropdown-toggle {
+		background-color: rgba(#FFF, 0.9);
+		border-color: rgba(#FFF, 0.9);
+		color: #000;
+	}
+
+	.dropdown {
+		position: relative;
+
+		.dropdown-menu {
+			display: none;
+		}
+	}
+}
+
 #map {
 	// Base color of current tileset
 	background-color: #242426;
@@ -34,4 +66,43 @@
 	right: 0;
 	left: 0;
 	top: 0;
+
+	.leaflet-marker-icon.point-icon {
+		background-color: $yellow;
+		border: 3px solid #FFF;
+
+		&:focus {
+			outline-color: $yellow;
+		}
+	}
+
+	.leaflet-popup-content-wrapper {
+		.leaflet-popup-content {
+			min-width: 280px;
+			padding: 20px;
+			margin: 0;
+		}
+
+		.card-header {
+			padding: 0 0 30px;
+			img {
+				vertical-align: middle;
+				display: inline-block;
+				margin: 0 10px 0 0;
+				height: 50px !important;
+				width: 50px;
+			}
+
+			.name {
+				vertical-align: middle;
+				display: inline-block;
+			}
+		}
+
+		.card-content {
+			span {
+				display: block;
+			}
+		}
+	}
 }

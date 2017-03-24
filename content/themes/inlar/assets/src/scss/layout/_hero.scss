@@ -25,21 +25,25 @@
 	p {
 		font-size: 2rem;
 	}
+}
 
-	.countries {
-		.button {
-			font-size: 1.6rem;
+.hero .countries,
+#country-control {
+	.button {
+		font-size: 1.6rem;
 
-			.flag {
-				vertical-align: middle;
-				display: inline-block;
-				margin: 0 5px 0 0;
-				width: 30px;
-			}
+		.flag, .name {
+			vertical-align: middle;
+			display: inline-block;
+		}
 
-			& + .button {
-				margin-left: 20px;
-			}
+		.flag {
+			margin: 0 10px 0 0;
+			width: 30px;
+		}
+
+		& + .button {
+			margin-left: 20px;
 		}
 	}
 }
