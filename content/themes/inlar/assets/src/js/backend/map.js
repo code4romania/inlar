@@ -1,9 +1,7 @@
 "use strict";
 
 maputils.prototype.init_admin = function() {
-	var _this = this;
-
-	this.input  = jQuery('#ptf_coords');
+	this.input = jQuery('#ptf_coords');
 
 	// Bail if we are not on the right page
 	if (!this.input.length)
@@ -26,6 +24,8 @@ maputils.prototype.init_admin = function() {
 		center: this.center,
 		zoom: 4,
 	});
+
+	var _this = this;
 
 	// Add the contact marker
 	this.marker = L.marker(this.center, {

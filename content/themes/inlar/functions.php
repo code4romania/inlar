@@ -60,4 +60,19 @@ function inlar_enqueue_backend_scripts() {
 	wp_enqueue_script('inlar-backend', $assets . '/backend.js', array('jquery'), null, true);
 }
 
+add_action('wp_head', 'inlar_head_vars');
+function inlar_head_vars() {
+	$vars = array(
+		'flags_url' => get_template_directory_uri() . '/assets/images/flags',
+	);
+
+	print('<script>');
+	foreach ($vars as $name => $value) {
+		printf('var %s = "%s";',
+			$name, esc_js($value)
+		);
+	}
+	print('</script>');
+}
+
 ?>

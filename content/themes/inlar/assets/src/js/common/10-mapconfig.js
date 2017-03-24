@@ -9,5 +9,7 @@ window.mapconfig = {
 	// Center to Europe by default
 	center: [48.0988048, 4.1474343],
 	// Filled in on page load when needed
-	data: [],
+	ngos: [],
+	countries: [],
+	current: -1,
 };

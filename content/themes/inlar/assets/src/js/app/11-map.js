@@ -1,28 +1,40 @@
 "use strict";
 jQuery(window).load(function() {
+	var mu = new maputils();
 
-	var basemap = L.tileLayer(mapconfig.template.nolabels, {
+	mu.baselayer = L.tileLayer(mapconfig.template.nolabels, {
 		attribution: mapconfig.attribution,
 		subdomains: 'abcd',
 		maxZoom: 19
 	});
 
-	var map = L.map('map', {
+	mu.map = L.map('map', {
 		center: mapconfig.center,
 		scrollWheelZoom: false,
-		layers: [basemap],
+		layers: [mu.baselayer],
 		zoom: 4,
 	});
 
-	var mu = new maputils();
+	jQuery('.countries a', '.map-container').on('click', function(e) {
+		var country_id = jQuery(this).data('country');
+		e.preventDefault();
 
-	// .addTo(map);
+		mu.add_markers(mapconfig.ngos, country_id);
+		mu.enable_map();
+	});
 });
 
 (function($) {
-	var url = "/json/ngos";
+	var json = {
+		'ngos':      '/json/ngos/',
+		'countries': '/json/countries/',
+	};
 
-	$.getJSON(url, function(response) {
-		window.mapconfig.data = response.data;
-	})
+	$.each(json, function(key, url) {
+		$.getJSON(url, function(response) {
+			window.mapconfig[key] = response.data;
+		})
+	});
+
+	
 })(jQuery);

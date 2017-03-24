@@ -7,3 +7,7 @@
 		});
 	}
 })(jQuery);
+
+function png_or_svg() {
+	return Modernizr.svgasimg ? '.svg' : '.png';
+}
