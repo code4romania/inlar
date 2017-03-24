@@ -112,15 +112,23 @@ class Post_Type_NGO extends Post_Type_Framework {
 
 		$filter_key   = $wp_query->query['ptf_filter'];
 
-		if (!in_array($filter_key, array('ngos'))) {
+		if (!in_array($filter_key, array('countries', 'ngos'))) {
 			$this->send_json_response('error', array(
 				'message' => __('Invalid request key', 'ptf')
 			));
-		} else {
-			$this->send_json_response('success', $this->get_ngos_by_country());			
 		}
 
-		return $template;
+		switch ($filter_key) {
+			case 'countries':
+				$result = $this->get_countries();
+				break;
+			
+			case 'ngos':
+				$result = $this->get_ngos_geojson();
+				break;
+		}
+
+		$this->send_json_response('success', $result);
 	}
 
 	function send_json_response($type = '', $data = array()) {
@@ -146,7 +154,8 @@ class Post_Type_NGO extends Post_Type_Framework {
 		header('Expires: 0');
 		status_header($code);
 
-		echo json_encode($response);
+		// @TODO: remove pretty print in prod
+		echo json_encode($response, JSON_PRETTY_PRINT);
 
 		exit;
 	}
@@ -162,55 +171,83 @@ class Post_Type_NGO extends Post_Type_Framework {
 		));
 
 		foreach ($terms as $term) {
-			$countries[$term->slug] = array(
-				'id'      => $term->term_id,
-				'name'    => $term->name,
-				'flag'    => get_term_meta($term->term_id, $conf['term'], true),
+			$countries[] = array(
+				'id'   => $term->term_id,
+				'name' => $term->name,
+				'flag' => get_term_meta($term->term_id, $conf['term'], true),
+				'url'  => get_term_link($term->term_id),
 			);
 		}
 
 		return $countries;
 	}
 
-	function get_ngo_data($post) {
-		$meta = $this->get_meta_box_values($post->ID);
-		$main = array(
-			'name' => get_the_title($post),
-			'desc' => sanitize_post_field('post_content', $post->post_content, $post->ID, 'display'), 
-		);
+	/**
+	 * Because confusing and contradictory standards.
+	 *
+	 * @link http://geojson.org/geojson-spec.html#positions GeoJSON standard positions
+	 * @link https://en.wikipedia.org/wiki/ISO_6709#Order.2C_sign.2C_and_units ISO 6709 Order, sign, and units
+	 * 
+	 * @param   string  $coords  "Lat,Lng" string, as saved in the database
+	 * @return  array            [lng, lat] array, as required by the geojson standard
+	 */
+	function normalize_geojson_coords($coords) {
+		$coords = array_map('floatval', explode(',', $coords));
 
-		return wp_parse_args($meta, $main);
+		return array($coords[1], $coords[0]);
 	}
 
-	function get_ngos_by_country() {
-		$transient = 'ptf_ngos_by_country';
+	function get_ngos_geojson($country = '') {
+		$transient = 'ptf_ngos_geojson';
 
-		if (false === ($countries = i18n_utils::get_transient($transient))) {
+		if (false === ($data = i18n_utils::get_transient($transient))) {
 			$countries = $this->get_countries();
 
-			foreach ($countries as $slug => $values) {
+			$data = array(
+				'type'     => 'FeatureCollection',
+				'features' => array(),
+			);
+
+			foreach ($countries as $country) {
 				$ngos = new WP_Query(array(
 					'posts_per_page' => -1,
 					'tax_query'      => array(
 						array(
 							'taxonomy' => $this->post_type_taxonomy_name,
-							'field'    => 'slug',
-							'terms'    => $slug,
+							'field'    => 'term_id',
+							'terms'    => $country['id'],
 						),
 					),
 				));
 
-				$countries[$slug]['ngos'] = array();
-
 				foreach ($ngos->posts as $ngo) {
-					$countries[$slug]['ngos'][] = $this->get_ngo_data($ngo);
+					$ngo_meta = $this->get_meta_box_values($ngo->ID);
+					$ngo_main = array(
+						'name'         => sanitize_post_field('post_title', $ngo->post_title, $ngo->ID),
+						'desc'         => sanitize_post_field('post_content', $ngo->post_content, $ngo->ID),
+						// @TODO: replace with featured image
+						'img'          => '//lorempixel.com/100/100/people/',
+						'country_name' => $country['name'],
+						'country_flag' => $country['flag'],
+						'country_id'   => $country['id'],
+					);
+
+
+					$data['features'][] = array(
+						'type'       => 'Feature',
+						'properties' => wp_parse_args($ngo_meta, $ngo_main),
+						'geometry'   => array(
+							'type'        => 'Point',
+							'coordinates' => $this->normalize_geojson_coords($ngo_meta['coords']),
+						),
+					);
 				}
 			}
 
-			i18n_utils::set_transient($transient, $countries, MINUTE_IN_SECONDS); // @TODO: use proper expiration value
+			i18n_utils::set_transient($transient, $data, 1/*MINUTE_IN_SECONDS*/); // @TODO: use proper expiration value
 		}
 
-		return $countries;
+		return $data;
 	}
 
 	/**
@@ -259,6 +296,11 @@ class Post_Type_NGO extends Post_Type_Framework {
 				'type'     => 'text',
 				'i18n'     => false,
 			),
+			'email'    => array(
+				'label'    => __('Email', 'ptf'),
+				'type'     => 'email',
+				'i18n'     => false,
+			),
 		);
 	}
 
@@ -269,6 +311,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 			'url'      => '',
 			'keywords' => '',
 			'phone'    => '',
+			'email'    => '',
 		);
 	}
 
@@ -315,11 +358,12 @@ class Post_Type_NGO extends Post_Type_Framework {
 	}
 
 	/**
-	 * [sanitize_meta_box_value description]
+	 * @TODO: sanitize_meta_box_value
+	 * @param	mixed	$key	[description]
 	 * @param	mixed	$value	[description]
 	 * @return 	mixed			False on fail, sanitized value on success
 	 */
-	function sanitize_meta_box_value($value) {
+	function sanitize_meta_box_value($key, $value) {
 		$fields = $this->get_meta_box_fields();
 
 		return $value;
@@ -352,7 +396,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 
 		// Sanitize and save
 		foreach ($values as $k => $v) {
-			$sanitized = $this->sanitize_meta_box_value($v);
+			$sanitized = $this->sanitize_meta_box_value($k, $v);
 
 			if ($sanitized === false)
 				continue;
@@ -361,7 +405,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 		}
 
 
-		i18n_utils::delete_transient('ptf_ngos_by_country');
+		i18n_utils::delete_transient('ptf_ngos_geojson');
 
 		// parent::save_meta_box_values($post_id, $values);
 	}
@@ -370,7 +414,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 		if (get_post_type($post->ID) !== $this->post_type_name)
 			return false;
 
-		i18n_utils::delete_transient('ptf_ngos_by_country');		
+		i18n_utils::delete_transient('ptf_ngos_geojson');		
 	}
 
 	function get_countries_conf() {
@@ -448,7 +492,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 			update_term_meta($term_id, $conf['term'], sanitize_key( $_POST[ $conf['name'] ] ));
 		}
 
-		i18n_utils::delete_transient('ptf_ngos_by_country');
+		i18n_utils::delete_transient('ptf_ngos_geojson');
 	}
 
 	function dashboard_glance($elements) {
