@@ -58,3 +58,116 @@ input[type="submit"] {
 	font-size: 11px;
 	padding: 5px 8px;
 }
+
+.dropdown-container {
+	position: relative;
+	z-index: 9;
+
+	.dropdown {
+		display: none;
+	}
+
+	&.open .dropdown {
+		display: block;
+	}
+}
+
+.dropdown {
+	background-color: #FFF;
+	position: absolute;
+	list-style: none;
+	min-width: 220px;
+	padding: 20px;
+
+	&:after {
+		border: 1rem solid transparent;
+		pointer-events: none;
+		position: absolute;
+		content: '';
+		height: 0;
+		width: 0;
+	}
+
+	&.top:after,
+	&.top-right:after,
+	&.top-left:after {
+		border-bottom-color: #FFF;
+		margin-left: -1rem;
+		bottom: 100%;
+		left: 50%;
+	}
+
+	&.bottom:after,
+	&.bottom-right:after,
+	&.bottom-left:after {
+		border-top-color: #fff;
+		margin-left: -1rem;
+		top: 100%;
+		left: 50%;
+	}
+
+	&.top-right:after,
+	&.bottom-right:after {
+		right: 1rem;
+		left: auto;
+	}
+
+	&.top-left:after,
+	&.bottom-left:after {
+		margin-left: 0;
+		left: 1rem;
+	}
+
+	&.right:after,
+	&.right-top:after,
+	&.right-bottom:after {
+		border-left-color: #fff;
+		margin-top: -1rem;
+		left: 100%;
+		top: 50%;
+	}
+
+	&.left:after,
+	&.left-top:after,
+	&.left-bottom:after {
+		border-right-color: #fff;
+		margin-top: -1rem;
+		right: 100%;
+		top: 50%;
+	}
+
+	&.right-top:after,
+	&.left-top:after {
+		margin-top: 0;
+		top: 1rem;
+	}
+
+	&.right-bottom:after,
+	&.left-bottom:after {
+		bottom: 1rem;
+		top: auto;
+	}
+
+	li {
+		padding: 14px 3px;
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		&:not(:hidden) + li {
+			border-top: 1px solid $light-gray;
+		}
+	}
+}
+
+#backdrop {
+	background-color: transparent;
+	position: fixed;
+	z-index: 8;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+}

@@ -39,9 +39,9 @@ maputils.prototype.control_dropdown = function() {
 	control+= '<span class="name">'+ mapconfig.current.name + '</span>';
 	control+= '</span>';
 
-	control+= '<div class="dropdown">';
-	control+= '<button class="button dropdown-toggle">Another country</button>';
-	control+= '<ul class="dropdown-menu">';
+	control+= '<div class="dropdown-container">';
+	control+= '<span class="button dropdown-toggle">'+ i18n.another_country +'<i class="icon-arrow-black"></i></span>';
+	control+= '<ul class="dropdown top-right">';
 
 	for (var country in mapconfig.countries) {
 		control+= '<li'+ (mapconfig.current.id == mapconfig.countries[country].id ? ' hidden' : '') +'>';
@@ -49,11 +49,11 @@ maputils.prototype.control_dropdown = function() {
 		control+= '</li>';
 	}
 
-	target.html(control);
+	target.empty().html(control);
 }
 
 maputils.prototype.add_markers = function(geojson, country_id) {
-	
+	this.map.removeLayer(this.markers);
 	this.markers = L.geoJson(geojson, {
 		pointToLayer: function(geoJsonPoint, latlng) {
 			return L.marker(latlng, {

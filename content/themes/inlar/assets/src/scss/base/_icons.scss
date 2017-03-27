@@ -1,0 +1,40 @@
+[class^="icon-"],
+[class*=" icon-"] {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0 0.85em 0;
+	height: .5em;
+	width: .5em;
+}
+
+.icon-arrow           { background-image: url('images/icons/arrow.png'); }
+.icon-search          { background-image: url('images/icons/search.png'); }
+.icon-facebook        { background-image: url('images/icons/facebook.png'); }
+.icon-instagram       { background-image: url('images/icons/instagram.png'); }
+.icon-medium          { background-image: url('images/icons/medium.png'); }
+.icon-twitter         { background-image: url('images/icons/twitter.png'); }
+.icon-arrow-black     { background-image: url('images/icons/arrow-black.png'); }
+.icon-search-black    { background-image: url('images/icons/search-black.png'); }
+.icon-facebook-black  { background-image: url('images/icons/facebook-black.png'); }
+.icon-instagram-black { background-image: url('images/icons/instagram-black.png'); }
+.icon-medium-black    { background-image: url('images/icons/medium-black.png'); }
+.icon-twitter-black   { background-image: url('images/icons/twitter-black.png'); }
+
+
+html.svgasimg {
+	.icon-arrow           { background-image: url('images/icons/arrow.svg'); }
+	.icon-search          { background-image: url('images/icons/search.svg'); }
+	.icon-facebook        { background-image: url('images/icons/facebook.svg'); }
+	.icon-instagram       { background-image: url('images/icons/instagram.svg'); }
+	.icon-medium          { background-image: url('images/icons/medium.svg'); }
+	.icon-twitter         { background-image: url('images/icons/twitter.svg'); }
+	.icon-arrow-black     { background-image: url('images/icons/arrow-black.svg'); }
+	.icon-search-black    { background-image: url('images/icons/search-black.svg'); }
+	.icon-facebook-black  { background-image: url('images/icons/facebook-black.svg'); }
+	.icon-instagram-black { background-image: url('images/icons/instagram-black.svg'); }
+	.icon-medium-black    { background-image: url('images/icons/medium-black.svg'); }
+	.icon-twitter-black   { background-image: url('images/icons/twitter-black.svg'); }
+}

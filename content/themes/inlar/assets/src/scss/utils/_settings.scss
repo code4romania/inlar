@@ -1,19 +1,23 @@
 @charset "UTF-8";
 
 // Fonts
+$font-primary:      'Open Sans', sans-serif;
 
 // Colors
-$gradient:			(from: #1C1218, to: #181C26);
-$yellow: 			#FFBC1B;
+$gradient:          (from: #1C1218, to: #181C26);
+$yellow:            #FFBC1B;
+$light-gray:        #CDCECF;
+$mid-gray:          #585858;
+
 
 // Grid
-$container-width:	1200px;
-$num-cols:			12;
+$container-width:   1200px;
+$num-cols:          12;
 
 // Breakpoints
 $breakpoints: (
-	null: 			null,
-	small:			600px,
-	medium:			768px,
-	large:			960px
+	null:           null,
+	small:          600px,
+	medium:         768px,
+	large:          960px
 );

@@ -6,12 +6,14 @@
 /* Base */
 @import "base/normalize";
 @import "base/base";
+@import "base/icons";
 
 /* Layout */
 @import "layout/grid";
 @import "layout/header";
 @import "layout/hero";
 @import "layout/map";
+@import "layout/content";
 @import "layout/footer";
 
 /* Modules */

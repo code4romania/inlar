@@ -4,10 +4,24 @@
 	background: linear-gradient(to bottom, #000 0%, transparent 100%);
 	padding: 3.5rem 0;
 	position: absolute;
-	z-index: 2;
+	z-index: 9;
 	right: 0;
 	left: 0;
 	top: 0;
+
+	nav {
+		justify-content: space-between;
+		display: flex;
+
+		&:before, &:after {
+			content: none;
+		}
+
+		.flex-item {
+			align-self: center;
+			font-size: 1.4rem;
+		}
+	}
 
 	.title-area {
 		background-image: url('images/logo.png');
@@ -17,6 +31,84 @@
 		display: inline-block;
 		height: 60px;
 		width: 200px;
+	}
+
+	.menu {
+		padding: 0;
+		margin: 0;
+
+		li {
+			display: inline-block;
+			font-size: 1.4rem;
+
+			a {
+				text-transform: uppercase;
+				text-decoration: none;
+				padding: 10px 25px;
+				color: #FFF;
+			}
+		}
+	}
+
+	.search-form {
+		display: inline-block;
+		position: relative;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		input {
+			transition: opacity .3s;
+			opacity: 0.5;
+
+			&.search-field {
+				padding: 1rem 1.5rem 1rem 2rem;
+				border: none;
+				border-bottom: 1px solid;
+				background: none;
+				outline: none;
+				color: #FFF;
+
+				&:focus {
+					& + .search-submit,
+					& {
+						opacity: 1;
+					}
+				}
+			}
+
+			&.search-submit {
+				text-indent: -9999px;
+				position: absolute;
+				margin: auto;
+				border: none;
+				padding: 0;
+				height: .75em;
+				width: 1em;
+				bottom: 0;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+
+	.lang-switcher {
+		display: inline-block;
+		position: relative;
+		margin-left: 3rem;
+
+		.current {
+			text-transform: uppercase;
+			cursor: pointer;
+			color: #FFF;
+		}
+
+		.dropdown {
+			position: absolute;
+			top: 100%;
+			right: 0;
+		}
 	}
 }
 
