@@ -74,7 +74,7 @@ class Post_Type_Partner extends Post_Type_Framework {
 			return;
 
 		add_meta_box(
-			'ptf_project',
+			'ptf_info',
 			__('Additional Information', 'ptf'),
 			array($this, 'render_meta_box'),
 			$this->post_type_name,
@@ -85,11 +85,17 @@ class Post_Type_Partner extends Post_Type_Framework {
 
 	function get_meta_box_fields() {
 		return array(
+			'url'      => array(
+				'label'    => __('URL', 'ptf'),
+				'type'     => 'url',
+				'i18n'     => false,
+			),
 		);
 	}
 
 	function get_default_values() {
 		return array(
+			'url'      => '',
 		);
 	}
 

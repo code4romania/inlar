@@ -225,7 +225,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 					$ngo_main = array(
 						'name'         => sanitize_post_field('post_title', $ngo->post_title, $ngo->ID),
 						'desc'         => sanitize_post_field('post_content', $ngo->post_content, $ngo->ID),
-						// @TODO: replace with featured image
+						// TODO: replace with featured image
 						'img'          => '//lorempixel.com/100/100/people/',
 						'country_name' => $country['name'],
 						'country_flag' => $country['flag'],
