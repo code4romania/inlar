@@ -1,23 +1,24 @@
-var gulp        = require('gulp'),
-	fs          = require('fs'),
-	path        = require('path'),
-	gutil       = require('gulp-util'),
-	merge       = require('merge-stream'),
-	pkg         = require('./package.json'),
+var gulp         = require('gulp'),
+	fs           = require('fs'),
+	path         = require('path'),
+	gutil        = require('gulp-util'),
+	merge        = require('merge-stream'),
+	pkg          = require('./package.json'),
 
-	clean       = require('gulp-clean'),
-	concat      = require('gulp-concat'),
-	header      = require('gulp-header'),
-	jshint      = require('gulp-jshint'),
-	modernizr   = require('gulp-modernizr'),
-	sass        = require('gulp-sass'),
-	sourcemaps  = require('gulp-sourcemaps'),
-	svgmin      = require('gulp-svgmin'),
-	uglify      = require('gulp-uglify'),
+	autoprefixer = require('gulp-autoprefixer'),
+	clean        = require('gulp-clean'),
+	concat       = require('gulp-concat'),
+	header       = require('gulp-header'),
+	jshint       = require('gulp-jshint'),
+	modernizr    = require('gulp-modernizr'),
+	sass         = require('gulp-sass'),
+	sourcemaps   = require('gulp-sourcemaps'),
+	svgmin       = require('gulp-svgmin'),
+	uglify       = require('gulp-uglify'),
 
-	banner      = '/*! ${pkg.name} - v${pkg.version}${suffix} */\n',
-	basedir     = pkg.assetsDir || '',
-	isprod      = !!gutil.env.prod;
+	banner       = '/*! ${pkg.name} - v${pkg.version}${suffix} */\n',
+	basedir      = pkg.assetsDir || '',
+	isprod       = !!gutil.env.prod;
 
 function getFolders(dir) {
 	return fs.readdirSync(dir)
@@ -90,6 +91,7 @@ gulp.task('css', function() {
 	return gulp.src(path.join(src, '/*.scss'))
 		.pipe(!isprod ? sourcemaps.init() : gutil.noop())
 		.pipe(sass(opts.sass))
+		.pipe(autoprefixer())
 		.pipe(isprod ? header(banner, opts.banner) : gutil.noop())
 		.pipe(!isprod ? sourcemaps.write('') : gutil.noop())
 		.pipe(gulp.dest(basedir));
