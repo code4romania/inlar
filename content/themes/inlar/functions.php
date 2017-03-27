@@ -2,6 +2,7 @@
 
 // Includes
 require_once('includes/map.php');
+require_once('includes/navigation.php');
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -29,7 +30,6 @@ function inlar_theme_setup() {
 
 	load_theme_textdomain('inlar');
 
-	// Use wp_nav_menu() in two locations.
 	register_nav_menus(array(
 		'menu-primary'		=> __('Primary menu', 'inlar'),
 	));
@@ -39,6 +39,9 @@ function inlar_theme_setup() {
 add_action('wp_enqueue_scripts', 'inlar_enqueue_frontend_scripts');
 function inlar_enqueue_frontend_scripts() {
 	$assets = get_template_directory_uri() . '/assets';
+
+	// Fonts
+	wp_enqueue_style('google-open-sans', '//fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic,cyrillic-ext,latin-ext', array(), null, 'all');
 
 	// CSS
 	wp_enqueue_style('app', $assets . '/app.css', array(), null, 'all');
@@ -64,15 +67,47 @@ add_action('wp_head', 'inlar_head_vars');
 function inlar_head_vars() {
 	$vars = array(
 		'flags_url' => get_template_directory_uri() . '/assets/images/flags',
+		'i18n'      => array(
+			'another_country' => __('Another country', 'inlar'),
+		),
 	);
 
 	print('<script>');
 	foreach ($vars as $name => $value) {
-		printf('var %s = "%s";',
-			$name, esc_js($value)
+		printf('var %s = %s;'.PHP_EOL,
+			$name, (is_array($value) ? json_encode($value) : '"'. esc_js($value).'"' )
 		);
 	}
 	print('</script>');
+}
+
+function inlar_language_switcher() {
+	global $q_config;
+
+	if (!function_exists('qtranxf_getSortedLanguages'))
+		return;
+
+	$languages = qtranxf_getSortedLanguages();
+
+	$active = '';
+	$output = array();
+
+	foreach ($languages as $language) {
+		if ($language === $q_config['language']) {
+			$active = sprintf('<span class="current">%s <i class="icon-arrow"></i></span>',
+				$language
+			);
+		} else {
+			$output[] = sprintf('<li><a href="%1$s" hreflang="%2$s">%2$s</a></li>',
+				qtranxf_convertURL(is_404() ? home_url() : '', $language),
+				$q_config['language_name'][$language]
+			);
+		}
+	}
+
+	printf('<div class="lang-switcher dropdown-container">%s<ul class="dropdown top-right">%s</ul></div>',
+		$active, implode('', $output)
+	);
 }
 
 ?>
