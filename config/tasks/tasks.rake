@@ -99,33 +99,9 @@ namespace :db do
 	end
 end
 
-namespace :config do
-	desc "Fetch submodule archives on remote based on local submodule info"
-	task :submodules do
-		submodules = []
-
-		on :local do
-			v = capture("git submodule --quiet foreach 'echo $path `git tag --points-at $sha1` `git config --file $toplevel/.gitmodules submodule.$name.url`'").lines
-
-			v.each { |line|
-				mod = line.split(' ')
-				submodules.push({
-					'path' => mod[0],
-					'tag'  => mod[1],
-					'url'  => mod[2],
-				})
-			}
-		end
-
-		on roles(:web) do
-			submodules.each { |mod|
-				execute "git archive --prefix=#{mod['path']}/ --remote=#{mod['url']} #{mod['tag']} | tar -x -f - -C #{release_path}"
-			}
-		end
-	end
-
+namespace :wp do
 	desc "Sets the database credentials (and other settings) in wp-config.php"
-	task :makewp do
+	task :config do
 		on roles(:web) do
 			stage = fetch(:stage).to_s
 			conf = fetch(:wpdb).fetch(stage)
@@ -154,6 +130,13 @@ namespace :config do
 				debug capture "sed -i 's/#{k}/#{v}/' #{release_path}/wp-config.php", :roles => :web
 			end
 			info "Done preparing wp-config.php"
+		end
+	end
+
+	desc "Remove wp-content dir"
+	task :cleanup do
+		on roles(:web) do
+			execute "if [ -d #{release_path}/wp/wp-content ]; then rm -rf #{release_path}/wp/wp-content; fi"
 		end
 	end
 end

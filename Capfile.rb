@@ -11,7 +11,5 @@ require 'capistrano/deploy'
 require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
 
-# Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
-# Dir.glob('config/tasks/*.rb').each { |r| import r }
-load 'config/tasks/tasks.rb'
-load 'config/tasks/hooks.rb'
+# Loads custom tasks from `config/tasks' if you have any defined.
+Dir.glob('config/tasks/*.rake').each { |r| import r }

@@ -12,3 +12,5 @@ lib export-ignore
 Capfile.rb export-ignore
 gulpfile.js export-ignore
 package.json export-ignore
+Gemfile export-ignore
+Gemfile.lock export-ignore
