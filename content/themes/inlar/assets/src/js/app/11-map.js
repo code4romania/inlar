@@ -1,5 +1,8 @@
 "use strict";
 jQuery(window).load(function() {
+	if (!jQuery('#map').length)
+		return;
+
 	var mu = new maputils(),
 	markers_fn = function(e) {
 		var country_id = jQuery(this).data('country');

@@ -3,6 +3,16 @@ body {
 	font-weight: 300;
 }
 
+p {
+	&:first-of-type {
+		margin-top: 0;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
 a, button, .button, input:focus,
 input[type="button"], input[type="reset"],
 input[type="submit"], textarea:focus {
