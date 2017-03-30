@@ -1,11 +1,5 @@
 <section class="partners-container">
-	<header class="entry-header">
-		<?php
-			// TODO: replace with proper option
-		?>
-		<h1 class="entry-title">Our Partners</h1>
-		<p>NGOs which share our values and can work with us on various future projects</p>
-	</header>
+	<?php inlar_header('inlar_partners', 'section'); ?>
 	<div class="entry-partners"><?php
 			$partners = new WP_Query(array(
 				'post_type'      => 'partner',
@@ -17,9 +11,10 @@
 				<div class="partner">
 					<div class="partner-box">
 						<?php
-						// TODO: replace with featured image
+							if (has_post_thumbnail()) {
+								the_post_thumbnail('partner-logo-small');
+							}
 						?>
-						<img src="//lorempixel.com/150/150/abstract/" alt="">
 						<h2 class="partner-name"><?php the_title(); ?></h2>
 					</div>
 				</div>

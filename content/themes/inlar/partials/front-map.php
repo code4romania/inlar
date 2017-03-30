@@ -1,9 +1,8 @@
-<section class="map-container map-closed">
-	<div class="map-bg"></div>
+<section class="hero map-container map-closed">
 	<div id="map" class="header-adjust">
 		<div id="country-control" class="container"></div>
 	</div>
-	<div class="hero header-adjust">
+	<div class="map-description header-adjust">
 		<div class="container">
 			<div class="row">
 				<div class="col m5">

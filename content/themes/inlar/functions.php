@@ -4,6 +4,10 @@
 require_once('includes/map.php');
 require_once('includes/navigation.php');
 
+// Image sizes
+add_image_size('partner-logo-small', 150, 150, true);
+add_image_size('partner-logo-large', 250, 250, true);
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -31,7 +35,11 @@ function inlar_theme_setup() {
 	load_theme_textdomain('inlar');
 
 	register_nav_menus(array(
-		'menu-primary'		=> __('Primary menu', 'inlar'),
+		'menu-primary' => __('Primary menu', 'inlar'),
+	));
+
+	add_theme_support('custom-header', array(
+		'default-image' => get_template_directory_uri() . '/assets/images/header.jpg',
 	));
 }
 
@@ -108,6 +116,24 @@ function inlar_language_switcher() {
 	printf('<div class="lang-switcher dropdown-container">%s<ul class="dropdown top-right">%s</ul></div>',
 		$active, implode('', $output)
 	);
+}
+
+function inlar_header_raw($title = '', $text = '', $type = false) {
+	$type_whitelist = array('hero', 'section');
+
+	if (!in_array($type, $type_whitelist))
+		return false;
+
+	include(locate_template("partials/header-{$type}.php"));
+}
+
+function inlar_header($option_name, $type = '') {
+	$opt = get_option($option_name, array(
+		'section_title' => '',
+		'section_text'  => '',
+	));
+
+	inlar_header_raw($opt['section_title'], $opt['section_text'], $type);
 }
 
 ?>
