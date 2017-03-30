@@ -7,7 +7,7 @@ namespace :shared do
 
 	task :make_symlinks do
 		on roles(:web) do
-			execute "if [ ! -h #{release_path}/shared ]; then ln -s #{shared_path}/files/ #{release_path}/shared; fi"
+			execute "if [ ! -h #{release_path}/shared ]; then ln -s #{shared_path} #{release_path}/shared; fi"
 			execute "for p in `find -L #{release_path} -type l`; do t=`readlink $p | grep -o 'shared/.*$'`; mkdir -p #{release_path}/$t; done"
 		end
 	end
@@ -48,9 +48,9 @@ namespace :db do
 	task :pull do
 		on roles(:web) do
 			if fetch(:stage) != :production then
-				puts "[ERROR] You must run db:pull from production with `cap production db:pull`"
+				fatal "[ERROR] You must run db:pull from production with `cap production db:pull`"
 			else
-				puts "Hang on... this might take a while."
+				info "Hang on... this might take a while."
 
 				random = rand( 10 ** 5 ).to_s.rjust( 5, '0' )
 				db = fetch(:wpdb).fetch(:production)
@@ -63,7 +63,7 @@ namespace :db do
 
 				execute "rm #{tmp}"
 
-				puts "Database downloaded from production"
+				info "Database downloaded from production"
 			end
 		end
 	end
@@ -72,9 +72,9 @@ namespace :db do
 	task :push do
 		on roles(:web) do
 			if fetch(:stage) != :staging then
-				puts "[ERROR] You must run db:push from staging with `cap staging db:push`"
+				fatal "[ERROR] You must run db:push from staging with `cap staging db:push`"
 			else
-				puts "Hang on... this might take a while."
+				info "Hang on... this might take a while."
 
 				dbfile = 'shared/db/production.sql.bz2'
 
@@ -90,9 +90,9 @@ namespace :db do
 
 					system "rm #{dbfile}"
 
-					puts "Database uploaded to staging"
+					info "Database uploaded to staging"
 				else
-					puts "[ERROR] Database dump not found! You must first run db:pull from production with `cap production db:pull`"
+					fatal "[ERROR] Database dump not found! You must first run db:pull from production with `cap production db:pull`"
 				end
 			end
 		end
@@ -107,21 +107,21 @@ namespace :wp do
 			conf = fetch(:wpdb).fetch(stage)
 			salts = fetch(:salts).fetch(stage)
 			conf = {
-				:'%%WP_STAGE%%'             => stage,
+				:'%%WP_STAGE%%'         => stage,
 
-				:'%%DB_NAME%%'              => conf['name'],
-				:'%%DB_USER%%'              => conf['user'],
-				:'%%DB_PASSWORD%%'          => conf['password'],
-				:'%%DB_HOST%%'              => conf['host'],
+				:'%%DB_NAME%%'          => conf['name'],
+				:'%%DB_USER%%'          => conf['user'],
+				:'%%DB_PASSWORD%%'      => conf['password'],
+				:'%%DB_HOST%%'          => conf['host'],
 
-				:'%%AUTH_KEY%%'             => salts['auth_key'],
-				:'%%SECURE_AUTH_KEY%%'      => salts['secure_auth_key'],
-				:'%%LOGGED_IN_KEY%%'        => salts['logged_in_key'],
-				:'%%NONCE_KEY%%'            => salts['nonce_key'],
-				:'%%AUTH_SALT%%'            => salts['auth_salt'],
-				:'%%SECURE_AUTH_SALT%%'     => salts['secure_auth_salt'],
-				:'%%LOGGED_IN_SALT%%'       => salts['logged_in_salt'],
-				:'%%NONCE_SALT%%'           => salts['nonce_salt'],
+				:'%%AUTH_KEY%%'         => salts['auth_key'],
+				:'%%SECURE_AUTH_KEY%%'  => salts['secure_auth_key'],
+				:'%%LOGGED_IN_KEY%%'    => salts['logged_in_key'],
+				:'%%NONCE_KEY%%'        => salts['nonce_key'],
+				:'%%AUTH_SALT%%'        => salts['auth_salt'],
+				:'%%SECURE_AUTH_SALT%%' => salts['secure_auth_salt'],
+				:'%%LOGGED_IN_SALT%%'   => salts['logged_in_salt'],
+				:'%%NONCE_SALT%%'       => salts['nonce_salt'],
 			}
 
 			info "Preparing wp-config.php"
