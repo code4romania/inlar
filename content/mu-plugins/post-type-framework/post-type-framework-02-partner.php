@@ -26,35 +26,35 @@ class Post_Type_Partner extends Post_Type_Framework {
 	 */
 	function setup() {
 		// Setup custom post types
-		$this->post_type_name	= 'partner';
-		$this->post_type_args	= array(
-			'labels'				=> array(
-				'name'					=> __('Partners', 'ptf'),
-				'singular_name'			=> __('Partner', 'ptf'),
-				'add_new'				=> __('Add New', 'ptf'),
-				'add_new_item'			=> __('Add Partner', 'ptf'),
-				'edit_item'				=> __('Edit Partner', 'ptf'),
-				'all_items'				=> __('All Partners', 'ptf'),
-				'view_item'				=> __('View Partner', 'ptf'),
-				'search_items'			=> __('Search Partners', 'ptf'),
-				'not_found'				=> __('No partners found', 'ptf'),
-				'not_found_in_trash'	=> __('No partners found in Trash', 'ptf'),
-				'menu_name'				=> __('Partners', 'ptf')
+		$this->post_type_name = 'partner';
+		$this->post_type_args = array(
+			'labels'              => array(
+				'name'               => __('Partners', 'ptf'),
+				'singular_name'      => __('Partner', 'ptf'),
+				'add_new'            => __('Add New', 'ptf'),
+				'add_new_item'       => __('Add Partner', 'ptf'),
+				'edit_item'          => __('Edit Partner', 'ptf'),
+				'all_items'          => __('All Partners', 'ptf'),
+				'view_item'          => __('View Partner', 'ptf'),
+				'search_items'       => __('Search Partners', 'ptf'),
+				'not_found'          => __('No partners found', 'ptf'),
+				'not_found_in_trash' => __('No partners found in Trash', 'ptf'),
+				'menu_name'          => __('Partners', 'ptf')
 			),
-			'menu_icon'				=> 'dashicons-groups',
-			'hierarchical'			=> false,
-			'supports'				=> array('title', 'editor', 'excerpt', 'thumbnail'),
-			'public'				=> true,
-			'show_ui'				=> true,
-			'menu_position'			=> 20,
-			'show_in_nav_menus'		=> true,
-			'publicly_queryable'	=> true,
-			'exclude_from_search'	=> false,
-			'has_archive'			=> true,
-			'query_var'				=> true,
-			'can_export'			=> true,
-			'rewrite'				=> array('slug' => $this->post_type_name, 'with_front' => false),
-			'capability_type'		=> 'post'
+			'menu_icon'           => 'dashicons-groups',
+			'hierarchical'        => false,
+			'supports'            => array('title', 'editor', 'thumbnail'),
+			'public'              => true,
+			'show_ui'             => true,
+			'menu_position'       => 20,
+			'show_in_nav_menus'   => true,
+			'publicly_queryable'  => true,
+			'exclude_from_search' => false,
+			'has_archive'         => true,
+			'query_var'           => true,
+			'can_export'          => true,
+			'rewrite'             => array('slug' => 'partners', 'with_front' => false),
+			'capability_type'     => 'post'
 		);
 	} 
 
@@ -166,11 +166,15 @@ class Post_Type_Partner extends Post_Type_Framework {
 
 		$values = $_POST['ptf'][$this->post_type_name];
 
-		// Force int values
+		// Sanitize and save
 		foreach ($values as $k => $v) {
-			update_post_meta($post_id, "_ptf_{$this->post_type_name}_{$k}_meta", absint($v));
-		}
+			$sanitized = parent::sanitize_meta_box_value($k, $v);
 
+			if ($sanitized === false)
+				continue;
+
+			update_post_meta($post_id, "_ptf_{$this->post_type_name}_{$k}_meta", $sanitized);
+		}
 		// parent::save_meta_box_values($post_id, $values);
 	}
 

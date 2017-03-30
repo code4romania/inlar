@@ -40,56 +40,56 @@ class Post_Type_NGO extends Post_Type_Framework {
 	 */
 	function setup() {
 		// Setup custom post types
-		$this->post_type_name	= 'ngo';
-		$this->post_type_args	= array(
-			'labels'				=> array(
-				'name'					=> __('NGOs', 'ptf'),
-				'singular_name'			=> __('NGO', 'ptf'),
-				'add_new'				=> __('Add New', 'ptf'),
-				'add_new_item'			=> __('Add NGO', 'ptf'),
-				'edit_item'				=> __('Edit NGO', 'ptf'),
-				'all_items'				=> __('All NGOs', 'ptf'),
-				'view_item'				=> __('View NGO', 'ptf'),
-				'search_items'			=> __('Search NGOs', 'ptf'),
-				'not_found'				=> __('No NGOs found', 'ptf'),
-				'not_found_in_trash'	=> __('No NGOs found in Trash', 'ptf'),
-				'menu_name'				=> __('NGOs', 'ptf')
+		$this->post_type_name = 'ngo';
+		$this->post_type_args = array(
+			'labels'              => array(
+				'name'               => __('NGOs', 'ptf'),
+				'singular_name'      => __('NGO', 'ptf'),
+				'add_new'            => __('Add New', 'ptf'),
+				'add_new_item'       => __('Add NGO', 'ptf'),
+				'edit_item'          => __('Edit NGO', 'ptf'),
+				'all_items'          => __('All NGOs', 'ptf'),
+				'view_item'          => __('View NGO', 'ptf'),
+				'search_items'       => __('Search NGOs', 'ptf'),
+				'not_found'          => __('No NGOs found', 'ptf'),
+				'not_found_in_trash' => __('No NGOs found in Trash', 'ptf'),
+				'menu_name'          => __('NGOs', 'ptf')
 			),
-			'menu_icon'				=> 'dashicons-location-alt',
-			'hierarchical'			=> false,
-			'supports'				=> array('title', 'editor', 'thumbnail'),
-			'public'				=> true,
-			'show_ui'				=> true,
-			'menu_position'			=> 20,
-			'show_in_nav_menus'		=> true,
-			'publicly_queryable'	=> true,
-			'exclude_from_search'	=> false,
-			'has_archive'			=> true,
-			'query_var'				=> true,
-			'can_export'			=> true,
-			'rewrite'				=> array('slug' => $this->post_type_name, 'with_front' => false),
-			'capability_type'		=> 'post'
+			'menu_icon'           => 'dashicons-location-alt',
+			'hierarchical'        => false,
+			'supports'            => array('title', 'editor', 'thumbnail'),
+			'public'              => true,
+			'show_ui'             => true,
+			'menu_position'       => 20,
+			'show_in_nav_menus'   => true,
+			'publicly_queryable'  => true,
+			'exclude_from_search' => false,
+			'has_archive'         => true,
+			'query_var'           => true,
+			'can_export'          => true,
+			'rewrite'             => array('slug' => $this->post_type_name, 'with_front' => false),
+			'capability_type'     => 'post'
 		);
 
 		$this->post_type_taxonomy_name = 'country';
 		$this->post_type_taxonomy_args = array(
-			'labels'			=> array(
-				'name'				=> __('Countries', 'ptf'),
-				'singular_name'		=> __('Country', 'ptf'),
-				'search_items'		=> __('Search Countries', 'ptf'),
-				'all_items'			=> __('All Countries', 'ptf'),
-				'edit_item'			=> __('Edit Country', 'ptf'),
-				'update_item'		=> __('Update Country', 'ptf'),
-				'add_new_item'		=> __('Add new Country', 'ptf'),
-				'new_item_name'		=> __('New Country', 'ptf'),
-				'not_found'			=> __('No categories found.', 'ptf'),
-				'menu_name'			=> __('Countries', 'ptf')
+			'labels'            => array(
+				'name'             => __('Countries', 'ptf'),
+				'singular_name'    => __('Country', 'ptf'),
+				'search_items'     => __('Search Countries', 'ptf'),
+				'all_items'        => __('All Countries', 'ptf'),
+				'edit_item'        => __('Edit Country', 'ptf'),
+				'update_item'      => __('Update Country', 'ptf'),
+				'add_new_item'     => __('Add new Country', 'ptf'),
+				'new_item_name'    => __('New Country', 'ptf'),
+				'not_found'        => __('No categories found.', 'ptf'),
+				'menu_name'        => __('Countries', 'ptf')
 			),
-			'hierarchical'		=> true,
-			'show_ui'			=> true,
-			'show_admin_column'	=> true,
-			'query_var'			=> true,
-			'rewrite'			=> array('slug' => 'country', 'with_front' => false)
+			'hierarchical'      => true,
+			'show_ui'           => true,
+			'show_admin_column' => true,
+			'query_var'         => true,
+			'rewrite'           => array('slug' => 'country', 'with_front' => false)
 		);
 
 		$this->post_type_args['taxonomies'] = array($this->post_type_taxonomy_name);
@@ -110,7 +110,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 		if (!isset($wp_query->query['ptf_filter']) || empty($wp_query->query['ptf_filter']))
 			return $template;
 
-		$filter_key   = $wp_query->query['ptf_filter'];
+		$filter_key = $wp_query->query['ptf_filter'];
 
 		if (!in_array($filter_key, array('countries', 'ngos'))) {
 			$this->send_json_response('error', array(
@@ -122,7 +122,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 			case 'countries':
 				$result = $this->get_countries();
 				break;
-			
+
 			case 'ngos':
 				$result = $this->get_ngos_geojson();
 				break;
@@ -140,7 +140,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 				);
 				$code = 400;
 				break;
-			
+
 			case 'success':
 				$response = array(
 					'data' => $data,
@@ -164,7 +164,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 		$conf = $this->get_countries_conf();
 
 		$countries = array();
-		
+
 		$terms = get_terms(array(
 			'taxonomy'   => $this->post_type_taxonomy_name,
 			'hide_empty' => true,
@@ -358,18 +358,6 @@ class Post_Type_NGO extends Post_Type_Framework {
 	}
 
 	/**
-	 * @TODO: sanitize_meta_box_value
-	 * @param	mixed	$key	[description]
-	 * @param	mixed	$value	[description]
-	 * @return 	mixed			False on fail, sanitized value on success
-	 */
-	function sanitize_meta_box_value($key, $value) {
-		$fields = $this->get_meta_box_fields();
-
-		return $value;
-	}
-
-	/**
 	 * Save custom data on post save.
 	 * @param	int		$post_id	The ID of the post being saved.
 	 */
@@ -396,7 +384,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 
 		// Sanitize and save
 		foreach ($values as $k => $v) {
-			$sanitized = $this->sanitize_meta_box_value($k, $v);
+			$sanitized = parent::sanitize_meta_box_value($k, $v);
 
 			if ($sanitized === false)
 				continue;
@@ -420,10 +408,10 @@ class Post_Type_NGO extends Post_Type_Framework {
 	function get_countries_conf() {
 		return array(
 			'name'      => $this->post_type_taxonomy_name . '_flag',
-			'term'		=> '_ptf_flag_id',
+			'term'      => '_ptf_flag_id',
 			'label'     => __('Flag', 'ptf'),
 			'countries' => apply_filters('countries_helper_get_list', null),
-			'url'		=> sprintf('%s/assets/images/flags/%%s.png',
+			'url'       => sprintf('%s/assets/images/flags/%%s.png',
 				get_template_directory_uri()
 			)
 		);

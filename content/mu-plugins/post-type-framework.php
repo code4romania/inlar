@@ -25,9 +25,9 @@ class Post_Type_Framework {
 			require_once($filename);
 		}
 
-		add_action('load-edit.php'			, array($this, 'admin_force_excerpt'));
-		add_action('wp_dashboard_setup'		, array($this, 'dashboard_activity_setup'));
-		add_action('admin_enqueue_scripts'	, array($this, 'load_assets'));
+		add_action('load-edit.php'         , array($this, 'admin_force_excerpt'));
+		add_action('wp_dashboard_setup'    , array($this, 'dashboard_activity_setup'));
+		add_action('admin_enqueue_scripts' , array($this, 'load_assets'));
 	}
 
 	function register_post_type() {
@@ -85,6 +85,18 @@ class Post_Type_Framework {
 		}
 	}
 
+	/**
+	 * @TODO: sanitize_meta_box_value
+	 * @param	mixed	$key	[description]
+	 * @param	mixed	$value	[description]
+	 * @return 	mixed			False on fail, sanitized value on success
+	 */
+	function sanitize_meta_box_value($key, $value) {
+		$fields = $this->get_meta_box_fields();
+
+		return $value;
+	}
+
 	function load_assets() {
 		// wp_enqueue_style('ptf-backend', plugins_url('post-type-framework/assets/ptf-backend.css', __FILE__), false, null);
 	}
@@ -131,8 +143,8 @@ class Post_Type_Framework {
 		if (!$posts || !$posts->publish)
 			return;
 
-		$singular	= '%s '. $this->post_type_args['labels']['singular_name'];
-		$plural		= '%s '. $this->post_type_args['labels']['name'];
+		$singular = '%s '. $this->post_type_args['labels']['singular_name'];
+		$plural   = '%s '. $this->post_type_args['labels']['name'];
 
 		$elements[] = sprintf('<a class="count-%1$s" href="edit.php?post_type=%1$s">%2$s</a>',
 			$this->post_type_name,
@@ -148,23 +160,23 @@ class Post_Type_Framework {
 		echo '<div id="activity-widget">';
 
 		$future_posts = $this->dashboard_activity_widget_items(array(
-			'display'	=> 2,
-			'max'		=> 5,
-			'status'	=> 'future',
-			'type'		=> $this->activity_types,
-			'order'		=> 'ASC',
-			'title'		=> __('Publishing Soon'),
-			'id'		=> 'future-posts',
+			'display' => 2,
+			'max'     => 5,
+			'status'  => 'future',
+			'type'    => $this->activity_types,
+			'order'   => 'ASC',
+			'title'   => __('Publishing Soon'),
+			'id'      => 'future-posts',
 		));
 
 		$recent_posts = $this->dashboard_activity_widget_items(array(
-			'display'	=> 2,
-			'max'		=> 5,
-			'status'	=> 'publish',
-			'type'		=> $this->activity_types,
-			'order'		=> 'DESC',
-			'title'		=> __('Recently Published'),
-			'id'		=> 'published-posts',
+			'display' => 2,
+			'max'     => 5,
+			'status'  => 'publish',
+			'type'    => $this->activity_types,
+			'order'   => 'DESC',
+			'title'   => __('Recently Published'),
+			'id'      => 'published-posts',
 		));
 
 		$recent_comments = wp_dashboard_recent_comments();
@@ -180,13 +192,13 @@ class Post_Type_Framework {
 
 	function dashboard_activity_widget_items($args) {
 		$query_args = array(
-			'post_type'			=> $args['type'],
-			'post_status'		=> $args['status'],
-			'orderby'			=> 'date',
-			'order'				=> $args['order'],
-			'posts_per_page'	=> intval($args['max']),
-			'no_found_rows'		=> true,
-			'cache_results'		=> false
+			'post_type'      => $args['type'],
+			'post_status'    => $args['status'],
+			'orderby'        => 'date',
+			'order'          => $args['order'],
+			'posts_per_page' => intval($args['max']),
+			'no_found_rows'  => true,
+			'cache_results'  => false
 		);
 
 		$posts = new WP_Query($query_args);
