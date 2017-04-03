@@ -14,7 +14,7 @@
 }
 
 // Hide only visually, but have it available for screenreaders: h5bp.com/v
-.visuallyhidden {
+.visuallyhidden, .screen-reader-text {
 	clip: rect(0 0 0 0);
 	position: absolute;
 	overflow: hidden;
@@ -42,17 +42,6 @@
 // Hide visually and from screenreaders, but maintain layout
 .invisible {
 	visibility: hidden;
-}
-
-.screen-reader-text {
-    clip: rect(0,0,0,0);
-    position: absolute;
-    overflow: hidden;
-    margin: -1px;
-    height: 1px;
-    padding: 0;
-    width: 1px;
-    border: 0;
 }
 
 // Image standard

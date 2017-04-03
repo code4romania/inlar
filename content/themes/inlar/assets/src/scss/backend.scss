@@ -18,3 +18,12 @@
 		height: 300px;
 	}
 }
+
+#dashboard_right_now li {
+	.count-ngo:before {
+		content: "\f231";
+	}
+	.count-partner:before {
+		content: "\f307";
+	}
+}

@@ -4,6 +4,7 @@
 	background:    -moz-linear-gradient(45deg, map-get($gradient, from) 0%, map-get($gradient, to) 100%);
 	background: 		linear-gradient(45deg, map-get($gradient, from) 0%, map-get($gradient, to) 100%);
 
+	padding-bottom: 0;
 	min-height: 100vh;
 	color: #FFF;
 
@@ -46,6 +47,10 @@
 		p {
 			font-size: 2rem;
 		}
+
+		.countries {
+			padding: 2rem 0 6rem;
+		}
 	}
 }
 
@@ -53,6 +58,7 @@
 	pointer-events: none;
 	position: relative;
 	font-size: 1.4rem;
+	text-align: left;
 	z-index: 999;
 
 	.current, .dropdown-container {

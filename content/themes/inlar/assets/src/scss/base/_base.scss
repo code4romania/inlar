@@ -1,5 +1,7 @@
 body {
 	position: relative;
+	font-size: 1.6rem;
+	line-height: 1.5;
 	font-weight: 300;
 }
 
@@ -166,7 +168,7 @@ input[type="submit"] {
 			color: #000;
 		}
 
-		&:not(:hidden) + li {
+		&:not([hidden]) + li {
 			border-top: 1px solid $light-gray;
 		}
 	}
