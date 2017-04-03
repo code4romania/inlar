@@ -23,6 +23,22 @@ class i18n_utils {
 	}
 
 	/**
+	 * Adds qTranslate-X support for the custom options page
+	 * 
+	 * @param   array  $config
+	 * @return  array
+	 */
+	public static function i18n_support($config) {
+		$config['theme-options'] = array(
+			'pages' => array(
+				'themes.php' => '^page=theme-options.*$',
+			),
+		);
+
+		return $config;
+	}
+
+	/**
 	 * Set transient for current language.
 	 * @param   string   $transient  Transient name, not SQL-escaped. Should be less than 45 chars.
 	 * @param   mixed    $value      Transient value, not SQL-escaped.
@@ -89,3 +105,5 @@ class i18n_utils {
 		return $result;
 	}
 }
+
+add_filter('i18n_admin_config', array('i18n_utils', 'i18n_support'));

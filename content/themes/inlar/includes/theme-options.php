@@ -15,9 +15,8 @@ class INLAR_Options {
 		$this->init_settings();
 		$this->init_fields();
 
-		add_action('admin_menu',	    array($this, 'add_menu_page'));
-		add_filter('admin_init',	    array($this, 'register_settings'));
-		add_filter('i18n_admin_config', array($this, 'i18n_support'));
+		add_action('admin_menu',        array($this, 'add_menu_page'));
+		add_action('admin_init',        array($this, 'register_settings'));
 	}
 
 	function init_settings() {
@@ -27,6 +26,24 @@ class INLAR_Options {
 				'title'    => __('Partners', 'ptf'),
 			),
 		);
+	}
+
+	function init_partners_list() {
+		$partners = get_posts(array(
+			'post_type'      => 'partner',
+			'posts_per_page' => -1,
+		));
+
+		$list = array();
+
+		foreach ($partners as $partner) {
+			$list[] = array(
+				'value' => $partner->ID,
+				'name'  => get_the_title($partner),
+			);
+		}
+
+		return $list;
 	}
 
 	function init_fields() {
@@ -43,10 +60,18 @@ class INLAR_Options {
 				'i18n'    => 'i18n-multilingual',
 				'default' => '',
 			),
+			'featured'     => array(
+				'title'   => __('Featured on the front-page', 'inlar'),
+				'type'    => 'select-partners',
+				'slots'   => 4,
+				'default' => array(0, 0, 0, 0),
+				'options' => $this->init_partners_list(),
+			),
 		);
 	}
 
 	function register_settings() {
+		do_action('inlar_before_options');
 		foreach ($this->config['settings'] as $setting) {
 			// Register db setting
 			register_setting($this->config['slug'], $setting['id'], array(
@@ -95,6 +120,7 @@ class INLAR_Options {
 	function render_menu_page() {
 		echo '<div class="wrap">';
 		printf('<h1>%s</h1>', $this->config['name']);
+		settings_errors($this->config['slug'], false, false);
 		print ('<form method="post" action="options.php">');
 
 		settings_fields($this->config['slug']);
@@ -115,26 +141,10 @@ class INLAR_Options {
 			return defaults;
 
 		foreach ($this->config['fields'][ $section ] as $id => $field) {
-			$defaults[ $id ] = $field['default'] ?: '';
+			$defaults[ $id ] = isset($field['default']) ? $field['default'] : '';
 		}
 
 		return $defaults;
-	}
-
-	/**
-	 * Adds qTranslate-X support for the custom options page
-	 * 
-	 * @param   array  $config
-	 * @return  array
-	 */
-	function i18n_support($config) {
-		$config['theme-options'] = array(
-			'pages' => array(
-				'themes.php' => '^page=theme-options.*$',
-			),
-		);
-
-		return $config;
 	}
 
 	/**
@@ -184,6 +194,33 @@ class INLAR_Options {
 				);
 				break;
 
+			case 'select-partners':
+				print ('<table>');
+				for ($i=0; $i < $args['slots']; $i++) {
+					print ('<tr>');
+					printf('<td><label for="%1$s_%3$d">#%4$d</label></td><td><select id="%1$s_%3$d" name="%2$s[%1$s][]">',
+						$args['label_for'], $args['section'],
+						$i, $i + 1
+					);
+					printf('<option value="0">-- %s --</option>',
+						__('None')
+					);
+
+					foreach ($args['options'] as $option) {
+
+						printf('<option value="%1$s" %3$s>%2$s</option>',
+							$option['value'], __($option['name']),
+
+							selected($option['value'], $data[ $args['label_for'] ][$i], false)
+						);
+					}
+					print ('</select></td>');
+					print ('</tr>');
+				}
+
+				print ('</table>');
+				break;
+
 			case 'pages':
 				wp_dropdown_pages(array(
 					'show_option_none'	=> sprintf('- %s -', __('None')),
@@ -212,6 +249,9 @@ class INLAR_Options {
 	 * @return  array               Sanitized values
 	 */
 	function sanitize_option_data($data, $option) {
+		$has_error = false;
+		$errors    = array();
+
 		if (!isset($this->config['fields'][ $option ]))
 			wp_die(__('Are you sure you want to do this?'));
 
@@ -223,7 +263,44 @@ class INLAR_Options {
 				
 				case 'textarea':
 					$data[$key] = sanitize_textarea_field($value);
+					break;
+
+				case 'select-partners':
+					$value = array_map('intval', $value);
+					$validated = array();
+
+					foreach ($value as $partner_id) {
+						if (!$partner_id)
+							continue;
+
+						if (in_array($partner_id, $validated)) {
+							$has_error = true;
+							$errors[] = __('You cannot feature the same partner twice!', 'inlar');
+							continue;
+						}
+
+						$validated[] = $partner_id;
+					}
+					$data[$key] = $validated;
+					break;
 			}
+		}
+
+		if ($has_error) {
+			foreach ($errors as $message) {
+				add_settings_error(
+					$this->config['slug'],
+					esc_attr('settings_updated'),
+					$message,
+					'error'
+				);
+			}
+		} else {
+			add_settings_error(
+				$this->config['slug'],
+				esc_attr('settings_updated'),
+				__('Settings saved.', 'inlar'),
+				'updated');
 		}
 
 		return $data;
