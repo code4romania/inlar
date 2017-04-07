@@ -22,8 +22,12 @@ class INLAR_Options {
 	function init_settings() {
 		$this->config['settings'] = array(
 			array(
+				'id'       => 'inlar_intro',
+				'title'    => __('Front-page', 'inlar'),
+			),
+			array(
 				'id'       => 'inlar_partners',
-				'title'    => __('Partners', 'ptf'),
+				'title'    => __('Partners', 'inlar'),
 			),
 		);
 	}
@@ -47,14 +51,29 @@ class INLAR_Options {
 	}
 
 	function init_fields() {
-		$this->config['fields']['inlar_partners'] = array(
-			'section_title' => array(
+		$this->config['fields']['inlar_intro'] = array(
+			'title' => array(
 				'title'   => __('Section title', 'inlar'),
 				'type'    => 'text',
 				'i18n'    => 'i18n-multilingual',
 				'default' => '',
 			),
-			'section_text' => array(
+			'text' => array(
+				'title'   => __('Section text', 'inlar'),
+				'type'    => 'textarea',
+				'i18n'    => 'i18n-multilingual',
+				'default' => '',
+			),
+		);
+
+		$this->config['fields']['inlar_partners'] = array(
+			'title' => array(
+				'title'   => __('Section title', 'inlar'),
+				'type'    => 'text',
+				'i18n'    => 'i18n-multilingual',
+				'default' => '',
+			),
+			'text' => array(
 				'title'   => __('Section text', 'inlar'),
 				'type'    => 'textarea',
 				'i18n'    => 'i18n-multilingual',
@@ -100,7 +119,8 @@ class INLAR_Options {
 					$setting['id'],
 					wp_parse_args($field, array(
 						'section'   => $setting['id'],
-						'label_for' => $id,
+						'label_for' => $setting['id'] .'_'. $id,
+						'id'        => $id,
 					))
 				);
 			}
@@ -159,37 +179,37 @@ class INLAR_Options {
 
 		switch ($type) {
 			case 'text':
-				printf('<input type="text" id="%1$s" name="%2$s[%1$s]" value="%3$s" class="regular-text %4$s">',
-					$args['label_for'], $args['section'],
-					$data[ $args['label_for'] ], $args['i18n'] ?: ''
+				printf('<input type="text" id="%2$s_%1$s" name="%2$s[%1$s]" value="%3$s" class="regular-text %4$s">',
+					$args['id'], $args['section'],
+					$data[ $args['id'] ], $args['i18n'] ?: ''
 				);
 				break;
 
 			case 'number':
-				printf('<input type="number" id="%1$s" name="%2$s[%1$s]" value="%3$s" class="">',
-					$args['label_for'], $args['section'],
-					$data[ $args['label_for'] ]
+				printf('<input type="number" id="%2$s_%1$s" name="%2$s[%1$s]" value="%3$s" class="">',
+					$args['id'], $args['section'],
+					$data[ $args['id'] ]
 				);
 				break;
 
 			case 'date':
-				printf('<input type="text" id="%1$s" name="%2$s[%1$s]" value="%3$s" class="datepicker">',
-					$args['label_for'], $args['section'],
-				 	strftime('%Y-%m-%d', $data[ $args['label_for'] ])
+				printf('<input type="text" id="%2$s_%1$s" name="%2$s[%1$s]" value="%3$s" class="datepicker">',
+					$args['id'], $args['section'],
+				 	strftime('%Y-%m-%d', $data[ $args['id'] ])
 				);
 				break;
 
 			case 'textarea':
-				printf('<textarea id="%1$s" name="%2$s[%1$s]" rows="10" class="large-text %4$s">%3$s</textarea>',
-					$args['label_for'], $args['section'],
-					$data[ $args['label_for'] ], $args['i18n'] ?: ''
+				printf('<textarea id="%2$s_%1$s" name="%2$s[%1$s]" rows="5" class="large-text %4$s">%3$s</textarea>',
+					$args['id'], $args['section'],
+					$data[ $args['id'] ], $args['i18n'] ?: ''
 				);
 				break;
 
 			case 'checkbox':
-				printf('<label for="%1$s"><input type="checkbox" id="%1$s" name="%2$s[%1$s]" value="1"%3$s> %4$s</label>',
-					$args['label_for'], $args['section'],
-					checked($data[$args['label_for']], '1', false),
+				printf('<label for="%2$s_%1$s"><input type="checkbox" id="%1$s" name="%2$s[%1$s]" value="1"%3$s> %4$s</label>',
+					$args['id'], $args['section'],
+					checked($data[$args['id']], '1', false),
 					isset($args['label_text']) ? $args['label_text'] : ''
 				);
 				break;
@@ -199,7 +219,7 @@ class INLAR_Options {
 				for ($i=0; $i < $args['slots']; $i++) {
 					print ('<tr>');
 					printf('<td><label for="%1$s_%3$d">#%4$d</label></td><td><select id="%1$s_%3$d" name="%2$s[%1$s][]">',
-						$args['label_for'], $args['section'],
+						$args['id'], $args['section'],
 						$i, $i + 1
 					);
 					printf('<option value="0">-- %s --</option>',
@@ -207,11 +227,12 @@ class INLAR_Options {
 					);
 
 					foreach ($args['options'] as $option) {
+						$compare = isset($data[ $args['id'] ][$i]) ? $data[ $args['id'] ][$i] : false;
 
 						printf('<option value="%1$s" %3$s>%2$s</option>',
 							$option['value'], __($option['name']),
 
-							selected($option['value'], $data[ $args['label_for'] ][$i], false)
+							selected($option['value'], $compare, false)
 						);
 					}
 					print ('</select></td>');
@@ -224,9 +245,9 @@ class INLAR_Options {
 			case 'pages':
 				wp_dropdown_pages(array(
 					'show_option_none'	=> sprintf('- %s -', __('None')),
-					'name'				=> sprintf('%s[%s]', $args['section'], $args['label_for']),
-					'id'				=> $args['label_for'],
-					'selected'			=> $data[ $args['label_for'] ],
+					'name'				=> sprintf('%s[%s]', $args['section'], $args['id']),
+					'id'				=> $args['id'],
+					'selected'			=> $data[ $args['id'] ],
 				));
 				break;
 		}
@@ -249,6 +270,7 @@ class INLAR_Options {
 	 * @return  array               Sanitized values
 	 */
 	function sanitize_option_data($data, $option) {
+		$current   = get_settings_errors($this->config['slug']);
 		$has_error = false;
 		$errors    = array();
 
@@ -295,12 +317,13 @@ class INLAR_Options {
 					'error'
 				);
 			}
-		} else {
+		} elseif (!in_array('updated', array_column($current, 'type'))) {
 			add_settings_error(
 				$this->config['slug'],
 				esc_attr('settings_updated'),
 				__('Settings saved.', 'inlar'),
-				'updated');
+				'updated'
+			);
 		}
 
 		return $data;
