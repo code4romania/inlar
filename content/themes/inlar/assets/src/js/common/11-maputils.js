@@ -75,7 +75,7 @@ maputils.prototype.add_markers = function(geojson, country_id) {
 			popup+= '<div class="card-content">';
 			for (var i = 0; i < props.length; i++) {				
 				if (feature.properties.hasOwnProperty(props[i]) && feature.properties[props[i]] !== '') {
-					popup+= '<span class="'+ props[i] +'">'+ feature.properties[props[i]] +'</span>';
+					popup+= '<span><i class="icon-'+ props[i] +'"></i><span class="'+ props[i] + '">'+ feature.properties[props[i]] +'</span></span>';
 				}
 			}
 			popup+= '</div>';
