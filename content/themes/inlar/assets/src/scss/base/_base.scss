@@ -1,4 +1,5 @@
 body {
+	direction: ltr;
 	position: relative;
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -104,7 +105,7 @@ input[type="submit"] {
 	&.top-right:after,
 	&.top-left:after {
 		border-bottom-color: #FFF;
-		margin-left: -1rem;
+		margin-right: -0.45rem;
 		bottom: 100%;
 		left: 50%;
 	}
@@ -182,4 +183,26 @@ input[type="submit"] {
 	right: 0;
 	left: 0;
 	top: 0;
+}
+
+body.admin-bar {
+	margin-top: 46px;
+
+	#wpadminbar {
+		margin-top: -46px;
+	}
+}
+
+@media screen and (min-width: 601px) {
+	body.admin-bar {
+		#wpadminbar {
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (min-width: 783px) {
+	body.admin-bar {
+		margin-top: 32px;
+	}
 }

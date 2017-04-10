@@ -1,3 +1,13 @@
+.flex-container {
+	max-width: $container-width;
+	padding: 0 15px;
+	margin: 0 auto;
+	width: 90%;
+
+	display: flex;
+	justify-content: space-between;
+}
+
 .container {
 	max-width: $container-width;
 	padding: 0 15px;

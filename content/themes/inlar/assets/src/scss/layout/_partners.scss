@@ -84,7 +84,7 @@
 }
 
 
-@media screen and (min-width: map-get($breakpoints, small)) {
+@media screen and (min-width: map-get($breakpoints, medium)) {
 	.front-sections .entry-partners {
 		.partner {
 			width: 25%;
