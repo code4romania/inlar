@@ -399,10 +399,10 @@ class Post_Type_NGO extends Post_Type_Framework {
 	}
 
 	function clear_transients($post_id) {
-		if (get_post_type($post->ID) !== $this->post_type_name)
+		if (get_post_type($post_id) !== $this->post_type_name)
 			return false;
 
-		i18n_utils::delete_transient('ptf_ngos_geojson');		
+		i18n_utils::delete_transient('ptf_ngos_geojson');
 	}
 
 	function get_countries_conf() {
