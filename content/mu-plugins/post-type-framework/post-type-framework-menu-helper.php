@@ -73,7 +73,7 @@ class Post_Type_Framework_Menu_Helper {
 		foreach ($items as &$item) {
 			if ($item->object !== 'ptf-nav')
 				continue;
-		  
+
 			$item->url = get_post_type_archive_link($item->type);
 
 			if (get_query_var('post_type') == $item->type) {

@@ -58,6 +58,9 @@ if (WP_LOCAL_DEV || WP_STAGE !== 'production') {
 	define('SAVEQUERIES', false);
 }
 
+// Disable editing in dashboard
+define('DISALLOW_FILE_EDIT', true);
+
 // Bootstrap WordPress
 if (!defined('ABSPATH'))
 	define('ABSPATH', dirname(__FILE__) . '/wp/');
