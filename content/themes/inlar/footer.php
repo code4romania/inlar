@@ -1,5 +1,5 @@
 <footer id="bottom">
-	<div class="container">
+	<div class="flex-container">
 		<a href="<?php echo home_url(); ?>" class="logo">
 			<h1 class="site-title screen-reader-text" itemprop="headline"><?php bloginfo('name'); ?></h1>
 		</a>

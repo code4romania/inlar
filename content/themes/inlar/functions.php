@@ -44,13 +44,20 @@ function inlar_theme_setup() {
 	));
 }
 
+add_action('get_header', 'my_filter_head');
+function my_filter_head() {
+	remove_action('wp_head', '_admin_bar_bump_cb');
+}
+
 // Enqueue theme CSS & JS
 add_action('wp_enqueue_scripts', 'inlar_enqueue_frontend_scripts');
 function inlar_enqueue_frontend_scripts() {
 	$assets = get_template_directory_uri() . '/assets';
 
 	// Fonts
-	wp_enqueue_style('google-open-sans', '//fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic,cyrillic-ext,latin-ext', array(), null, 'all');
+	wp_enqueue_style('google-rubik', '//fonts.googleapis.com/css?family=Rubik:300,500&amp;subset=cyrillic,latin-ext', array(), null, 'all');
+	wp_enqueue_style('google-noto-serif', '//fonts.googleapis.com/css?family=Noto+Serif&amp;subset=cyrillic,latin-ext', array(), null, 'all');
+	wp_enqueue_style('google-cairo', '//fonts.googleapis.com/css?family=Cairo:400,600&subset=arabic', array(), null, 'all');
 
 	// CSS
 	wp_enqueue_style('app', $assets . '/app.css', array(), null, 'all');
@@ -130,11 +137,11 @@ function inlar_header_raw($title = '', $text = '', $type = false) {
 
 function inlar_header($option_name, $type = '') {
 	$opt = get_option($option_name, array(
-		'section_title' => '',
-		'section_text'  => '',
+		'title' => '',
+		'text'  => '',
 	));
 
-	inlar_header_raw($opt['section_title'], $opt['section_text'], $type);
+	inlar_header_raw($opt['title'], $opt['text'], $type);
 }
 
 ?>

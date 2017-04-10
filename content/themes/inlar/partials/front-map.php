@@ -5,12 +5,19 @@
 	<div class="map-description header-adjust">
 		<div class="container">
 			<div class="row">
-				<div class="col m5">
-					<h1><?php bloginfo('name'); ?></h1>
+				<div class="col l5 s12">
 					<?php
-						// TODO: replace with proper option
+						$option = wp_parse_args(get_option('inlar_intro', array()), array(
+							'title' => '',
+							'text'  => '',
+						));
+
+						if (!empty($option['title']))
+							printf('<h1>%s</h1>', $option['title']);
+
+						if (!empty($option['text']))
+							printf('<p>%s</p>', $option['text']);
 					?>
-					<p>We connect legal professionals helping refugees, migrants, asylum seekers, to guarantee access to justice for all. It advocates for pro bono legal aid and for cooperation in the legal field.</p>
 					<div class="countries">
 						<?php inlar_country_buttons(); ?>
 					</div>
