@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.7.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-03-29 09:34:25+0000\n"
+"PO-Revision-Date: 2017-04-23 09:31:28+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -48,21 +48,21 @@ msgstr "Ustawienia rejestracji API"
 #. https://make.wordpress.org/core/2016/09/08/wp_hook-next-generation-actions-and-filters/
 #: wp-admin/about.php:214
 msgid "The code that lies beneath actions and filters has been overhauled and modernized, fixing bugs along the way."
-msgstr "Kod umieszczony poniżej akcji i filtórw został odświeżony i zmodernizowany, a przy okazji poprawion błędy. "
+msgstr "Kod napędzający akcje i filtry został odświeżony i zmodernizowany, a przy okazji naprawione zostały błędy."
 
 #: wp-admin/about.php:204
 msgid "List tables, now with more than bulk edit and delete."
-msgstr "Listowanie tabel, teraz umożliwia masową edycję i usuwanie."
+msgstr "Listowanie tabel, teraz nie tylko z masową edycją i usuwaniem."
 
 #: wp-admin/about.php:203
 msgid "Custom Bulk Actions"
-msgstr "Dostosowywalne akcje masowe"
+msgstr "Własne akcje masowe"
 
 #. translators: %s:
 #. https://make.wordpress.org/core/2016/09/09/new-functions-hooks-and-behaviour-for-theme-developers-in-wordpress-4-7/
 #: wp-admin/about.php:197
 msgid "WordPress 4.7 includes <a href=\"%s\">new functions, hooks, and behavior</a> for theme developers."
-msgstr "WordPress 4.7 zawiera <a href=\"%s\">nowe funkcji, miejsca, w które można wstrzelić własny kod, oraz zachowania</a> dla twórców motywów."
+msgstr "WordPress 4.7 zawiera <a href=\"%s\">nowe funkcje, hooki, oraz mechanizmy</a> dla twórców motywów."
 
 #: wp-admin/about.php:193
 msgid "More Theme API Goodies"
@@ -70,7 +70,7 @@ msgstr "Wiecej możliwosci w API motywów"
 
 #: wp-admin/about.php:190
 msgid "By opening up the page template functionality to all post types, theme developers have even more flexibility with the WordPress template hierarchy."
-msgstr "Hierachia szablonów w Wordpress daje jeszcze więcej elastyczności twórcom motywów dzięki rozszerzeniu szablonów strony na wszystkie typy treści."
+msgstr "Dzięki otwarciu funkcjonalności szablonów stron na wszystkie typy wpisów, hierarchia szablonów WordPressa jest jeszcze bardziej elastyczna dla twórców motywów."
 
 #: wp-admin/about.php:189
 msgid "Post Type Templates"
@@ -84,11 +84,11 @@ msgstr "Jeszcze więcej radości dla programistów %s"
 #. translators: %s: https://developer.wordpress.org/rest-api/
 #: wp-admin/about.php:170
 msgid "Content endpoints provide machine-readable external access to your WordPress site with a clear, standards-driven interface, paving the way for new and innovative methods of interacting with sites through plugins, themes, apps, and beyond. Ready to get started with development? <a href=\"%s\">Check out the REST API reference.</a>"
-msgstr "Punkty zaczepienia w treści dostarczają zrozumiały dla maszyn zewnętrzny dostęp do twojego WordPressa z jasnym, zestandaryzowanym interfejsem, który prowadzi do nowych i innowacyjnych metod interakcji ze stronami z pośrednictwem wtyczek, motywów, aplikacji i nie tylko. Gotowy/a rozpocząć programowanie? <a href=\"%s\">Sprawdź poradnik do REST API.</a>"
+msgstr "Punkty zaczepienia dla treści umożliwiają dostęp do twojego WordPressa za pośrednictwem prostego, opartego o uznane standardy interfejsu, otwierając przestrzeń dla nowych i innowacyjnych metod interakcji z witrynami dla wtyczek, motywów, aplikacji i nie tylko. Gotowy rozpocząć programowanie? <a href=\"%s\">Sprawdź dokumentację REST API.</a>"
 
 #: wp-admin/about.php:165
 msgid "WordPress 4.7 comes with REST API endpoints for posts, comments, terms, users, meta, and settings."
-msgstr "WordPress 4.7 ma REST API z punktami zaczepienia dla wpisów, komentarzy, użytkowników, informacji meta oraz ustawień."
+msgstr "WordPressem 4.7 wprowadzan nowe REST API z punktami zaczepienia dla wpisów, komentarzy, taksonomii, użytkowników, metadanych oraz ustawień."
 
 #: wp-admin/about.php:164
 msgid "Introducing REST API Content Endpoints"
@@ -96,7 +96,7 @@ msgstr "Wprowadzenie punktów zaczepienia REST API dla treści"
 
 #: wp-admin/about.php:157
 msgid "Just because your site is in one language doesn&#8217;t mean that everybody helping manage it prefers that language for their admin. Add more languages to your site and a user language option will show up in your user&#8217;s profiles."
-msgstr "Tylko dlatego, że strona jest w jednym języku, nie oznacza, że wszyscy zarządzający stroną preferują ten język. Dodaj więcej języków do witryny, a wybór języka dla panelu administratora pojawi się w profilu użytkownika."
+msgstr "To, że twoja witryna jest w jednym języku, nie oznacza, że wszyscy nią zarządzający preferują właśnie ten język w swoim kokpicie. Dodaj więcej języków do witryny, a możliwość wybóru języka pojawi się w profilu użytkownika."
 
 #: wp-admin/about.php:155
 msgid "Dashboard in your language"
@@ -104,7 +104,7 @@ msgstr "Panel administracyjny w twoim języku"
 
 #: wp-admin/about.php:152
 msgid "Managing your document collection is easier with WordPress 4.7. Uploading PDFs will generate thumbnail images so you can more easily distinguish between all your documents."
-msgstr "Zarządzanie kolekcją dokumentów jest łatwiejsze z WordPress 4.7. Wysyłanie plików PDF wygeneruje miniatury zdjęć, dzięki czemu można łatwiej rozróżnić poszczególne dokumenty."
+msgstr "Zarządzanie kolekcją dokumentów jest łatwiejsze z WordPressem 4.7. Wgrywanie plików PDF automatycznie wygeneruje miniatury, dzięki którym łatwo rozróżnisz poszczególne dokumenty."
 
 #: wp-admin/about.php:150
 msgid "PDF Thumbnail Previews"
@@ -112,11 +112,11 @@ msgstr "Podgląd miniaturek PDF"
 
 #: wp-admin/about.php:142
 msgid "Sometimes you just need a few visual tweaks to make your site perfect. WordPress 4.7 allows you to add custom CSS and instantly see how your changes affect your site. The live preview allows you to work quickly without page refreshes slowing you down."
-msgstr "Czasami wystarczy kilka usprawnień aby stworzyć witrynę doskonałą. WordPress 4.7 umożliwia dodawanie niestandardowego CSS, którego efekty działania możesz natychmiast sprawdzić oraz zobaczyć jak zmiany wpływają na witrynę. Podgląd na żywo pozwala na szybką pracę, bez konieczności odświeżania strony."
+msgstr "Czasami kilka usprawnień wystarczy, aby stworzyć doskonałą witrynę. Dzięki WordPressowi 4.7 możesz dodać własny CSS i od razu zobaczyć zmiany. Podgląd na żywo pozwala pracować szybciej, bez oczekiwania na przeładowanie strony."
 
 #: wp-admin/about.php:137
 msgid "Many menus for sites contain links to the pages of your site, but what happens when you don&#8217;t have any pages yet? Now you can add new pages while building menus instead of leaving the customizer and abandoning your changes. Once you&#8217;ve published your customizations, you&#8217;ll have new pages ready for you to fill with content."
-msgstr "Menu może zawierać linki do stron, ale to, co się dzieje, gdy nie ma żadnych stron? Od teraz można dodawać nowe strony w trakcie budowy menu, bez konieczności opuszczania strony personalizacji witryny. Po opublikowaniu zmian, dodane strony będą tylko czekać na wypełnienie treścią."
+msgstr "Menu zazwyczaj zawiera linki do stron twojej witryny, ale co gdy nie ma jeszcze żadnych? Od teraz nowe strony można dodawać podczas budowy menu, bezpośrednio na ekranie personalizacji. Po opublikowaniu zmian, dodane strony będą już jedynie czekać na uzupełnienie treścią."
 
 #: wp-admin/about.php:135
 msgid "Smoother Menu Building"
@@ -124,11 +124,11 @@ msgstr "Lepsze budowanie menu"
 
 #: wp-admin/about.php:129
 msgid "Sometimes a big atmospheric video as a moving header image is just what you need to showcase your wares; go ahead and try it out with Twenty Seventeen. Need some video inspiration? Try searching for sites with video headers available for download and use."
-msgstr "Czasami wielki film w nagłówku jest tylko tym, co potrzebne, aby zaprezentować swoje produkty.  Wypróbuj taki układ z motywem Twenty Seventeen. Potrzebujesz inspirujących filmów? Spróbuj wyszukać witryn, które pozwalają na pobranie i użycie filmowych nagłówków."
+msgstr "Czasem najlepszym sposobem na zaprezentowanie twoich produktów jest nastrojowy film na całą szerokość nagłówka. Wypróbuj taki układ z motywem Twenty Seventeen. Brakuje ci inspiracji? Spróbuj poszukać witryn pozwalających na pobranie i użycie nagłówków wideo."
 
 #: wp-admin/about.php:119
 msgid "Video Headers"
-msgstr "Nagłówki filmów"
+msgstr "Filmowe nagłówki"
 
 #: wp-admin/about.php:116
 msgid "Visible icons appear to show you which parts of your site can be customized while live previewing. Click on a shortcut and get straight to editing. Paired with starter content, getting started with customizing your site is faster than ever."
@@ -136,7 +136,7 @@ msgstr "Wyświetlane w treści ikony pokazują, które części witryny mogą by
 
 #: wp-admin/about.php:106
 msgid "Edit Shortcuts"
-msgstr "Edytuj skróty klawiszowe"
+msgstr "Skróty do edycji"
 
 #: wp-admin/about.php:89
 msgid "To help give you a solid base to build from, individual themes can provide starter content that appears when you go to customize your brand new site. This can range from placing a business information widget in the best location to providing a sample menu with social icon links to a static front page complete with beautiful images. Don&#8217;t worry - nothing new will appear on the live site until you&#8217;re ready to save and publish your initial theme setup."
@@ -168,7 +168,7 @@ msgstr "Przedstawiamy motyw Twenty Seventeen"
 
 #: wp-admin/about.php:37 wp-admin/credits.php:23 wp-admin/freedoms.php:22
 msgid "Thank you for updating to the latest version! WordPress %s helps you get your site set up the way you want it."
-msgstr "Dziękujemy za aktualizację do najnowszej wersji! WordPress %s ułatwia skonfigurowanie Twojej witryny w taki sposób jaki tego chcesz."
+msgstr "Dziękujemy za aktualizację do najnowszej wersji! WordPress %s ułatwia skonfigurowanie twojej witryny w sposób taki, jaki tego chcesz."
 
 #: wp-admin/users.php:167 wp-admin/users.php:207
 msgid "Sorry, you are not allowed to delete users."
@@ -176,7 +176,7 @@ msgstr "Przepraszamy, nie posiadasz uprawnień do kasowania użytkowników."
 
 #: wp-admin/customize.php:163
 msgid "The Customizer allows you to preview changes to your site before publishing them. You can navigate to different pages on your site within the preview. Edit shortcuts are shown for some editable elements."
-msgstr "Personalizacja pozwala Ci podejrzeć zmiany na twojej witrynie przed ich opublikowaniem. Możesz przechodzić pomiędzy poszczególnymi stronami na Twojej witrynie w ramach trybu podglądu. Linki do edycji są wyświetlana przy niektórych edytowalnych elementach."
+msgstr "Personalizacja pozwala podejrzeć zmiany w witrynie przed ich opublikowaniem. Tryb podglądu umożliwia przechodzenie pomiędzy poszczególnymi stronami witryny. Przy niektórych edytowalnych elementach wyświetlane są odnośniki przyspieszające poruszanie się po ekranach Personalizacji."
 
 #: wp-admin/customize.php:196
 msgctxt "short (~12 characters) label for hide controls button"
@@ -4272,7 +4272,7 @@ msgstr "%s przejął i edytuje."
 
 #: wp-admin/nav-menus.php:719
 msgid "or <a href=\"%s\">create a new menu</a>."
-msgstr "lub <a href=\"%s\">utworzyć nowe menu</a>."
+msgstr "lub <a href=\"%s\">utwórz nowe menu</a>."
 
 #: wp-admin/nav-menus.php:678
 msgid "Select a menu to edit:"
