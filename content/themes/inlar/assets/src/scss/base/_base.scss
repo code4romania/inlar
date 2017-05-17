@@ -16,6 +16,16 @@ p {
 	}
 }
 
+a {
+	text-decoration: none;
+	outline: none;
+	color: $green;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 a, button, .button, input:focus,
 input[type="button"], input[type="reset"],
 input[type="submit"], textarea:focus {
@@ -47,29 +57,50 @@ input[type="submit"] {
 		text-decoration: none;
 	}
 }
+
 .button {
 	display: inline-block;
-}
 
-.button.button-block {
-	display: block;
-	width: 100%;
-}
+	&.button-block {
+		display: block;
+		width: 100%;
+	}
 
-.button.button-large {
-	font-size: 26px;
-	padding: 15px 40px;
-}
+	&.button-wide {
+		padding: 1rem 4rem;
+	}
 
-.button.button-small,
-.button.button-small.button-invert:hover {
-	font-size: 14px;
-	padding: 15px 20px;
-}
+	&.button-large {
+		padding: 1.5rem 4rem;
+		font-size: 2.6rem;
+	}
 
-.button.button-mini {
-	font-size: 11px;
-	padding: 5px 8px;
+	&.button-main {
+		border-color: $green;
+		color: $green;
+
+		i {
+			transform: rotate(-90deg);
+			margin: 0 0 0 3.575em;
+
+			&.icon-arrow {
+				display: none;
+			}
+		}
+
+		&:hover {
+			background-color: $green;
+			color: #FFF;
+
+			i.icon-arrow {
+				display: inline-block;
+			}
+
+			i.icon-arrow-green {
+				display: none;
+			}
+		}
+	}
 }
 
 .dropdown-container {
@@ -87,10 +118,11 @@ input[type="submit"] {
 
 .dropdown {
 	background-color: #FFF;
+	padding: 1rem 1.5rem;
+	box-shadow: 0px 15px 15px rgba(0, 0, 0, .25);
 	position: absolute;
 	list-style: none;
-	min-width: 220px;
-	padding: 20px;
+	min-width: 22rem;
 
 	&:after {
 		border: 1rem solid transparent;
@@ -113,7 +145,7 @@ input[type="submit"] {
 	&.bottom:after,
 	&.bottom-right:after,
 	&.bottom-left:after {
-		border-top-color: #fff;
+		border-top-color: #FFF;
 		margin-left: -1rem;
 		top: 100%;
 		left: 50%;
@@ -134,7 +166,7 @@ input[type="submit"] {
 	&.right:after,
 	&.right-top:after,
 	&.right-bottom:after {
-		border-left-color: #fff;
+		border-left-color: #FFF;
 		margin-top: -1rem;
 		left: 100%;
 		top: 50%;
@@ -143,7 +175,7 @@ input[type="submit"] {
 	&.left:after,
 	&.left-top:after,
 	&.left-bottom:after {
-		border-right-color: #fff;
+		border-right-color: #FFF;
 		margin-top: -1rem;
 		right: 100%;
 		top: 50%;
@@ -162,11 +194,13 @@ input[type="submit"] {
 	}
 
 	li {
-		padding: 14px 3px;
+		padding: .7rem .3rem;
+		cursor: pointer;
+		color: #000;
 
 		a {
 			text-decoration: none;
-			color: #000;
+			color: inherit;
 		}
 
 		&:not([hidden]) + li {

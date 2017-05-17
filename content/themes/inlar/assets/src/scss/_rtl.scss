@@ -2,13 +2,6 @@ body.rtl {
 	direction: rtl;
 	unicode-bidi: embed;
 
- 	// Flip icons horizontally
-	/* [class^="icon-"],
-	[class*=" icon-"] {
-		transform: scaleX(-1);
-		filter: FlipH;
-	} */
-
 	// Flip dropdown arrows
 	.dropdown {
 		&.top:after,
@@ -120,6 +113,13 @@ body.rtl {
 		}
 	}
 
+	.map-description .countries {
+		.button.dropdown-container .dropdown {
+			left: 1.75rem;
+			right: auto;
+		}
+	}
+
 	#country-control {
 		text-align: initial;
 
@@ -169,6 +169,12 @@ body.rtl {
 			}
 		}
 	}
+
+	.button.button-main i {
+		transform: rotate(90deg);
+		margin: 0 3.575em 0 0;
+	}
+
 	// Team
 	.member .size-team-profile {
 		margin-left: 2rem;
@@ -196,6 +202,16 @@ body.rtl {
 			.size-partner-logo-large + .partner-content {
 				padding-right: 4.855%;
 				padding-left: 0;
+			}
+		}
+
+		.contact-container {
+			.form-container {
+				padding: 0 0 0 10rem;
+			}
+
+			.details, .social {
+				width: 25%;
 			}
 		}
 	}

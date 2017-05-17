@@ -16,6 +16,10 @@
 
 	@extend %clearfix;
 
+	&.narrow {
+		max-width: $container-narrow;
+	}
+
 	.row {
 		margin-bottom: 2rem;
 		margin-right: auto;

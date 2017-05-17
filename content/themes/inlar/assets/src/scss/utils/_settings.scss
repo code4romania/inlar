@@ -6,13 +6,16 @@ $font-secondary:    'Noto Serif', 'Cairo', serif; // cyrillic,latin-ext
 
 // Colors
 $gradient:          (from: #1C1218, to: #181C26);
+$green:             #019875;
 $yellow:            #FFBC1B;
-$light-gray:        #CDCECF;
+$gray90:            #E5E5E5;
+$light-gray:        #A9A8A8;
 $mid-gray:          #585858;
 
 
 // Grid
 $container-width:   1200px;
+$container-narrow:  760px;
 $num-cols:          12;
 
 // Breakpoints
