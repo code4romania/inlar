@@ -4,6 +4,7 @@
 require_once('includes/map.php');
 require_once('includes/navigation.php');
 require_once('includes/theme-options.php');
+require_once('includes/contact-form.php');
 
 // Image sizes
 add_image_size('partner-logo-small', 150, 150, true);
@@ -67,6 +68,8 @@ function inlar_enqueue_frontend_scripts() {
 	wp_enqueue_script('inlar-modernizr', $assets . '/modernizr.js', array(), null, false);
 	wp_enqueue_script('inlar-common', $assets . '/common.js', array(), null, false);
 	wp_enqueue_script('inlar-app', $assets . '/app.js', array('jquery'), null, true);
+
+	wp_localize_script('inlar-app', 'ajax_url', admin_url('admin-ajax.php'));
 }
 
 // Enqueue theme backend CSS & JS
