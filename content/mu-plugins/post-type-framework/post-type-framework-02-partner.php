@@ -48,12 +48,12 @@ class Post_Type_Partner extends Post_Type_Framework {
 			'show_ui'             => true,
 			'menu_position'       => 20,
 			'show_in_nav_menus'   => true,
-			'publicly_queryable'  => true,
+			'publicly_queryable'  => false,
 			'exclude_from_search' => false,
-			'has_archive'         => true,
+			'has_archive'         => false,
 			'query_var'           => true,
 			'can_export'          => true,
-			'rewrite'             => array('slug' => 'partners', 'with_front' => false),
+			'rewrite'             => false,
 			'capability_type'     => 'post'
 		);
 	} 
