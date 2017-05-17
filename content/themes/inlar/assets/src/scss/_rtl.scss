@@ -169,6 +169,25 @@ body.rtl {
 			}
 		}
 	}
+	// Team
+	.member .size-team-profile {
+		margin-left: 2rem;
+		margin-right: 0;
+	}
+
+	.contact-container {
+		.details {
+			padding: 0 0 0 2rem;
+		}
+
+		.social {
+			padding: 0 2rem 0 0;
+
+			.icon {
+				margin: 0 0 0 1rem;
+			}
+		}
+	}
 }
 
 @media (min-width: map-get($breakpoints, medium)) {

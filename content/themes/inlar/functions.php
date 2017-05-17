@@ -8,6 +8,7 @@ require_once('includes/theme-options.php');
 // Image sizes
 add_image_size('partner-logo-small', 150, 150, true);
 add_image_size('partner-logo-large', 250, 250, true);
+add_image_size('team-profile',       100, 100, true);
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -142,6 +143,39 @@ function inlar_header($option_name, $type = '') {
 	));
 
 	inlar_header_raw($opt['title'], $opt['text'], $type);
+}
+
+add_filter('get_the_excerpt', 'inlar_excerpt_trim', 10, 2);
+function inlar_excerpt_trim($excerpt, $post) {
+	switch ($post->post_type) {
+		case 'team':
+			$excerpt = wp_trim_words($excerpt, 20);
+			break;
+		
+		default:
+			// business as usual
+			break;
+	}
+
+	return $excerpt;
+}
+
+function inlar_get_page_archive_link($template) {
+	$template = "page-{$template}.php";
+
+	if (!locate_template($template, false, false))
+		return;
+
+	$pages = get_pages(array(
+		'meta_key'   => '_wp_page_template',
+		'meta_value' => $template,
+		'number'     => 1,
+	));
+
+	if (empty($pages))
+		return;
+
+	return get_permalink($pages[0]->ID);
 }
 
 function inlar_fetch_template($name) {
