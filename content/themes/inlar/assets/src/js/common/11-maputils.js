@@ -89,6 +89,7 @@ maputils.prototype.add_markers = function(geojson, country_id) {
 maputils.prototype.enable_map = function() {
 	this.control_dropdown();
 	jQuery('.map-container').removeClass('map-closed').addClass('map-open');
+	// TODO: fitBounds()
 }
 
 maputils.prototype.disable_map = function() {

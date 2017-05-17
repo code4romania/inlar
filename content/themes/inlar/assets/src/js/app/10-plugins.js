@@ -52,3 +52,21 @@
 function png_or_svg() {
 	return Modernizr.svgasimg ? '.svg' : '.png';
 }
+
+Handlebars.registerHelper('select-attrs', function(country_id) {
+	var attrs = 'value="' + country_id + '"';
+
+	if (country_id == mapconfig.current.id)
+		attrs+= ' selected';
+
+	return attrs;
+});
+
+Handlebars.registerHelper('list-attrs', function(country_id) {
+	var attrs = 'data-country="' + country_id + '"';
+
+	if (country_id == mapconfig.current.id)
+		attrs+= ' hidden';
+
+	return attrs;
+});
