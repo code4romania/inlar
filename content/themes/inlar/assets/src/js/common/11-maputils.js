@@ -53,23 +53,10 @@ maputils.prototype.add_markers = function(geojson, country_id) {
 			});
 		},
 		onEachFeature: function(feature, layer) {
-			var props = ['phone', 'email'],
-				popup = '';
+			var source   = jQuery('#template-map_card').html(),
+				template = Handlebars.compile(source);
 
-			popup+= '<div class="card-header">';
-			popup+= (feature.properties.img != '') ? '<img src="'+ feature.properties.img +'" alt="">' : '';
-			popup+= '<strong class="name">'+ feature.properties.name +'</strong>';
-			popup+= '</div>';
-
-			popup+= '<div class="card-content">';
-			for (var i = 0; i < props.length; i++) {				
-				if (feature.properties.hasOwnProperty(props[i]) && feature.properties[props[i]] !== '') {
-					popup+= '<span><i class="icon-'+ props[i] +'"></i><span class="'+ props[i] + '">'+ feature.properties[props[i]] +'</span></span>';
-				}
-			}
-			popup+= '</div>';
-
-			layer.bindPopup(popup);
+			layer.bindPopup(template(feature.properties));
 		},
 		filter: function(feature, layer) {
 			if (feature.properties.country_id == country_id) {

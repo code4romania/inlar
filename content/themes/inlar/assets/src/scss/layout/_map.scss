@@ -239,6 +239,7 @@
 
 	.leaflet-popup-content-wrapper {
 		.leaflet-popup-content {
+			font-size: 1.4rem;
 			min-width: 28rem;
 			padding: 2rem;
 			margin: 0;
@@ -257,16 +258,34 @@
 			.name {
 				vertical-align: middle;
 				display: inline-block;
-				font-size: 1.8rem;
+				font-size: 1.3em;
 				font-weight: 400;
 			}
 		}
 
 		.card-content {
-			font-size: 1.6rem;
+			font-size: 1em;
 
-			> span {
-				display: block;
+			p {
+				margin: 0 0 .67em;
+				font-size: 1em;
+				opacity: 1;
+			}
+
+			a {
+				text-decoration: underline;
+				color: $green;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+
+			i {
+				margin-right: 1em;
+				margin-left: 0;
+				height: 1em;
+				width: 1em;
 			}
 		}
 	}
@@ -309,7 +328,13 @@ html.svgasimg {
 		}
 	}
 
-
+	#map {
+		.leaflet-popup-content-wrapper {
+			.leaflet-popup-content {
+				font-size: 1.5rem;
+			}
+		}
+	}
 }
 
 @media (min-width: map-get($breakpoints, medium)) {
@@ -323,6 +348,14 @@ html.svgasimg {
 
 			p {
 				font-size: 2rem;
+			}
+		}
+	}
+
+	#map {
+		.leaflet-popup-content-wrapper {
+			.leaflet-popup-content {
+				font-size: 1.6rem;
 			}
 		}
 	}

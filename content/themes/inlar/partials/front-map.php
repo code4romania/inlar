@@ -23,5 +23,6 @@
 		</div>
 	</div>
 	<?php inlar_fetch_template('map_control'); ?>
+	<?php inlar_fetch_template('map_card'); ?>
 </section>
 

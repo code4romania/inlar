@@ -215,20 +215,18 @@ class Post_Type_NGO extends Post_Type_Framework {
 
 				foreach ($ngos->posts as $ngo) {
 					$ngo_meta = $this->get_meta_box_values($ngo->ID);
-					$ngo_main = array(
-						'name'         => sanitize_post_field('post_title', $ngo->post_title, $ngo->ID),
-						'desc'         => sanitize_post_field('post_content', $ngo->post_content, $ngo->ID),
-						// TODO: replace with featured image
-						'img'          => '//lorempixel.com/100/100/people/',
-						'country_name' => $country['name'],
-						'country_flag' => $country['flag'],
-						'country_id'   => $country['id'],
-					);
-
 
 					$data['features'][] = array(
 						'type'       => 'Feature',
-						'properties' => wp_parse_args($ngo_meta, $ngo_main),
+						'properties' => array(
+							'name'         => sanitize_post_field('post_title', $ngo->post_title, $ngo->ID),
+							'desc'         => sanitize_post_field('post_content', $ngo->post_content, $ngo->ID),
+							'img'          => get_the_post_thumbnail_url($ngo->ID, 'partner-logo-small'),
+							'country_name' => $country['name'],
+							'country_flag' => $country['flag'],
+							'country_id'   => $country['id'],
+							'meta'         => $ngo_meta,
+						),
 						'geometry'   => array(
 							'type'        => 'Point',
 							'coordinates' => $this->normalize_geojson_coords($ngo_meta['coords']),
