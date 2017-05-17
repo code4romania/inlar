@@ -23,27 +23,35 @@ class INLAR_Options {
 		$this->config['settings'] = array(
 			array(
 				'id'       => 'inlar_intro',
-				'title'    => __('Front-page', 'inlar'),
+				'title'    => __('Intro', 'inlar'),
 			),
 			array(
 				'id'       => 'inlar_partners',
 				'title'    => __('Partners', 'inlar'),
 			),
+			array(
+				'id'       => 'inlar_team',
+				'title'    => __('Team', 'inlar'),
+			),
+			array(
+				'id'       => 'inlar_contact',
+				'title'    => __('Contact', 'inlar'),
+			),
 		);
 	}
 
-	function init_partners_list() {
-		$partners = get_posts(array(
-			'post_type'      => 'partner',
+	function init_list($post_type) {
+		$items = get_posts(array(
+			'post_type'      => $post_type,
 			'posts_per_page' => -1,
 		));
 
 		$list = array();
 
-		foreach ($partners as $partner) {
+		foreach ($items as $item) {
 			$list[] = array(
-				'value' => $partner->ID,
-				'name'  => get_the_title($partner),
+				'value' => $item->ID,
+				'name'  => get_the_title($item),
 			);
 		}
 
@@ -81,10 +89,89 @@ class INLAR_Options {
 			),
 			'featured'     => array(
 				'title'   => __('Featured on the front-page', 'inlar'),
-				'type'    => 'select-partners',
+				'type'    => 'select-items',
 				'slots'   => 4,
 				'default' => array(0, 0, 0, 0),
-				'options' => $this->init_partners_list(),
+				'options' => $this->init_list('partner'),
+			),
+		);
+
+		$this->config['fields']['inlar_team'] = array(
+			'title' => array(
+				'title'   => __('Section title', 'inlar'),
+				'type'    => 'text',
+				'i18n'    => 'i18n-multilingual',
+				'default' => '',
+			),
+			'text' => array(
+				'title'   => __('Section text', 'inlar'),
+				'type'    => 'textarea',
+				'i18n'    => 'i18n-multilingual',
+				'default' => '',
+			),
+			'featured'     => array(
+				'title'   => __('Featured on the front-page', 'inlar'),
+				'type'    => 'select-items',
+				'slots'   => 4,
+				'default' => array(0, 0, 0, 0),
+				'options' => $this->init_list('team'),
+			),
+		);
+
+		$this->config['fields']['inlar_contact'] = array(
+			'title' => array(
+				'title'   => __('Section title', 'inlar'),
+				'type'    => 'text',
+				'i18n'    => 'i18n-multilingual',
+				'default' => '',
+			),
+			'text' => array(
+				'title'   => __('Section text', 'inlar'),
+				'type'    => 'textarea',
+				'i18n'    => 'i18n-multilingual',
+				'default' => '',
+			),
+			'email'    => array(
+				'title'   => __('Email address', 'inlar'),
+				'type'    => 'email',
+				'i18n'    => false,
+				'default' => '',
+			),
+			'phone'    => array(
+				'title'   => __('Phone', 'inlar'),
+				'type'    => 'text',
+				'i18n'    => false,
+				'default' => '',
+			),
+			'address'    => array(
+				'title'   => __('Address', 'inlar'),
+				'type'    => 'textarea',
+				'i18n'    => false,
+				'default' => '',
+			),
+			'facebook'    => array(
+				'title'   => __('Facebook profile', 'inlar'),
+				'type'    => 'url',
+				'i18n'    => false,
+				'default' => '',
+			),
+			'twitter'    => array(
+				'title'   => __('Twitter profile', 'inlar'),
+				'type'    => 'url',
+				'i18n'    => false,
+				'default' => '',
+			),
+			'instagram'    => array(
+				'title'   => __('Instagram profile', 'inlar'),
+				'type'    => 'url',
+				'i18n'    => false,
+				'default' => '',
+			),
+			'medium'    => array(
+				'title'   => __('Medium profile', 'inlar'),
+				'type'    => 'url',
+				'i18n'    => false,
+				'default' => '',
 			),
 		);
 	}
@@ -92,8 +179,12 @@ class INLAR_Options {
 	function register_settings() {
 		do_action('inlar_before_options');
 		foreach ($this->config['settings'] as $setting) {
+			$settings_page = sprintf('%s-%s',
+				$this->config['slug'],
+				$setting['id']
+			);
 			// Register db setting
-			register_setting($this->config['slug'], $setting['id'], array(
+			register_setting($settings_page, $setting['id'], array(
 				'sanitize_callback' => null
 			));
 
@@ -104,7 +195,7 @@ class INLAR_Options {
 			add_filter("sanitize_option_{$setting['id']}", array($this, 'sanitize_option_data'), 10, 3);
 
 			// Add a section for the new setting
-			add_settings_section($setting['id'], $setting['title'], null, $this->config['slug']);
+			add_settings_section($setting['id'], $setting['title'], null, $settings_page);
 
 			// No fields, no dice
 			if (!isset($this->config['fields'][ $setting['id'] ]))
@@ -115,7 +206,7 @@ class INLAR_Options {
 					$id,
 					$field['title'],
 					array($this, 'render_fields_html'),
-					$this->config['slug'],
+					$settings_page,
 					$setting['id'],
 					wp_parse_args($field, array(
 						'section'   => $setting['id'],
@@ -137,14 +228,43 @@ class INLAR_Options {
 		);
 	}
 
+	function render_tabs($active_tab) {
+		print ('<h2 class="nav-tab-wrapper">');
+		foreach ($this->config['settings'] as $setting) {
+			printf('<a href="%s" class="nav-tab%s">%s</a>',
+				add_query_arg(array(
+					'page' => $this->config['slug'],
+					'tab' => $setting['id'],
+				), admin_url('themes.php', 'admin')),
+				($active_tab == $setting['id'] ? ' nav-tab-active' : ''),
+				$setting['title']
+			);
+		}
+		print ('</h2>');
+	}
+
 	function render_menu_page() {
+		if (isset($_GET['tab']) && in_array($_GET['tab'], array_column($this->config['settings'], 'id'))) {
+			$active_tab = $_GET['tab'];
+		} else {
+			$active_tab = $this->config['settings'][0]['id'];
+		}
+
 		echo '<div class="wrap">';
 		printf('<h1>%s</h1>', $this->config['name']);
 		settings_errors($this->config['slug'], false, false);
+
+		$this->render_tabs($active_tab);
+
 		print ('<form method="post" action="options.php">');
 
-		settings_fields($this->config['slug']);
-		do_settings_sections($this->config['slug']);
+		$settings_page = sprintf('%s-%s',
+			$this->config['slug'],
+			$active_tab
+		);
+
+		settings_fields($settings_page);
+		do_settings_sections($settings_page);
 
 		submit_button();
 		print ('</form>');
@@ -179,9 +299,12 @@ class INLAR_Options {
 
 		switch ($type) {
 			case 'text':
-				printf('<input type="text" id="%2$s_%1$s" name="%2$s[%1$s]" value="%3$s" class="regular-text %4$s">',
+			case 'email':
+			case 'url':
+				printf('<input type="%5$s" id="%2$s_%1$s" name="%2$s[%1$s]" value="%3$s" class="regular-text %4$s">',
 					$args['id'], $args['section'],
-					$data[ $args['id'] ], $args['i18n'] ?: ''
+					$data[ $args['id'] ], $args['i18n'] ?: '',
+					$type
 				);
 				break;
 
@@ -214,7 +337,7 @@ class INLAR_Options {
 				);
 				break;
 
-			case 'select-partners':
+			case 'select-items':
 				print ('<table>');
 				for ($i=0; $i < $args['slots']; $i++) {
 					print ('<tr>');
@@ -287,7 +410,7 @@ class INLAR_Options {
 					$data[$key] = sanitize_textarea_field($value);
 					break;
 
-				case 'select-partners':
+				case 'select-items':
 					$value = array_map('intval', $value);
 					$validated = array();
 
