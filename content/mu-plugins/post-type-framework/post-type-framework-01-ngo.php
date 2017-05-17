@@ -120,11 +120,15 @@ class Post_Type_NGO extends Post_Type_Framework {
 
 		switch ($filter_key) {
 			case 'countries':
-				$result = $this->get_countries();
+				$result = array(
+					'countries' => $this->get_countries()
+				);
 				break;
 
 			case 'ngos':
-				$result = $this->get_ngos_geojson();
+				$result = array(
+					'ngos' => $this->get_ngos_geojson()
+				);
 				break;
 		}
 
@@ -132,30 +136,14 @@ class Post_Type_NGO extends Post_Type_Framework {
 	}
 
 	function send_json_response($type = '', $data = array()) {
-		switch ($type) {
-			default:
-			case 'error':
-				$response = array(
-					'error' => $data,
-				);
-				$code = 400;
-				break;
-
-			case 'success':
-				$response = array(
-					'data' => $data,
-				);
-				$code = 200;
-				break;
-		}
-
 		header('Content-type: application/json');
 		header('Pragma: no-cache');
 		header('Expires: 0');
-		status_header($code);
 
-		// @TODO: remove pretty print in prod
-		echo json_encode($response, JSON_PRETTY_PRINT);
+		echo json_encode(array(
+			'success' => ($type == 'success'),
+			'data'    => $data,
+		));
 
 		exit;
 	}
@@ -167,6 +155,8 @@ class Post_Type_NGO extends Post_Type_Framework {
 
 		$terms = get_terms(array(
 			'taxonomy'   => $this->post_type_taxonomy_name,
+			'orderby'    => 'count',
+			'order'      => 'DESC',
 			'hide_empty' => true,
 		));
 
@@ -174,7 +164,10 @@ class Post_Type_NGO extends Post_Type_Framework {
 			$countries[] = array(
 				'id'   => $term->term_id,
 				'name' => $term->name,
-				'flag' => get_term_meta($term->term_id, $conf['term'], true),
+				'flag' => sprintf('%s/assets/images/flags/%s.png',
+					get_template_directory_uri(),
+					get_term_meta($term->term_id, $conf['term'], true)
+				),
 				'url'  => get_term_link($term->term_id),
 			);
 		}

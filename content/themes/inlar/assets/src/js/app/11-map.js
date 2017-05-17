@@ -6,6 +6,14 @@ jQuery(window).load(function() {
 	var mu = new maputils(),
 	markers_fn = function(e) {
 		var country_id = jQuery(this).data('country');
+
+		if (typeof country_id == 'undefined') {
+			country_id = jQuery(this).val();
+		}
+
+		if (!country_id)
+			return;
+
 		e.preventDefault();
 
 		mu.add_markers(mapconfig.ngos, country_id);
@@ -25,8 +33,11 @@ jQuery(window).load(function() {
 		zoom: 4,
 	});
 
-	jQuery('.countries a', '.map-container').on('click', markers_fn);
-	jQuery('#country-control').on('click', '.dropdown a', markers_fn);
+	jQuery('.countries li', '.map-description').on('click', markers_fn);
+	jQuery('#country-control').on('click', '.dropdown li', markers_fn);
+
+	jQuery('.countries select', '.map-description').on('change', markers_fn);
+	jQuery('#country-control').on('change', 'select', markers_fn);
 });
 
 (function($) {
@@ -37,7 +48,10 @@ jQuery(window).load(function() {
 
 	$.each(json, function(key, url) {
 		$.getJSON(url, function(response) {
-			window.mapconfig[key] = response.data;
+			if (!response.success)
+				return;
+
+			window.mapconfig[key] = response.data[key];
 		})
 	});
 

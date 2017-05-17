@@ -144,4 +144,13 @@ function inlar_header($option_name, $type = '') {
 	inlar_header_raw($opt['title'], $opt['text'], $type);
 }
 
+function inlar_fetch_template($name) {
+	if ('' === ($template = locate_template("partials/template-{$name}.php", false)))
+		return;
+
+	printf('<script id="template-%s" type="text/x-handlebars-template">'.PHP_EOL, $name);
+	get_template_part('partials/template', $name);
+	print ('</script>'.PHP_EOL);
+}
+
 ?>

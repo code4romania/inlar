@@ -1,46 +1,58 @@
 <?php
+
 /**
- * [inlar_country_buttons description]
+ * Generates the initial country selections buttons.
  *
- * TODO: add dropdown when showing more countries than $show_front
+ * $show_front is currently set to 1 for testing purposes
+ * TODO: fix buttons overflow for intermediary screen sizes
  */
 function inlar_country_buttons() {
-	$show_front = 3;
+	$show_front = 1;
 
 	$countries = apply_filters('ptf_get_countries', null);
+	$main_list = $drop_list = $select_list = '';
 
-	foreach ($countries as $country) {
-		printf('<a href="%1$s" data-country="%2$s" class="button"><img src="%4$s/assets/images/flags/%5$s.png" alt="%3$s" class="flag png2svg"><span class="name">%3$s</span></a>',
-			get_term_link($country['id']), $country['id'], $country['name'],
-			get_template_directory_uri(), $country['flag']
-		);
-	}
-}
+	$select_list = sprintf('<option value="0">%s</option>',
+		__('Select a country', 'inlar')
+	);
 
-function inlar_country_map_select($current = 0) {
-	$countries = apply_filters('ptf_get_countries', null);
+	if (!$countries)
+		return;
 
-	$current = $dropdown = '';
-
-	foreach ($countries as $country) {
-		if ($country['id'] === $current) {
-			$current = sprintf('<span class="button current"><img src="%2$s/assets/images/flags/%3$s.png" alt="%1$s" class="flag png2svg">%1$s</span>',
-				$country['name'], get_template_directory_uri(), $country['flag']
+	foreach ($countries as $index => $country) {
+		if ($index < $show_front) {
+			$main_list.= sprintf('<li class="button" data-country="%1$s"><img src="%3$s" alt="" class="flag"><span class="name">%2$s</span></li>',
+				$country['id'], $country['name'], $country['flag']
 			);
 		} else {
-			$dropdown.= sprintf('<li><a href="%1$s" data-country="%2$s" class="button">%3$s</a></li>',
-				get_term_link($country['id']), $country['id'], $country['name']
+			$drop_list.= sprintf('<li data-country="%1$s">%2$s</li>',
+				$country['id'], $country['name']
 			);
 		}
+
+		$select_list.= sprintf('<option value="%d">%s</option>',
+			$country['id'], $country['name']
+		);
 	}
 
-	$dropdown = sprintf('<div class="dropdown"><button class="button dropdown-toggle">%s</button><ul class="dropdown-menu">%s</ul></div>',
-		__('Another country', 'inlar'), $dropdown
+	if (!empty($drop_list)) {
+		$dropdown = '<li class="button dropdown-container">';
+		$dropdown.= '<div class="dropdown-toggle">%s<i class="icon-arrow"></i></div>';
+		$dropdown.= '<ul class="dropdown top-right">%s</ul></li>';
+
+		$drop_list = sprintf($dropdown,
+			__('More countries', 'inlar'),
+			$drop_list
+		);
+	}
+
+	$select_list = sprintf('<li class="button mobile-select">%s<select>%s</select></li>',
+		__('Select a country', 'inlar'), $select_list
 	);
 
-
-	printf('<div class="country-control">%s%s</div>',
-		$current, $dropdown
+	printf('<ul class="countries">%s%s%s</ul>',
+		$main_list, $drop_list, $select_list
 	);
 }
+
 ?>

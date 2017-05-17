@@ -15,7 +15,7 @@ maputils.prototype.get_coords = function() {
 	if (typeof this.input == 'object' && this.input.val()) {
 		coords = this.str_to_latlng(this.input.val());
 	}
-	
+
 	return coords;
 }
 
@@ -31,25 +31,14 @@ maputils.prototype.str_to_latlng = function(str) {
 }
 
 maputils.prototype.control_dropdown = function() {
-	var target = jQuery('#country-control'),
-		control;
+	var target   = jQuery('#country-control'),
+		source   = jQuery('#template-map_control').html(),
+		template = Handlebars.compile(source);
 
-	control = '<span class="button current">';
-	control+= '<img src="'+ flags_url +'/'+ mapconfig.current.flag + png_or_svg() + '" class="flag">';
-	control+= '<span class="name">'+ mapconfig.current.name + '</span>';
-	control+= '</span>';
-
-	control+= '<div class="dropdown-container">';
-	control+= '<span class="button dropdown-toggle">'+ i18n.another_country +'<i class="icon-arrow-black"></i></span>';
-	control+= '<ul class="dropdown top-right">';
-
-	for (var country in mapconfig.countries) {
-		control+= '<li'+ (mapconfig.current.id == mapconfig.countries[country].id ? ' hidden' : '') +'>';
-		control+= '<a href="'+ mapconfig.countries[country].url +'" data-country="'+mapconfig.countries[country].id +'">'+ mapconfig.countries[country].name +'</a>';
-		control+= '</li>';
-	}
-
-	target.empty().html(control);
+	target.empty().html(template({
+		current: mapconfig.current,
+		countries: mapconfig.countries
+	}));
 }
 
 maputils.prototype.add_markers = function(geojson, country_id) {
