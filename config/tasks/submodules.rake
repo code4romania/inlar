@@ -48,7 +48,7 @@ namespace :submodules do
 					abort
 				else
 					info "Found submodule tree-ish: #{treeish}"
-					execute "git -C #{full_path} archive --prefix=#{submodule['path']}/ HEAD | tar -x -f - -C #{release_path}"
+					execute "git -C #{full_path} archive --prefix=#{submodule['path']}/ #{treeish} | tar -x -f - -C #{release_path}"
 				end
 			}
 		end
