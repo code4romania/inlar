@@ -43,12 +43,27 @@ function inlar_theme_setup() {
 
 	add_theme_support('custom-header', array(
 		'default-image' => get_template_directory_uri() . '/assets/images/header.jpg',
+		'width'         => 1600,
+		'height'        => 800,
 	));
 }
 
-add_action('get_header', 'my_filter_head');
-function my_filter_head() {
+add_action('get_header', 'inlar_filter_head');
+function inlar_filter_head() {
 	remove_action('wp_head', '_admin_bar_bump_cb');
+}
+
+add_action('customize_register', 'inlar_customize_register');
+function inlar_customize_register($wp_customize) {
+	$sections = array(
+		'colors',
+		'custom_css',
+		'static_front_page',
+	);
+
+	foreach ($sections as $section) {
+		$wp_customize->remove_section($section);
+	}
 }
 
 // Enqueue theme CSS & JS
@@ -81,53 +96,6 @@ function inlar_enqueue_backend_scripts() {
 
 	wp_enqueue_script('inlar-common', $assets . '/common.js', array(), null, false);
 	wp_enqueue_script('inlar-backend', $assets . '/backend.js', array('jquery'), null, true);
-}
-
-add_action('wp_head', 'inlar_head_vars');
-function inlar_head_vars() {
-	$vars = array(
-		'flags_url' => get_template_directory_uri() . '/assets/images/flags',
-		'i18n'      => array(
-			'another_country' => __('Another country', 'inlar'),
-		),
-	);
-
-	print('<script>');
-	foreach ($vars as $name => $value) {
-		printf('var %s = %s;'.PHP_EOL,
-			$name, (is_array($value) ? json_encode($value) : '"'. esc_js($value).'"' )
-		);
-	}
-	print('</script>');
-}
-
-function inlar_language_switcher() {
-	global $q_config;
-
-	if (!function_exists('qtranxf_getSortedLanguages'))
-		return;
-
-	$languages = qtranxf_getSortedLanguages();
-
-	$active = '';
-	$output = array();
-
-	foreach ($languages as $language) {
-		if ($language === $q_config['language']) {
-			$active = sprintf('<span class="current">%s <i class="icon-arrow"></i></span>',
-				$language
-			);
-		} else {
-			$output[] = sprintf('<li><a href="%1$s" hreflang="%2$s">%2$s</a></li>',
-				qtranxf_convertURL(is_404() ? home_url() : '', $language),
-				$q_config['language_name'][$language]
-			);
-		}
-	}
-
-	printf('<div class="lang-switcher dropdown-container">%s<ul class="dropdown top-right">%s</ul></div>',
-		$active, implode('', $output)
-	);
 }
 
 function inlar_header_raw($title = '', $text = '', $type = false) {

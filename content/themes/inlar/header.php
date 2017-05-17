@@ -13,10 +13,16 @@
 				<h1 class="site-title screen-reader-text" itemprop="headline"><?php bloginfo('name'); ?></h1>
 				<p class="site-description screen-reader-text" itemprop="description"><?php bloginfo('description'); ?></p>
 			</a>
-			<?php inlar_navigation_menu('menu-primary'); ?>
-			<div class="flex-item"><?php
-				get_search_form();
-				inlar_language_switcher();
+			<div class="nav-mobile flex-item"><?php
+				inlar_navigation_mobile('menu-primary');
+			?></div>
+			</div>
+			<div class="nav-menu flex-item">
+				<?php inlar_navigation_menu('menu-primary'); ?>
+			</div>
+			<div class="nav-right flex-item"><?php
+				// get_search_form();
+				inlar_navigation_language_switcher();
 			?></div>
 		</nav>
 	</header>
