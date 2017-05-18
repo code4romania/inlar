@@ -140,3 +140,17 @@ namespace :wp do
 		end
 	end
 end
+
+namespace :gulp do
+	desc "Compiled assets and upload them to release_path"
+	task :make do
+		pkg = JSON.parse(File.read('package.json'))
+
+		on roles(:web) do
+			system "gulp --prod --silent"
+			Dir.glob(File.join(pkg['assetsDir'], '*.{js,css}')).each do |file|
+				upload! file, File.join(release_path, file)
+			end
+		end
+	end
+end

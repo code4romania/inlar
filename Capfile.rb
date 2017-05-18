@@ -1,6 +1,9 @@
 # Load YAML
 require 'yaml'
 
+# Load JSON
+require 'json'
+
 # Load DSL and Setup Up Stages
 require 'capistrano/setup'
 
