@@ -22,14 +22,14 @@
 				$url  = get_post_meta($post->ID, '_ptf_partner_url_meta', true);
 
 				if ($url) {
-					$before = sprintf('<a href="%s" target="_blank" class="partner-box">', $url);
+					$before = sprintf('<a href="%s" target="_blank" class="partner">', $url);
 					$after  = '</a>';
 				} else {
-					$before = '<div class="partner-box">';
+					$before = '<div class="partner">';
 					$after  = '</div>';
 				}
 
-				printf('<div class="partner">%s%s<h2 class="partner-name">%s</h2>%s</div>',
+				printf('%s%s<h2 class="partner-name">%s</h2>%s',
 					$before, $logo, get_the_title($post), $after
 				);
 			endwhile; endif;
