@@ -3,6 +3,7 @@ function maputils() {
 	this.center    = false;
 	this.input     = false;
 	this.baselayer = false;
+	this.textlayer = false;
 	this.map       = false;
 	this.markers   = false;
 }
@@ -76,7 +77,10 @@ maputils.prototype.add_markers = function(geojson, country_id) {
 maputils.prototype.enable_map = function() {
 	this.control_dropdown();
 	jQuery('.map-container').removeClass('map-closed').addClass('map-open');
-	// TODO: fitBounds()
+	this.map.fitBounds(this.markers.getBounds(), {
+		paddingTopLeft: [0, 150],
+		maxZoom: 15,
+	});
 }
 
 maputils.prototype.disable_map = function() {

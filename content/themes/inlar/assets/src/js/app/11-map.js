@@ -26,10 +26,17 @@ jQuery(window).load(function() {
 		maxZoom: 19
 	});
 
+	mu.textlayer = L.tileLayer(mapconfig.template.onlylabels, {
+		attribution: mapconfig.attribution,
+		subdomains: 'abcd',
+		maxZoom: 19,
+		minZoom: 10
+	});
+
 	mu.map = L.map('map', {
 		center: mapconfig.center,
 		scrollWheelZoom: false,
-		layers: [mu.baselayer],
+		layers: [mu.baselayer, mu.textlayer],
 		zoom: 4,
 	});
 
