@@ -11,23 +11,25 @@ Text Domain: ptf
 class Post_Type_Framework {
 	protected $post_type_name;
 	protected $post_type_args;
-	private $activity_types = array('post', 'page', 'partner');
+	private $activity_types = array('post', 'page', 'ngo', 'partner', 'team');
 
 	public function __construct() {
-
 		// No need to run this for child classes
 		if (get_parent_class($this))
 			return;
 
 		load_muplugin_textdomain('ptf');
 
-		foreach (glob(dirname(__FILE__) . '/post-type-framework/post-type-framework-*.php') as $filename) {
-			require_once($filename);
-		}
-
 		add_action('load-edit.php'         , array($this, 'admin_force_excerpt'));
 		add_action('wp_dashboard_setup'    , array($this, 'dashboard_activity_setup'));
 		add_action('admin_enqueue_scripts' , array($this, 'load_assets'));
+		add_action('plugins_loaded'        , array($this, 'extend_post_types'));
+	}
+
+	function extend_post_types() {
+		foreach (glob(dirname(__FILE__) . '/post-type-framework/post-type-framework-*.php') as $filename) {
+			require_once($filename);
+		}
 	}
 
 	function register_post_type() {
