@@ -4,6 +4,7 @@ config/ export-ignore
 .capistrano/ export-ignore
 lib export-ignore
 *.po export-ignore
+*.pot export-ignore
 *.log export-ignore
 .editorconfig export-ignore
 .gitattributes export-ignore
