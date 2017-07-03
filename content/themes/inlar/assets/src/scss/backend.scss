@@ -1,0 +1,33 @@
+@import "modules/leaflet";
+
+#flag_preview {
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 4px;
+	width: 30px;
+
+	&[src=""] {
+		display: none;
+	}
+}
+
+
+#ptf_info {
+	#map {
+		overflow: hidden;
+		height: 300px;
+	}
+}
+
+#dashboard_right_now li {
+	.count-ngo:before {
+		content: "\f231";
+	}
+	.count-partner:before {
+		content: "\f307";
+	}
+
+	.count-team:before {
+		content: "\f336";
+	}
+}

@@ -1,0 +1,258 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: INLAR\n"
+"POT-Creation-Date: 2017-07-03 16:36+0300\n"
+"PO-Revision-Date: 2017-07-03 16:36+0300\n"
+"Last-Translator: Andrei Ioniță <hi@andrei.io>\n"
+"Language-Team: Andrei Ioniță <hi@andrei.io>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:2 404.php:5
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: functions.php:41
+msgid "Primary menu"
+msgstr ""
+
+#: includes/class-contact-form.php:9
+msgid "Your name"
+msgstr ""
+
+#: includes/class-contact-form.php:16
+msgid "Your email"
+msgstr ""
+
+#: includes/class-contact-form.php:22
+msgid "Subject"
+msgstr ""
+
+#: includes/class-contact-form.php:23
+msgid "How can we help you?"
+msgstr ""
+
+#: includes/class-contact-form.php:30
+msgid "Message"
+msgstr ""
+
+#: includes/class-contact-form.php:31
+msgid "Detail your story here"
+msgstr ""
+
+#: includes/class-contact-form.php:38 includes/class-contact-form.php:78
+msgid "Send now"
+msgstr ""
+
+#: includes/class-contact-form.php:106 includes/class-contact-form.php:112
+#: includes/class-contact-form.php:146
+msgid "Error"
+msgstr ""
+
+#: includes/class-contact-form.php:107 includes/class-contact-form.php:147
+msgid "An unexpected error has occured. Please try again later."
+msgstr ""
+
+#: includes/class-contact-form.php:108 includes/class-contact-form.php:114
+#: includes/class-contact-form.php:148
+msgid "Back"
+msgstr ""
+
+#: includes/class-contact-form.php:113
+msgid "Your email doesn't seem to be valid. Please check it and try again."
+msgstr ""
+
+#: includes/class-contact-form.php:123
+#, php-format
+msgctxt "contact mail subject prefix"
+msgid "[INLAR] %s"
+msgstr ""
+
+#: includes/class-contact-form.php:137
+msgid "Message Sent"
+msgstr ""
+
+#: includes/class-contact-form.php:139
+#, php-format
+msgid ""
+"Thank you, %s! Your message was sent and we will try to reply in short time."
+msgstr ""
+
+#: includes/class-contact-form.php:142
+msgid "Done"
+msgstr ""
+
+#: includes/class-contact-form.php:156
+msgctxt "form validation message"
+msgid "This field is required."
+msgstr ""
+
+#: includes/class-contact-form.php:157
+msgctxt "form validation message"
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: includes/class-contact-form.php:158
+msgctxt "form validation message"
+msgid "Please enter at least {0} characters."
+msgstr ""
+
+#: includes/class-contact-form.php:159
+msgctxt "form validation message"
+msgid "Please enter no more than {0} characters."
+msgstr ""
+
+#: includes/class-theme-options.php:8
+msgid "Theme Options"
+msgstr ""
+
+#: includes/class-theme-options.php:26
+msgid "Intro"
+msgstr ""
+
+#: includes/class-theme-options.php:30
+msgid "Partners"
+msgstr ""
+
+#: includes/class-theme-options.php:34
+msgid "Team"
+msgstr ""
+
+#: includes/class-theme-options.php:38
+msgid "Contact"
+msgstr ""
+
+#: includes/class-theme-options.php:64 includes/class-theme-options.php:79
+#: includes/class-theme-options.php:101 includes/class-theme-options.php:123
+msgid "Section title"
+msgstr ""
+
+#: includes/class-theme-options.php:70 includes/class-theme-options.php:85
+#: includes/class-theme-options.php:107 includes/class-theme-options.php:129
+msgid "Section text"
+msgstr ""
+
+#: includes/class-theme-options.php:91 includes/class-theme-options.php:113
+msgid "Featured on the front-page"
+msgstr ""
+
+#: includes/class-theme-options.php:135 partials/front-contact.php:13
+msgid "Email address"
+msgstr ""
+
+#: includes/class-theme-options.php:141 partials/front-contact.php:21
+msgid "Phone"
+msgstr ""
+
+#: includes/class-theme-options.php:147 partials/front-contact.php:29
+msgid "Address"
+msgstr ""
+
+#: includes/class-theme-options.php:153
+msgid "Facebook profile"
+msgstr ""
+
+#: includes/class-theme-options.php:159
+msgid "Twitter profile"
+msgstr ""
+
+#: includes/class-theme-options.php:165
+msgid "Instagram profile"
+msgstr ""
+
+#: includes/class-theme-options.php:171
+msgid "Medium profile"
+msgstr ""
+
+#: includes/class-theme-options.php:349 includes/class-theme-options.php:370
+msgid "None"
+msgstr ""
+
+#: includes/class-theme-options.php:401
+msgid "Are you sure you want to do this?"
+msgstr ""
+
+#: includes/class-theme-options.php:423
+msgid "You cannot feature the same partner twice!"
+msgstr ""
+
+#: includes/class-theme-options.php:447
+msgid "Settings saved."
+msgstr ""
+
+#: includes/map.php:16 includes/map.php:50
+msgid "Select a country"
+msgstr ""
+
+#: includes/map.php:44
+msgid "More countries"
+msgstr ""
+
+#: includes/navigation.php:84
+msgid "Language"
+msgstr ""
+
+#: partials/front-contact.php:37
+msgid "Social media"
+msgstr ""
+
+#: partials/front-partner.php:39
+msgid "See all partners"
+msgstr ""
+
+#: partials/front-team.php:46
+msgid "See full team"
+msgstr ""
+
+#: partials/loop-partner.php:19
+msgid "Visit website"
+msgstr ""
+
+#: partials/template-map_card.php:14
+msgid "Find us"
+msgstr ""
+
+#: partials/template-map_control.php:14
+msgid "Another country"
+msgstr ""
+
+#: searchform.php:2
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:3
+msgctxt "placeholder"
+msgid "Search"
+msgstr ""
+
+#: searchform.php:4
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "INLAR"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Code for Romania"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://code4.ro/"
+msgstr ""

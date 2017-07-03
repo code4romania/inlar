@@ -1,0 +1,113 @@
+.member {
+	header {
+		margin: 0 0 4rem;
+		@extend %clearfix;
+
+	}
+
+	.size-team-profile {
+		border-radius: 50%;
+	}
+
+	.member-name {
+		font-size: 1.6rem;
+		font-weight: 300;
+		margin: 0;
+	}
+
+	.member-title {
+		text-transform: uppercase;
+		color: $light-gray;
+		font-size: 1.2rem;
+		font-weight: 500;
+	}
+
+	.member-desc {
+		line-height: 1.625;
+	}
+}
+
+.entry-team {
+	justify-content: center;
+	align-items: stretch;
+	flex-wrap: wrap;
+	display: flex;
+
+	.member {
+		width: 100%;
+	}
+}
+
+.front-sections .entry-team {
+	text-align: center;
+
+	.member-name {
+		font-size: 1.6rem;
+	}
+
+	.member-title {
+		font-size: 1.6rem;
+	}
+
+	.member-desc {
+		font-size: 1.4rem;
+	}
+}
+
+.team-container {
+	background-color: #F4F4F4;
+}
+
+@media screen and (min-width: map-get($breakpoints, small)) {
+	.member {
+		.size-team-profile, .member-meta {
+			vertical-align: middle;
+			display: inline-block;
+		}
+
+		.size-team-profile {
+			margin-right: 2rem;
+		}
+	}
+
+	.entry-team {
+		.member {
+			padding: 1.5rem 1.5rem 7.5rem;
+			width: 50%;
+		}
+	}
+
+	.front-sections .entry-team {
+		.size-team-profile {
+			margin: 0 0 2rem !important;
+		}
+
+		.member-desc {
+			margin: 2rem 0 0;
+		}
+	}
+}
+
+@media screen and (min-width: map-get($breakpoints, medium)) {
+	.member {
+		.member-name {
+			font-size: 2.4rem;
+		}
+
+		.member-title, .member-email {
+			font-size: 1.6rem;
+		}
+	}
+
+	.entry-team {
+		.member {
+			padding: 1.5rem 1.5rem 5rem;
+		}
+	}
+
+	.front-sections .entry-team {
+		.member {
+			width: 25%;
+		}
+	}
+}

@@ -1,0 +1,293 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Type Framework Plugin\n"
+"POT-Creation-Date: 2017-06-16 11:54+0300\n"
+"PO-Revision-Date: 2017-06-16 12:19+0300\n"
+"Last-Translator: Andrei Ioniță <hi@andrei.io>\n"
+"Language-Team: Andrei Ioniță <hi@andrei.io>\n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: post-type-framework.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: languages\n"
+"X-Poedit-SearchPath-1: mu-plugins\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: post-type-framework.php:137
+msgid "Activity"
+msgstr "Activitate"
+
+#: post-type-framework.php:168
+msgid "Publishing Soon"
+msgstr "Se publică în curând"
+
+#: post-type-framework.php:178
+msgid "Recently Published"
+msgstr "Publicate Recent"
+
+#: post-type-framework.php:187
+msgid "No activity yet!"
+msgstr "Încă nu există activitate!"
+
+#: post-type-framework.php:224
+msgid "Today"
+msgstr "Azi"
+
+#: post-type-framework.php:226
+msgid "Tomorrow"
+msgstr "Mâine"
+
+#. translators: date and time format for recent posts on the dashboard, see http://php.net/date
+#: post-type-framework.php:229
+msgid "M jS"
+msgstr "M jS"
+
+#. translators: 1: relative date, 2: time, 3: post edit link, 4: post title
+#: post-type-framework.php:235
+#, php-format
+msgid "<span>%1$s, %2$s</span> <a href=\"%3$s\">%4$s</a> (%5$s)"
+msgstr "<span>%1$s, %2$s</span> <a href=\"%3$s\">%4$s</a> (%5$s)"
+
+#. translators: 1: relative date, 2: time, 3: post title
+#: post-type-framework.php:244
+#, php-format
+msgid "<span>%1$s, %2$s</span> %3$s"
+msgstr "<span>%1$s, %2$s</span> %3$s"
+
+#: post-type-framework/post-type-framework-01-ngo.php:46
+#: post-type-framework/post-type-framework-01-ngo.php:56
+msgid "NGOs"
+msgstr "ONG-uri"
+
+#: post-type-framework/post-type-framework-01-ngo.php:47
+msgid "NGO"
+msgstr "ONG"
+
+#: post-type-framework/post-type-framework-01-ngo.php:48
+#: post-type-framework/post-type-framework-02-partner.php:34
+#: post-type-framework/post-type-framework-03-team.php:34
+msgid "Add New"
+msgstr "Adaugă"
+
+#: post-type-framework/post-type-framework-01-ngo.php:49
+msgid "Add NGO"
+msgstr "Adaugă ONG"
+
+#: post-type-framework/post-type-framework-01-ngo.php:50
+msgid "Edit NGO"
+msgstr "Editează ONG"
+
+#: post-type-framework/post-type-framework-01-ngo.php:51
+msgid "All NGOs"
+msgstr "Toate ONG-urile"
+
+#: post-type-framework/post-type-framework-01-ngo.php:52
+msgid "View NGO"
+msgstr ""
+
+#: post-type-framework/post-type-framework-01-ngo.php:53
+msgid "Search NGOs"
+msgstr ""
+
+#: post-type-framework/post-type-framework-01-ngo.php:54
+msgid "No NGOs found"
+msgstr ""
+
+#: post-type-framework/post-type-framework-01-ngo.php:55
+msgid "No NGOs found in Trash"
+msgstr ""
+
+#: post-type-framework/post-type-framework-01-ngo.php:77
+#: post-type-framework/post-type-framework-01-ngo.php:86
+msgid "Countries"
+msgstr "Țări"
+
+#: post-type-framework/post-type-framework-01-ngo.php:78
+msgid "Country"
+msgstr "Țară"
+
+#: post-type-framework/post-type-framework-01-ngo.php:79
+msgid "Search Countries"
+msgstr ""
+
+#: post-type-framework/post-type-framework-01-ngo.php:80
+msgid "All Countries"
+msgstr "Toate țările"
+
+#: post-type-framework/post-type-framework-01-ngo.php:81
+msgid "Edit Country"
+msgstr "Editează țara"
+
+#: post-type-framework/post-type-framework-01-ngo.php:82
+msgid "Update Country"
+msgstr "Actualizează țara"
+
+#: post-type-framework/post-type-framework-01-ngo.php:83
+msgid "Add new Country"
+msgstr "Adaugă țară nouă"
+
+#: post-type-framework/post-type-framework-01-ngo.php:84
+msgid "New Country"
+msgstr "Țară nouă"
+
+#: post-type-framework/post-type-framework-01-ngo.php:85
+msgid "No categories found."
+msgstr "Nicio categorie găsită."
+
+#: post-type-framework/post-type-framework-01-ngo.php:117
+msgid "Invalid request key"
+msgstr ""
+
+#: post-type-framework/post-type-framework-01-ngo.php:254
+#: post-type-framework/post-type-framework-02-partner.php:78
+#: post-type-framework/post-type-framework-03-team.php:78
+msgid "Additional Information"
+msgstr "Informații suplimentare"
+
+#: post-type-framework/post-type-framework-01-ngo.php:265
+msgid "Coordinates"
+msgstr "Coordonate"
+
+#: post-type-framework/post-type-framework-01-ngo.php:270
+msgid "Address"
+msgstr "Adresă"
+
+#: post-type-framework/post-type-framework-01-ngo.php:276
+#: post-type-framework/post-type-framework-02-partner.php:89
+msgid "URL"
+msgstr "URL"
+
+#: post-type-framework/post-type-framework-01-ngo.php:281
+msgid "Keywords"
+msgstr "Cuvinte cheie"
+
+#: post-type-framework/post-type-framework-01-ngo.php:286
+msgid "Phone"
+msgstr "Telefon"
+
+#: post-type-framework/post-type-framework-01-ngo.php:291
+#: post-type-framework/post-type-framework-03-team.php:94
+msgid "Email"
+msgstr "Email"
+
+#: post-type-framework/post-type-framework-01-ngo.php:403
+#: post-type-framework/post-type-framework-02-partner.php:185
+#: post-type-framework/post-type-framework-03-team.php:191
+msgid "Flag"
+msgstr "Steag"
+
+#: post-type-framework/post-type-framework-01-ngo.php:423
+#: post-type-framework/post-type-framework-01-ngo.php:450
+#: post-type-framework/post-type-framework-02-partner.php:205
+#: post-type-framework/post-type-framework-02-partner.php:232
+#: post-type-framework/post-type-framework-03-team.php:211
+#: post-type-framework/post-type-framework-03-team.php:238
+msgid "-- Select --"
+msgstr "-- Selectează --"
+
+#: post-type-framework/post-type-framework-02-partner.php:32
+#: post-type-framework/post-type-framework-02-partner.php:42
+msgid "Partners"
+msgstr "Parteneri"
+
+#: post-type-framework/post-type-framework-02-partner.php:33
+msgid "Partner"
+msgstr "Partener"
+
+#: post-type-framework/post-type-framework-02-partner.php:35
+msgid "Add Partner"
+msgstr "Adaugă partener"
+
+#: post-type-framework/post-type-framework-02-partner.php:36
+msgid "Edit Partner"
+msgstr "Editează partener"
+
+#: post-type-framework/post-type-framework-02-partner.php:37
+msgid "All Partners"
+msgstr "Toți partenerii"
+
+#: post-type-framework/post-type-framework-02-partner.php:38
+msgid "View Partner"
+msgstr ""
+
+#: post-type-framework/post-type-framework-02-partner.php:39
+msgid "Search Partners"
+msgstr ""
+
+#: post-type-framework/post-type-framework-02-partner.php:40
+msgid "No partners found"
+msgstr ""
+
+#: post-type-framework/post-type-framework-02-partner.php:41
+msgid "No partners found in Trash"
+msgstr ""
+
+#: post-type-framework/post-type-framework-03-team.php:32
+msgid "Team members"
+msgstr ""
+
+#: post-type-framework/post-type-framework-03-team.php:33
+msgid "Team member"
+msgstr "Membru echipă"
+
+#: post-type-framework/post-type-framework-03-team.php:35
+msgid "Add Team member"
+msgstr "Adaugă membru echipă"
+
+#: post-type-framework/post-type-framework-03-team.php:36
+msgid "Edit Team member"
+msgstr "Editează membru echipă"
+
+#: post-type-framework/post-type-framework-03-team.php:37
+msgid "All Team members"
+msgstr "Toți membrii echipei"
+
+#: post-type-framework/post-type-framework-03-team.php:38
+msgid "View Team member"
+msgstr ""
+
+#: post-type-framework/post-type-framework-03-team.php:39
+msgid "Search Team members"
+msgstr ""
+
+#: post-type-framework/post-type-framework-03-team.php:40
+msgid "No team members found"
+msgstr ""
+
+#: post-type-framework/post-type-framework-03-team.php:41
+msgid "No team members found in Trash"
+msgstr ""
+
+#: post-type-framework/post-type-framework-03-team.php:42
+msgid "Team"
+msgstr "Echipa"
+
+#: post-type-framework/post-type-framework-03-team.php:89
+msgid "Title"
+msgstr "Titlu"
+
+#: post-type-framework/post-type-framework-menu-helper.php:15
+msgid "Archive links"
+msgstr "Link-uri arhivă"
+
+#: post-type-framework/post-type-framework-menu-helper.php:64
+msgid "Add to Menu"
+msgstr "Adaugă în meniu"
+
+#. Plugin Name of the plugin/theme
+msgid "Post Type Framework Plugin"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Creates the required post types in a theme-independent way."
+msgstr ""

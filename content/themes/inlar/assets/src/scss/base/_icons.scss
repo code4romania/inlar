@@ -1,0 +1,69 @@
+[class^="icon-"],
+[class*=" icon-"] {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0 0.85em 0;
+	height: .5em;
+	width: .5em;
+}
+
+.icon-arrow           { background-image: url('images/icons/arrow.png'); }
+.icon-search          { background-image: url('images/icons/search.png'); }
+.icon-facebook        { background-image: url('images/icons/facebook.png'); }
+.icon-instagram       { background-image: url('images/icons/instagram.png'); }
+.icon-medium          { background-image: url('images/icons/medium.png'); }
+.icon-twitter         { background-image: url('images/icons/twitter.png'); }
+
+.icon-arrow-black     { background-image: url('images/icons/arrow-black.png'); }
+.icon-search-black    { background-image: url('images/icons/search-black.png'); }
+.icon-facebook-black  { background-image: url('images/icons/facebook-black.png'); }
+.icon-instagram-black { background-image: url('images/icons/instagram-black.png'); }
+.icon-medium-black    { background-image: url('images/icons/medium-black.png'); }
+.icon-twitter-black   { background-image: url('images/icons/twitter-black.png'); }
+
+.icon-arrow-green     { background-image: url('images/icons/arrow-green.png'); }
+.icon-search-green    { background-image: url('images/icons/search-green.png'); }
+.icon-facebook-green  { background-image: url('images/icons/facebook-green.png'); }
+.icon-instagram-green { background-image: url('images/icons/instagram-green.png'); }
+.icon-medium-green    { background-image: url('images/icons/medium-green.png'); }
+.icon-twitter-green   { background-image: url('images/icons/twitter-green.png'); }
+
+.icon-email           { background-image: url('images/icons/mail.png'); }
+.icon-phone           { background-image: url('images/icons/phone.png'); }
+.icon-map             { background-image: url('images/icons/map.png'); }
+.icon-select          { background-image: url('images/icons/select.png'); }
+.icon-check           { background-image: url('images/icons/check.png'); }
+.icon-cross           { background-image: url('images/icons/cross.png'); }
+
+html.svgasimg {
+	.icon-arrow           { background-image: url('images/icons/arrow.svg'); }
+	.icon-search          { background-image: url('images/icons/search.svg'); }
+	.icon-facebook        { background-image: url('images/icons/facebook.svg'); }
+	.icon-instagram       { background-image: url('images/icons/instagram.svg'); }
+	.icon-medium          { background-image: url('images/icons/medium.svg'); }
+	.icon-twitter         { background-image: url('images/icons/twitter.svg'); }
+
+	.icon-arrow-black     { background-image: url('images/icons/arrow-black.svg'); }
+	.icon-search-black    { background-image: url('images/icons/search-black.svg'); }
+	.icon-facebook-black  { background-image: url('images/icons/facebook-black.svg'); }
+	.icon-instagram-black { background-image: url('images/icons/instagram-black.svg'); }
+	.icon-medium-black    { background-image: url('images/icons/medium-black.svg'); }
+	.icon-twitter-black   { background-image: url('images/icons/twitter-black.svg'); }
+
+	.icon-arrow-green     { background-image: url('images/icons/arrow-green.svg'); }
+	.icon-search-green    { background-image: url('images/icons/search-green.svg'); }
+	.icon-facebook-green  { background-image: url('images/icons/facebook-green.svg'); }
+	.icon-instagram-green { background-image: url('images/icons/instagram-green.svg'); }
+	.icon-medium-green    { background-image: url('images/icons/medium-green.svg'); }
+	.icon-twitter-green   { background-image: url('images/icons/twitter-green.svg'); }
+
+	.icon-email           { background-image: url('images/icons/mail.svg'); }
+	.icon-phone           { background-image: url('images/icons/phone.svg'); }
+	.icon-map             { background-image: url('images/icons/map.svg'); }
+	.icon-select          { background-image: url('images/icons/select.svg'); }
+	.icon-check           { background-image: url('images/icons/check.svg'); }
+	.icon-cross           { background-image: url('images/icons/cross.svg'); }
+}

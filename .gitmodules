@@ -1,0 +1,9 @@
+[submodule "wp"]
+	path = wp
+	url = https://github.com/WordPress/WordPress.git
+[submodule "content/plugins/qtranslate-x"]
+	path = content/plugins/qtranslate-x
+	url = https://github.com/qTranslate-Team/qtranslate-x.git
+[submodule "content/plugins/wp-mail-smtp"]
+	path = content/plugins/wp-mail-smtp
+	url = https://github.com/chmac/wp-mail-smtp

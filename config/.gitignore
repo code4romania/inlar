@@ -1,0 +1,5 @@
+/deploy.rb
+/deploy/production.rb
+/deploy/staging.rb
+/secrets/db.yaml
+/secrets/salts.yaml

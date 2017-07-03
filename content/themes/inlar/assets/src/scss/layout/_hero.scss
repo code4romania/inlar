@@ -1,0 +1,53 @@
+.hero {
+	align-items: center;
+	align-self: center;
+	text-align: center;
+	min-height: 40rem;
+	max-height: 70rem;
+	margin: 0 0 6rem;
+	display: flex;
+	height: 75vh;
+	color: #FFF;
+
+	@extend %clearfix;
+
+	&.has-header-image {
+		background-color: #00030A;
+		position: relative;
+
+		.header-image {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+			opacity: 0.35;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			top: 0;
+		}
+
+		.container {
+			position: relative;
+		}
+	}
+
+	h1 {
+		font-size: 3.6rem;
+		font-weight: 300;
+		margin-top: 0;
+	}
+
+	p {
+		font-size: 2rem;
+		opacity: .7;
+	}
+}
+
+
+.map-container .hero {
+	align-items: center;
+	align-self: center;
+	min-height: 100vh;
+	display: flex;
+}
