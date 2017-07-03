@@ -12,11 +12,6 @@
 		position: relative;
 	}
 
-	&.map-closed {
-		#map {
-			
-		}
-	}
 	&.map-open {
 		height: 90vh;
 
@@ -80,6 +75,7 @@
 		}
 
 		.countries {
+			white-space: nowrap;
 			padding: 2rem 0 0;
 			margin-bottom: 0;
 		}
@@ -164,7 +160,6 @@
 }
 
 .map-description .countries .button {
-
 	line-height: 1.25;
 	display: none;
 

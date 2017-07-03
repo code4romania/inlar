@@ -1,201 +1,209 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "Project-Id-Version: INLAR\n"
-"POT-Creation-Date: 2017-06-19 09:55+0300\n"
-"PO-Revision-Date: 2017-06-19 09:55+0300\n"
+"POT-Creation-Date: 2017-07-03 16:36+0300\n"
+"PO-Revision-Date: 2017-07-03 16:36+0300\n"
+"Last-Translator: Andrei Ioniță <hi@andrei.io>\n"
 "Language-Team: Andrei Ioniță <hi@andrei.io>\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "X-Generator: Poedit 2.0.2\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: Andrei Ioniță <hi@andrei.io>\n"
-"Language: ar\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:2 404.php:5
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
 
 #: functions.php:41
 msgid "Primary menu"
 msgstr ""
 
-#: includes/contact-form.php:9
+#: includes/class-contact-form.php:9
 msgid "Your name"
 msgstr ""
 
-#: includes/contact-form.php:16
+#: includes/class-contact-form.php:16
 msgid "Your email"
 msgstr ""
 
-#: includes/contact-form.php:22
+#: includes/class-contact-form.php:22
 msgid "Subject"
 msgstr ""
 
-#: includes/contact-form.php:23
+#: includes/class-contact-form.php:23
 msgid "How can we help you?"
 msgstr ""
 
-#: includes/contact-form.php:30
+#: includes/class-contact-form.php:30
 msgid "Message"
 msgstr ""
 
-#: includes/contact-form.php:31
+#: includes/class-contact-form.php:31
 msgid "Detail your story here"
 msgstr ""
 
-#: includes/contact-form.php:38 includes/contact-form.php:78
+#: includes/class-contact-form.php:38 includes/class-contact-form.php:78
 msgid "Send now"
 msgstr ""
 
-#: includes/contact-form.php:106 includes/contact-form.php:112
-#: includes/contact-form.php:146
+#: includes/class-contact-form.php:106 includes/class-contact-form.php:112
+#: includes/class-contact-form.php:146
 msgid "Error"
 msgstr ""
 
-#: includes/contact-form.php:107 includes/contact-form.php:147
+#: includes/class-contact-form.php:107 includes/class-contact-form.php:147
 msgid "An unexpected error has occured. Please try again later."
 msgstr ""
 
-#: includes/contact-form.php:108 includes/contact-form.php:114
-#: includes/contact-form.php:148
+#: includes/class-contact-form.php:108 includes/class-contact-form.php:114
+#: includes/class-contact-form.php:148
 msgid "Back"
 msgstr ""
 
-#: includes/contact-form.php:113
+#: includes/class-contact-form.php:113
 msgid "Your email doesn't seem to be valid. Please check it and try again."
 msgstr ""
 
-#: includes/contact-form.php:123
+#: includes/class-contact-form.php:123
 #, php-format
 msgctxt "contact mail subject prefix"
 msgid "[INLAR] %s"
 msgstr ""
 
-#: includes/contact-form.php:137
+#: includes/class-contact-form.php:137
 msgid "Message Sent"
 msgstr ""
 
-#: includes/contact-form.php:139
+#: includes/class-contact-form.php:139
 #, php-format
-msgid "Thank you, %s! Your message was sent and we will try to reply in short time."
+msgid ""
+"Thank you, %s! Your message was sent and we will try to reply in short time."
 msgstr ""
 
-#: includes/contact-form.php:142
+#: includes/class-contact-form.php:142
 msgid "Done"
 msgstr ""
 
-#: includes/contact-form.php:156
+#: includes/class-contact-form.php:156
 msgctxt "form validation message"
 msgid "This field is required."
 msgstr ""
 
-#: includes/contact-form.php:157
+#: includes/class-contact-form.php:157
 msgctxt "form validation message"
 msgid "Please enter a valid email address."
 msgstr ""
 
-#: includes/contact-form.php:158
+#: includes/class-contact-form.php:158
 msgctxt "form validation message"
 msgid "Please enter at least {0} characters."
 msgstr ""
 
-#: includes/contact-form.php:159
+#: includes/class-contact-form.php:159
 msgctxt "form validation message"
 msgid "Please enter no more than {0} characters."
 msgstr ""
 
-#: includes/map.php:16 includes/map.php:49
+#: includes/class-theme-options.php:8
+msgid "Theme Options"
+msgstr ""
+
+#: includes/class-theme-options.php:26
+msgid "Intro"
+msgstr ""
+
+#: includes/class-theme-options.php:30
+msgid "Partners"
+msgstr ""
+
+#: includes/class-theme-options.php:34
+msgid "Team"
+msgstr ""
+
+#: includes/class-theme-options.php:38
+msgid "Contact"
+msgstr ""
+
+#: includes/class-theme-options.php:64 includes/class-theme-options.php:79
+#: includes/class-theme-options.php:101 includes/class-theme-options.php:123
+msgid "Section title"
+msgstr ""
+
+#: includes/class-theme-options.php:70 includes/class-theme-options.php:85
+#: includes/class-theme-options.php:107 includes/class-theme-options.php:129
+msgid "Section text"
+msgstr ""
+
+#: includes/class-theme-options.php:91 includes/class-theme-options.php:113
+msgid "Featured on the front-page"
+msgstr ""
+
+#: includes/class-theme-options.php:135 partials/front-contact.php:13
+msgid "Email address"
+msgstr ""
+
+#: includes/class-theme-options.php:141 partials/front-contact.php:21
+msgid "Phone"
+msgstr ""
+
+#: includes/class-theme-options.php:147 partials/front-contact.php:29
+msgid "Address"
+msgstr ""
+
+#: includes/class-theme-options.php:153
+msgid "Facebook profile"
+msgstr ""
+
+#: includes/class-theme-options.php:159
+msgid "Twitter profile"
+msgstr ""
+
+#: includes/class-theme-options.php:165
+msgid "Instagram profile"
+msgstr ""
+
+#: includes/class-theme-options.php:171
+msgid "Medium profile"
+msgstr ""
+
+#: includes/class-theme-options.php:349 includes/class-theme-options.php:370
+msgid "None"
+msgstr ""
+
+#: includes/class-theme-options.php:401
+msgid "Are you sure you want to do this?"
+msgstr ""
+
+#: includes/class-theme-options.php:423
+msgid "You cannot feature the same partner twice!"
+msgstr ""
+
+#: includes/class-theme-options.php:447
+msgid "Settings saved."
+msgstr ""
+
+#: includes/map.php:16 includes/map.php:50
 msgid "Select a country"
 msgstr ""
 
-#: includes/map.php:43
+#: includes/map.php:44
 msgid "More countries"
 msgstr ""
 
 #: includes/navigation.php:84
 msgid "Language"
-msgstr ""
-
-#: includes/theme-options.php:8
-msgid "Theme Options"
-msgstr ""
-
-#: includes/theme-options.php:26
-msgid "Intro"
-msgstr ""
-
-#: includes/theme-options.php:30
-msgid "Partners"
-msgstr ""
-
-#: includes/theme-options.php:34
-msgid "Team"
-msgstr ""
-
-#: includes/theme-options.php:38
-msgid "Contact"
-msgstr ""
-
-#: includes/theme-options.php:64 includes/theme-options.php:79
-#: includes/theme-options.php:101 includes/theme-options.php:123
-msgid "Section title"
-msgstr ""
-
-#: includes/theme-options.php:70 includes/theme-options.php:85
-#: includes/theme-options.php:107 includes/theme-options.php:129
-msgid "Section text"
-msgstr ""
-
-#: includes/theme-options.php:91 includes/theme-options.php:113
-msgid "Featured on the front-page"
-msgstr ""
-
-#: includes/theme-options.php:135 partials/front-contact.php:13
-msgid "Email address"
-msgstr ""
-
-#: includes/theme-options.php:141 partials/front-contact.php:21
-msgid "Phone"
-msgstr ""
-
-#: includes/theme-options.php:147 partials/front-contact.php:29
-msgid "Address"
-msgstr ""
-
-#: includes/theme-options.php:153
-msgid "Facebook profile"
-msgstr ""
-
-#: includes/theme-options.php:159
-msgid "Twitter profile"
-msgstr ""
-
-#: includes/theme-options.php:165
-msgid "Instagram profile"
-msgstr ""
-
-#: includes/theme-options.php:171
-msgid "Medium profile"
-msgstr ""
-
-#: includes/theme-options.php:349 includes/theme-options.php:370
-msgid "None"
-msgstr ""
-
-#: includes/theme-options.php:401
-msgid "Are you sure you want to do this?"
-msgstr ""
-
-#: includes/theme-options.php:423
-msgid "You cannot feature the same partner twice!"
-msgstr ""
-
-#: includes/theme-options.php:447
-msgid "Settings saved."
 msgstr ""
 
 #: partials/front-contact.php:37

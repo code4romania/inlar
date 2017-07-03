@@ -21,7 +21,6 @@
 				<?php inlar_navigation_menu('menu-primary'); ?>
 			</div>
 			<div class="nav-right flex-item"><?php
-				// get_search_form();
 				inlar_navigation_language_switcher();
 			?></div>
 		</nav>

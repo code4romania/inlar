@@ -1,6 +1,6 @@
 <?php
 
-class INLAR_Options {
+class INLAR_Theme_Options {
 	private $config;
 	
 	function __construct() {
@@ -454,6 +454,6 @@ class INLAR_Options {
 }
 
 if (is_admin()) {
-	$inlar_options = new INLAR_Options();
+	$inlar_options = new INLAR_Theme_Options();
 }
 ?>

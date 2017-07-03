@@ -3,11 +3,11 @@
 /**
  * Generates the initial country selections buttons.
  *
- * $show_front is currently set to 1 for testing purposes
  * TODO: fix buttons overflow for intermediary screen sizes
+ * TODO: remove need for fixed $show_front
  */
 function inlar_country_buttons() {
-	$show_front = 1;
+	$show_front = 2;
 
 	$countries = apply_filters('ptf_get_countries', null);
 	$main_list = $drop_list = $select_list = '';

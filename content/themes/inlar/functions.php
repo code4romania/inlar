@@ -1,10 +1,10 @@
 <?php
 
 // Includes
-require_once('includes/map.php');
+require_once('includes/class-theme-options.php');
+require_once('includes/class-contact-form.php');
 require_once('includes/navigation.php');
-require_once('includes/theme-options.php');
-require_once('includes/contact-form.php');
+require_once('includes/map.php');
 
 // Image sizes
 add_image_size('partner-logo-small', 150, 150, true);
