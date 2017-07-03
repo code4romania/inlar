@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-08 19:56:31+0000\n"
+"PO-Revision-Date: 2017-06-19 13:54:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -225,6 +225,10 @@ msgstr "Daha fazla geliştirici mutluluğu %s"
 #: wp-admin/users.php:167 wp-admin/users.php:207
 msgid "Sorry, you are not allowed to delete users."
 msgstr "Üzgünüz, kullanıcıları silmenize izin verilmiyor."
+
+#: wp-admin/user-new.php:23 wp-admin/user-new.php:117
+msgid "Sorry, you are not allowed to create users."
+msgstr "Üzgünüz, kullanıcı oluşturmanıza izin verilmiyor."
 
 #: wp-admin/customize.php:163
 msgid "The Customizer allows you to preview changes to your site before publishing them. You can navigate to different pages on your site within the preview. Edit shortcuts are shown for some editable elements."
@@ -466,9 +470,9 @@ msgstr "Yüklü eklentilerin içinde yapılan arama, isim, açıklama ya da geli
 msgid "Custom Logo"
 msgstr "Özel logo"
 
-#: wp-admin/user-new.php:23 wp-admin/user-new.php:117
-msgid "Sorry, you are not allowed to create users."
-msgstr "Üzgünüz, kullanıcı oluşturmanıza izin verilmiyor."
+#: wp-admin/users.php:317 wp-admin/users.php:348
+msgid "Sorry, you are not allowed to remove users."
+msgstr "Üzgünüz, kullanıcı kaldırmanıza izin verilmiyor."
 
 #: wp-admin/user-new.php:16 wp-admin/user-new.php:56
 msgid "Sorry, you are not allowed to add users to this network."
@@ -660,10 +664,6 @@ msgstr "Bu, düzenleyicideki mevcut içeriği en son yedek ile değiştirecektir
 #: wp-admin/includes/template.php:1523
 msgid "Close media attachment panel"
 msgstr "Ortam eki penceresini kapat"
-
-#: wp-admin/users.php:317 wp-admin/users.php:348
-msgid "Sorry, you are not allowed to remove users."
-msgstr "Üzgünüz, kullanıcıları kaldırmanıza izin verilmiyor."
 
 #: wp-admin/includes/ms.php:1096
 msgid "Info"
