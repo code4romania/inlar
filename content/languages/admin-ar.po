@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-28 10:32:29+0000\n"
+"PO-Revision-Date: 2017-07-29 08:49:40+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1225,16 +1225,16 @@ msgstr "سلّة المهملات"
 msgid "The ssh2 PHP extension is available, however, we require the PHP5 function %s"
 msgstr "الملحق ssh2 للـ PHP مُتاح، ولكننا نحتاج دالة %s في PHP5"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:588
+#: wp-admin/includes/class-wp-comments-list-table.php:593
 msgid "Quick edit this comment inline"
 msgstr "تحرير سريع لهذا التعليق في نفس الصفحة"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:584
+#: wp-admin/includes/class-wp-comments-list-table.php:589
 #: wp-admin/includes/dashboard.php:634
 msgid "Edit this comment"
 msgstr "تحرير هذا التعليق"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:570
+#: wp-admin/includes/class-wp-comments-list-table.php:575
 msgid "Restore this comment from the spam"
 msgstr "استعادة التعليق من التعليقات المزعجة"
 
@@ -1748,7 +1748,7 @@ msgstr "لا توجد تعليقات في قائمة الإنتظار"
 msgid "Failed to initialize a SFTP subsystem session with the SSH2 Server %s"
 msgstr "تعذر بدء جلسة SFTP مع خادم الـ SSH2 %s"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:405
+#: wp-admin/includes/class-wp-comments-list-table.php:410
 msgctxt "column name"
 msgid "Submitted On"
 msgstr "أرسل في"
@@ -1924,7 +1924,7 @@ msgstr "القالب الحالي لا يدعم رفع صورة مخصّصة ل�
 
 #. translators: %s: comment link
 #: wp-admin/comment.php:187
-#: wp-admin/includes/class-wp-comments-list-table.php:648
+#: wp-admin/includes/class-wp-comments-list-table.php:653
 msgid "In reply to %s."
 msgstr "ردًا على %s."
 
@@ -2031,7 +2031,7 @@ msgstr "تأكيد كلمة المرور"
 msgid "While you are editing your %1$s file, take a moment to make sure you have all 8 keys and that they are unique. You can generate these using the <a href=\"%2$s\">WordPress.org secret key service</a>."
 msgstr "بينما وأنت تقوم بتحرير الملف %1$s الخاص بك، انتظر للحظة لتتأكد من أنّ لديك مفاتيح الأمان الثمانية، وأن تكون فريدة من نوعها، إذا لم تتوفر لديك يمكنك إنشاؤها عبر <a href=\"%2$s\">خدمة تكوين مفاتيح الأمان</a>."
 
-#: wp-admin/includes/class-wp-comments-list-table.php:616
+#: wp-admin/includes/class-wp-comments-list-table.php:621
 #: wp-admin/includes/class-wp-list-table.php:523
 #: wp-admin/includes/class-wp-list-table.php:1324
 #: wp-admin/includes/update.php:687
@@ -2827,7 +2827,7 @@ msgstr "d/m/Y g:i:s a"
 
 #. translators: column name or table row header
 #: wp-admin/comment.php:169
-#: wp-admin/includes/class-wp-comments-list-table.php:402
+#: wp-admin/includes/class-wp-comments-list-table.php:407
 msgid "In Response To"
 msgstr "ردًا على"
 
@@ -2948,7 +2948,7 @@ msgstr "تمّ تسجيل خروج %s."
 msgid "You are now logged out everywhere else."
 msgstr "أنت الآن سجلت خروجك من كل الآماكن الأخرى."
 
-#: wp-admin/includes/class-wp-comments-list-table.php:327
+#: wp-admin/includes/class-wp-comments-list-table.php:332
 msgid "Filter by comment type"
 msgstr "تصفية حسب نوع التعليق"
 
@@ -3238,7 +3238,7 @@ msgstr "يمكنك التحكم بمقاسات الصورة مع المحافظ�
 msgid "To crop the image, click on it and drag to make your selection."
 msgstr "لقص الصورة، أنقر عليها باستمرار ثمّ اسحب مؤشر الفأرة لتحديد المساحة التي تريد أن تقصها."
 
-#: wp-admin/includes/class-wp-comments-list-table.php:329
+#: wp-admin/includes/class-wp-comments-list-table.php:334
 msgid "All comment types"
 msgstr "كافة أنواع التعليقات"
 
@@ -3261,7 +3261,7 @@ msgstr "المميّزة"
 
 #: wp-admin/includes/ms.php:1004 wp-admin/users.php:275
 msgid "Attribute all content to:"
-msgstr "نسب كافة المحتويات ل:"
+msgstr "نسب كافة المحتويات لـ:"
 
 #: wp-admin/includes/ms.php:1002 wp-admin/users.php:273
 msgid "Delete all content."
@@ -4829,7 +4829,7 @@ msgstr "يمكن تحويل الوسوم بصورة انتقائية إلى تص
 msgid "Select %s"
 msgstr "اختيار %s"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:627
+#: wp-admin/includes/class-wp-comments-list-table.php:632
 msgid "Select comment"
 msgstr "اختر تعليق"
 
@@ -5051,7 +5051,7 @@ msgid "%s ago"
 msgstr "قبل %s"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:300
-#: wp-admin/includes/class-wp-comments-list-table.php:574
+#: wp-admin/includes/class-wp-comments-list-table.php:579
 #: wp-admin/includes/class-wp-media-list-table.php:144
 #: wp-admin/includes/class-wp-media-list-table.php:715
 #: wp-admin/includes/class-wp-posts-list-table.php:397
@@ -5243,7 +5243,7 @@ msgstr "الإنجليزية البريطانية"
 
 #: wp-admin/includes/ms.php:532
 msgid "MB (Leave blank for network default)"
-msgstr "ميغا (أتركه فارغاً لاستخدام خيار الشبكة الافتراضي)"
+msgstr "ميجابايت (أتركه فارغاً لاستخدام خيار الشبكة الافتراضي)"
 
 #: wp-admin/includes/ms.php:687 wp-admin/includes/ms.php:689
 msgid "You attempted to access the \"%1$s\" dashboard, but you do not currently have privileges on this site. If you believe you should be able to access the \"%1$s\" dashboard, please contact your network administrator."
@@ -5272,12 +5272,12 @@ msgstr "[%s] عنوان بريد إلكتروني جديد"
 #. translators: Megabytes
 #: wp-admin/includes/ms.php:486
 msgid "MB"
-msgstr "ميغا"
+msgstr "م.ب."
 
 #. translators: Gigabytes
 #: wp-admin/includes/ms.php:482
 msgid "GB"
-msgstr "جيغا"
+msgstr "ج.ب."
 
 #. translators: %s: New email address
 #: wp-admin/includes/ms.php:437
@@ -7273,12 +7273,12 @@ msgstr "قص صورة الترويسة"
 msgid "Default Images"
 msgstr "الصور الافتراضية"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:578
+#: wp-admin/includes/class-wp-comments-list-table.php:583
 #: wp-admin/includes/dashboard.php:639
 msgid "Delete this comment permanently"
 msgstr "حذف هذا التعليق بشكل دائم"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:574
+#: wp-admin/includes/class-wp-comments-list-table.php:579
 msgid "Restore this comment from the Trash"
 msgstr "استعادة هذا التعليق من سلة المهملات"
 
@@ -7389,7 +7389,7 @@ msgid "You have version %1$s installed. Update to %2$s."
 msgstr "أنت تستخدم النسخة  %1$s. قم بالتحديث للنسخة %2$s."
 
 #: wp-admin/includes/class-wp-comments-list-table.php:302
-#: wp-admin/includes/class-wp-comments-list-table.php:570
+#: wp-admin/includes/class-wp-comments-list-table.php:575
 msgctxt "comment"
 msgid "Not Spam"
 msgstr "غير مزعج"
@@ -7989,7 +7989,7 @@ msgstr "تحديث العضو "
 
 #: wp-admin/user-edit.php:691
 msgid "Update Profile"
-msgstr "تحديث الحساب "
+msgstr "تحديث الملف الشخصي"
 
 #: wp-admin/user-edit.php:667
 msgid "Additional Capabilities"
@@ -8065,11 +8065,11 @@ msgstr "تم تحديث العضو."
 
 #: wp-admin/includes/user.php:517
 msgid "Always use https when visiting the admin"
-msgstr "دائماً استخدم https عن زيارة لوحة التحكم"
+msgstr "استخدام https دائماً عند زيارة لوحة التحكم"
 
 #: wp-admin/includes/user.php:516
 msgid "Use https"
-msgstr "استعمل https"
+msgstr "استخدام https"
 
 #: wp-admin/media-upload.php:38
 msgid "Invalid item ID."
@@ -8131,7 +8131,7 @@ msgstr "تنصيب الإضافة: %s"
 
 #: wp-admin/update.php:85
 msgid "Plugin failed to reactivate due to a fatal error."
-msgstr "فشلت عملية إعادة تفعيل الإضافة بسبب خطأ فادح"
+msgstr "فشلت عملية إعادة تفعيل الإضافة بسبب خطأ فادح."
 
 #: wp-admin/update.php:82
 msgid "Plugin reactivated successfully."
@@ -9315,7 +9315,7 @@ msgstr "عرض"
 msgid "Relationship"
 msgstr "علاقات الرابط (XFN)"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:398
+#: wp-admin/includes/class-wp-comments-list-table.php:403
 #: wp-admin/includes/class-wp-post-comments-list-table.php:28
 msgctxt "column name"
 msgid "Comment"
@@ -9339,7 +9339,7 @@ msgctxt "column name"
 msgid "Title"
 msgstr "العنوان"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:588
+#: wp-admin/includes/class-wp-comments-list-table.php:593
 #: wp-admin/includes/class-wp-posts-list-table.php:1253
 #: wp-admin/includes/class-wp-terms-list-table.php:449
 msgid "Quick&nbsp;Edit"
@@ -10271,36 +10271,36 @@ msgstr "[بانتظار المراجعة]"
 msgid "From %1$s on %2$s %3$s"
 msgstr "من %1$s على %2$s %3$s"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:580
+#: wp-admin/includes/class-wp-comments-list-table.php:585
 #: wp-admin/includes/dashboard.php:641
 msgid "Move this comment to the Trash"
 msgstr "نقل هذا التعليق إلى سلة المهملات"
 
 #. translators: mark as spam link
-#: wp-admin/includes/class-wp-comments-list-table.php:568
+#: wp-admin/includes/class-wp-comments-list-table.php:573
 #: wp-admin/includes/dashboard.php:636
 msgctxt "verb"
 msgid "Spam"
 msgstr "تعليق مزعج"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:568
+#: wp-admin/includes/class-wp-comments-list-table.php:573
 #: wp-admin/includes/dashboard.php:636
 msgid "Mark this comment as spam"
 msgstr "أشر إلى التعليق كإعلان مزعج"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:590
+#: wp-admin/includes/class-wp-comments-list-table.php:595
 #: wp-admin/includes/dashboard.php:635
 msgid "Reply to this comment"
 msgstr "الرد على هذا التعليق"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:558
-#: wp-admin/includes/class-wp-comments-list-table.php:564
+#: wp-admin/includes/class-wp-comments-list-table.php:563
+#: wp-admin/includes/class-wp-comments-list-table.php:569
 #: wp-admin/includes/dashboard.php:633
 msgid "Unapprove this comment"
 msgstr "لا توافق على هذا التعليق"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:560
-#: wp-admin/includes/class-wp-comments-list-table.php:563
+#: wp-admin/includes/class-wp-comments-list-table.php:565
+#: wp-admin/includes/class-wp-comments-list-table.php:568
 #: wp-admin/includes/dashboard.php:632
 msgid "Approve this comment"
 msgstr "وافق على هذا التعليق"
@@ -10866,24 +10866,24 @@ msgstr "تم تحديث الحقل الإضافي"
 msgid "No comments found."
 msgstr "لا يوجد أي تعليق."
 
-#: wp-admin/includes/class-wp-comments-list-table.php:359
+#: wp-admin/includes/class-wp-comments-list-table.php:364
 #: wp-admin/includes/class-wp-media-list-table.php:181
 #: wp-admin/includes/class-wp-posts-list-table.php:493
 msgid "Empty Trash"
 msgstr "تفريغ سلة المهملات"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:359
+#: wp-admin/includes/class-wp-comments-list-table.php:364
 msgid "Empty Spam"
 msgstr "حذف كافة التعليقات المزعجة"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:354
+#: wp-admin/includes/class-wp-comments-list-table.php:359
 #: wp-admin/includes/class-wp-links-list-table.php:115
 #: wp-admin/includes/class-wp-media-list-table.php:177
 #: wp-admin/includes/class-wp-posts-list-table.php:488
 msgid "Filter"
 msgstr "تصفية"
 
-#: wp-admin/includes/class-wp-comments-list-table.php:340
+#: wp-admin/includes/class-wp-comments-list-table.php:345
 #: wp-admin/includes/class-wp-posts-list-table.php:1612
 msgid "Pings"
 msgstr "التنبيهات"
@@ -10896,15 +10896,15 @@ msgid "Move to Trash"
 msgstr "نقل لسلة المهملات"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:295
-#: wp-admin/includes/class-wp-comments-list-table.php:560
-#: wp-admin/includes/class-wp-comments-list-table.php:563
+#: wp-admin/includes/class-wp-comments-list-table.php:565
+#: wp-admin/includes/class-wp-comments-list-table.php:568
 #: wp-admin/includes/dashboard.php:632
 msgid "Approve"
 msgstr "الموافقة"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:293
-#: wp-admin/includes/class-wp-comments-list-table.php:558
-#: wp-admin/includes/class-wp-comments-list-table.php:564
+#: wp-admin/includes/class-wp-comments-list-table.php:563
+#: wp-admin/includes/class-wp-comments-list-table.php:569
 #: wp-admin/includes/dashboard.php:633
 msgid "Unapprove"
 msgstr "إلغاء الموافقة"

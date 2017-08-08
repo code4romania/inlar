@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-12 21:51:31+0000\n"
+"PO-Revision-Date: 2017-07-29 08:35:28+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,6 +36,50 @@ msgstr "٬"
 msgid "number_format_decimal_point"
 msgstr "."
 
+#: wp-includes/widgets/class-wp-widget-text.php:366
+msgid "This widget may have contained code that may work better in the new &#8220;Custom HTML&#8221; widget. If you haven&#8217;t yet, how about trying that widget instead?"
+msgstr "قد يكون هذا الودجت محتوياً على كود قد يعمل بشكل أفضل في الودجت الجديد &#8221;HTML مخصص&#8220;. إذا لم يكن لديك بعد، ماذا عن المحاولة في تجربة هذا الودجت بدلاً عنه؟"
+
+#: wp-includes/widgets/class-wp-widget-text.php:419
+msgid "Hey there, looks like you just pasted HTML into the &#8220;Visual&#8221; tab of the Text widget. You may want to paste your code into the &#8220;Text&#8221; tab instead. Alternately, try out the new &#8220;Custom HTML&#8221; widget!"
+msgstr "مرحبا، كما هو الحال عندما تقوم بلصق كود HTML في التبويب &#8221;مرئي&#8220; في الودجت من نوع \"نص\". قد ترغب بلصق الأكواد الخاصة بك في التبويب &#8221;نص&#8220; بدلاً من ذلك. قم بتجربة ودجت &#8221;HTML مخصص&#8220; الجديد عوضاً عن ذلك."
+
+#: wp-includes/widgets/class-wp-widget-text.php:403
+msgid "Hey, did you hear we have a &#8220;Custom HTML&#8221; widget now? You can find it by scanning the list of available widgets on this screen. Check it out to add some custom code to your site!"
+msgstr "مرحبا، هل علمت أنه لدينا ودجت &#8221;HTML مخصص&#8220; الآن؟ يمكنك العثور عليه بفحص قائمة الودجات المتوفرة على هذه الشاشة. قم بتجربته لإضافة بعض الأكواد المخصصة إلى موقعك!"
+
+#: wp-includes/widgets/class-wp-widget-text.php:418
+msgid "Did you just paste HTML?"
+msgstr "هل قمت بلصق HTML فقط؟"
+
+#: wp-includes/widgets/class-wp-widget-text.php:401
+msgid "Hey, did you hear we have a &#8220;Custom HTML&#8221; widget now? You can find it by pressing the &#8220;<a class=\"add-widget\" href=\"#\">Add a Widget</a>&#8221; button and searching for &#8220;HTML&#8221;. Check it out to add some custom code to your site!"
+msgstr "مرحبا، هل علمت أنه لدينا ودجت &#8221;HTML مخصص&#8220; الآن؟ يمكنك العثور عليه بالضغط على زر &#8221;<a class=\"add-widget\" href=\"#\">أضف ودجت</a>&#8220; والبحث عن &#8221;HTML&#8220;. قم بتجربته لإضافة بعض الأكواد المخصصة إلى موقعك!"
+
+#: wp-includes/widgets/class-wp-widget-text.php:399
+msgid "New Custom HTML Widget"
+msgstr "ودجت HTML مخصص جديد"
+
+#: wp-includes/widgets/class-wp-widget-text.php:364
+msgid "This widget may contain code that may work better in the new &#8220;Custom HTML&#8221; widget. How about trying that widget instead?"
+msgstr "قد يحتوي هذا الودجت على كود قد يعمل بشكل أفضل في الودجت الجديد &#8221;HTML مخصص&#8220;. ماذا عن المحاولة في تجربة هذا الودجت بدلاً عنه؟"
+
+#: wp-includes/widgets/class-wp-widget-text.php:36
+msgid "Arbitrary text."
+msgstr "نص اختياري."
+
+#: wp-includes/default-widgets.php:103
+msgid "Custom HTML"
+msgstr "HTML مخصص"
+
+#: wp-includes/default-widgets.php:207
+msgid "Some HTML tags are not permitted, including:"
+msgstr "بعض وسوم HTML غير مسموح بها، تتضمن:"
+
+#: wp-includes/default-widgets.php:96
+msgid "Arbitrary HTML code."
+msgstr "كود HTML اختياري."
+
 #: wp-includes/category-template.php:806 wp-includes/category-template.php:815
 msgid "%s item"
 msgid_plural "%s items"
@@ -50,7 +94,7 @@ msgstr[5] "%s عنصر"
 msgid "Show tag counts"
 msgstr "اظهار عدد الأوسمة"
 
-#: wp-includes/widgets/class-wp-widget-media.php:60
+#: wp-includes/widgets/class-wp-widget-media.php:68
 msgctxt "label for button in the media widget"
 msgid "Add Media"
 msgstr "أضف ملف وسائط"
@@ -70,7 +114,7 @@ msgctxt "label for button in the audio widget"
 msgid "Add Audio"
 msgstr "أضف ملف صوتي"
 
-#: wp-includes/media.php:3118
+#: wp-includes/media.php:3122
 msgid "(no author)"
 msgstr "(لا مؤلف)"
 
@@ -107,21 +151,21 @@ msgstr "تم تحديث المدينة. قائمة بالأحداث التي ب�
 msgid "Enter your closest city to find nearby events."
 msgstr "ادخل أقرب مدينة للعثور على الأحداث القريبة."
 
-#: wp-includes/widgets/class-wp-widget-media.php:63
+#: wp-includes/widgets/class-wp-widget-media.php:71
 msgid "Add to Widget"
 msgstr "الإضافة الى ودجت"
 
-#: wp-includes/widgets/class-wp-widget-media.php:62
+#: wp-includes/widgets/class-wp-widget-media.php:70
 msgctxt "label for button in the media widget; should preferably not be longer than ~13 characters long"
 msgid "Edit Media"
 msgstr "تحرير ملف وسائط"
 
-#: wp-includes/widgets/class-wp-widget-media.php:61
+#: wp-includes/widgets/class-wp-widget-media.php:69
 msgctxt "label for button in the media widget; should preferably not be longer than ~13 characters long"
 msgid "Replace Media"
 msgstr "تبديل ملف الوسائط"
 
-#: wp-includes/widgets/class-wp-widget-media.php:51
+#: wp-includes/widgets/class-wp-widget-media.php:59
 msgid "A media item."
 msgstr "ملف وسائط."
 
@@ -140,20 +184,20 @@ msgstr[5] "ودجات لفيديو (%d)"
 msgid "Video Widget"
 msgstr "ودجت الفيديو"
 
-#: wp-includes/widgets/class-wp-widget-media.php:59
+#: wp-includes/widgets/class-wp-widget-media.php:67
 msgid "No media selected"
 msgstr "لايوجد ملف وسائط تمّ تحديده"
 
-#: wp-includes/widgets/class-wp-widget-media.php:71
+#: wp-includes/widgets/class-wp-widget-media.php:79
 msgid "Media Widget"
 msgstr "ودجت الوسائط"
 
 #. translators: placeholder is URL to media library
-#: wp-includes/widgets/class-wp-widget-media.php:66
+#: wp-includes/widgets/class-wp-widget-media.php:74
 msgid "We can&#8217;t find that file. Check your <a href=\"%s\">media library</a> and make sure it wasn&#8217;t deleted."
 msgstr "لا يمكننا إيجاد ذلك الملف. تحقق من <a href=\"%s\">مكتبة الوسائط الخاصة بك</a> وتأكد جيدًا بأنّه لم يتمّ حذفه."
 
-#: wp-includes/widgets/class-wp-widget-media.php:137
+#: wp-includes/widgets/class-wp-widget-media.php:151
 msgid "Title for the widget"
 msgstr "عنوان الودجت"
 
@@ -182,7 +226,7 @@ msgstr "الشبكة تسمح بتسجيل المستخدمين حاليًا."
 msgid "The network currently allows both site and user registrations."
 msgstr "الشبكة تسمح بتسجيل المواقع والمستخدمين حاليًا."
 
-#: wp-includes/widgets/class-wp-widget-media.php:131
+#: wp-includes/widgets/class-wp-widget-media.php:145
 msgid "URL to the media file"
 msgstr "رابط ملف الوسائط"
 
@@ -192,7 +236,7 @@ msgid "To change or disable registration go to your <a href=\"%s\">Options page<
 msgstr "لتغيير أو تعطيل التسجيل اذهب الى <a href=\"%s\">صفحة الإعدادت</a>."
 
 #. translators: %d is widget count
-#: wp-includes/widgets/class-wp-widget-media.php:70
+#: wp-includes/widgets/class-wp-widget-media.php:78
 msgid "Media Widget (%d)"
 msgid_plural "Media Widget (%d)"
 msgstr[0] "ودجت الوسائط (%d)"
@@ -202,7 +246,7 @@ msgstr[3] "ودجت الوسائط (%d)"
 msgstr[4] "ودجت الوسائط (%d)"
 msgstr[5] "ودجت الوسائط (%d)"
 
-#: wp-includes/widgets/class-wp-widget-media.php:124
+#: wp-includes/widgets/class-wp-widget-media.php:138
 msgid "Attachment post ID"
 msgstr "مُعرّف مرفق المقالة"
 
@@ -216,7 +260,7 @@ msgstr "نأسف, لا نستطيع عرض فيديو من هذا النوع. ا
 msgid "URL to the %s video source file"
 msgstr "الرابط إلى ملف مصدر الفيديو %s"
 
-#: wp-includes/widgets/class-wp-widget-media.php:72
+#: wp-includes/widgets/class-wp-widget-media.php:80
 msgid "Looks like this isn&#8217;t the correct kind of file. Please link to an appropriate file instead."
 msgstr "يبدو أن هذا النوع من الملفات غير مدعوم. فضلاً اختر ملف آخر ومناسب."
 
@@ -295,7 +339,7 @@ msgstr "استبدال الصورة"
 
 #: wp-includes/widgets/class-wp-widget-media-audio.php:198
 #: wp-includes/widgets/class-wp-widget-media-image.php:325
-#: wp-includes/widgets/class-wp-widget-media-video.php:241
+#: wp-includes/widgets/class-wp-widget-media-video.php:237
 msgid "Unable to preview media due to an unknown error."
 msgstr "يتعذر معاينة الوسائط بسبب خطأ غير معروف."
 
@@ -387,17 +431,17 @@ msgid "Updated!"
 msgstr "تم التحديث!"
 
 #. translators: 1: parameter, 2: maximum number
-#: wp-includes/rest-api.php:1122
+#: wp-includes/rest-api.php:1127
 msgid "%1$s must be less than or equal to %2$d"
 msgstr "%1$s يجب أن يكون أقل أو يساوي %2$d"
 
 #. translators: 1: parameter, 2: maximum number
-#: wp-includes/rest-api.php:1119
+#: wp-includes/rest-api.php:1124
 msgid "%1$s must be less than %2$d"
 msgstr "%1$s يجب أن يكون أقل من %2$d"
 
 #. translators: 1: parameter, 2: minimum number
-#: wp-includes/rest-api.php:1114
+#: wp-includes/rest-api.php:1119
 msgid "%1$s must be greater than or equal to %2$d"
 msgstr "%1$s يجب أن يكون أكبر أو يساوي %2$d"
 
@@ -410,7 +454,7 @@ msgid "All features, supported by the post type."
 msgstr "كافة المميزات مدعومة بواسطة نوع المقالة."
 
 #. translators: 1: parameter, 2: minimum number
-#: wp-includes/rest-api.php:1111
+#: wp-includes/rest-api.php:1116
 msgid "%1$s must be greater than %2$d"
 msgstr "%1$s يجب أن يكون أكبر من %2$d"
 
@@ -477,7 +521,7 @@ msgid "The password for the parent post of the comment (if the post is password 
 msgstr "كلمة المرور للمقال المرتبط مع التعليق (إذا كان المقال محمياً بكلمة مرور)."
 
 #. translators: 1: suggested width number, 2: suggested height number.
-#: wp-includes/media-template.php:240 wp-includes/media.php:3568
+#: wp-includes/media-template.php:240 wp-includes/media.php:3572
 msgid "Suggested image dimensions: %1$s by %2$s pixels."
 msgstr "أبعاد الصوره المقترحة: %1$s × %2$s بيكسل."
 
@@ -485,7 +529,7 @@ msgstr "أبعاد الصوره المقترحة: %1$s × %2$s بيكسل."
 msgid "Sorry, this file type is not permitted for security reasons."
 msgstr "عفوًا، هذا النوع من الملفات غير مسموح به لأسباب أمنية."
 
-#: wp-includes/media.php:3518
+#: wp-includes/media.php:3522
 msgid ""
 "You are about to permanently delete this item from your site.\n"
 "This action cannot be undone.\n"
@@ -495,7 +539,7 @@ msgstr ""
 "هذا الإجراء لايمكن التراجع عنه.\n"
 "\"إلغاء الأمر\" للإيقاف الإجراء أو \"موافق\" لتنفيذه."
 
-#: wp-includes/media.php:3519 wp-includes/script-loader.php:80
+#: wp-includes/media.php:3523 wp-includes/script-loader.php:80
 msgid ""
 "You are about to permanently delete these items from your site.\n"
 "This action cannot be undone.\n"
@@ -561,17 +605,17 @@ msgstr "الحد الأقصى لإرتفاع الإطار المُضمّن با�
 msgid "The maximum width of the embed frame in pixels."
 msgstr "الحد الأقصى لعرض الإطار المُضمّن بالبيكسل."
 
-#: wp-includes/class-wp-editor.php:1125
+#: wp-includes/class-wp-editor.php:1142
 msgctxt "Short for green in RGB"
 msgid "G"
 msgstr "G"
 
-#: wp-includes/class-wp-editor.php:1124
+#: wp-includes/class-wp-editor.php:1141
 msgctxt "Short for red in RGB"
 msgid "R"
 msgstr "R"
 
-#: wp-includes/class-wp-editor.php:1126
+#: wp-includes/class-wp-editor.php:1143
 msgctxt "Short for blue in RGB"
 msgid "B"
 msgstr "B"
@@ -584,24 +628,24 @@ msgstr "الموقع الإلكتروني للمصدر الذي يتم جلب ب
 msgid "The oEmbed format to use."
 msgstr "صيغة oEmbed التي يجب استخدامها."
 
-#: wp-includes/class-wp-editor.php:1076
+#: wp-includes/class-wp-editor.php:1093
 msgid "Date/time"
 msgstr "تاريخ/وقت"
 
-#: wp-includes/class-wp-editor.php:1078
+#: wp-includes/class-wp-editor.php:1095
 msgid "Table of Contents"
 msgstr "جدول المحتويات"
 
-#: wp-includes/class-wp-editor.php:1082
+#: wp-includes/class-wp-editor.php:1099
 msgid "Insert/edit media"
 msgstr "إدراج/تعديل ملف الوسائط"
 
-#: wp-includes/class-wp-customize-widgets.php:777
+#: wp-includes/class-wp-customize-widgets.php:791
 msgid "You can navigate to other pages on your site while using the Customizer to view and edit the widgets displayed on those pages."
 msgstr "يمكنك التنقل الى الصفحات الأخرى في موقعك خلال استخدام التخصيص لمشاهدة وتحرير الودجات المعروضة على هذه الصفحات."
 
 #. translators: placeholder is the total number of widget areas registered
-#: wp-includes/class-wp-customize-widgets.php:756
+#: wp-includes/class-wp-customize-widgets.php:770
 msgid "Your theme has %s widget area, but this particular page doesn&#8217;t display it."
 msgid_plural "Your theme has %s widget areas, but this particular page doesn&#8217;t display them."
 msgstr[0] "قالبك يحتوي على %s منطقة ودجت، ولكن هذه الصفحة تحديدًا لا تقوم بعرضه."
@@ -611,33 +655,33 @@ msgstr[3] "قالبك يحتوي على %s مناطق ودجت، ولكن هذه
 msgstr[4] "قالبك يحتوي على %s منطقة ودجت، ولكن هذه الصفحة تحديدًا لا تقوم بعرضهم."
 msgstr[5] "قالبك يحتوي على %s منطقة ودجت، ولكن هذه الصفحة تحديدًا لا تقوم بعرضهم."
 
-#: wp-includes/class-wp-editor.php:1079
+#: wp-includes/class-wp-editor.php:1096
 msgid "Insert/edit code sample"
 msgstr "إدراج/تحرير عينة كود"
 
-#: wp-includes/class-wp-editor.php:1052
+#: wp-includes/class-wp-editor.php:1069
 msgctxt "Id for link anchor (TinyMCE)"
 msgid "Id"
 msgstr "المُعرف"
 
-#: wp-includes/class-wp-editor.php:1051
+#: wp-includes/class-wp-editor.php:1068
 msgid "Id should start with a letter, followed only by letters, numbers, dashes, dots, colons or underscores."
 msgstr "المُعرف يجب أن يبدأ بحرف، متبوعاً فقط بأحرف، أرقام,،شرطات، نقاط، فواصل منقوطة أو خطوط سفلية."
 
 #. translators: placeholder is the total number of widget areas registered
-#: wp-includes/class-wp-customize-widgets.php:751
+#: wp-includes/class-wp-customize-widgets.php:765
 msgid "Your theme has 1 widget area, but this particular page doesn&#8217;t display it."
 msgstr "قالبك يحتوي على منطقة ودجت واحد، ولكن هذه الصفحة تحديدًا لا تقوم بعرضه."
 
 #. translators: placeholder is the number of other widget areas registered but
 #. not rendered
-#: wp-includes/class-wp-customize-widgets.php:731
+#: wp-includes/class-wp-customize-widgets.php:745
 msgid "Your theme has 1 other widget area, but this particular page doesn&#8217;t display it."
 msgstr "قالبك يحتوي على منطقة ودجت أخرى، ولكن هذه الصفحة تحديدًا لا تقوم بعرضه."
 
 #. translators: placeholder is the number of other widget areas registered but
 #. not rendered
-#: wp-includes/class-wp-customize-widgets.php:739
+#: wp-includes/class-wp-customize-widgets.php:753
 msgid "Your theme has %s other widget area, but this particular page doesn&#8217;t display it."
 msgid_plural "Your theme has %s other widget areas, but this particular page doesn&#8217;t display them."
 msgstr[0] "قالبك يحتوي على %s منطقة ودجت أخرى، ولكن هذه الصفحة تحديدًا لا تقوم بعرضه."
@@ -875,11 +919,11 @@ msgid "Invalid page template."
 msgstr "قالب صفحة غير صالح."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:606
-#: wp-includes/rest-api.php:1095
+#: wp-includes/rest-api.php:1100
 msgid "Invalid email address."
 msgstr "عنوان بريد إلكتروني غير صالح."
 
-#: wp-includes/post.php:3136 wp-includes/rest-api.php:1089
+#: wp-includes/post.php:3136 wp-includes/rest-api.php:1094
 msgid "Invalid date."
 msgstr "تاريخ غير صالح."
 
@@ -904,52 +948,52 @@ msgstr "الفيديو يشتغل."
 msgid "Video is paused."
 msgstr "الفيديو توقف مؤقتًا."
 
-#: wp-includes/theme.php:1962
+#: wp-includes/theme.php:1966
 msgctxt "Theme starter content"
 msgid "Archives"
 msgstr "الآرشيفات"
 
-#: wp-includes/theme.php:2084
+#: wp-includes/theme.php:2088
 msgctxt "Theme starter content"
 msgid "This is an example of a homepage section. Homepage sections can be any page other than the homepage itself, including the page that shows your latest blog posts."
 msgstr "هذا مثال عن قسم الصفحة الرئيسية. أقسام الصفحة الرئيسية يمكن أن تكون أي صفحة أخرى غير الصفحة الرئيسية نفسها, شاملة الصفحة التي تعرض آخر مقالات مدونتك."
 
-#: wp-includes/theme.php:2078
+#: wp-includes/theme.php:2082
 msgctxt "Theme starter content"
 msgid "News"
 msgstr "الأخبار"
 
-#: wp-includes/theme.php:2070
+#: wp-includes/theme.php:2074
 msgctxt "Theme starter content"
 msgid "This is a page with some basic contact information, such as an address and phone number. You might also try a plugin to add a contact form."
 msgstr "هذه صفحة تحتوي على بعض معلومات الاتصال الأساسية, مثل العنوان ورقم الهاتف. قد ترغب أيضًا بتثبيت إضافة لعرض نموذج مراسلة."
 
-#: wp-includes/theme.php:2065
+#: wp-includes/theme.php:2069
 msgctxt "Theme starter content"
 msgid "You might be an artist who would like to introduce yourself and your work here or maybe you&rsquo;re a business with a mission to describe."
 msgstr "ربما أنت فنان حيث ترغب بتقديم نفسك و عملك هنا أو ربما لديك عمل وترغب في وصفه."
 
-#: wp-includes/theme.php:1977
+#: wp-includes/theme.php:1981
 msgctxt "Theme starter content"
 msgid "Recent Posts"
 msgstr "أحدث المقالات"
 
-#: wp-includes/theme.php:1974
+#: wp-includes/theme.php:1978
 msgctxt "Theme starter content"
 msgid "Recent Comments"
 msgstr "أحدث التعليقات"
 
-#: wp-includes/theme.php:2060
+#: wp-includes/theme.php:2064
 msgctxt "Theme starter content"
 msgid "Welcome to your site! This is your homepage, which is what most visitors will see when they come to your site for the first time."
 msgstr "مرحبًا بك في موقعك! هذه صفحتك الرئيسية، التي سيراها أغلب الزوار عندما يزورون موقعك لأول مرة."
 
-#: wp-includes/theme.php:1965
+#: wp-includes/theme.php:1969
 msgctxt "Theme starter content"
 msgid "Calendar"
 msgstr "التقويم"
 
-#: wp-includes/theme.php:1971
+#: wp-includes/theme.php:1975
 msgctxt "Theme starter content"
 msgid "Meta"
 msgstr "منوعات"
@@ -1014,27 +1058,27 @@ msgstr "عذرًا، غير مسموح لك بإنشاء عناصر جديدة."
 msgid "Sorry, you are not allowed to read comments without a post."
 msgstr "عذرًا، غير مسموح لك بقراءة تعليقات بدون مقالة."
 
-#: wp-includes/theme.php:2028
+#: wp-includes/theme.php:2032
 msgctxt "Theme starter content"
 msgid "GitHub"
 msgstr "GitHub"
 
-#: wp-includes/theme.php:2040
+#: wp-includes/theme.php:2044
 msgctxt "Theme starter content"
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: wp-includes/theme.php:2024
+#: wp-includes/theme.php:2028
 msgctxt "Theme starter content"
 msgid "Foursquare"
 msgstr "Foursquare"
 
-#: wp-includes/theme.php:2036
+#: wp-includes/theme.php:2040
 msgctxt "Theme starter content"
 msgid "LinkedIn"
 msgstr "LinkedIn"
 
-#: wp-includes/theme.php:2052
+#: wp-includes/theme.php:2056
 msgctxt "Theme starter content"
 msgid "YouTube"
 msgstr "YouTube"
@@ -1057,12 +1101,12 @@ msgstr "عذرًا, غير مسموح لك بإسناد العناصر المُ�
 msgid "Sorry, you are not allowed to make posts sticky."
 msgstr "عذرًا, غير مسموح لك بتثبيت المقالات."
 
-#: wp-includes/theme.php:1958
+#: wp-includes/theme.php:1960
 msgctxt "Theme starter content"
 msgid "About This Site"
 msgstr "حول هذا الموقع"
 
-#: wp-includes/theme.php:1959
+#: wp-includes/theme.php:1961
 msgctxt "Theme starter content"
 msgid "This may be a good place to introduce yourself and your site or include some credits."
 msgstr "قد يكون هذا مكانًا جيدًا لتقديم نفسك وموقعك أو تضمين بعض الشكر والتقدير."
@@ -1094,62 +1138,62 @@ msgstr "تحديد فيديو"
 msgid "No video selected"
 msgstr "لم يتم تحديد فيديو"
 
-#: wp-includes/theme.php:2083
+#: wp-includes/theme.php:2087
 msgctxt "Theme starter content"
 msgid "A homepage section"
 msgstr "قسم الصفحة الرئيسية"
 
-#: wp-includes/theme.php:2069
+#: wp-includes/theme.php:2073
 msgctxt "Theme starter content"
 msgid "Contact"
 msgstr "اتصال"
 
-#: wp-includes/theme.php:2074
+#: wp-includes/theme.php:2078
 msgctxt "Theme starter content"
 msgid "Blog"
 msgstr "المدونة"
 
-#: wp-includes/theme.php:1986 wp-includes/theme.php:2059
+#: wp-includes/theme.php:1990 wp-includes/theme.php:2063
 msgctxt "Theme starter content"
 msgid "Home"
 msgstr "الرئيسية"
 
-#: wp-includes/theme.php:2016
+#: wp-includes/theme.php:2020
 msgctxt "Theme starter content"
 msgid "Email"
 msgstr "البريد الإلكتروني"
 
-#: wp-includes/theme.php:2032
+#: wp-includes/theme.php:2036
 msgctxt "Theme starter content"
 msgid "Instagram"
 msgstr "Instagram"
 
-#: wp-includes/theme.php:2064
+#: wp-includes/theme.php:2068
 msgctxt "Theme starter content"
 msgid "About"
 msgstr "حول"
 
-#: wp-includes/theme.php:2044
+#: wp-includes/theme.php:2048
 msgctxt "Theme starter content"
 msgid "Twitter"
 msgstr "تويتر"
 
-#: wp-includes/theme.php:2020
+#: wp-includes/theme.php:2024
 msgctxt "Theme starter content"
 msgid "Facebook"
 msgstr "فيسبوك"
 
-#: wp-includes/theme.php:2048
+#: wp-includes/theme.php:2052
 msgctxt "Theme starter content"
 msgid "Yelp"
 msgstr "Yelp"
 
-#: wp-includes/theme.php:1980
+#: wp-includes/theme.php:1984
 msgctxt "Theme starter content"
 msgid "Search"
 msgstr "بحث"
 
-#: wp-includes/theme.php:1968
+#: wp-includes/theme.php:1972
 msgctxt "Theme starter content"
 msgid "Categories"
 msgstr "التصنيفات"
@@ -1369,27 +1413,27 @@ msgid "Item selected."
 msgstr "العنصر تم تحديده."
 
 #. translators: 1: parameter, 2: minimum number, 3: maximum number
-#: wp-includes/rest-api.php:1138
+#: wp-includes/rest-api.php:1143
 msgid "%1$s must be between %2$d (exclusive) and %3$d (inclusive)"
 msgstr "%1$s يجب أن يكون بين %2$d (حصرًا) و %3$d (ضمنًا)"
 
 #. translators: 1: parameter, 2: minimum number, 3: maximum number
-#: wp-includes/rest-api.php:1128
+#: wp-includes/rest-api.php:1133
 msgid "%1$s must be between %2$d (exclusive) and %3$d (exclusive)"
 msgstr "%1$s يجب أن يكون بين %2$d (حصرًا) و %3$d (حصرًا)"
 
 #. translators: %s: IP address
-#: wp-includes/rest-api.php:1101
+#: wp-includes/rest-api.php:1106
 msgid "%s is not a valid IP address."
 msgstr "%s ليس عنوان IP صالح."
 
 #. translators: 1: parameter, 2: minimum number, 3: maximum number
-#: wp-includes/rest-api.php:1143
+#: wp-includes/rest-api.php:1148
 msgid "%1$s must be between %2$d (inclusive) and %3$d (inclusive)"
 msgstr "%1$s يجب أن يكون بين %2$d (ضمنًا) و %3$d (ضمنًا)"
 
 #. translators: 1: parameter, 2: minimum number, 3: maximum number
-#: wp-includes/rest-api.php:1133
+#: wp-includes/rest-api.php:1138
 msgid "%1$s must be between %2$d (inclusive) and %3$d (exclusive)"
 msgstr "%1$s يجب أن يكون بين %2$d (ضمنًا) و %3$d (حصرًا)"
 
@@ -1408,14 +1452,14 @@ msgid "Could not update meta value in database."
 msgstr "تعذر تحديث قيمة الحقل في قاعدة البيانات."
 
 #. translators: 1: parameter, 2: type name
-#: wp-includes/rest-api.php:1049 wp-includes/rest-api.php:1067
-#: wp-includes/rest-api.php:1072 wp-includes/rest-api.php:1077
-#: wp-includes/rest-api.php:1082
+#: wp-includes/rest-api.php:1054 wp-includes/rest-api.php:1072
+#: wp-includes/rest-api.php:1077 wp-includes/rest-api.php:1082
+#: wp-includes/rest-api.php:1087
 msgid "%1$s is not of type %2$s."
 msgstr "%1$s ليس من النوع %2$s."
 
 #. translators: 1: parameter, 2: list of valid values
-#: wp-includes/rest-api.php:1061
+#: wp-includes/rest-api.php:1066
 msgid "%1$s is not one of %2$s."
 msgstr "%1$s ليس واحدًا %2$s."
 
@@ -1717,11 +1761,6 @@ msgstr "تم حذف المقال بالفعل."
 msgid "A post can not be sticky and have a password."
 msgstr "المقال ﻻ يمكن أن يكون مُثبت ويملك كلمة مرور."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:134
-#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:354
-msgid "Sorry, you are not allowed to edit comments."
-msgstr "عذرًا، غي مسموح لك بتحرير التعليقات."
-
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:495
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:530
 msgid "Cannot create existing post."
@@ -1730,6 +1769,11 @@ msgstr "ﻻ يمكن إنشاء مقالة موجودة."
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:443
 msgid "Sorry, you are not allowed to create new users."
 msgstr "عذرًا، غير مسموح لك بإنشاء مستخدمين جدد."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:134
+#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:354
+msgid "Sorry, you are not allowed to edit comments."
+msgstr "عذرًا، غير مسموح لك بتحرير التعليقات."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:410
 msgid "Incorrect post password."
@@ -2233,7 +2277,7 @@ msgstr "السابق"
 msgid "Username or Email Address"
 msgstr "اسم المستخدم أو البريد الإلكتروني"
 
-#: wp-includes/media.php:3531
+#: wp-includes/media.php:3535
 msgid "Search media items..."
 msgstr "بحث في الوسائط..."
 
@@ -2303,13 +2347,13 @@ msgstr "عذرًا، تعذر إنشاء العنصر."
 msgid "Sorry, your entry could not be posted."
 msgstr "عذرًا، تعذر نشر مقالتك."
 
-#: wp-includes/class-wp-customize-widgets.php:785
-#: wp-includes/class-wp-customize-widgets.php:840
+#: wp-includes/class-wp-customize-widgets.php:799
+#: wp-includes/class-wp-customize-widgets.php:854
 msgid "No widgets found."
 msgstr "لم يتم العثور على ودجات."
 
 #. translators: placeholder is the count for the number of widgets found
-#: wp-includes/class-wp-customize-widgets.php:784
+#: wp-includes/class-wp-customize-widgets.php:798
 msgid "Number of widgets found: %d"
 msgstr "عدد الودجات التي تمّ العثور عليها: %d"
 
@@ -2498,7 +2542,7 @@ msgstr "هذا النموذج لا يتم عرضه بالمعاينة الحيّ
 msgid "Edit selected menu"
 msgstr "تحرير القائمة المُحددة"
 
-#: wp-includes/class-wp-editor.php:1259
+#: wp-includes/class-wp-editor.php:1276
 msgid "Warning: the link has been inserted but may have errors. Please test it."
 msgstr "تحذير: الرابط الذي تمّ إدراجه قد يحتوي على أخطاء، يرجى اختباره."
 
@@ -2506,7 +2550,7 @@ msgstr "تحذير: الرابط الذي تمّ إدراجه قد يحتوي ع
 msgid "Search Results"
 msgstr "نتائج البحث"
 
-#: wp-includes/class-wp-editor.php:1214
+#: wp-includes/class-wp-editor.php:1231
 msgid "Rich Text Area. Press Control-Option-H for help."
 msgstr "منطقة نص منسق. اضغط Control-Option-H للمساعدة."
 
@@ -2551,7 +2595,7 @@ msgstr "إيقاف مؤقت"
 msgid "Inexistent terms."
 msgstr "عناصر غير موجودة."
 
-#: wp-includes/taxonomy.php:1967 wp-includes/taxonomy.php:2593
+#: wp-includes/taxonomy.php:1970 wp-includes/taxonomy.php:2596
 msgid "A name is required for this term."
 msgstr "الاسم مطلوب لهذا العنصر."
 
@@ -2783,7 +2827,7 @@ msgstr "تحديث الآن"
 msgid "Sorry, you are not allowed to preview drafts."
 msgstr "عذرًا، لا يسمح لك بمعاينة المسودات."
 
-#: wp-includes/rest-api/class-wp-rest-server.php:908
+#: wp-includes/rest-api/class-wp-rest-server.php:922
 #: wp-includes/script-loader.php:132 wp-includes/script-loader.php:517
 msgid "Sorry, you are not allowed to do that."
 msgstr "عذرًا، لا يُسمح لك بفعل هذا."
@@ -2880,7 +2924,7 @@ msgstr "عذرًا، لا يُسمح لك بتخصيص هذا الموقع."
 msgid "Do not pass %1$s tags to %2$s."
 msgstr "لا تمرر وسوم %1$s إلى %2$s."
 
-#: wp-includes/class-wp-editor.php:1240
+#: wp-includes/class-wp-editor.php:1257
 msgid "Link options"
 msgstr "خيارات الرابط"
 
@@ -2902,7 +2946,7 @@ msgstr "الطريقة %s مطلوبة لإزالة معلومات الميتا 
 msgid "Plugin details"
 msgstr "تفاصيل الإضافة"
 
-#: wp-includes/media.php:3532
+#: wp-includes/media.php:3536
 msgid "No media files found."
 msgstr "لم يتمّ إيجاد ملفات وسائط."
 
@@ -2944,7 +2988,7 @@ msgstr "الثابت %1$s <strong>مهجور</strong>. استخدم الثابت
 msgid "Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead."
 msgstr "إزالة %1$s يدويًا سوف يسبب ظهور تحذيرات PHP. استخدم المرشح %2$s بدلاً من ذلك."
 
-#: wp-includes/class-wp-editor.php:1267
+#: wp-includes/class-wp-editor.php:1284
 msgid "The next group of formatting shortcuts are applied as you type or when you insert them around plain text in the same paragraph. Press Escape or the Undo button to undo."
 msgstr "المجموعة التالية لإختصارات التنسيق يتم تطبيقها حينما تكتب أو حينما تدرجها حول نص عادي في نفس الفقرة. للتراجع اضغط مفتاح الهروب (Escape) أو زر التراجع (Undo)."
 
@@ -3115,7 +3159,7 @@ msgstr "https://codex.wordpress.org/Child_Themes"
 msgid "Logo"
 msgstr "الشعار"
 
-#: wp-includes/class-wp-editor.php:1238
+#: wp-includes/class-wp-editor.php:1255
 msgid "Paste URL or type to search"
 msgstr "ألصق رابط أو اكتب للبحث"
 
@@ -3503,16 +3547,16 @@ msgid "Permalink saved"
 msgstr "تم حفظ الرابط الدائم"
 
 #. translators: 1: function name, 2: WordPress version number, 3: error message
-#: wp-includes/rest-api.php:521
+#: wp-includes/rest-api.php:526
 msgid "%1$s (since %2$s; %3$s)"
 msgstr "%1$s (منذ %2$s; %3$s)"
 
-#: wp-includes/rest-api.php:744
+#: wp-includes/rest-api.php:749
 msgid "Cookie nonce is invalid"
 msgstr "مُناسبية الكعكة غير صالحة"
 
 #. translators: 1: function name, 2: WordPress version number
-#: wp-includes/rest-api.php:500 wp-includes/rest-api.php:524
+#: wp-includes/rest-api.php:505 wp-includes/rest-api.php:529
 msgid "%1$s (since %2$s; no alternative available)"
 msgstr "%1$s (منذ %2$s; لا بديل متاح)"
 
@@ -3528,19 +3572,19 @@ msgstr "الكود قصير %1$s غير صالح. لا تستخدم فراغات
 
 #. translators: 1: function name, 2: WordPress version number, 3: new function
 #. name
-#: wp-includes/rest-api.php:497
+#: wp-includes/rest-api.php:502
 msgid "%1$s (since %2$s; use %3$s instead)"
 msgstr "%1$s (منذ %2$s; استخدم %3$s بدلاً عنها)"
 
-#: wp-includes/rest-api/class-wp-rest-server.php:1062
+#: wp-includes/rest-api/class-wp-rest-server.php:1076
 msgid "The specified namespace could not be found."
 msgstr "تعذر العثور على مساحة التسمية (namespace) المحددة."
 
-#: wp-includes/rest-api/class-wp-rest-server.php:972
+#: wp-includes/rest-api/class-wp-rest-server.php:986
 msgid "No route was found matching the URL and request method"
 msgstr "لم يتم ايجاد مسار يتوافق مع الرابط ووسيلة الطلب."
 
-#: wp-includes/rest-api/class-wp-rest-server.php:851
+#: wp-includes/rest-api/class-wp-rest-server.php:865
 msgid "The handler for the route is invalid"
 msgstr "الـ handler المتعلق بالمسار غير صالح"
 
@@ -3806,7 +3850,7 @@ msgstr "المعذرة، لقد استخدمت المساحة المخصصة ل�
 msgid "Sorry, you are not allowed to moderate or edit this comment."
 msgstr "عذرًا، لا يسمح لك بمراجعة أو تحرير هذا التعليق."
 
-#: wp-includes/class-wp-customize-widgets.php:782
+#: wp-includes/class-wp-customize-widgets.php:796
 #: wp-includes/customize/class-wp-widget-area-customize-control.php:63
 msgid "Reorder widgets"
 msgstr "إعادة ترتيب الودجات"
@@ -3842,11 +3886,11 @@ msgid "Sorry, you are not allowed to edit theme options on this site."
 msgstr "عذرًا، لا يُسمح لك بتحرير خيارات القالب على هذا الموقع."
 
 #: wp-includes/class-wp-customize-nav-menus.php:972
-#: wp-includes/class-wp-customize-widgets.php:831
+#: wp-includes/class-wp-customize-widgets.php:845
 msgid "Clear Results"
 msgstr "حذف النتائج"
 
-#: wp-includes/class-wp-editor.php:1265
+#: wp-includes/class-wp-editor.php:1282
 msgid "The following formatting shortcuts are replaced when pressing Enter. Press Escape or the Undo button to undo."
 msgstr "اختصارات التنسيق التالية سيتم استبدالها عند الضغط على زر الإدخال Enter. للتراجع اضغط على زر الهروب Escape أو زر التراجع Undo."
 
@@ -3982,7 +4026,7 @@ msgstr "هوية الموقع"
 msgid "Add to menu: %1$s (%2$s)"
 msgstr "أضف للقائمة: %1$s (%2$s)"
 
-#: wp-includes/class-wp-editor.php:1263
+#: wp-includes/class-wp-editor.php:1280
 msgid "When starting a new paragraph with one of these formatting shortcuts followed by a space, the formatting will be applied automatically. Press Backspace or Escape to undo."
 msgstr "عندما تبدأ بفقرة جديدة بإستعمال اختصارات التنسيق متبوعًا بمسافة فإنّه سوف يتمّ تطبيق التنسيق بشكل تلقائي. اضغط ( Backspace ) أو ( Esc ) في لوحة المفاتيح للتراجع."
 
@@ -4032,7 +4076,7 @@ msgid "(unnamed)"
 msgstr "(غير مسمى)"
 
 #: wp-includes/class-wp-customize-nav-menus.php:437
-#: wp-includes/class-wp-customize-widgets.php:781
+#: wp-includes/class-wp-customize-widgets.php:795
 msgid "Reorder mode closed"
 msgstr "تم إغلاق وضع إعادة الترتيب"
 
@@ -4045,13 +4089,13 @@ msgstr "إغلاق وضع إعادة الترتيب"
 msgid "%1$s (%2$d)"
 msgstr "%1$s (%2$d)"
 
-#: wp-includes/class-wp-editor.php:999
+#: wp-includes/class-wp-editor.php:1016
 msgctxt "HTML tag"
 msgid "Preformatted"
 msgstr "مهيأ مسبقًا"
 
 #: wp-includes/class-wp-customize-nav-menus.php:436
-#: wp-includes/class-wp-customize-widgets.php:780
+#: wp-includes/class-wp-customize-widgets.php:794
 msgid "Reorder mode enabled"
 msgstr "تم تمكين وضع إعادة الترتيب"
 
@@ -4251,31 +4295,33 @@ msgctxt "Comma-separated list of words to texturize in your language"
 msgid "'tain't,'twere,'twas,'tis,'twill,'til,'bout,'nuff,'round,'cause,'em"
 msgstr "'tain't,'twere,'twas,'tis,'twill,'til,'bout,'nuff,'round,'cause,'em"
 
-#: wp-includes/class-wp-editor.php:1246
+#: wp-includes/class-wp-editor.php:1263
 msgid "Default shortcuts,"
 msgstr "الاختصارات الافتراضية،"
 
-#: wp-includes/widgets/class-wp-widget-text.php:198
+#: wp-includes/default-widgets.php:195
+#: wp-includes/widgets/class-wp-widget-text.php:370
+#: wp-includes/widgets/class-wp-widget-text.php:431
 msgid "Content:"
 msgstr "المحتوى"
 
-#: wp-includes/class-wp-editor.php:1253
+#: wp-includes/class-wp-editor.php:1270
 msgid "Ctrl + Alt + letter:"
 msgstr "Ctrl + Alt + حرف:"
 
-#: wp-includes/class-wp-editor.php:1254
+#: wp-includes/class-wp-editor.php:1271
 msgid "Shift + Alt + letter:"
 msgstr "Shift + Alt + حرف:"
 
-#: wp-includes/class-wp-editor.php:1255
+#: wp-includes/class-wp-editor.php:1272
 msgid "Cmd + letter:"
 msgstr "Cmd + حرف:"
 
-#: wp-includes/class-wp-editor.php:1256
+#: wp-includes/class-wp-editor.php:1273
 msgid "Ctrl + letter:"
 msgstr "Ctrl + حرف:"
 
-#: wp-includes/class-wp-editor.php:1247
+#: wp-includes/class-wp-editor.php:1264
 msgid "Additional shortcuts,"
 msgstr "الاختصارات الإضافية،"
 
@@ -4283,7 +4329,7 @@ msgstr "الاختصارات الإضافية،"
 msgid "Allow link notifications from other blogs (pingbacks and trackbacks) on new articles"
 msgstr "السماح بإشعارات الربط من المدونات الأخرى (التنبيهات \"PingBacks\" والتعقيبات \"TrackBacks\") في المقالات الجديدة"
 
-#: wp-includes/class-wp-editor.php:1249
+#: wp-includes/class-wp-editor.php:1266
 msgid "Inline toolbar (when an image, link or preview is selected)"
 msgstr "شريط أدوات مضمن (عندما يتم تحديد صورة، رابط أو معاينة)"
 
@@ -4306,7 +4352,7 @@ msgid "Custom Links"
 msgstr "روابط مخصصة"
 
 #: wp-includes/class-wp-customize-nav-menus.php:968
-#: wp-includes/class-wp-customize-widgets.php:832
+#: wp-includes/class-wp-customize-widgets.php:846
 msgid "The search results will be updated as you type."
 msgstr "سيتم تحديث نتائج البحث أثناء الكتابة."
 
@@ -4343,7 +4389,7 @@ msgstr "نقل مستوى واحد للأسفل"
 #: wp-includes/class-wp-customize-nav-menus.php:428
 #: wp-includes/class-wp-customize-nav-menus.php:958
 #: wp-includes/class-wp-customize-section.php:246
-#: wp-includes/class-wp-customize-widgets.php:822
+#: wp-includes/class-wp-customize-widgets.php:836
 msgid "Customizing &#9656; %s"
 msgstr "تخصيص &#9666; %s"
 
@@ -4477,7 +4523,7 @@ msgstr "علاقات الرابط (XFN)"
 msgid "CSS Classes"
 msgstr "CSS Classes (الفئات)"
 
-#: wp-includes/class-wp-editor.php:1684
+#: wp-includes/class-wp-editor.php:1701
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:105
 #: wp-includes/media-template.php:1008
 #: wp-includes/widgets/class-wp-widget-media-image.php:138
@@ -4588,7 +4634,7 @@ msgstr[3] "%1$s ردود على %2$s"
 msgstr[4] "%1$s رد على %2$s"
 msgstr[5] "%1$s رد على %2$s"
 
-#: wp-includes/theme.php:2971
+#: wp-includes/theme.php:2975
 msgid "Customizer"
 msgstr "مخصّص"
 
@@ -4606,7 +4652,7 @@ msgstr "الصورة المُقترحة #%d"
 msgid "Suggested embed #%d"
 msgstr "التضمين المُقترح #%d"
 
-#: wp-includes/taxonomy.php:3486
+#: wp-includes/taxonomy.php:3489
 msgid "Could not split shared term."
 msgstr "غير قادر على تقسيم الفئة المشتركة."
 
@@ -4736,7 +4782,7 @@ msgstr ""
 "\n"
 "--فريق العمل @ SITE_NAME"
 
-#: wp-includes/media.php:3498
+#: wp-includes/media.php:3502
 msgid "Drag and drop to reorder media files."
 msgstr "إسحب وأفلت لإعادة ترتيب ملفات الوسائط."
 
@@ -4754,7 +4800,7 @@ msgid "F j, Y @ H:i:s"
 msgstr "j F, Y @ H:i:s"
 
 #: wp-includes/class-wp-customize-nav-menus.php:1067
-#: wp-includes/class-wp-editor.php:1679 wp-includes/media-template.php:820
+#: wp-includes/class-wp-editor.php:1696 wp-includes/media-template.php:820
 msgid "Link Text"
 msgstr "نص الرابط"
 
@@ -4826,44 +4872,44 @@ msgstr "تفاصيل القالب"
 msgid "No categories found."
 msgstr "لم يتم العثور على تصنيفات."
 
-#: wp-includes/class-wp-editor.php:1234 wp-includes/script-loader.php:99
+#: wp-includes/class-wp-editor.php:1251 wp-includes/script-loader.php:99
 msgid "Distraction-free writing mode"
 msgstr "نمط الكتابة بدون إلهاء"
 
 #. translators: 1: Theme support 2: hook name
-#: wp-includes/theme.php:2419
+#: wp-includes/theme.php:2423
 msgid "Theme support for %1$s should be registered before the %2$s hook."
 msgstr "ينبغي أن يُسجل دعم القالب لـ %1$s قبل خُطاف %2$s."
 
-#: wp-includes/class-wp-customize-widgets.php:775
+#: wp-includes/class-wp-customize-widgets.php:789
 msgid "Widget moved up"
 msgstr "الودجت إنتقلت للأعلى"
 
-#: wp-includes/class-wp-customize-widgets.php:776
+#: wp-includes/class-wp-customize-widgets.php:790
 msgid "Widget moved down"
 msgstr "الودجت إنتقلت للأسفل"
 
-#: wp-includes/class-wp-editor.php:1248
+#: wp-includes/class-wp-editor.php:1265
 msgid "Focus shortcuts:"
 msgstr "اختصارات التركيز:"
 
-#: wp-includes/class-wp-editor.php:1251
+#: wp-includes/class-wp-editor.php:1268
 msgid "Editor toolbar"
 msgstr "شريط أدوات المحرر"
 
-#: wp-includes/class-wp-editor.php:1252
+#: wp-includes/class-wp-editor.php:1269
 msgid "Elements path"
 msgstr "مسار العناصر"
 
-#: wp-includes/class-wp-editor.php:1250
+#: wp-includes/class-wp-editor.php:1267
 msgid "Editor menu (when enabled)"
 msgstr "قائمة المحرر (عند التمكين)"
 
-#: wp-includes/class-wp-editor.php:1261
+#: wp-includes/class-wp-editor.php:1278
 msgid "To move focus to other buttons use Tab or the arrow keys. To return focus to the editor press Escape or use one of the buttons."
 msgstr "لنقل التركيز إلى أزرار أخرى استخدم مفاتيح الأسهم أو مفتاح التبديل (Tab). لإرجاع التركيز إلى المحرر اضغط على مفتاح Esc أو استخدم واحد من الأزرار الموجودة."
 
-#: wp-includes/class-wp-editor.php:1213
+#: wp-includes/class-wp-editor.php:1230
 msgid "Rich Text Area. Press Alt-Shift-H for help."
 msgstr "منطقة النص المُنسق، اضغط Alt-Shift-H للمساعدة."
 
@@ -4872,11 +4918,11 @@ msgstr "منطقة النص المُنسق، اضغط Alt-Shift-H للمساعد
 msgid "The following values do not describe a valid date: month %1$s, day %2$s."
 msgstr "لا تصف القيم التالية تاريخًا صالحًا: شهر %1$s، يوم %2$s."
 
-#: wp-includes/theme.php:2263
+#: wp-includes/theme.php:2267
 msgid "You need to pass an array of types."
 msgstr "تحتاج إلى تمرير مصفوفة أنواع."
 
-#: wp-includes/taxonomy.php:2056
+#: wp-includes/taxonomy.php:2059
 msgid "A term with the name provided already exists in this taxonomy."
 msgstr "هناك عنصر بنفس الاسم والاسم اللطيف موجود مسبقًا في هذه الفئة."
 
@@ -4943,7 +4989,7 @@ msgctxt "translations"
 msgid "Installed"
 msgstr "مُثبت"
 
-#: wp-includes/media.php:3516
+#: wp-includes/media.php:3520
 msgctxt "noun"
 msgid "Trash"
 msgstr "سلة المهملات"
@@ -4958,7 +5004,7 @@ msgstr "السابق"
 msgid "Invalid value %1$s for %2$s. Expected value should be between %3$s and %4$s."
 msgstr "قيمة غير صالحة %1$s لـ %2$s. القيمة المتوقعة ينبغي أن تكون ما بين %3$s و %4$s."
 
-#: wp-includes/class-wp-editor.php:1144
+#: wp-includes/class-wp-editor.php:1161
 msgid "Add to Dictionary"
 msgstr "أضف إلى القاموس"
 
@@ -4967,16 +5013,16 @@ msgstr "أضف إلى القاموس"
 msgid "Reply to %s"
 msgstr "رد على %s"
 
-#: wp-includes/class-wp-editor.php:1152
+#: wp-includes/class-wp-editor.php:1169
 msgid "Border color"
 msgstr "لون الحدود"
 
-#: wp-includes/class-wp-editor.php:1186
+#: wp-includes/class-wp-editor.php:1203
 msgctxt "vertical table cell alignment"
 msgid "V Align"
 msgstr "محاذاة عمودية"
 
-#: wp-includes/class-wp-editor.php:1181
+#: wp-includes/class-wp-editor.php:1198
 msgctxt "horizontal table cell alignment"
 msgid "H Align"
 msgstr "محاذاة أفقية"
@@ -5061,7 +5107,7 @@ msgstr "الكاتب: %s"
 msgid "Year: %s"
 msgstr "السنة: %s"
 
-#: wp-includes/class-wp-editor.php:1235
+#: wp-includes/class-wp-editor.php:1252
 msgid "No alignment"
 msgstr "بلا محاذاة"
 
@@ -5085,11 +5131,11 @@ msgstr "%1$s: %2$s"
 msgid "No file selected"
 msgstr "لا يوجد ملف محدد"
 
-#: wp-includes/class-wp-editor.php:1121
+#: wp-includes/class-wp-editor.php:1138
 msgid "Custom color"
 msgstr "لون مخصص"
 
-#: wp-includes/class-wp-editor.php:1120
+#: wp-includes/class-wp-editor.php:1137
 msgid "Color"
 msgstr "اللون"
 
@@ -5111,16 +5157,16 @@ msgstr "تحديد صورة"
 msgid "No image selected"
 msgstr "لا توجد صورة محددة"
 
-#: wp-includes/class-wp-editor.php:1122
+#: wp-includes/class-wp-editor.php:1139
 msgctxt "label for custom color"
 msgid "Custom..."
 msgstr "مخصص..."
 
-#: wp-includes/class-wp-editor.php:1123
+#: wp-includes/class-wp-editor.php:1140
 msgid "No color"
 msgstr "بلا لون"
 
-#: wp-includes/class-wp-editor.php:1037
+#: wp-includes/class-wp-editor.php:1054
 msgctxt "list style"
 msgid "Default"
 msgstr "الإفتراضي"
@@ -5130,7 +5176,7 @@ msgctxt "add new from admin bar"
 msgid "Post"
 msgstr "مقالة"
 
-#: wp-includes/class-wp-editor.php:1227
+#: wp-includes/class-wp-editor.php:1244
 msgctxt "TinyMCE menu"
 msgid "Format"
 msgstr "التنسيق"
@@ -5159,15 +5205,15 @@ msgstr "أضف ملف وسائط جديد"
 msgid "<strong>You have successfully updated WordPress!</strong> Please log back in to see what&#8217;s new."
 msgstr "<strong>لقد تم تحديث ووردبريس بنجاح!</strong> يرجى تسجيل الدخول مرة أخرى لترى ما الجديد."
 
-#: wp-includes/media.php:3523
+#: wp-includes/media.php:3527
 msgid "Trash Selected"
 msgstr "نقل المُحدد لسلة المهملات"
 
-#: wp-includes/media.php:3524
+#: wp-includes/media.php:3528
 msgid "Untrash Selected"
 msgstr "استعادة المُحدد"
 
-#: wp-includes/media.php:3520
+#: wp-includes/media.php:3524
 msgid ""
 "You are about to trash these items.\n"
 "  'Cancel' to stop, 'OK' to delete."
@@ -5183,15 +5229,15 @@ msgstr "إستعادة"
 msgid "Press return or enter to open this panel"
 msgstr "إضغط زر العودة أو الإدخال لفتح هذه اللوحة"
 
-#: wp-includes/media.php:3521
+#: wp-includes/media.php:3525
 msgid "Bulk Select"
 msgstr "تحديد متعدد"
 
-#: wp-includes/media.php:3522
+#: wp-includes/media.php:3526
 msgid "Cancel Selection"
 msgstr "إلغاء التحديد"
 
-#: wp-includes/media.php:3525
+#: wp-includes/media.php:3529
 msgid "Delete Selected"
 msgstr "حذف المحدد"
 
@@ -5203,7 +5249,7 @@ msgstr "(بدون تسمية)"
 
 #. translators: %s: taxonomy label, %l: list of terms formatted as per
 #. $term_template
-#: wp-includes/taxonomy.php:3971
+#: wp-includes/taxonomy.php:3974
 msgid "%s: %l."
 msgstr "%s: %l."
 
@@ -5211,7 +5257,7 @@ msgstr "%s: %l."
 msgid "Maximum upload file size: %s."
 msgstr "الحد الأقصى لحجم الملف المراد رفعه: %s."
 
-#: wp-includes/class-wp-editor.php:1705
+#: wp-includes/class-wp-editor.php:1722
 msgid "Search or use up and down arrow keys to select an item."
 msgstr "ابحث أو استخدم مفتاحي الأسهم للأعلى أو الأسفل لتحديد عنصر."
 
@@ -5251,11 +5297,11 @@ msgstr "هذا الموقع لم يعد متاحاً."
 msgid "Dimensions:"
 msgstr "الأبعاد:"
 
-#: wp-includes/media.php:3529
+#: wp-includes/media.php:3533
 msgid "Filter by type"
 msgstr "تصفية بحسب النوع"
 
-#: wp-includes/media.php:3528
+#: wp-includes/media.php:3532
 msgid "Filter by date"
 msgstr "تصفية بحسب التاريخ"
 
@@ -5263,7 +5309,7 @@ msgstr "تصفية بحسب التاريخ"
 msgid "View attachment page"
 msgstr "عرض صفحة المرفق"
 
-#: wp-includes/media.php:3512
+#: wp-includes/media.php:3516
 msgid "All dates"
 msgstr "كل التواريخ"
 
@@ -5271,11 +5317,11 @@ msgstr "كل التواريخ"
 msgid "Uploaded To"
 msgstr "مرفوع إلى"
 
-#: wp-includes/class-wp-editor.php:1218
+#: wp-includes/class-wp-editor.php:1235
 msgid "Your browser does not support direct access to the clipboard. Please use keyboard shortcuts or your browser&#8217;s edit menu instead."
 msgstr "متصفحك لا يدعم الوصول المباشر إلى الحافظة. يرجى استخدام اختصارات لوحة المفاتيح أو قائمة التحرير في متصفحك بدلا من ذلك."
 
-#: wp-includes/media.php:3515
+#: wp-includes/media.php:3519
 msgid "Unattached"
 msgstr "غير مرفق"
 
@@ -5287,7 +5333,7 @@ msgstr "معدل البت"
 msgid "Close media panel"
 msgstr "إغلاق لوحة الوسائط"
 
-#: wp-includes/media.php:3530
+#: wp-includes/media.php:3534
 msgid "Search Media"
 msgstr "بحث في الوسائط"
 
@@ -5315,7 +5361,7 @@ msgstr "اسم الملف:"
 msgid "File type:"
 msgstr "نوع الملف:"
 
-#: wp-includes/class-wp-editor.php:1233
+#: wp-includes/class-wp-editor.php:1250
 msgid "Read more..."
 msgstr "قراءة المزيد..."
 
@@ -5323,7 +5369,7 @@ msgstr "قراءة المزيد..."
 msgid "No plugins found. Try a different search."
 msgstr "ﻻ توجد إضافات. جرب البحث بطريقة أخرى."
 
-#: wp-includes/class-wp-customize-widgets.php:422
+#: wp-includes/class-wp-customize-widgets.php:436
 msgid "Widgets are independent sections of content that can be placed into widgetized areas provided by your theme (commonly called sidebars)."
 msgstr "الودجات هي أقسام مستقلة للمحتوى، يمكن وضعها في مناطق يتم تحديدها من قبل القالب (معروفة باسم الأشرطة الجانبية)."
 
@@ -5352,16 +5398,16 @@ msgstr "في حين يمكنك إقتصاص الصور كما ترغب بعد ا
 msgid "(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)"
 msgstr "(تعذّر على ووردبريس تأسيس اتصال آمن مع WordPress.org. يرجى الاتصال بمسؤول الخادم الخاص بك.)"
 
-#: wp-includes/class-wp-customize-widgets.php:1172
+#: wp-includes/class-wp-customize-widgets.php:1186
 msgid "Shift-click to edit this widget."
 msgstr "نقرة مع Shift لتحرير هذا الودجت."
 
-#: wp-includes/class-wp-editor.php:1000
+#: wp-includes/class-wp-editor.php:1017
 msgctxt "HTML tag"
 msgid "Address"
 msgstr "عنوان"
 
-#: wp-includes/class-wp-editor.php:1211
+#: wp-includes/class-wp-editor.php:1228
 msgid "If you&#8217;re looking to paste rich content from Microsoft Word, try turning this option off. The editor will clean up text pasted from Word automatically."
 msgstr "إذا كنت تنوي لصق محتوى منسق من مايكروسوفت وورد، حاول إيقاف هذا الخيار لأن المحرّر سيقوم بإلغاء تنسيق النص الذي تم لصقه من مايكروسوفت وورد تلقائيًا."
 
@@ -5370,7 +5416,7 @@ msgstr "إذا كنت تنوي لصق محتوى منسق من مايكروسو�
 msgid "While you can crop images to your liking after clicking <strong>Add new image</strong>, your theme recommends a header size of %s pixels."
 msgstr "في حين يمكنك إقتصاص الصور كما ترغب بعد النقر على <strong>أضف صورة جديدة</strong>، قالبك يوصي بترويسة حجمها %s بيكسل."
 
-#: wp-includes/class-wp-editor.php:1245
+#: wp-includes/class-wp-editor.php:1262
 msgid "Keyboard Shortcuts"
 msgstr "اختصارات لوحة المفاتيح"
 
@@ -5384,7 +5430,7 @@ msgstr "<strong>خطأ</strong>: ملفات الكوكيز محظورة لسبب
 msgid "<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href=\"%s\">enable cookies</a> to use WordPress."
 msgstr "<strong>خطأ</strong>: ملفات الكوكيز محظورة او غير مدعومة من قبل متصفحك. يجب عليك <a href=\"%s\">تفعيل الكوكيز</a> لاستخدام ووردبريس."
 
-#: wp-includes/class-wp-editor.php:1175
+#: wp-includes/class-wp-editor.php:1192
 msgid "Split table cell"
 msgstr "إفصل خلايا الجدول"
 
@@ -5407,19 +5453,19 @@ msgstr "سمة عنوان الصورة (title)"
 msgid "Edit Original"
 msgstr "تحرير الأصل"
 
-#: wp-includes/media.php:3591
+#: wp-includes/media.php:3595
 msgid "Update audio playlist"
 msgstr "تحديث قائمة التشغيل الصوتية"
 
-#: wp-includes/media.php:3593
+#: wp-includes/media.php:3597
 msgid "Add to Audio Playlist"
 msgstr "أضف ملفات لقائمة التشغيل الصوتية"
 
-#: wp-includes/media.php:3589
+#: wp-includes/media.php:3593
 msgid "&#8592; Cancel Audio Playlist"
 msgstr "&#8592; إلغاء قائمة التشغيل الصوتية"
 
-#: wp-includes/media.php:3592
+#: wp-includes/media.php:3596
 msgid "Add to audio playlist"
 msgstr "إضافة ملفات إلى قائمة التشغيل الصوتية"
 
@@ -5427,12 +5473,12 @@ msgstr "إضافة ملفات إلى قائمة التشغيل الصوتية"
 msgid "Custom Size"
 msgstr "تخصيص الحجم"
 
-#: wp-includes/class-wp-editor.php:1185
+#: wp-includes/class-wp-editor.php:1202
 msgctxt "table cell alignment attribute"
 msgid "None"
 msgstr "لا شيء"
 
-#: wp-includes/class-wp-editor.php:1012
+#: wp-includes/class-wp-editor.php:1029
 msgid "Font Family"
 msgstr "عائلة الخط"
 
@@ -5455,19 +5501,19 @@ msgstr "نوع"
 msgid "Artist"
 msgstr "فنّان"
 
-#: wp-includes/media.php:3590
+#: wp-includes/media.php:3594
 msgid "Insert audio playlist"
 msgstr "أدرج قائمة تشغيل صوت"
 
-#: wp-includes/media.php:3569
+#: wp-includes/media.php:3573
 msgid "There has been an error cropping your image."
 msgstr "حصل خطأ أثناء قص الصورة."
 
-#: wp-includes/class-wp-editor.php:1013
+#: wp-includes/class-wp-editor.php:1030
 msgid "Font Sizes"
 msgstr "حجم الخط"
 
-#: wp-includes/media.php:3588
+#: wp-includes/media.php:3592
 msgid "Edit Audio Playlist"
 msgstr "تحرير قائمة تشغيل الصوت"
 
@@ -5487,28 +5533,28 @@ msgstr "اعدادات العرض"
 msgid "Show Video List"
 msgstr "اظهار قائمة الفيديو"
 
-#: wp-includes/class-wp-customize-widgets.php:773
+#: wp-includes/class-wp-customize-widgets.php:787
 msgid "Trash widget by moving it to the inactive widgets sidebar."
 msgstr "احذف الودجت بواسطة نقله إلى قائمة الودجات غير الفعالة."
 
-#: wp-includes/class-wp-customize-widgets.php:828
+#: wp-includes/class-wp-customize-widgets.php:842
 msgid "Search Widgets"
 msgstr "بحث في الودجات"
 
-#: wp-includes/class-wp-customize-widgets.php:829
+#: wp-includes/class-wp-customize-widgets.php:843
 msgid "Search widgets&hellip;"
 msgstr "بحث في الودجات&hellip;"
 
-#: wp-includes/class-wp-editor.php:985
+#: wp-includes/class-wp-editor.php:1002
 msgctxt "TinyMCE"
 msgid "Headings"
 msgstr "الترويسات"
 
-#: wp-includes/class-wp-customize-widgets.php:771
+#: wp-includes/class-wp-customize-widgets.php:785
 msgid "Save and preview changes before publishing them."
 msgstr "احفظ وشاهد التغييرات قبل نشرها."
 
-#: wp-includes/class-wp-customize-widgets.php:709
+#: wp-includes/class-wp-customize-widgets.php:723
 msgctxt "Move widget"
 msgid "Move"
 msgstr "نقل"
@@ -5527,241 +5573,241 @@ msgstr "تلقائي"
 msgid "Tracks (subtitles, captions, descriptions, chapters, or metadata)"
 msgstr "المسارات (ترجمات، كلمات توضيحية، أوصاف، فصول، أو أي بيانات وصفية)"
 
-#: wp-includes/media.php:3566
+#: wp-includes/media.php:3570
 msgid "Cropping&hellip;"
 msgstr "قص&hellip;"
 
-#: wp-includes/class-wp-customize-widgets.php:700
+#: wp-includes/class-wp-customize-widgets.php:714
 msgid "Move to another area&hellip;"
 msgstr "نقل إلى منطقة أخرى&hellip;"
 
-#: wp-includes/class-wp-editor.php:998
+#: wp-includes/class-wp-editor.php:1015
 msgctxt "HTML tag"
 msgid "Pre"
 msgstr "مهيأ مسبقاً"
 
-#: wp-includes/class-wp-editor.php:1039
+#: wp-includes/class-wp-editor.php:1056
 msgctxt "list style"
 msgid "Disc"
 msgstr "قرص"
 
-#: wp-includes/class-wp-editor.php:1043
+#: wp-includes/class-wp-editor.php:1060
 msgctxt "list style"
 msgid "Upper Roman"
 msgstr "أحرف رومانية كبيرة"
 
-#: wp-includes/class-wp-editor.php:1041
+#: wp-includes/class-wp-editor.php:1058
 msgctxt "list style"
 msgid "Lower Alpha"
 msgstr "أحرف إنجليزية صغيرة"
 
-#: wp-includes/class-wp-editor.php:1042
+#: wp-includes/class-wp-editor.php:1059
 msgctxt "list style"
 msgid "Upper Alpha"
 msgstr "أحرف إنجليزية كبيرة"
 
-#: wp-includes/class-wp-editor.php:1040
+#: wp-includes/class-wp-editor.php:1057
 msgctxt "list style"
 msgid "Lower Greek"
 msgstr "أحرف يونانية صغيرة"
 
-#: wp-includes/class-wp-editor.php:1044
+#: wp-includes/class-wp-editor.php:1061
 msgctxt "list style"
 msgid "Lower Roman"
 msgstr "أحرف رومانية صغيرة"
 
 #. translators: block tags
-#: wp-includes/class-wp-editor.php:994
+#: wp-includes/class-wp-editor.php:1011
 msgctxt "TinyMCE"
 msgid "Blocks"
 msgstr "الكُتل"
 
-#: wp-includes/class-wp-editor.php:1204
+#: wp-includes/class-wp-editor.php:1221
 msgctxt "editor button"
 msgid "Show blocks"
 msgstr "أظهر الكُتل"
 
-#: wp-includes/class-wp-editor.php:1048
+#: wp-includes/class-wp-editor.php:1065
 msgctxt "Link anchor (TinyMCE)"
 msgid "Anchor"
 msgstr "رابط"
 
-#: wp-includes/class-wp-editor.php:1049
+#: wp-includes/class-wp-editor.php:1066
 msgctxt "Link anchors (TinyMCE)"
 msgid "Anchors"
 msgstr "الروابط"
 
-#: wp-includes/class-wp-editor.php:1161
+#: wp-includes/class-wp-editor.php:1178
 msgctxt "table body"
 msgid "Body"
 msgstr "الجسم"
 
-#: wp-includes/class-wp-editor.php:1002
+#: wp-includes/class-wp-editor.php:1019
 msgctxt "HTML elements"
 msgid "Inline"
 msgstr "مضمنة"
 
-#: wp-includes/class-wp-editor.php:1200
+#: wp-includes/class-wp-editor.php:1217
 msgctxt "TinyMCE"
 msgid "Templates"
 msgstr "القوالب"
 
-#: wp-includes/class-wp-editor.php:983
+#: wp-includes/class-wp-editor.php:1000
 msgctxt "TinyMCE"
 msgid "Formats"
 msgstr "التنسيقات"
 
-#: wp-includes/class-wp-editor.php:1197
+#: wp-includes/class-wp-editor.php:1214
 msgctxt "table cell scope attribute"
 msgid "Scope"
 msgstr "النطاق"
 
-#: wp-includes/class-wp-editor.php:1160
+#: wp-includes/class-wp-editor.php:1177
 msgctxt "table header"
 msgid "Header"
 msgstr "الترويسة"
 
 #. translators: word count
-#: wp-includes/class-wp-editor.php:1208
+#: wp-includes/class-wp-editor.php:1225
 msgid "Words: %s"
 msgstr "كلمات: %s"
 
-#: wp-includes/class-wp-editor.php:997
+#: wp-includes/class-wp-editor.php:1014
 msgctxt "HTML tag"
 msgid "Div"
 msgstr "Div"
 
-#: wp-includes/class-wp-editor.php:1134
+#: wp-includes/class-wp-editor.php:1151
 msgctxt "find/replace"
 msgid "Whole words"
 msgstr "كافة الكلمات"
 
-#: wp-includes/class-wp-editor.php:1036
+#: wp-includes/class-wp-editor.php:1053
 msgctxt "list style"
 msgid "Square"
 msgstr "مربع"
 
-#: wp-includes/class-wp-editor.php:1038
+#: wp-includes/class-wp-editor.php:1055
 msgctxt "list style"
 msgid "Circle"
 msgstr "دائرة"
 
-#: wp-includes/class-wp-editor.php:1199
+#: wp-includes/class-wp-editor.php:1216
 msgctxt "TinyMCE"
 msgid "Insert template"
 msgstr "إدراج قالب"
 
-#: wp-includes/class-wp-editor.php:1225
+#: wp-includes/class-wp-editor.php:1242
 msgctxt "TinyMCE menu"
 msgid "View"
 msgstr "عرض"
 
-#: wp-includes/class-wp-editor.php:1226
+#: wp-includes/class-wp-editor.php:1243
 msgctxt "TinyMCE menu"
 msgid "Table"
 msgstr "جدول"
 
-#: wp-includes/class-wp-editor.php:1136
+#: wp-includes/class-wp-editor.php:1153
 msgctxt "find/replace"
 msgid "Replace with"
 msgstr "استبدل بـ"
 
-#: wp-includes/class-wp-editor.php:1222
+#: wp-includes/class-wp-editor.php:1239
 msgctxt "TinyMCE menu"
 msgid "File"
 msgstr "ملف"
 
-#: wp-includes/class-wp-editor.php:1223
+#: wp-includes/class-wp-editor.php:1240
 msgctxt "TinyMCE menu"
 msgid "Edit"
 msgstr "تحرير"
 
-#: wp-includes/class-wp-editor.php:1224
+#: wp-includes/class-wp-editor.php:1241
 msgctxt "TinyMCE menu"
 msgid "Tools"
 msgstr "أدوات"
 
-#: wp-includes/class-wp-editor.php:1158
+#: wp-includes/class-wp-editor.php:1175
 msgctxt "table cell"
 msgid "Cell"
 msgstr "خلية"
 
-#: wp-includes/class-wp-editor.php:1162
+#: wp-includes/class-wp-editor.php:1179
 msgctxt "table footer"
 msgid "Footer"
 msgstr "تذييل"
 
-#: wp-includes/class-wp-editor.php:1221
+#: wp-includes/class-wp-editor.php:1238
 msgctxt "TinyMCE menu"
 msgid "Insert"
 msgstr "إدراج"
 
-#: wp-includes/class-wp-editor.php:1142
+#: wp-includes/class-wp-editor.php:1159
 msgctxt "spellcheck"
 msgid "Ignore all"
 msgstr "تجاهل الكل"
 
-#: wp-includes/class-wp-editor.php:1143
+#: wp-includes/class-wp-editor.php:1160
 msgctxt "spellcheck"
 msgid "Ignore"
 msgstr "تجاهل"
 
-#: wp-includes/class-wp-editor.php:1157
+#: wp-includes/class-wp-editor.php:1174
 msgctxt "table columns"
 msgid "Cols"
 msgstr "أعمدة"
 
 #. translators: previous
-#: wp-includes/class-wp-editor.php:1133
+#: wp-includes/class-wp-editor.php:1150
 msgctxt "find/replace"
 msgid "Prev"
 msgstr "السابق"
 
-#: wp-includes/class-wp-editor.php:1137
+#: wp-includes/class-wp-editor.php:1154
 msgctxt "find/replace"
 msgid "Find"
 msgstr "إيجاد"
 
-#: wp-includes/class-wp-editor.php:1138
+#: wp-includes/class-wp-editor.php:1155
 msgctxt "find/replace"
 msgid "Replace all"
 msgstr "استبدال الكل"
 
-#: wp-includes/class-wp-editor.php:1092
+#: wp-includes/class-wp-editor.php:1109
 msgctxt "editor button"
 msgid "Left to right"
 msgstr "محاذاة من اليسار لليمين"
 
-#: wp-includes/class-wp-editor.php:1130
+#: wp-includes/class-wp-editor.php:1147
 msgctxt "find/replace"
 msgid "Replace"
 msgstr "استبدل"
 
-#: wp-includes/class-wp-editor.php:1131
+#: wp-includes/class-wp-editor.php:1148
 msgctxt "find/replace"
 msgid "Next"
 msgstr "التالي"
 
-#: wp-includes/class-wp-editor.php:1047
+#: wp-includes/class-wp-editor.php:1064
 msgctxt "Name of link anchor (TinyMCE)"
 msgid "Name"
 msgstr "اسم"
 
-#: wp-includes/class-wp-editor.php:1091
+#: wp-includes/class-wp-editor.php:1108
 msgctxt "editor button"
 msgid "Right to left"
 msgstr "محاذاة من اليمين لليسار"
 
-#: wp-includes/class-wp-editor.php:1034 wp-includes/script-loader.php:112
+#: wp-includes/class-wp-editor.php:1051 wp-includes/script-loader.php:112
 msgid "Bulleted list"
 msgstr "قائمة نقطية"
 
-#: wp-includes/class-wp-editor.php:1156
+#: wp-includes/class-wp-editor.php:1173
 msgctxt "table column"
 msgid "Column"
 msgstr "عمود"
 
-#: wp-includes/class-wp-editor.php:1141
+#: wp-includes/class-wp-editor.php:1158
 msgctxt "spellcheck"
 msgid "Finish"
 msgstr "إنهاء"
@@ -5770,11 +5816,11 @@ msgstr "إنهاء"
 msgid "Add alternate sources for maximum HTML5 playback:"
 msgstr "أضف مصادر بديلة لأقصى تشغيل HTML5:"
 
-#: wp-includes/media.php:3596
+#: wp-includes/media.php:3600
 msgid "Drag and drop to reorder videos."
 msgstr "إسحب وأفلت لإعادة ترتيب ملفات الفيديو."
 
-#: wp-includes/media.php:3586
+#: wp-includes/media.php:3590
 msgid "Drag and drop to reorder tracks."
 msgstr "إسحب وأفلت لإعادة ترتيب المسارات."
 
@@ -5790,51 +5836,51 @@ msgstr "معامل الإستعلام للدالة %s يجب أن يحتوي ع�
 msgid "Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! \" ? $ % ^ &amp; )."
 msgstr "تلميح: مفضّل أن تتكوّن كلمة المرور من 7 خانات على الأقل. لجعلها أقوى، استخدم الحروف الكبيرة والصغيرة، الأرقام والرموز مثل ! \" ? $ % ^ &amp; )"
 
-#: wp-includes/media.php:3562
+#: wp-includes/media.php:3566
 msgid "Select and Crop"
 msgstr "اختيار وقص"
 
-#: wp-includes/media.php:3565
+#: wp-includes/media.php:3569
 msgid "Crop your image"
 msgstr "قص الصورة"
 
-#: wp-includes/media.php:3580
+#: wp-includes/media.php:3584
 msgid "Add Video Source"
 msgstr "إضافة مصدر الفيديو"
 
-#: wp-includes/media.php:3602
+#: wp-includes/media.php:3606
 msgid "Add to video playlist"
 msgstr "إضافة إلى قائمة تشغيل الفيديو"
 
-#: wp-includes/media.php:3574
+#: wp-includes/media.php:3578
 msgid "Add Audio Source"
 msgstr "إضافة مصدر الملف الصوتي"
 
-#: wp-includes/media.php:3582
+#: wp-includes/media.php:3586
 msgid "Select Poster Image"
 msgstr "حدّد صورة الملصق"
 
-#: wp-includes/media.php:3599
+#: wp-includes/media.php:3603
 msgid "&#8592; Cancel Video Playlist"
 msgstr "&#8592; إلغاء قائمة تشغيل الفيديو"
 
-#: wp-includes/media.php:3601
+#: wp-includes/media.php:3605
 msgid "Update video playlist"
 msgstr "تحديث قائمة تشغيل الفيديو"
 
-#: wp-includes/media.php:3603
+#: wp-includes/media.php:3607
 msgid "Add to Video Playlist"
 msgstr "أضف ملفات إلى قائمة تشغيل الفيديو"
 
-#: wp-includes/media.php:3597
+#: wp-includes/media.php:3601
 msgid "Create Video Playlist"
 msgstr "إنشاء قائمة تشغيل فيديو"
 
-#: wp-includes/media.php:3587
+#: wp-includes/media.php:3591
 msgid "Create Audio Playlist"
 msgstr "إنشاء قائمة تشغيل صوتية"
 
-#: wp-includes/media.php:3563
+#: wp-includes/media.php:3567
 msgid "Skip Cropping"
 msgstr "تخطي القص"
 
@@ -5842,11 +5888,11 @@ msgstr "تخطي القص"
 msgid "Autoplay"
 msgstr "تشغيل تلقائي"
 
-#: wp-includes/media.php:3598
+#: wp-includes/media.php:3602
 msgid "Edit Video Playlist"
 msgstr "تحرير قائمة تشغيل الفيديو"
 
-#: wp-includes/media.php:3600
+#: wp-includes/media.php:3604
 msgid "Insert video playlist"
 msgstr "إدراج قائمة تشغيل الفيديو"
 
@@ -5854,41 +5900,41 @@ msgstr "إدراج قائمة تشغيل الفيديو"
 msgid "Invalid menu ID."
 msgstr "معرّف القائمة (ID) غير صالح."
 
-#: wp-includes/media.php:3578
+#: wp-includes/media.php:3582
 msgid "Video Details"
 msgstr "تفاصيل الفيديو"
 
-#: wp-includes/media.php:3579
+#: wp-includes/media.php:3583
 msgid "Replace Video"
 msgstr "استبدال الفيديو"
 
-#: wp-includes/media.php:3583
+#: wp-includes/media.php:3587
 msgid "Add Subtitles"
 msgstr "إضافة ترجمات"
 
-#: wp-includes/media.php:3564
+#: wp-includes/media.php:3568
 msgid "Crop Image"
 msgstr "قص صورة"
 
-#: wp-includes/media.php:3572
+#: wp-includes/media.php:3576
 msgid "Audio Details"
 msgstr "تفاصيل الصوت"
 
-#: wp-includes/media.php:3573
+#: wp-includes/media.php:3577
 msgid "Replace Audio"
 msgstr "استبدال الصوت"
 
-#: wp-includes/media.php:3556
+#: wp-includes/media.php:3560
 msgid "Replace Image"
 msgstr "استبدال صورة"
 
-#: wp-includes/media.php:3557 wp-includes/media.php:3575
-#: wp-includes/media.php:3581
+#: wp-includes/media.php:3561 wp-includes/media.php:3579
+#: wp-includes/media.php:3585
 msgid "Cancel Edit"
 msgstr "إلغاء التحرير"
 
 #: wp-includes/customize/class-wp-customize-image-control.php:41
-#: wp-includes/media.php:3561
+#: wp-includes/media.php:3565
 msgid "Choose Image"
 msgstr "اختر صورة"
 
@@ -5896,11 +5942,11 @@ msgstr "اختر صورة"
 msgid "Poster Image"
 msgstr "صورة الملصق"
 
-#: wp-includes/media.php:3508
+#: wp-includes/media.php:3512
 msgid "Create a new playlist"
 msgstr "إنشاء قائمة تشغيل جديدة"
 
-#: wp-includes/media.php:3509
+#: wp-includes/media.php:3513
 msgid "Create a new video playlist"
 msgstr "إنشاء قائمة تشغيل فيديو جديدة"
 
@@ -5935,16 +5981,16 @@ msgstr "%s و %s"
 msgid "Show Artist Name in Tracklist"
 msgstr "عرض اسم الفنان في قائمة المسارات"
 
-#: wp-includes/media.php:3555
+#: wp-includes/media.php:3559
 msgid "Image Details"
 msgstr "تفاصيل الصورة"
 
 #: wp-includes/class-wp-customize-nav-menus.php:952
 #: wp-includes/class-wp-customize-panel.php:378
 #: wp-includes/class-wp-customize-section.php:368
-#: wp-includes/class-wp-customize-widgets.php:817
+#: wp-includes/class-wp-customize-widgets.php:831
 #: wp-includes/customize/class-wp-customize-nav-menus-panel.php:75
-#: wp-includes/media.php:3492
+#: wp-includes/media.php:3496
 msgid "Back"
 msgstr "رجوع"
 
@@ -5978,66 +6024,66 @@ msgstr "اختر عشوائياً من الترويسات المقترحة"
 msgid "Randomize uploaded headers"
 msgstr "اختر عشوائياً من الترويسات المرفوعة"
 
-#: wp-includes/class-wp-customize-widgets.php:708
+#: wp-includes/class-wp-customize-widgets.php:722
 msgid "Select an area to move this widget into:"
 msgstr "حدّد منطقة لنقل هذا الودجت إليها:"
 
-#: wp-includes/class-wp-customize-widgets.php:824
+#: wp-includes/class-wp-customize-widgets.php:838
 #: wp-includes/customize/class-wp-widget-area-customize-control.php:61
 msgid "Add a Widget"
 msgstr "أضف ودجت"
 
-#: wp-includes/class-wp-editor.php:1056
+#: wp-includes/class-wp-editor.php:1073
 msgid "Robots"
 msgstr "الروبوتات"
 
-#: wp-includes/class-wp-editor.php:1159
+#: wp-includes/class-wp-editor.php:1176
 msgid "Header cell"
 msgstr "خلايا الترويسة"
 
-#: wp-includes/class-wp-editor.php:1094
+#: wp-includes/class-wp-editor.php:1111
 msgid "Nonbreaking space"
 msgstr "مساحة غير فاصلة"
 
-#: wp-includes/class-wp-editor.php:1139
+#: wp-includes/class-wp-editor.php:1156
 msgid "Match case"
 msgstr "طابق حالة الأحرف"
 
-#: wp-includes/class-wp-editor.php:1032
+#: wp-includes/class-wp-editor.php:1049
 msgid "Visual aids"
 msgstr "الوسائل المرئية"
 
-#: wp-includes/class-wp-editor.php:1095
+#: wp-includes/class-wp-editor.php:1112
 msgid "Page break"
 msgstr "فاصل الصفحة"
 
-#: wp-includes/class-wp-editor.php:1129
+#: wp-includes/class-wp-editor.php:1146
 msgid "Could not find the specified string."
 msgstr "تعذّر العثور على السلسلة المحدّدة."
 
-#: wp-includes/class-wp-editor.php:1135
+#: wp-includes/class-wp-editor.php:1152
 msgid "Find and replace"
 msgstr "بحث واستبدال"
 
-#: wp-includes/class-wp-editor.php:1093
+#: wp-includes/class-wp-editor.php:1110
 msgid "Emoticons"
 msgstr "أيقونات تعبيرية"
 
-#: wp-includes/class-wp-editor.php:1205
+#: wp-includes/class-wp-editor.php:1222
 msgid "Show invisible characters"
 msgstr "عرض الحروف غير المرئية"
 
 #: wp-includes/class-wp-customize-nav-menus.php:930
-#: wp-includes/class-wp-customize-widgets.php:702
+#: wp-includes/class-wp-customize-widgets.php:716
 msgid "Move up"
 msgstr "تحريك للأعلى"
 
-#: wp-includes/class-wp-editor.php:1077
+#: wp-includes/class-wp-editor.php:1094
 msgid "Insert date/time"
 msgstr "إدراج التاريخ/الوقت"
 
 #: wp-includes/class-wp-customize-nav-menus.php:931
-#: wp-includes/class-wp-customize-widgets.php:701
+#: wp-includes/class-wp-customize-widgets.php:715
 msgid "Move down"
 msgstr "تحريك للأسفل"
 
@@ -6050,15 +6096,15 @@ msgstr "مقترحة"
 msgid "No image set"
 msgstr "لم يتم تعيين صورة"
 
-#: wp-includes/class-wp-editor.php:1210
+#: wp-includes/class-wp-editor.php:1227
 msgid "Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off."
 msgstr "لصق المحتوى يتم الآن في وضع النص العادي. سيتم لصق المحتويات كنص عادي طالما لم تقم بإيقاف هذا الخيار."
 
-#: wp-includes/class-wp-editor.php:1090
+#: wp-includes/class-wp-editor.php:1107
 msgid "Special character"
 msgstr "رمز خاص"
 
-#: wp-includes/class-wp-editor.php:1059
+#: wp-includes/class-wp-editor.php:1076
 msgid "Encoding"
 msgstr "ترميز"
 
@@ -6066,31 +6112,31 @@ msgstr "ترميز"
 msgid "https://wordpress.org/support/forum/requests-and-feedback"
 msgstr "https://wordpress.org/support/forum/requests-and-feedback"
 
-#: wp-includes/class-wp-editor.php:1231 wp-includes/script-loader.php:120
+#: wp-includes/class-wp-editor.php:1248 wp-includes/script-loader.php:120
 msgid "Insert Read More tag"
 msgstr "أدرج فاصل اقرأ المزيد"
 
-#: wp-includes/class-wp-editor.php:1196
+#: wp-includes/class-wp-editor.php:1213
 msgid "Cell spacing"
 msgstr "المسافة بين الخلايا"
 
-#: wp-includes/class-wp-editor.php:1195
+#: wp-includes/class-wp-editor.php:1212
 msgid "Cell padding"
 msgstr "الحشو (Padding) في الخلايا"
 
-#: wp-includes/class-wp-editor.php:1155
+#: wp-includes/class-wp-editor.php:1172
 msgid "Rows"
 msgstr "صفوف"
 
-#: wp-includes/class-wp-editor.php:1194
+#: wp-includes/class-wp-editor.php:1211
 msgid "Cell type"
 msgstr "نوع الخلية"
 
-#: wp-includes/class-wp-editor.php:1191
+#: wp-includes/class-wp-editor.php:1208
 msgid "Row group"
 msgstr "مجموعة الصف"
 
-#: wp-includes/class-wp-editor.php:1171
+#: wp-includes/class-wp-editor.php:1188
 msgid "Delete column"
 msgstr "حذف عمود"
 
@@ -6098,39 +6144,39 @@ msgstr "حذف عمود"
 msgid "Current header"
 msgstr "الترويسة الحالية"
 
-#: wp-includes/class-wp-editor.php:1086
+#: wp-includes/class-wp-editor.php:1103
 msgid "Insert video"
 msgstr "إدراج فيديو"
 
-#: wp-includes/class-wp-editor.php:1087
+#: wp-includes/class-wp-editor.php:1104
 msgid "Embed"
 msgstr "تضمين"
 
-#: wp-includes/media-template.php:892 wp-includes/media.php:3490
+#: wp-includes/media-template.php:892 wp-includes/media.php:3494
 msgid "Replace"
 msgstr "استبدال"
 
-#: wp-includes/class-wp-editor.php:1193
+#: wp-includes/class-wp-editor.php:1210
 msgid "Row type"
 msgstr "نوع الصف"
 
-#: wp-includes/class-wp-editor.php:1147
+#: wp-includes/class-wp-editor.php:1164
 msgid "Insert table"
 msgstr "إدراج جدول"
 
-#: wp-includes/class-wp-editor.php:1103
+#: wp-includes/class-wp-editor.php:1120
 msgid "Restore last draft"
 msgstr "استعادة آخر مسودة"
 
-#: wp-includes/class-wp-editor.php:1011
+#: wp-includes/class-wp-editor.php:1028
 msgid "Source code"
 msgstr "شفرة المصدر"
 
-#: wp-includes/class-wp-editor.php:1085
+#: wp-includes/class-wp-editor.php:1102
 msgid "Paste your embed code below:"
 msgstr "لصق الشفرة المضمنة أدناه:"
 
-#: wp-includes/class-wp-editor.php:1018
+#: wp-includes/class-wp-editor.php:1035
 msgid "Justify"
 msgstr "محاذاة بالتساوي"
 
@@ -6139,76 +6185,76 @@ msgstr "محاذاة بالتساوي"
 msgid "https://wordpress.org/"
 msgstr "http://ar.wordpress.org/"
 
-#: wp-includes/class-wp-customize-widgets.php:774
+#: wp-includes/class-wp-customize-widgets.php:788
 #: wp-includes/script-loader.php:718 wp-includes/script-loader.php:742
 msgid "An error has occurred. Please reload the page and try again."
 msgstr "حدث خطأ. يرجى إعادة تحميل الصفحة والمحاولة مرة أخرى."
 
-#: wp-includes/class-wp-editor.php:1058
+#: wp-includes/class-wp-editor.php:1075
 msgid "Keywords"
 msgstr "كلمات مفتاحية"
 
-#: wp-includes/class-wp-editor.php:1084
+#: wp-includes/class-wp-editor.php:1101
 msgid "Alternative source"
 msgstr "مصدر بديل"
 
-#: wp-includes/class-wp-editor.php:1073
+#: wp-includes/class-wp-editor.php:1090
 msgid "Style"
 msgstr "نمط"
 
-#: wp-includes/class-wp-editor.php:1007
+#: wp-includes/class-wp-editor.php:1024
 msgid "Clear formatting"
 msgstr "إزالة التنسيق"
 
-#: wp-includes/class-wp-editor.php:1192
+#: wp-includes/class-wp-editor.php:1209
 msgid "Column group"
 msgstr "مجموعة العمود"
 
-#: wp-includes/class-wp-editor.php:1230
+#: wp-includes/class-wp-editor.php:1247
 msgid "Toolbar Toggle"
 msgstr "تبديل شريط الأدوات"
 
-#: wp-includes/class-wp-editor.php:1075 wp-includes/script-loader.php:111
+#: wp-includes/class-wp-editor.php:1092 wp-includes/script-loader.php:111
 msgid "Insert image"
 msgstr "إدراج صورة"
 
-#: wp-includes/class-wp-editor.php:1202
+#: wp-includes/class-wp-editor.php:1219
 msgid "Background color"
 msgstr "لون الخلفية"
 
-#: wp-includes/class-wp-editor.php:1016
+#: wp-includes/class-wp-editor.php:1033
 msgid "Align right"
 msgstr "محاذاة لليمين"
 
-#: wp-includes/class-wp-editor.php:1015
+#: wp-includes/class-wp-editor.php:1032
 msgid "Align center"
 msgstr "محاذاة للوسط"
 
-#: wp-includes/class-wp-editor.php:1017
+#: wp-includes/class-wp-editor.php:1034
 msgid "Align left"
 msgstr "محاذاة لليسار"
 
-#: wp-includes/class-wp-editor.php:1203
+#: wp-includes/class-wp-editor.php:1220
 msgid "Text color"
 msgstr "لون النص"
 
-#: wp-includes/class-wp-editor.php:1020
+#: wp-includes/class-wp-editor.php:1037
 msgid "Decrease indent"
 msgstr "إنقاص المسافة البادئة"
 
-#: wp-includes/class-wp-editor.php:1035 wp-includes/script-loader.php:114
+#: wp-includes/class-wp-editor.php:1052 wp-includes/script-loader.php:114
 msgid "Numbered list"
 msgstr "قائمة مرقّمة"
 
-#: wp-includes/class-wp-editor.php:1101
+#: wp-includes/class-wp-editor.php:1118
 msgid "Horizontal line"
 msgstr "خط أفقي"
 
-#: wp-includes/class-wp-editor.php:1096
+#: wp-includes/class-wp-editor.php:1113
 msgid "Paste as text"
 msgstr "لصق كنص"
 
-#: wp-includes/class-wp-editor.php:1019
+#: wp-includes/class-wp-editor.php:1036
 msgid "Increase indent"
 msgstr "زيادة المسافة البادئة"
 
@@ -6219,11 +6265,11 @@ msgstr "زيادة المسافة البادئة"
 msgid "https://wordpress.org/support/"
 msgstr "https://ar.wordpress.org/support/"
 
-#: wp-includes/class-wp-editor.php:1112
+#: wp-includes/class-wp-editor.php:1129
 msgid "New window"
 msgstr "نافذة جديدة"
 
-#: wp-includes/class-wp-editor.php:1113
+#: wp-includes/class-wp-editor.php:1130
 msgid "Text to display"
 msgstr "نص للعرض"
 
@@ -6275,10 +6321,6 @@ msgstr "آرشيف شهري لمقالات موقعك."
 #: wp-includes/widgets/class-wp-widget-rss.php:27
 msgid "Entries from any RSS or Atom feed."
 msgstr "مقالات من أي خلاصة RSS أو Atom."
-
-#: wp-includes/widgets/class-wp-widget-text.php:28
-msgid "Arbitrary text or HTML."
-msgstr "نص أو HTML."
 
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:27
 msgid "A cloud of your most used tags."
@@ -6482,7 +6524,7 @@ msgid "JavaScript must be enabled to use this feature."
 msgstr "يجب تمكين جافا سكريبت لاستخدام هذه الميزة."
 
 #. translators: localized date format, see https://secure.php.net/date
-#: wp-includes/class-wp-locale.php:398 wp-includes/media.php:3104
+#: wp-includes/class-wp-locale.php:398 wp-includes/media.php:3108
 msgid "F j, Y"
 msgstr "j F، Y"
 
@@ -6606,7 +6648,7 @@ msgstr "ترتيب عشوائي"
 msgid "Caption this image&hellip;"
 msgstr "أضف وصفاً للصورة&hellip;"
 
-#: wp-includes/media.php:3538
+#: wp-includes/media.php:3542
 msgid "Insert from URL"
 msgstr "أدرج من رابط (URL)"
 
@@ -6614,7 +6656,7 @@ msgstr "أدرج من رابط (URL)"
 #. If there is not a word you can use in your language to avoid issues with
 #. the 		   lack of plural support here, turn it into "selected: %d" then
 #. translate it.
-#: wp-includes/media.php:3497
+#: wp-includes/media.php:3501
 msgid "%d selected"
 msgstr "عدد العناصر المحدّدة: %d"
 
@@ -6623,15 +6665,15 @@ msgctxt "Links widget"
 msgid "Random"
 msgstr "عشوائي"
 
-#: wp-includes/media-template.php:1236 wp-includes/media.php:3513
+#: wp-includes/media-template.php:1236 wp-includes/media.php:3517
 msgid "No items found."
 msgstr "لم يتم العثور على شيء."
 
-#: wp-includes/media.php:3551
+#: wp-includes/media.php:3555
 msgid "Add to Gallery"
 msgstr "أضف للمعرض"
 
-#: wp-includes/media.php:3552
+#: wp-includes/media.php:3556
 msgid "Reverse order"
 msgstr "اعكس الترتيب"
 
@@ -6645,7 +6687,7 @@ msgid "Sorry, that file cannot be edited."
 msgstr "عذراً، لا يمكن تحرير هذا الملف."
 
 #: wp-includes/media-template.php:441 wp-includes/media-template.php:544
-#: wp-includes/media.php:3526
+#: wp-includes/media.php:3530
 msgid "Delete Permanently"
 msgstr "حذف بشكل دائم"
 
@@ -6657,7 +6699,7 @@ msgstr "تمّ تجاوز الحد المسموح للرفع."
 msgid "Dismiss Errors"
 msgstr "تجاهل الأخطاء"
 
-#: wp-includes/media.php:2917
+#: wp-includes/media.php:2921
 msgid "No editor could be selected."
 msgstr "تعذر اختيار محرر."
 
@@ -6720,7 +6762,7 @@ msgstr "إدراج في الصفحة"
 msgid "Uploaded to this page"
 msgstr "المرفوعة إلى هذه الصفحة"
 
-#: wp-includes/media.php:3511
+#: wp-includes/media.php:3515
 msgid "All media items"
 msgstr "كافة ملفات الوسائط"
 
@@ -6733,7 +6775,7 @@ msgstr "صوت"
 msgid "Uploaded to this post"
 msgstr "المرفوعة إلى هذه المقالة"
 
-#: wp-includes/media.php:3510
+#: wp-includes/media.php:3514
 msgid "&#8592; Return to library"
 msgstr "&#8592; الرجوع إلى المكتبة"
 
@@ -6742,7 +6784,7 @@ msgstr "&#8592; الرجوع إلى المكتبة"
 msgid "Custom URL"
 msgstr "رابط (URL) مخصّص"
 
-#: wp-includes/media-template.php:501 wp-includes/media.php:3535
+#: wp-includes/media-template.php:501 wp-includes/media.php:3539
 msgid "Attachment Details"
 msgstr "تفاصيل المرفق"
 
@@ -6756,7 +6798,7 @@ msgid "Columns"
 msgstr "أعمدة"
 
 #: wp-includes/media-template.php:696 wp-includes/media-template.php:771
-#: wp-includes/media-template.php:945 wp-includes/media.php:3170
+#: wp-includes/media-template.php:945 wp-includes/media.php:3174
 msgid "Large"
 msgstr "كبير"
 
@@ -6764,11 +6806,11 @@ msgstr "كبير"
 msgid "Gallery Settings"
 msgstr "إعدادات المعرض"
 
-#: wp-includes/media.php:3547
+#: wp-includes/media.php:3551
 msgid "&#8592; Cancel Gallery"
 msgstr "&#8592; إلغاء المعرض"
 
-#: wp-includes/media.php:3502
+#: wp-includes/media.php:3506
 msgid "Upload Images"
 msgstr "رفع صور"
 
@@ -6780,7 +6822,7 @@ msgstr "إعدادات عرض المرفق"
 msgid "WordPress &rsaquo; Success"
 msgstr "ووردبريس &rsaquo; نجاح"
 
-#: wp-includes/media.php:3501
+#: wp-includes/media.php:3505
 msgid "Upload Files"
 msgstr "رفع ملفات"
 
@@ -6788,7 +6830,7 @@ msgstr "رفع ملفات"
 msgid "Drop files anywhere to upload"
 msgstr "أفلت الملفات في أي مكان لرفعها"
 
-#: wp-includes/media.php:3548
+#: wp-includes/media.php:3552
 msgid "Insert gallery"
 msgstr "إدراج المعرض"
 
@@ -6796,11 +6838,11 @@ msgstr "إدراج المعرض"
 msgid "Drop files to upload"
 msgstr "أفلت الملفات لرفعها"
 
-#: wp-includes/media.php:3545
+#: wp-includes/media.php:3549
 msgid "Create Gallery"
 msgstr "إنشاء معرض"
 
-#: wp-includes/media.php:3505
+#: wp-includes/media.php:3509
 msgid "Media Library"
 msgstr "مكتبة الوسائط"
 
@@ -6882,7 +6924,7 @@ msgstr "صف هذا الملف الصوتي&hellip;"
 msgid "Describe this media file&hellip;"
 msgstr "صف ملف الوسائط هذا&hellip;"
 
-#: wp-includes/media.php:3549
+#: wp-includes/media.php:3553
 msgid "Update gallery"
 msgstr "تحديث المعرض"
 
@@ -6941,7 +6983,7 @@ msgstr "تعذّر قراءة حجم الصورة."
 msgid "Insert into post"
 msgstr "إدراج في المقالة"
 
-#: wp-includes/media.php:3507
+#: wp-includes/media.php:3511
 msgid "Create a new gallery"
 msgstr "إنشاء معرض جديد"
 
@@ -6963,7 +7005,7 @@ msgctxt "Display name based on first name and last name"
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
 
-#: wp-includes/media.php:3506
+#: wp-includes/media.php:3510
 msgid "Insert Media"
 msgstr "أضف وسائط"
 
@@ -6971,11 +7013,11 @@ msgstr "أضف وسائط"
 msgid "Select Color"
 msgstr "إختر لونا"
 
-#: wp-includes/media.php:3550
+#: wp-includes/media.php:3554
 msgid "Add to gallery"
 msgstr "أضف للمعرض"
 
-#: wp-includes/taxonomy.php:2301
+#: wp-includes/taxonomy.php:2304
 msgid "Could not insert term relationship into the database"
 msgstr "تعذر إدخال علاقة العناصر في قاعدة البيانات"
 
@@ -7168,12 +7210,12 @@ msgid "Front page"
 msgstr "الصفحة الرئيسية"
 
 #: wp-includes/class-wp-customize-manager.php:3871
-#: wp-includes/class-wp-customize-widgets.php:772
-#: wp-includes/class-wp-editor.php:1236
+#: wp-includes/class-wp-customize-widgets.php:786
+#: wp-includes/class-wp-editor.php:1253
 #: wp-includes/customize/class-wp-customize-image-control.php:37
 #: wp-includes/customize/class-wp-customize-media-control.php:63
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:144
-#: wp-includes/media-template.php:474 wp-includes/media.php:3491
+#: wp-includes/media-template.php:474 wp-includes/media.php:3495
 msgid "Remove"
 msgstr "إزالة"
 
@@ -7190,7 +7232,7 @@ msgstr "لا يمكن أن يكون اسم العنصر فارغا."
 #: wp-includes/class-wp-xmlrpc-server.php:2026
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:405
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:511
-#: wp-includes/taxonomy.php:1973 wp-includes/taxonomy.php:2597
+#: wp-includes/taxonomy.php:1976 wp-includes/taxonomy.php:2600
 msgid "Parent term does not exist."
 msgstr "العنصر الأب غير موجود."
 
@@ -7226,7 +7268,7 @@ msgstr "عذراً، لا يُسمح لك بتحرير العناصر في هذ�
 #: wp-includes/class-wp-xmlrpc-server.php:1455
 #: wp-includes/class-wp-xmlrpc-server.php:2002
 #: wp-includes/class-wp-xmlrpc-server.php:2093
-#: wp-includes/class-wp-xmlrpc-server.php:2165 wp-includes/taxonomy.php:1964
+#: wp-includes/class-wp-xmlrpc-server.php:2165 wp-includes/taxonomy.php:1967
 msgid "Invalid term ID."
 msgstr "معرف (ID) العنصر غير صالح."
 
@@ -7242,8 +7284,8 @@ msgstr "معرف (ID) العنصر غير صالح."
 #: wp-includes/taxonomy.php:419 wp-includes/taxonomy.php:639
 #: wp-includes/taxonomy.php:730 wp-includes/taxonomy.php:910
 #: wp-includes/taxonomy.php:1074 wp-includes/taxonomy.php:1835
-#: wp-includes/taxonomy.php:1949 wp-includes/taxonomy.php:2212
-#: wp-includes/taxonomy.php:2355 wp-includes/taxonomy.php:2556
+#: wp-includes/taxonomy.php:1952 wp-includes/taxonomy.php:2215
+#: wp-includes/taxonomy.php:2358 wp-includes/taxonomy.php:2559
 msgid "Invalid taxonomy."
 msgstr "فئة غير صالحة."
 
@@ -7731,7 +7773,7 @@ msgstr "كل المقالات"
 msgid "Approve and Reply"
 msgstr "موافقة ورد"
 
-#: wp-includes/class-wp-editor.php:1108
+#: wp-includes/class-wp-editor.php:1125
 msgid "Link"
 msgstr "رابط"
 
@@ -7753,7 +7795,7 @@ msgstr "تصفّح التعليقات"
 msgid "Preload"
 msgstr "تحميل مسبق"
 
-#: wp-includes/class-wp-editor.php:1083
+#: wp-includes/class-wp-editor.php:1100
 msgid "Poster"
 msgstr "ملصق"
 
@@ -7774,11 +7816,11 @@ msgctxt "post format"
 msgid "Format"
 msgstr "بنية المقالة"
 
-#: wp-includes/class-wp-editor.php:1673
+#: wp-includes/class-wp-editor.php:1690
 msgid "Enter the destination URL"
 msgstr "أدخل رابط التحويل"
 
-#: wp-includes/class-wp-editor.php:1687
+#: wp-includes/class-wp-editor.php:1704
 msgid "Or link to existing content"
 msgstr "أو قم بالربط مع محتوى موجود"
 
@@ -7841,7 +7883,7 @@ msgstr "صوت"
 msgid "Invalid post format."
 msgstr "بنية مقالة غير صالحة."
 
-#: wp-includes/class-wp-editor.php:1704
+#: wp-includes/class-wp-editor.php:1721
 msgid "No search term specified. Showing recent items."
 msgstr "لم يتم تحديد كلمات البحث. جاري إظهار أحدث العناصر."
 
@@ -8358,7 +8400,7 @@ msgstr "الرابط الذي أدخلته لا يبدو صحيحاً. من فض
 msgid "The email address entered did not appear to be a valid email address. Please enter a valid email address."
 msgstr "عنوان البريد الإلكتروني الذي قمت بإدخاله لا يبدو صحيحاً. من فضلك قم بإدخال عنوان بريد إلكتروني صحيح."
 
-#: wp-includes/taxonomy.php:2053
+#: wp-includes/taxonomy.php:2056
 msgid "A term with the name provided already exists with this parent."
 msgstr "هناك عنصر بنفس الاسم موجود مسبقًا مع هذا الأب."
 
@@ -8896,11 +8938,11 @@ msgstr "خلاصة آخر المقالات <abbr title=\"Really Simple Syndicati
 msgid "Show post counts"
 msgstr "عرض عدد المقالات"
 
-#: wp-includes/class-wp-editor.php:1071
+#: wp-includes/class-wp-editor.php:1088
 msgid "Vertical space"
 msgstr "مسافة عمودية"
 
-#: wp-includes/taxonomy.php:4042
+#: wp-includes/taxonomy.php:4045
 msgid "Invalid object ID"
 msgstr "معرف (ID) الكائن غير صالح"
 
@@ -8918,16 +8960,16 @@ msgid "PM"
 msgstr "مساءً"
 
 #. translators: 1: Taxonomy term slug
-#: wp-includes/taxonomy.php:2655
+#: wp-includes/taxonomy.php:2658
 msgid "The slug &#8220;%s&#8221; is already in use by another term"
 msgstr "العنوان اللطيف &#8220;%s&#8221; مستخدم مسبقاً بواسطة عنصر آخر"
 
-#: wp-includes/taxonomy.php:2077
+#: wp-includes/taxonomy.php:2080
 msgid "Could not insert term into the database"
 msgstr "لم أتمكن من إدخال العنصر في قاعدة البيانات"
 
-#: wp-includes/taxonomy.php:726 wp-includes/taxonomy.php:2569
-#: wp-includes/taxonomy.php:3840
+#: wp-includes/taxonomy.php:726 wp-includes/taxonomy.php:2572
+#: wp-includes/taxonomy.php:3843
 msgid "Empty Term"
 msgstr "عنصر فارغ"
 
@@ -8944,7 +8986,7 @@ msgstr "الكاتب هو %s"
 msgid "User has blocked requests through HTTP."
 msgstr "حجب المستخدم الطلبات من خلال ال HTTP"
 
-#: wp-includes/class-wp-editor.php:1055
+#: wp-includes/class-wp-editor.php:1072
 msgid "Document properties"
 msgstr "خصائص المستند"
 
@@ -8960,15 +9002,15 @@ msgstr "الرئيسية"
 msgid "Post Comment"
 msgstr "إرســال التعليق"
 
-#: wp-includes/class-wp-editor.php:1102
+#: wp-includes/class-wp-editor.php:1119
 msgid "Horizontal space"
 msgstr "مسافة أفقية"
 
-#: wp-includes/class-wp-editor.php:1069
+#: wp-includes/class-wp-editor.php:1086
 msgid "Border"
 msgstr "إطار"
 
-#: wp-includes/media.php:3546
+#: wp-includes/media.php:3550
 msgid "Edit Gallery"
 msgstr "تحرير المعرض"
 
@@ -8977,7 +9019,7 @@ msgstr "تحرير المعرض"
 msgid "You are attempting to log out of %s"
 msgstr "أنت تحاول تسجيل الخروج من %s"
 
-#: wp-includes/class-wp-editor.php:1064 wp-includes/script-loader.php:267
+#: wp-includes/class-wp-editor.php:1081 wp-includes/script-loader.php:267
 #: wp-includes/widgets/class-wp-widget-media-image.php:26
 msgid "Image"
 msgstr "صورة"
@@ -9092,11 +9134,11 @@ msgstr[5] "المنشورة <span class=\"count\">(%s)</span>"
 msgid "%1$s %2$s %3$s Tag Feed"
 msgstr "%1$s %2$s %3$s خلاصة الوسوم"
 
-#: wp-includes/class-wp-editor.php:1025
+#: wp-includes/class-wp-editor.php:1042
 msgid "Select all"
 msgstr "اختر الكل"
 
-#: wp-includes/class-wp-editor.php:1068
+#: wp-includes/class-wp-editor.php:1085
 msgid "Source"
 msgstr "المصدر"
 
@@ -9109,7 +9151,7 @@ msgstr "خصائص الرابط"
 msgid "Mute"
 msgstr "صامت"
 
-#: wp-includes/class-wp-editor.php:1100 wp-includes/script-loader.php:352
+#: wp-includes/class-wp-editor.php:1117 wp-includes/script-loader.php:352
 msgid "Fullscreen"
 msgstr "شاشة كاملة"
 
@@ -9123,172 +9165,172 @@ msgstr "حلقة"
 msgid "Align"
 msgstr "محاذاة"
 
-#: wp-includes/class-wp-editor.php:1070
+#: wp-includes/class-wp-editor.php:1087
 msgid "Constrain proportions"
 msgstr "النسب المقيدة (Constrain proportions)"
 
-#: wp-includes/class-wp-editor.php:1189
+#: wp-includes/class-wp-editor.php:1206
 #: wp-includes/customize/class-wp-customize-background-position-control.php:56
 msgid "Bottom"
 msgstr "أسفل"
 
-#: wp-includes/class-wp-editor.php:1188
+#: wp-includes/class-wp-editor.php:1205
 msgid "Middle"
 msgstr "منتصف"
 
-#: wp-includes/class-wp-editor.php:1187
+#: wp-includes/class-wp-editor.php:1204
 #: wp-includes/customize/class-wp-customize-background-position-control.php:46
 msgid "Top"
 msgstr "أعلى"
 
-#: wp-includes/class-wp-editor.php:1074
+#: wp-includes/class-wp-editor.php:1091
 msgid "Dimensions"
 msgstr "أبعاد"
 
-#: wp-includes/class-wp-editor.php:1072
+#: wp-includes/class-wp-editor.php:1089
 msgid "Image description"
 msgstr "وصف الصورة"
 
-#: wp-includes/class-wp-editor.php:982
+#: wp-includes/class-wp-editor.php:999
 msgid "New document"
 msgstr "مستند جديد"
 
-#: wp-includes/class-wp-editor.php:1024
+#: wp-includes/class-wp-editor.php:1041
 msgid "Paste"
 msgstr "لصق"
 
-#: wp-includes/class-wp-editor.php:1023
+#: wp-includes/class-wp-editor.php:1040
 msgid "Copy"
 msgstr "نسخ"
 
-#: wp-includes/class-wp-editor.php:1022
+#: wp-includes/class-wp-editor.php:1039
 msgid "Cut"
 msgstr "قطع"
 
-#: wp-includes/class-wp-editor.php:1006
+#: wp-includes/class-wp-editor.php:1023
 msgid "Superscript"
 msgstr "أحرف علوية"
 
-#: wp-includes/class-wp-editor.php:1005
+#: wp-includes/class-wp-editor.php:1022
 msgid "Subscript"
 msgstr "أحرف سفلية"
 
-#: wp-includes/class-wp-editor.php:1003
+#: wp-includes/class-wp-editor.php:1020
 msgid "Underline"
 msgstr "تحته خط"
 
-#: wp-includes/class-wp-editor.php:1009 wp-includes/script-loader.php:102
+#: wp-includes/class-wp-editor.php:1026 wp-includes/script-loader.php:102
 msgid "Italic"
 msgstr "مائل"
 
-#: wp-includes/class-wp-editor.php:1008 wp-includes/script-loader.php:100
+#: wp-includes/class-wp-editor.php:1025 wp-includes/script-loader.php:100
 msgid "Bold"
 msgstr "عريض"
 
-#: wp-includes/class-wp-editor.php:996 wp-includes/script-loader.php:105
+#: wp-includes/class-wp-editor.php:1013 wp-includes/script-loader.php:105
 msgid "Blockquote"
 msgstr "صندوق اقتباس"
 
-#: wp-includes/class-wp-editor.php:991
+#: wp-includes/class-wp-editor.php:1008
 msgid "Heading 6"
 msgstr "ترويسة 6"
 
-#: wp-includes/class-wp-editor.php:990
+#: wp-includes/class-wp-editor.php:1007
 msgid "Heading 5"
 msgstr "ترويسة 5"
 
-#: wp-includes/class-wp-editor.php:989
+#: wp-includes/class-wp-editor.php:1006
 msgid "Heading 4"
 msgstr "ترويسة 4"
 
-#: wp-includes/class-wp-editor.php:988
+#: wp-includes/class-wp-editor.php:1005
 msgid "Heading 3"
 msgstr "ترويسة 3"
 
-#: wp-includes/class-wp-editor.php:987
+#: wp-includes/class-wp-editor.php:1004
 msgid "Heading 2"
 msgstr "ترويسة 2"
 
-#: wp-includes/class-wp-editor.php:986
+#: wp-includes/class-wp-editor.php:1003
 msgid "Heading 1"
 msgstr "ترويسة 1"
 
-#: wp-includes/class-wp-editor.php:995
+#: wp-includes/class-wp-editor.php:1012
 msgid "Paragraph"
 msgstr "فقرة"
 
-#: wp-includes/class-wp-editor.php:1173
+#: wp-includes/class-wp-editor.php:1190
 msgid "Copy table row"
 msgstr "انسخ صف الجدول"
 
-#: wp-includes/class-wp-editor.php:1148
+#: wp-includes/class-wp-editor.php:1165
 msgid "Delete table"
 msgstr "احذف الجدول"
 
-#: wp-includes/class-wp-editor.php:1154
+#: wp-includes/class-wp-editor.php:1171
 msgid "Row"
 msgstr "صف"
 
-#: wp-includes/class-wp-editor.php:1216 wp-includes/script-loader.php:463
+#: wp-includes/class-wp-editor.php:1233 wp-includes/script-loader.php:463
 #: wp-includes/script-loader.php:574 wp-includes/script-loader.php:583
-#: wp-includes/script-loader.php:763 wp-includes/theme.php:2970
+#: wp-includes/script-loader.php:763 wp-includes/theme.php:2974
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "التغييرات التي أحدثتها ستفقد إذا غادرت هذه الصفحة"
 
-#: wp-includes/class-wp-editor.php:1172
+#: wp-includes/class-wp-editor.php:1189
 msgid "Cut table row"
 msgstr "اقطع صف الجدول"
 
-#: wp-includes/class-wp-editor.php:1169
+#: wp-includes/class-wp-editor.php:1186
 msgid "Paste table row after"
 msgstr "الصق صف الجدول بعد"
 
-#: wp-includes/class-wp-editor.php:1168
+#: wp-includes/class-wp-editor.php:1185
 msgid "Paste table row before"
 msgstr "الصق صف الجدول قبل"
 
-#: wp-includes/class-wp-editor.php:1149
+#: wp-includes/class-wp-editor.php:1166
 msgid "Table properties"
 msgstr "خصائص الجدول"
 
-#: wp-includes/class-wp-editor.php:1151
+#: wp-includes/class-wp-editor.php:1168
 msgid "Table cell properties"
 msgstr "خصائص خلية الجدول"
 
-#: wp-includes/class-wp-editor.php:1150
+#: wp-includes/class-wp-editor.php:1167
 msgid "Table row properties"
 msgstr "خصائص صف الجدول"
 
-#: wp-includes/class-wp-editor.php:1174
+#: wp-includes/class-wp-editor.php:1191
 msgid "Merge table cells"
 msgstr "ادمج خلايا الجدول"
 
-#: wp-includes/class-wp-editor.php:1170
+#: wp-includes/class-wp-editor.php:1187
 msgid "Delete row"
 msgstr "احذف صف"
 
-#: wp-includes/class-wp-editor.php:1166
+#: wp-includes/class-wp-editor.php:1183
 msgid "Insert column before"
 msgstr "أدرج عمود قبل"
 
-#: wp-includes/class-wp-editor.php:1165
+#: wp-includes/class-wp-editor.php:1182
 msgid "Insert row after"
 msgstr "أدرج سطر بعد"
 
-#: wp-includes/class-wp-editor.php:1164
+#: wp-includes/class-wp-editor.php:1181
 msgid "Insert row before"
 msgstr "أدرج سطر قبل"
 
-#: wp-includes/class-wp-editor.php:1104 wp-includes/class-wp-editor.php:1110
-#: wp-includes/class-wp-editor.php:1669 wp-includes/script-loader.php:428
+#: wp-includes/class-wp-editor.php:1121 wp-includes/class-wp-editor.php:1127
+#: wp-includes/class-wp-editor.php:1686 wp-includes/script-loader.php:428
 msgid "Insert/edit link"
 msgstr "أدرج/ حرر رابط"
 
-#: wp-includes/class-wp-editor.php:1065
+#: wp-includes/class-wp-editor.php:1082
 msgid "Insert/edit image"
 msgstr "أدرج/ حرر صورة"
 
-#: wp-includes/class-wp-editor.php:1098
+#: wp-includes/class-wp-editor.php:1115
 msgid "Print"
 msgstr "طباعة"
 
@@ -9375,17 +9417,6 @@ msgstr[3] "%s ساعات"
 msgstr[4] "%s ساعة"
 msgstr[5] "%s ساعة"
 
-#. translators: Time difference between two dates, in days. 1: Number of days
-#: wp-includes/formatting.php:3240
-msgid "%s day"
-msgid_plural "%s days"
-msgstr[0] "%s يوم"
-msgstr[1] "%s يوم"
-msgstr[2] "%s يومين"
-msgstr[3] "%s أيام"
-msgstr[4] "%s يوم"
-msgstr[5] "%s يوم"
-
 #: wp-includes/deprecated.php:64
 msgid "new WordPress Loop"
 msgstr "حلقة ووردبريس الجديدة"
@@ -9403,14 +9434,18 @@ msgstr "عرض تاريخ العنصر؟"
 msgid "Display item content?"
 msgstr "عرض محتوى العنصر؟"
 
+#: wp-includes/widgets/class-wp-widget-text.php:374
+msgid "Automatically add paragraphs"
+msgstr "إضافة الفقرات آلياً."
+
 #. translators: comments widget: 1: comment author, 2: post link
 #: wp-includes/widgets/class-wp-widget-recent-comments.php:116
 msgctxt "widgets"
 msgid "%1$s on %2$s"
 msgstr "%1$s على %2$s"
 
-#: wp-includes/class-wp-editor.php:1242
-#: wp-includes/widgets/class-wp-widget-text.php:35
+#: wp-includes/class-wp-editor.php:1259
+#: wp-includes/widgets/class-wp-widget-text.php:43
 msgid "Text"
 msgstr "نص"
 
@@ -9676,7 +9711,7 @@ msgstr "خلاصة التعليقات"
 msgid "Newer Comments &raquo;"
 msgstr "التعليقات الأحدث &raquo;"
 
-#: wp-includes/class-wp-editor.php:1232
+#: wp-includes/class-wp-editor.php:1249
 msgid "Insert Page Break tag"
 msgstr "أضف وسم فاصل الصفحة"
 
@@ -10102,7 +10137,7 @@ msgstr "الأحد"
 msgid "Tuesday"
 msgstr "الثلاثاء"
 
-#: wp-includes/class-wp-editor.php:1004
+#: wp-includes/class-wp-editor.php:1021
 msgid "Strikethrough"
 msgstr "يتوسطه خط"
 
@@ -10114,16 +10149,16 @@ msgstr "تقويم"
 msgid "&laquo; Previous"
 msgstr "&laquo; الصفحة السابقة"
 
-#: wp-includes/class-wp-editor.php:1257
+#: wp-includes/class-wp-editor.php:1274
 msgid "Letter"
 msgstr "حرف"
 
-#: wp-includes/class-wp-editor.php:1140
+#: wp-includes/class-wp-editor.php:1157
 msgid "Check Spelling"
 msgstr "تدقيق إملائي"
 
 #. translators: 1: month name, 2: 4-digit year
-#: wp-includes/general-template.php:1758 wp-includes/media.php:3424
+#: wp-includes/general-template.php:1758 wp-includes/media.php:3428
 msgid "%1$s %2$d"
 msgstr "%1$s %2$d"
 
@@ -10185,7 +10220,7 @@ msgstr "آخر تحديث"
 msgid "Comments on: %s"
 msgstr "التعليقات على: %s"
 
-#: wp-includes/class-wp-editor.php:1066
+#: wp-includes/class-wp-editor.php:1083
 msgid "General"
 msgstr "عام"
 
@@ -10201,7 +10236,7 @@ msgstr "مرة واحدة يومياُ"
 msgid "Next &raquo;"
 msgstr "التالي &raquo;"
 
-#: wp-includes/class-wp-editor.php:1258
+#: wp-includes/class-wp-editor.php:1275
 msgid "Action"
 msgstr "الإجراء"
 
@@ -10218,11 +10253,11 @@ msgstr "صباحًا"
 msgid "Duplicate comment detected; it looks as though you&#8217;ve already said that!"
 msgstr "تم اكتشاف وجود تعليق مكرر، يبدو أنك قد سبق وأرسلت هذا التعليق."
 
-#: wp-includes/class-wp-editor.php:1109 wp-includes/script-loader.php:104
+#: wp-includes/class-wp-editor.php:1126 wp-includes/script-loader.php:104
 msgid "Insert link"
 msgstr "أضف رابطاً"
 
-#: wp-includes/class-wp-editor.php:1167
+#: wp-includes/class-wp-editor.php:1184
 msgid "Insert column after"
 msgstr "أضف عموداً بعد"
 
@@ -10238,11 +10273,11 @@ msgstr "غير قادر على إنشاء مستخدم"
 msgid "Remove From Bulk Edit"
 msgstr "إزالة من التحرير الشامل"
 
-#: wp-includes/class-wp-editor.php:1105
+#: wp-includes/class-wp-editor.php:1122
 msgid "Remove link"
 msgstr "إزالة الرابط"
 
-#: wp-includes/class-wp-editor.php:1010 wp-includes/script-loader.php:118
+#: wp-includes/class-wp-editor.php:1027 wp-includes/script-loader.php:118
 msgid "Code"
 msgstr "شفرة"
 
@@ -10336,17 +10371,28 @@ msgstr "%s [المراجعة الحالية]"
 msgid "Do you really want to <a href=\"%s\">log out</a>?"
 msgstr "هل أنت متأكد بأنك تريد <a href=\"%s\">تسجيل الخروج</a>؟"
 
-#: wp-includes/class-wp-editor.php:1080
+#: wp-includes/class-wp-editor.php:1097
 msgid "Language"
 msgstr "اللغة"
 
-#: wp-includes/class-wp-editor.php:1118
+#: wp-includes/class-wp-editor.php:1135
 msgid "The URL you entered seems to be an external link. Do you want to add the required http:// prefix?"
 msgstr "عنوان الرابط الذي أدخلته يبدو وكأنه رابط خارجي. هل ترغب بإضافة البادئة http:// ؟"
 
-#: wp-includes/class-wp-editor.php:1116
+#: wp-includes/class-wp-editor.php:1133
 msgid "The URL you entered seems to be an email address. Do you want to add the required mailto: prefix?"
 msgstr "عنوان الرابط الذي أدخلته يبدو وكأنّه عنوان بريد إلكتروني. هل ترغب في إضافة بادئة mailto: ؟"
+
+#. translators: Time difference between two dates, in days. 1: Number of days
+#: wp-includes/formatting.php:3240
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s يوم"
+msgstr[1] "يوم واحد"
+msgstr[2] "يومين"
+msgstr[3] "%s أيام"
+msgstr[4] "%s يوم"
+msgstr[5] "%s يوم"
 
 #: wp-includes/theme-compat/comments.php:66
 msgid "Comments are closed."
@@ -10430,7 +10476,7 @@ msgstr "لا توجد تعليقات"
 msgid "Dashboard"
 msgstr "الرئيسية"
 
-#: wp-includes/class-wp-editor.php:182 wp-includes/class-wp-editor.php:1241
+#: wp-includes/class-wp-editor.php:182 wp-includes/class-wp-editor.php:1258
 msgid "Visual"
 msgstr "مرئي"
 
@@ -10444,7 +10490,7 @@ msgstr "%1$s الساعة %2$s"
 msgid "Separate tags with commas"
 msgstr "افصل بين الوسوم بفواصل"
 
-#: wp-includes/class-wp-editor.php:1177 wp-includes/media-template.php:965
+#: wp-includes/class-wp-editor.php:1194 wp-includes/media-template.php:965
 #: wp-includes/widgets/class-wp-widget-media-image.php:78
 msgid "Height"
 msgstr "ارتفاع"
@@ -10478,7 +10524,7 @@ msgstr "دخول"
 msgid "Site Title"
 msgstr "اسم الموقع"
 
-#: wp-includes/class-wp-editor.php:1178 wp-includes/media-template.php:965
+#: wp-includes/class-wp-editor.php:1195 wp-includes/media-template.php:965
 #: wp-includes/widgets/class-wp-widget-media-image.php:72
 msgid "Width"
 msgstr "عرض"
@@ -10544,18 +10590,20 @@ msgstr "تعليق واحد"
 msgid "Enter your password to view comments."
 msgstr "أكتب كلمة المرور لمشاهدة التعليقات."
 
+#: wp-includes/default-widgets.php:190
 #: wp-includes/widgets/class-wp-nav-menu-widget.php:137
 #: wp-includes/widgets/class-wp-widget-archives.php:157
 #: wp-includes/widgets/class-wp-widget-calendar.php:104
 #: wp-includes/widgets/class-wp-widget-categories.php:160
-#: wp-includes/widgets/class-wp-widget-media.php:387
+#: wp-includes/widgets/class-wp-widget-media.php:401
 #: wp-includes/widgets/class-wp-widget-meta.php:111
 #: wp-includes/widgets/class-wp-widget-pages.php:131
 #: wp-includes/widgets/class-wp-widget-recent-comments.php:159
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:132
 #: wp-includes/widgets/class-wp-widget-search.php:71
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:127
-#: wp-includes/widgets/class-wp-widget-text.php:194
+#: wp-includes/widgets/class-wp-widget-text.php:359
+#: wp-includes/widgets/class-wp-widget-text.php:392
 msgid "Title:"
 msgstr "العنوان:"
 
@@ -10594,7 +10642,7 @@ msgstr "لا توجد نتائج."
 msgid "Yes"
 msgstr "نعم"
 
-#: wp-includes/admin-bar.php:801 wp-includes/class-wp-customize-widgets.php:421
+#: wp-includes/admin-bar.php:801 wp-includes/class-wp-customize-widgets.php:435
 #: wp-includes/functions.php:3707
 msgid "Widgets"
 msgstr "ودجات"
@@ -10704,6 +10752,8 @@ msgid "Sidebar"
 msgstr "الشريط الجانبي"
 
 #: wp-includes/script-loader.php:138 wp-includes/script-loader.php:299
+#: wp-includes/widgets/class-wp-widget-text.php:406
+#: wp-includes/widgets/class-wp-widget-text.php:421
 msgid "Dismiss"
 msgstr "تجاهل"
 
@@ -10712,7 +10762,7 @@ msgstr "تجاهل"
 msgid "File &#8220;%s&#8221; is not an image."
 msgstr "الملف &#8220;%s&#8221; ليس صورة."
 
-#: wp-includes/class-wp-editor.php:1060
+#: wp-includes/class-wp-editor.php:1077
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:128
 #: wp-includes/media-template.php:408 wp-includes/media-template.php:589
 msgid "Description"
@@ -10730,7 +10780,7 @@ msgstr "روابط"
 msgid "Edit Link Category"
 msgstr "تحرير تصنيف الرابط"
 
-#: wp-includes/class-wp-editor.php:1061 wp-includes/theme-compat/sidebar.php:27
+#: wp-includes/class-wp-editor.php:1078 wp-includes/theme-compat/sidebar.php:27
 msgid "Author"
 msgstr "كاتب"
 
@@ -10759,7 +10809,7 @@ msgstr "RSS"
 msgid "Save as Pending"
 msgstr "حفظ بانتظار المراجعة"
 
-#: wp-includes/media.php:3485
+#: wp-includes/media.php:3489
 msgid "Add Media"
 msgstr "أضف ملفات وسائط"
 
@@ -10788,45 +10838,45 @@ msgstr "إضافة أو إزالة وسوم"
 msgid "Saved."
 msgstr "تمّ الحفظ."
 
-#: wp-includes/class-wp-editor.php:1179 wp-includes/media-template.php:398
+#: wp-includes/class-wp-editor.php:1196 wp-includes/media-template.php:398
 #: wp-includes/media-template.php:579 wp-includes/media-template.php:837
 #: wp-includes/media-template.php:902
 #: wp-includes/widgets/class-wp-widget-media-image.php:85
 msgid "Caption"
 msgstr "كلمات توضيحية"
 
-#: wp-includes/media.php:3135 wp-includes/script-loader.php:431
+#: wp-includes/media.php:3139 wp-includes/script-loader.php:431
 #: wp-includes/script-loader.php:620
 msgid "(no title)"
 msgstr "(بدون عنوان)"
 
-#: wp-includes/class-wp-editor.php:1097 wp-includes/media-template.php:1247
+#: wp-includes/class-wp-editor.php:1114 wp-includes/media-template.php:1247
 msgid "Preview"
 msgstr "معاينة"
 
-#: wp-includes/class-wp-editor.php:1184
+#: wp-includes/class-wp-editor.php:1201
 #: wp-includes/customize/class-wp-customize-background-position-control.php:52
 #: wp-includes/media-template.php:626 wp-includes/media-template.php:857
 #: wp-includes/media-template.php:923
 msgid "Right"
 msgstr "يمين"
 
-#: wp-includes/class-wp-editor.php:1183
+#: wp-includes/class-wp-editor.php:1200
 #: wp-includes/customize/class-wp-customize-background-position-control.php:51
 #: wp-includes/media-template.php:623 wp-includes/media-template.php:854
 #: wp-includes/media-template.php:920
 msgid "Center"
 msgstr "وسط"
 
-#: wp-includes/class-wp-editor.php:1182
+#: wp-includes/class-wp-editor.php:1199
 #: wp-includes/customize/class-wp-customize-background-position-control.php:50
 #: wp-includes/media-template.php:620 wp-includes/media-template.php:851
 #: wp-includes/media-template.php:917
 msgid "Left"
 msgstr "يسار"
 
-#: wp-includes/class-wp-customize-widgets.php:770
-#: wp-includes/class-wp-editor.php:1239 wp-includes/media.php:3527
+#: wp-includes/class-wp-customize-widgets.php:784
+#: wp-includes/class-wp-editor.php:1256 wp-includes/media.php:3531
 msgid "Apply"
 msgstr "تطبيق"
 
@@ -10847,7 +10897,7 @@ msgid "New Page"
 msgstr "صفحة جديدة"
 
 #: wp-includes/media-template.php:330 wp-includes/media-template.php:528
-#: wp-includes/media.php:3558
+#: wp-includes/media.php:3562
 msgid "Edit Image"
 msgstr "تحرير الصورة"
 
@@ -10867,13 +10917,13 @@ msgstr "جدولة"
 msgid "All Categories"
 msgstr "كل التصنيفات"
 
-#: wp-includes/class-wp-editor.php:1031 wp-includes/class-wp-editor.php:1670
+#: wp-includes/class-wp-editor.php:1048 wp-includes/class-wp-editor.php:1687
 #: wp-includes/script-loader.php:269 wp-includes/script-loader.php:351
 #: wp-includes/script-loader.php:466 wp-includes/script-loader.php:986
 msgid "Close"
 msgstr "إغلاق"
 
-#: wp-includes/media.php:3487
+#: wp-includes/media.php:3491
 msgid "Select"
 msgstr "اختر"
 
@@ -10887,17 +10937,17 @@ msgstr "تحرير ملف الوسائط"
 msgid "Size"
 msgstr "حجم"
 
-#: wp-includes/class-wp-editor.php:1180 wp-includes/media-template.php:612
+#: wp-includes/class-wp-editor.php:1197 wp-includes/media-template.php:612
 msgid "Alignment"
 msgstr "محاذاة"
 
 #: wp-includes/media-template.php:695 wp-includes/media-template.php:770
-#: wp-includes/media-template.php:944 wp-includes/media.php:3169
+#: wp-includes/media-template.php:944 wp-includes/media.php:3173
 msgid "Medium"
 msgstr "متوسط"
 
 #: wp-includes/media-template.php:697 wp-includes/media-template.php:772
-#: wp-includes/media-template.php:946 wp-includes/media.php:3171
+#: wp-includes/media-template.php:946 wp-includes/media.php:3175
 msgid "Full Size"
 msgstr "الحجم الكامل"
 
@@ -10909,8 +10959,8 @@ msgstr "المحتوى "
 msgid "Reply"
 msgstr "رد"
 
-#: wp-includes/class-wp-editor.php:1030 wp-includes/class-wp-editor.php:1716
-#: wp-includes/media.php:3488 wp-includes/script-loader.php:415
+#: wp-includes/class-wp-editor.php:1047 wp-includes/class-wp-editor.php:1733
+#: wp-includes/media.php:3492 wp-includes/script-loader.php:415
 #: wp-includes/script-loader.php:465 wp-includes/script-loader.php:555
 msgid "Cancel"
 msgstr "إلغاء "
@@ -10937,7 +10987,7 @@ msgid "Unknown Feed"
 msgstr "خلاصة غير معروفة"
 
 #: wp-includes/media-template.php:694 wp-includes/media-template.php:769
-#: wp-includes/media-template.php:943 wp-includes/media.php:3168
+#: wp-includes/media-template.php:943 wp-includes/media.php:3172
 msgid "Thumbnail"
 msgstr "صورة مصغرة"
 
@@ -10964,11 +11014,11 @@ msgstr "غير معروف"
 msgid "Are you sure you want to do this?"
 msgstr "هل أنت متأكد من رغبتك بفعل هذا؟"
 
-#: wp-includes/class-wp-editor.php:1026
+#: wp-includes/class-wp-editor.php:1043
 msgid "Undo"
 msgstr "تراجع"
 
-#: wp-includes/class-wp-editor.php:1027
+#: wp-includes/class-wp-editor.php:1044
 msgid "Redo"
 msgstr "إلغاء التراجع"
 
@@ -10984,10 +11034,10 @@ msgid "The GD image library is not installed."
 msgstr "مكتبة GD لتحرير الصور غير مثبتة."
 
 #: wp-includes/class-wp-customize-nav-menus.php:1063
-#: wp-includes/class-wp-editor.php:1114 wp-includes/class-wp-editor.php:1675
+#: wp-includes/class-wp-editor.php:1131 wp-includes/class-wp-editor.php:1692
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:91
 #: wp-includes/media-template.php:376 wp-includes/media-template.php:557
-#: wp-includes/media.php:3484
+#: wp-includes/media.php:3488
 #: wp-includes/widgets/class-wp-widget-media-image.php:107
 msgid "URL"
 msgstr "الرابط"
@@ -11014,11 +11064,11 @@ msgstr "التعقيبات \"TrackBack\""
 
 #: wp-includes/class-walker-comment.php:244
 #: wp-includes/class-walker-comment.php:350
-#: wp-includes/class-wp-editor.php:1237
+#: wp-includes/class-wp-editor.php:1254
 msgid "Edit"
 msgstr "تحرير"
 
-#: wp-includes/class-wp-editor.php:1099
+#: wp-includes/class-wp-editor.php:1116
 msgid "Save"
 msgstr "حفظ"
 
@@ -11026,7 +11076,7 @@ msgstr "حفظ"
 msgid "Publish"
 msgstr "نشر"
 
-#: wp-includes/class-wp-editor.php:1067
+#: wp-includes/class-wp-editor.php:1084
 msgid "Advanced"
 msgstr "متقدم"
 
@@ -11040,7 +11090,7 @@ msgstr "صفحات"
 msgid "Users"
 msgstr "أعضاء"
 
-#: wp-includes/class-wp-editor.php:1029 wp-includes/script-loader.php:554
+#: wp-includes/class-wp-editor.php:1046 wp-includes/script-loader.php:554
 msgid "OK"
 msgstr "موافق"
 
@@ -11051,7 +11101,7 @@ msgid "Done"
 msgstr "انتهى"
 
 #: wp-includes/admin-bar.php:875 wp-includes/admin-bar.php:876
-#: wp-includes/class-wp-editor.php:1691 wp-includes/media.php:3486
+#: wp-includes/class-wp-editor.php:1708 wp-includes/media.php:3490
 msgid "Search"
 msgstr "بحث"
 
@@ -11082,7 +11132,7 @@ msgstr "الاسم"
 msgid "Categories"
 msgstr "تصنيفات"
 
-#: wp-includes/media.php:3489 wp-includes/script-loader.php:429
+#: wp-includes/media.php:3493 wp-includes/script-loader.php:429
 #: wp-includes/script-loader.php:565 wp-includes/script-loader.php:650
 msgid "Update"
 msgstr "تحديث"
@@ -11096,7 +11146,7 @@ msgctxt "post"
 msgid "Add New"
 msgstr "أضف جديداً"
 
-#: wp-includes/class-wp-editor.php:1719 wp-includes/script-loader.php:430
+#: wp-includes/class-wp-editor.php:1736 wp-includes/script-loader.php:430
 msgid "Add Link"
 msgstr "أضف رابطاً"
 
@@ -11110,11 +11160,11 @@ msgstr "نتائج البحث عن &#8220;%s&#8221;"
 msgid "Add"
 msgstr "أضف"
 
-#: wp-includes/class-wp-editor.php:1081
+#: wp-includes/class-wp-editor.php:1098
 msgid "Media"
 msgstr "وسائط"
 
-#: wp-includes/class-wp-editor.php:1111
+#: wp-includes/class-wp-editor.php:1128
 msgid "Target"
 msgstr "الهدف"
 
@@ -11127,7 +11177,7 @@ msgstr "منشور"
 msgid "Draft"
 msgstr "مسودة"
 
-#: wp-includes/class-wp-editor.php:1057 wp-includes/media-template.php:382
+#: wp-includes/class-wp-editor.php:1074 wp-includes/media-template.php:382
 #: wp-includes/media-template.php:563 wp-includes/revision.php:34
 #: wp-includes/script-loader.php:581
 msgid "Title"
@@ -11185,6 +11235,6 @@ msgstr "تتحايل، ها؟"
 msgid "No posts found."
 msgstr "لا توجد مقالات."
 
-#: wp-includes/class-wp-editor.php:1611
+#: wp-includes/class-wp-editor.php:1628
 msgid "Y/m/d"
 msgstr "Y/m/d"
