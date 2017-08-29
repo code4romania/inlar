@@ -33,3 +33,21 @@ html.svgasimg #bottom {
 		background-image: url('images/logo.svg');
 	}
 }
+
+.footer-code {
+	padding: 30px 15px;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1200px;
+
+	.mono {
+		color: #b7b7b7;
+		font-size: 11px;
+	}
+}
+
+.footer-logo {
+	display: inline-block;
+	max-width: 100px;
+	opacity: .7;
+}
