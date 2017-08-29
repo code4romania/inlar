@@ -13,19 +13,44 @@
 		background-position: 0% 50%;
 		background-repeat: no-repeat;
 		background-size: 334%;
-		height: 60px;
-		width: 60px;
+		height: 6rem;
+		width: 6rem;
+	}
+
+	.copy, .mono {
+		color: #FFF;
+		color: rgba(#FFF, 0.7);
+		font-size: 1.1rem;
 	}
 
 	.copy {
-		float: right;
-		color: #FFF;
-		color: rgba(#FFF, 0.7);
+		padding-left: 1rem;
 		text-align: right;
 		font-size: 1.4rem;
 		margin: 2.3rem 0;
 		line-height: 1;
+		float: right;
 	}
+
+	.footer-code {
+		padding-top: 3.5rem;
+	}
+
+	.footer-logo {
+		transition: opacity .3s;
+		display: inline-block;
+		max-width: 10rem;
+		opacity: .7;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		img {
+			display: block;
+		}
+	}
+
 }
 
 html.svgasimg #bottom {
@@ -34,20 +59,18 @@ html.svgasimg #bottom {
 	}
 }
 
-.footer-code {
-	padding: 30px 15px;
-	width: 90%;
-	margin: 0 auto;
-	max-width: 1200px;
-
-	.mono {
-		color: #b7b7b7;
-		font-size: 11px;
+@media (min-width: map-get($breakpoints, small)) {
+	#bottom {
+		.copy, .mono {
+			font-size: 1.3rem;
+		}
 	}
 }
 
-.footer-logo {
-	display: inline-block;
-	max-width: 100px;
-	opacity: .7;
+@media (min-width: map-get($breakpoints, large)) {
+	#bottom {
+		.copy, .mono {
+			font-size: 1.4rem;
+		}
+	}
 }
