@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: INLAR\n"
-"POT-Creation-Date: 2017-08-08 14:27+0300\n"
+"POT-Creation-Date: 2017-08-29 15:53+0300\n"
 "PO-Revision-Date: 2017-06-16 12:20+0300\n"
 "Last-Translator: Andrei Ioniță <hi@andrei.io>\n"
 "Language-Team: Andrei Ioniță <hi@andrei.io>\n"
@@ -23,6 +23,21 @@ msgstr ""
 
 #: 404.php:2 404.php:5
 msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#. translators: %s will be replaced with the current year
+#: footer.php:9
+#, php-format
+msgid "&copy; %s INLAR. All Rights Reserved"
+msgstr ""
+
+#: footer.php:18
+msgid "In collaboration with Code for Romania."
+msgstr ""
+
+#: footer.php:20
+msgid ""
+"An independent, non-partisan, non-political, non-govermental organization."
 msgstr ""
 
 #: functions.php:41
