@@ -117,12 +117,6 @@ function inlar_header($option_name, $type = '') {
 	inlar_header_raw($opt['title'], $opt['text'], $type);
 }
 
-function inlar_header_blog() {
-	$title = __('What\'s new', 'inlar');
-
-	inlar_header_raw($title, '', 'hero');
-}
-
 add_filter('get_the_excerpt', 'inlar_excerpt_trim', 10, 2);
 function inlar_excerpt_trim($excerpt, $post) {
 	switch ($post->post_type) {

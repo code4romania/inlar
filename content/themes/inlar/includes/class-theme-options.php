@@ -30,6 +30,10 @@ class INLAR_Theme_Options {
 				'title'    => __('Partners', 'inlar'),
 			),
 			array(
+				'id'       => 'inlar_news',
+				'title'    => __('News', 'inlar'),
+			),
+			array(
 				'id'       => 'inlar_team',
 				'title'    => __('Team', 'inlar'),
 			),
@@ -93,6 +97,21 @@ class INLAR_Theme_Options {
 				'slots'   => 4,
 				'default' => array(0, 0, 0, 0),
 				'options' => $this->init_list('partner'),
+			),
+		);
+
+		$this->config['fields']['inlar_news'] = array(
+			'title' => array(
+				'title'   => __('Section title', 'inlar'),
+				'type'    => 'text',
+				'i18n'    => 'i18n-multilingual',
+				'default' => '',
+			),
+			'text' => array(
+				'title'   => __('Section text', 'inlar'),
+				'type'    => 'textarea',
+				'i18n'    => 'i18n-multilingual',
+				'default' => '',
 			),
 		);
 

@@ -1,20 +1,11 @@
 <?php get_header(); ?>
-<?php inlar_header_blog(); ?>
+<?php inlar_header('inlar_news', 'hero'); ?>
 <main id="content" class="container">
-	<div class="entry-news">
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<article itemscope itemtype="http://schema.org/Article" <?php post_class('entry'); ?>>
-			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php
-				if (has_post_thumbnail())
-					the_post_thumbnail('medium');
-
-				printf('<div class="entry-meta"><h1 class="entry-title" itemprop="headline">%s</h1><time itemprop="datePublished" datetime="%s">%s</time></div>',
-					get_the_title(), get_the_date('c'), get_the_date()
-				);
-			?></a>
-		</article>
-	<?php endwhile; endif; ?>
-	</div>
+	<div class="entry-news"><?php
+		if (have_posts()) : while (have_posts()) : the_post(); 
+			include(locate_template('partials/loop-news.php'));
+		endwhile; endif;
+	?></div>
 	<?php inlar_paginate(); ?>
 </main>
 <?php get_footer(); ?>
