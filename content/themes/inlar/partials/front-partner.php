@@ -6,7 +6,7 @@
 	if (empty($featured))
 		return;
 ?>
-<section class="partners-container">
+<section id="partners" class="partners-container">
 	<div class="container">
 		<?php inlar_header('inlar_partners', 'section'); ?>
 		<div class="entry-partners"><?php
@@ -22,14 +22,14 @@
 				$url  = get_post_meta($post->ID, '_ptf_partner_url_meta', true);
 
 				if ($url) {
-					$before = sprintf('<a href="%s" target="_blank" class="partner">', $url);
+					$before = sprintf('<a href="%s" target="_blank" class="entry">', $url);
 					$after  = '</a>';
 				} else {
-					$before = '<div class="partner">';
+					$before = '<div class="entry">';
 					$after  = '</div>';
 				}
 
-				printf('%s%s<h2 class="partner-name">%s</h2>%s',
+				printf('%s%s<h2 class="entry-title">%s</h2>%s',
 					$before, $logo, get_the_title($post), $after
 				);
 			endwhile; endif;

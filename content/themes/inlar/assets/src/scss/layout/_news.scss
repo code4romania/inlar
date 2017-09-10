@@ -1,0 +1,27 @@
+// see _partners.scss for base definitions
+.entry-news {
+	.entry {
+		padding: 0;
+
+		img {
+			margin-bottom: 0;
+		}
+
+		.entry-meta {
+			padding: 3rem;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+	}
+
+	+ .paginate {
+		text-align: center;
+
+		i {
+			height: .75em;
+			width: .75em;
+		}
+	}
+}

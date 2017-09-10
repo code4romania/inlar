@@ -109,13 +109,6 @@ class INLAR_Theme_Options {
 				'i18n'    => 'i18n-multilingual',
 				'default' => '',
 			),
-			'featured'     => array(
-				'title'   => __('Featured on the front-page', 'inlar'),
-				'type'    => 'select-items',
-				'slots'   => 4,
-				'default' => array(0, 0, 0, 0),
-				'options' => $this->init_list('team'),
-			),
 		);
 
 		$this->config['fields']['inlar_contact'] = array(

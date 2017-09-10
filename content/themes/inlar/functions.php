@@ -7,9 +7,10 @@ require_once('includes/navigation.php');
 require_once('includes/map.php');
 
 // Image sizes
-add_image_size('partner-logo-small', 150, 150, true);
-add_image_size('partner-logo-large', 250, 250, true);
-add_image_size('team-profile',       100, 100, true);
+add_image_size('partner-logo-small',  150,  150, false);
+add_image_size('partner-logo-large',  250,  250, false);
+add_image_size('team-profile',        100,  100, true);
+add_image_size('hero-image',         2000,  875, true);
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -116,6 +117,12 @@ function inlar_header($option_name, $type = '') {
 	inlar_header_raw($opt['title'], $opt['text'], $type);
 }
 
+function inlar_header_blog() {
+	$title = __('What\'s new', 'inlar');
+
+	inlar_header_raw($title, '', 'hero');
+}
+
 add_filter('get_the_excerpt', 'inlar_excerpt_trim', 10, 2);
 function inlar_excerpt_trim($excerpt, $post) {
 	switch ($post->post_type) {
@@ -156,6 +163,31 @@ function inlar_fetch_template($name) {
 	printf('<script id="template-%s" type="text/x-handlebars-template">'.PHP_EOL, $name);
 	get_template_part('partials/template', $name);
 	print ('</script>'.PHP_EOL);
+}
+
+function inlar_paginate() {
+	global $wp_query;
+
+	if ($wp_query->max_num_pages < 2)
+		return;
+
+	$links = array(
+		'left'	=> get_previous_posts_link('<i class="icon-arrow-green turn-left"></i>'),
+		'right'	=> get_next_posts_link('<i class="icon-arrow-green turn-right"></i>'),
+	);
+
+	foreach ($links as $k => $v) {
+		if (!is_null($v))
+			continue;
+
+		$links[$k] = sprintf('<i class="icon-arrow turn-%s"></i>', $k);
+	}
+
+	printf('<nav class="paginate">%2$s <span class="current">%1$s</span> %3$s</nav>',
+		sprintf(__('Page %s', 'inlar'), max(1, get_query_var('paged'))),
+		$links['left'],
+		$links['right']
+	);
 }
 
 ?>

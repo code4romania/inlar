@@ -1,11 +1,12 @@
-.front-sections .entry-partners {
+.front-sections .entry-partners,
+.entry-news {
 	justify-content: space-around;
 	align-items: stretch;
 	text-align: center;
 	flex-wrap: wrap;
 	display: flex;
 
-	.partner {
+	.entry {
 		transition: box-shadow .3s, margin .3s;
 		background-color: #FFF;
 		text-decoration: none;
@@ -22,14 +23,15 @@
 			display: block;
 		}
 
-		.partner-name {
+		.entry-title {
 			font-size: 1.8rem;
 			margin: 0;
 		}
 	}
 }
 
-.entry-partners .partner {
+.entry-partners .entry,
+.entry-news .entry {
 	box-shadow: 0 .5rem .8rem 0 $gray90;
 	border: 1px solid $gray90;
 	text-decoration: none;
@@ -42,21 +44,21 @@
 		display: block;
 	}
 
-	.partner-name, .partner-desc {
+	.entry-title, .entry-desc {
 		color: $mid-gray;
 	}
 
-	.partner-name {
+	.entry-title {
 		font-size: 2.2rem;
 		font-weight: 300;
 		margin: 0;
 
-		+ .partner-desc:not(:empty) {
+		+ .entry-desc:not(:empty) {
 			margin-top: 2.5rem;
 		}
 	}
 
-	.partner-desc {
+	.entry-desc {
 		font-size: 1.6rem;
 		line-height: 1.5;
 	}
@@ -67,8 +69,9 @@
 }
 
 @media (min-width: map-get($breakpoints, small)) {
-	.front-sections .entry-partners {
-		.partner {
+	.front-sections .entry-partners,
+	.entry-news {
+		.entry {
 			width: 45.5%;
 		}
 	}
@@ -76,14 +79,15 @@
 
 
 @media screen and (min-width: map-get($breakpoints, medium)) {
-	.front-sections .entry-partners {
-		.partner {
+	.front-sections .entry-partners,
+	.entry-news {
+		.entry {
 			width: 22.275%;
 		}
 	}
 
-	.page-template-page-partner .entry-partners .partner {
-		.size-partner-logo-large, .partner-content {
+	.page-template-page-partner .entry-partners .entry {
+		.size-partner-logo-large, .entry-content {
 			vertical-align: middle;
 			display: inline-block;
 		}
@@ -92,12 +96,12 @@
 			width: 24.272%;
 			margin: 0;
 
-			+ .partner-content {
+			+ .entry-content {
 				padding-left: 4.855%;
 			}
 		}
 
-		.partner-content {
+		.entry-content {
 			width: 75%;
 		}
 	}

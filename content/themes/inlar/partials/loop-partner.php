@@ -1,4 +1,4 @@
-<div class="partner" itemscope="itemscope" itemtype="http://schema.org/Organization">
+<div class="entry" itemscope="itemscope" itemtype="http://schema.org/Organization">
 	<?php
 		if (has_post_thumbnail()) {
 			the_post_thumbnail('partner-logo-large', array(
@@ -6,10 +6,10 @@
 			));
 		}
 	?>
-	<div class="partner-content">
-		<h2 class="partner-name" itemprop="name"><?php the_title(); ?></h2><?php
+	<div class="entry-content">
+		<h2 class="entry-title" itemprop="name"><?php the_title(); ?></h2><?php
 		// empty php block to strip white-space in display: inline-block cases
-		?><div class="partner-desc"><?php
+		?><div class="entry-desc"><?php
 			the_content();
 
 			$partner_url = get_post_meta($post->ID, '_ptf_partner_url_meta', true);

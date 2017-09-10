@@ -1,20 +1,10 @@
-<?php
-	$opt = get_option('inlar_team');
-
-	$featured = (isset($opt['featured']) && !empty($opt['featured'])) ? $opt['featured'] : array();
-
-	if (empty($featured))
-		return;
-?>
-<section class="team-container">
+<section id="team" class="team-container">
 	<div class="container">
 		<?php inlar_header('inlar_team', 'section'); ?>
 		<div class="entry-team"><?php
 			$members = new WP_Query(array(
 				'post_type'      => 'team',
-				'posts_per_page' => count($featured),
-				'post__in'       => $featured,
-				'orderby'        => 'post__in',
+				'posts_per_page' => -1,
 			));
 
 			if ($members->have_posts()) : while ($members->have_posts()) : $members->the_post(); ?>
@@ -37,7 +27,6 @@
 							);
 						}
 					?>
-					<div class="member-desc" itemprop="description"><?php the_excerpt(); ?></div>
 				</article>
 			<?php endwhile; endif;
 		?></div>
