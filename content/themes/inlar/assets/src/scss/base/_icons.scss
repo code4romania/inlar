@@ -8,6 +8,14 @@
 	margin: 0 0.85em 0;
 	height: .5em;
 	width: .5em;
+
+	&.turn-left {
+		transform: rotate(90deg);
+	}
+
+	&.turn-right {
+		transform: rotate(-90deg);
+	}
 }
 
 .icon-arrow           { background-image: url('images/icons/arrow.png'); }

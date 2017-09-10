@@ -1,4 +1,7 @@
-<header class="entry-header">
-	<h1 class="entry-title"><?php echo $title; ?></h1>
-	<p><?php echo $text; ?></p>
-</header>
+<header class="entry-header"><?php
+	if ($title)
+		printf('<h1 class="entry-title">%s</h1>', $title);
+
+	if ($text)
+		printf('<p>%s</p>', $text);
+?></header>

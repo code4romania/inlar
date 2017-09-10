@@ -1,5 +1,5 @@
 <?php $opt = get_option('inlar_contact'); ?>
-<section class="contact-container">
+<section id="contact" class="contact-container">
 	<div class="container">
 		<?php inlar_header('inlar_contact', 'section'); ?>
 		<div class="entry-contact">

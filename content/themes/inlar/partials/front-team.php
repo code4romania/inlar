@@ -1,4 +1,4 @@
-<section class="team-container">
+<section id="team" class="team-container">
 	<div class="container">
 		<?php inlar_header('inlar_team', 'section'); ?>
 		<div class="entry-team"><?php
