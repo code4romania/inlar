@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: INLAR\n"
-"POT-Creation-Date: 2017-08-29 15:53+0300\n"
-"PO-Revision-Date: 2017-08-29 15:54+0300\n"
+"POT-Creation-Date: 2017-09-10 17:53+0300\n"
+"PO-Revision-Date: 2017-09-10 17:55+0300\n"
 "Last-Translator: Andrei Ioniță <hi@andrei.io>\n"
 "Language-Team: Andrei Ioniță <hi@andrei.io>\n"
 "Language: ar\n"
@@ -41,8 +41,17 @@ msgid ""
 "An independent, non-partisan, non-political, non-govermental organization."
 msgstr ""
 
-#: functions.php:41
+#: functions.php:42
 msgid "Primary menu"
+msgstr ""
+
+#: functions.php:121
+msgid "What's new"
+msgstr ""
+
+#: functions.php:187
+#, php-format
+msgid "Page %s"
 msgstr ""
 
 #: includes/class-contact-form.php:9
@@ -219,6 +228,10 @@ msgstr ""
 
 #: includes/navigation.php:84
 msgid "Language"
+msgstr ""
+
+#: page-team.php:31
+msgid "See all the INLAR members"
 msgstr ""
 
 #: partials/front-contact.php:37

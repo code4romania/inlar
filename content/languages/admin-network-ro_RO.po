@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-09 08:41:58+0000\n"
+"PO-Revision-Date: 2017-09-09 07:52:28+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -271,9 +271,9 @@ msgstr[2] "Activate <span class=\"count\">(%s)</span>"
 msgctxt "themes"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] "În total <span class=\"count\">(%s)</span>"
-msgstr[1] "În total <span class=\"count\">(%s)</span>"
-msgstr[2] "În total <span class=\"count\">(%s)</span>"
+msgstr[0] "Toate <span class=\"count\">(%s)</span>"
+msgstr[1] "Toate <span class=\"count\">(%s)</span>"
+msgstr[2] "Toate <span class=\"count\">(%s)</span>"
 
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:247
 msgid "Theme"

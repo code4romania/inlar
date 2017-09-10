@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-07-28 10:26:15+0000\n"
+"PO-Revision-Date: 2017-09-09 07:07:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8781,13 +8781,6 @@ msgstr "O adresă de email validă este obligatorie."
 msgid "Sorry, you are not allowed to update posts as this user."
 msgstr "Regret, ca acest utilizator nu ai voie să actualizezi articole."
 
-#: wp-includes/post.php:237
-msgid "Trash <span class=\"count\">(%s)</span>"
-msgid_plural "Trash <span class=\"count\">(%s)</span>"
-msgstr[0] "Gunoi <span class=\"count\">(%s)</span>"
-msgstr[1] "Gunoi <span class=\"count\">(%s)</span>"
-msgstr[2] "Gunoi <span class=\"count\">(%s)</span>"
-
 #: wp-includes/class-wp-editor.php:1083
 msgid "General"
 msgstr "General"
@@ -10290,6 +10283,13 @@ msgstr "URL-ul pe care l-ai introdus pare să fie o legătură externă. Vrei s�
 #: wp-includes/general-template.php:984 wp-includes/general-template.php:1199
 msgid "Page not found"
 msgstr "Pagină negăsită"
+
+#: wp-includes/post.php:237
+msgid "Trash <span class=\"count\">(%s)</span>"
+msgid_plural "Trash <span class=\"count\">(%s)</span>"
+msgstr[0] "La gunoi <span class=\"count\">(%s)</span>"
+msgstr[1] "La gunoi <span class=\"count\">(%s)</span>"
+msgstr[2] "La gunoi <span class=\"count\">(%s)</span>"
 
 #: wp-includes/class-wp-theme.php:800
 msgid "Blue"
