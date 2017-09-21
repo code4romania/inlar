@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-08-26 13:28:48+0000\n"
+"PO-Revision-Date: 2017-09-20 10:02:42+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -9015,7 +9015,7 @@ msgstr "Publié le :"
 
 #: wp-includes/script-loader.php:557
 msgid "Schedule for:"
-msgstr "Planifier pour :"
+msgstr "Planifié pour le :"
 
 #: wp-includes/script-loader.php:556
 msgid "Publish on:"

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-08-24 22:01:11+0000\n"
+"PO-Revision-Date: 2017-09-19 20:27:57+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1366,7 +1366,7 @@ msgstr "Извините, обратные ссылки для этого объ
 
 #: wp-trackback.php:85
 msgid "I really need an ID for this to work."
-msgstr "Мне правда нужен ID чтобы это сработало."
+msgstr "Мне нужен ID, чтобы это сработало."
 
 #: wp-includes/script-loader.php:549
 msgid "Term removed."
