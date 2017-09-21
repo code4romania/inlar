@@ -76,9 +76,17 @@
 		}
 
 		.countries {
+			transition: visibility .3s, opacity .3s;
 			white-space: nowrap;
 			padding: 2rem 0 0;
 			margin-bottom: 0;
+			visibility: hidden;
+			opacity: 0;
+
+			&.active {
+				visibility: visible;
+				opacity: 1;
+			}
 		}
 	}
 }

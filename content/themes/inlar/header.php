@@ -16,7 +16,6 @@
 			<div class="nav-mobile flex-item"><?php
 				inlar_navigation_mobile('menu-primary');
 			?></div>
-			</div>
 			<div class="nav-menu flex-item">
 				<?php inlar_navigation_menu('menu-primary'); ?>
 			</div>

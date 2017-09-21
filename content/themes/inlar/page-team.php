@@ -22,7 +22,6 @@
 
 	$sub = get_pages(array(
 		'child_of' => $page_id,
-		'number'   => 1,
 	));
 
 	if ($sub) {

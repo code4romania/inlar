@@ -8,7 +8,6 @@ function maputils() {
 	this.markers   = false;
 }
 
-
 maputils.prototype.get_coords = function() {
 	// start with default coordinates
 	var coords = window.mapconfig.center;
@@ -18,18 +17,18 @@ maputils.prototype.get_coords = function() {
 	}
 
 	return coords;
-}
+};
 
 // Convert LatLng pair to string
 maputils.prototype.latlng_to_str = function(obj) {
 	return obj.lat.toFixed(this.precision) + ',' + obj.lng.toFixed(this.precision);
-}
+};
 
 // Convert string to LatLng pair
 maputils.prototype.str_to_latlng = function(str) {
 	str = str.split(',');
 	return (str.length == 2 ? jQuery.map(str, parseFloat) : false);
-}
+};
 
 maputils.prototype.control_dropdown = function() {
 	var target   = jQuery('#country-control'),
@@ -40,7 +39,7 @@ maputils.prototype.control_dropdown = function() {
 		current: mapconfig.current,
 		countries: mapconfig.countries
 	}));
-}
+};
 
 maputils.prototype.add_markers = function(geojson, country_id) {
 	this.map.removeLayer(this.markers);
@@ -72,7 +71,7 @@ maputils.prototype.add_markers = function(geojson, country_id) {
 			return false;
 		}
 	}).addTo(this.map);
-}
+};
 
 maputils.prototype.enable_map = function() {
 	this.control_dropdown();
@@ -81,10 +80,10 @@ maputils.prototype.enable_map = function() {
 		paddingTopLeft: [0, 150],
 		maxZoom: 15,
 	});
-}
+};
 
 maputils.prototype.disable_map = function() {
 	jQuery('.map-container').removeClass('map-open').addClass('map-closed');
 
 	jQuery('#country-control').empty();
-}
+};

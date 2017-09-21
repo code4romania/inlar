@@ -4,7 +4,6 @@
  * Generates the initial country selections buttons.
  *
  * TODO: fix buttons overflow for intermediary screen sizes
- * TODO: remove need for fixed $show_front
  */
 function inlar_country_buttons() {
 	$show_front = 2;

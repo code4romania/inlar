@@ -1,4 +1,3 @@
-"use strict";
 (function($) {
 	if (Modernizr.svgasimg) {
 		// Replace png with svg
@@ -10,7 +9,7 @@
 	if (typeof validation_messages != 'undefined') {
 		for (var key in validation_messages) {
 			if (key.match(/(min|max)length/i)) {
-				validation_messages[key] = $.validator.format(validation_messages[key])
+				validation_messages[key] = $.validator.format(validation_messages[key]);
 			}
 		}
 
@@ -69,4 +68,17 @@ Handlebars.registerHelper('list-attrs', function(country_id) {
 		attrs+= ' hidden';
 
 	return attrs;
+});
+
+Handlebars.registerHelper('ifeq', function(n1, n2, opts) {
+	if (n1 == n2) {
+		return opts.fn(this);
+	} else {
+		return opts.inverse(this);
+	}
+});
+
+Handlebars.registerHelper('debug', function(arg) {
+	console.log(arg);
+	return arg;
 });
