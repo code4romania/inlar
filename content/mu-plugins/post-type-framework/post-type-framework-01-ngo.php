@@ -62,12 +62,12 @@ class Post_Type_NGO extends Post_Type_Framework {
 			'show_ui'             => true,
 			'menu_position'       => 20,
 			'show_in_nav_menus'   => true,
-			'publicly_queryable'  => true,
+			'publicly_queryable'  => false,
 			'exclude_from_search' => false,
 			'has_archive'         => true,
 			'query_var'           => true,
 			'can_export'          => true,
-			'rewrite'             => array('slug' => $this->post_type_name, 'with_front' => false),
+			'rewrite'             => false,
 			'capability_type'     => 'post'
 		);
 
@@ -221,7 +221,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 						'properties' => array(
 							'name'         => sanitize_post_field('post_title', $ngo->post_title, $ngo->ID),
 							'desc'         => sanitize_post_field('post_content', $ngo->post_content, $ngo->ID),
-							'img'          => get_the_post_thumbnail_url($ngo->ID, 'partner-logo-small'),
+							'img'          => get_the_post_thumbnail_url($ngo->ID, 'partner-logo-large'),
 							'country_name' => $country['name'],
 							'country_flag' => $country['flag'],
 							'country_id'   => $country['id'],
@@ -277,11 +277,6 @@ class Post_Type_NGO extends Post_Type_Framework {
 				'type'     => 'url',
 				'i18n'     => false,
 			),
-			'keywords' => array(
-				'label'    => __('Keywords', 'ptf'),
-				'type'     => 'text',
-				'i18n'     => 'i18n-multilingual',
-			),
 			'phone'    => array(
 				'label'    => __('Phone', 'ptf'),
 				'type'     => 'text',
@@ -300,7 +295,6 @@ class Post_Type_NGO extends Post_Type_Framework {
 			'coords'   => '',
 			'address'  => '',
 			'url'      => '',
-			'keywords' => '',
 			'phone'    => '',
 			'email'    => '',
 		);

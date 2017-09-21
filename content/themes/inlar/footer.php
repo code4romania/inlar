@@ -11,7 +11,7 @@
 	</div>
 
 	<div class="footer-code container">
-		<a class="brand footer-logo" href="https://code4.ro/en/">
+		<a class="brand footer-logo" href="https://code4.ro/">
 			<img src="//code4.ro/wp-content/uploads/2017/08/logo-bw.png" alt="Code for Romania">
 		</a>
 		<p class="mono">

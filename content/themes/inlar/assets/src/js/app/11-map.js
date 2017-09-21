@@ -1,4 +1,3 @@
-"use strict";
 jQuery(window).load(function() {
 	if (!jQuery('#map').length)
 		return;
@@ -18,6 +17,15 @@ jQuery(window).load(function() {
 
 		mu.add_markers(mapconfig.ngos, country_id);
 		mu.enable_map();
+
+		var target   = jQuery('#ngo .container'),
+			source   = jQuery('#template-map_ngo').html(),
+			template = Handlebars.compile(source);
+
+		target.html(template({
+			country_id: country_id,
+			ngos: mapconfig.ngos.features,
+		})).parent().removeClass('hidden');
 	};
 
 	mu.baselayer = L.tileLayer(mapconfig.template.nolabels, {
@@ -48,19 +56,19 @@ jQuery(window).load(function() {
 });
 
 (function($) {
-	var json = {
-		'ngos':      '/json/ngos/',
-		'countries': '/json/countries/',
-	};
+	var toLoad = ['ngos', 'countries'],
+		loaded = [];
 
-	$.each(json, function(key, url) {
-		$.getJSON(url, function(response) {
+	$.each(toLoad, function(i, key) {
+		$.getJSON('/json/'+ key + '/', function(response) {
 			if (!response.success)
 				return;
 
-			window.mapconfig[key] = response.data[key];
-		})
-	});
+			window.mapconfig[ key ] = response.data[ key ];
+			loaded.push(key);
 
-	
+			if (toLoad.length == loaded.length)
+				$('.map-description ul.countries').addClass('active');
+		});
+	});
 })(jQuery);
