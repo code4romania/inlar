@@ -1,4 +1,3 @@
-"use strict";
 window.mapconfig = {
 	template: {
 		all:        '//cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png',
@@ -9,7 +8,7 @@ window.mapconfig = {
 	// Center to Europe by default
 	center: [48.0988048, 4.1474343],
 	// Filled in on page load when needed
-	ngos: [],
+	ngos: {},
 	countries: [],
 	current: -1,
 };
