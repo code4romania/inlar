@@ -6,5 +6,6 @@
 	<?php get_template_part('partials/front', 'contact'); ?>
 	<?php get_template_part('partials/front', 'team'); ?>
 	<?php get_template_part('partials/front', 'partner'); ?>
+	<?php get_template_part('partials/front', 'member'); ?>
 </main>
 <?php get_footer(); ?>

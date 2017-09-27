@@ -98,6 +98,12 @@ class INLAR_Theme_Options {
 				'default' => array(0, 0, 0, 0),
 				'options' => $this->init_list('partner'),
 			),
+			'members' => array(
+				'title'   => __('Members page', 'inlar'),
+				'type'    => 'pages',
+				'i18n'    => false,
+				'default' => array(),
+			),
 		);
 
 		$this->config['fields']['inlar_news'] = array(
@@ -179,8 +185,8 @@ class INLAR_Theme_Options {
 				'i18n'    => false,
 				'default' => '',
 			),
-			'medium'    => array(
-				'title'   => __('Medium profile', 'inlar'),
+			'linkedin'    => array(
+				'title'   => __('linkedin profile', 'inlar'),
 				'type'    => 'url',
 				'i18n'    => false,
 				'default' => '',
