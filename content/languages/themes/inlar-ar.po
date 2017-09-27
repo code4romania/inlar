@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: INLAR\n"
-"POT-Creation-Date: 2017-09-10 18:17+0300\n"
-"PO-Revision-Date: 2017-09-10 18:17+0300\n"
+"POT-Creation-Date: 2017-09-27 18:20+0300\n"
+"PO-Revision-Date: 2017-09-27 18:20+0300\n"
 "Last-Translator: Andrei Ioniță <hi@andrei.io>\n"
 "Language-Team: Andrei Ioniță <hi@andrei.io>\n"
 "Language: ar\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-Basepath: ../../themes/inlar\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -161,14 +161,14 @@ msgid "Contact"
 msgstr ""
 
 #: includes/class-theme-options.php:68 includes/class-theme-options.php:83
-#: includes/class-theme-options.php:105 includes/class-theme-options.php:120
-#: includes/class-theme-options.php:135
+#: includes/class-theme-options.php:111 includes/class-theme-options.php:126
+#: includes/class-theme-options.php:141
 msgid "Section title"
 msgstr ""
 
 #: includes/class-theme-options.php:74 includes/class-theme-options.php:89
-#: includes/class-theme-options.php:111 includes/class-theme-options.php:126
-#: includes/class-theme-options.php:141
+#: includes/class-theme-options.php:117 includes/class-theme-options.php:132
+#: includes/class-theme-options.php:147
 msgid "Section text"
 msgstr ""
 
@@ -176,55 +176,59 @@ msgstr ""
 msgid "Featured on the front-page"
 msgstr ""
 
-#: includes/class-theme-options.php:147 partials/front-contact.php:13
+#: includes/class-theme-options.php:102
+msgid "Members page"
+msgstr ""
+
+#: includes/class-theme-options.php:153 partials/front-contact.php:13
 msgid "Email address"
 msgstr ""
 
-#: includes/class-theme-options.php:153 partials/front-contact.php:21
+#: includes/class-theme-options.php:159 partials/front-contact.php:21
 msgid "Phone"
 msgstr ""
 
-#: includes/class-theme-options.php:159 partials/front-contact.php:29
+#: includes/class-theme-options.php:165 partials/front-contact.php:29
 msgid "Address"
 msgstr ""
 
-#: includes/class-theme-options.php:165
+#: includes/class-theme-options.php:171
 msgid "Facebook profile"
 msgstr ""
 
-#: includes/class-theme-options.php:171
+#: includes/class-theme-options.php:177
 msgid "Twitter profile"
 msgstr ""
 
-#: includes/class-theme-options.php:177
+#: includes/class-theme-options.php:183
 msgid "Instagram profile"
 msgstr ""
 
-#: includes/class-theme-options.php:183
-msgid "Medium profile"
+#: includes/class-theme-options.php:189
+msgid "Linkedin profile"
 msgstr ""
 
-#: includes/class-theme-options.php:361 includes/class-theme-options.php:382
+#: includes/class-theme-options.php:367 includes/class-theme-options.php:388
 msgid "None"
 msgstr ""
 
-#: includes/class-theme-options.php:413
+#: includes/class-theme-options.php:419
 msgid "Are you sure you want to do this?"
 msgstr ""
 
-#: includes/class-theme-options.php:435
+#: includes/class-theme-options.php:441
 msgid "You cannot feature the same partner twice!"
 msgstr ""
 
-#: includes/class-theme-options.php:459
+#: includes/class-theme-options.php:465
 msgid "Settings saved."
 msgstr ""
 
-#: includes/map.php:16 includes/map.php:50
+#: includes/map.php:15 includes/map.php:49
 msgid "Select a country"
 msgstr ""
 
-#: includes/map.php:44
+#: includes/map.php:43
 msgid "More countries"
 msgstr ""
 
@@ -232,12 +236,12 @@ msgstr ""
 msgid "Language"
 msgstr ""
 
-#: page-team.php:31
-msgid "See all the INLAR members"
-msgstr ""
-
 #: partials/front-contact.php:37
 msgid "Social media"
+msgstr ""
+
+#: partials/front-member.php:17
+msgid "Members"
 msgstr ""
 
 #: partials/front-news.php:16

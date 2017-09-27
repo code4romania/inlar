@@ -186,7 +186,7 @@ class INLAR_Theme_Options {
 				'default' => '',
 			),
 			'linkedin'    => array(
-				'title'   => __('linkedin profile', 'inlar'),
+				'title'   => __('Linkedin profile', 'inlar'),
 				'type'    => 'url',
 				'i18n'    => false,
 				'default' => '',
