@@ -204,6 +204,8 @@ class Post_Type_NGO extends Post_Type_Framework {
 			foreach ($countries as $country) {
 				$ngos = new WP_Query(array(
 					'posts_per_page' => -1,
+					'post_type'      => $this->post_type_name,
+					'orderby'        => 'title',
 					'tax_query'      => array(
 						array(
 							'taxonomy' => $this->post_type_taxonomy_name,
