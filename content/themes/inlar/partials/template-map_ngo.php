@@ -8,9 +8,7 @@
 				<div class="entry-content">
 					<h2 class="entry-title" itemprop="name">{{properties.name}}</h2>{{!-- 
 					--}}<div class="entry-desc">
-							{{{properties.desc}}}
-
-							
+						<p>{{{properties.desc}}}</p>
 						{{#with properties.meta}}
 							<ul class="ngo-meta">
 								{{#if phone}}
@@ -20,7 +18,7 @@
 									<li><i class="icon-email"></i><a href="mailto:{{email}}" class="email">{{email}}</a></li>
 								{{/if}}
 								{{#if address}}
-									<li><i class="icon-map"></i> <address>{{address}}</address></li>
+									<li><i class="icon-map"></i><address>{{address}}</address></li>
 								{{/if}}
 							</ul>
 						{{/with}}
