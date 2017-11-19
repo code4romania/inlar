@@ -187,7 +187,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 	function normalize_geojson_coords($coords) {
 		$coords = array_map('floatval', explode(',', $coords));
 
-		return array($coords[1], $coords[0]);
+		return array_reverse($coords);
 	}
 
 	function get_ngos_geojson($country = '') {
@@ -218,6 +218,11 @@ class Post_Type_NGO extends Post_Type_Framework {
 				foreach ($ngos->posts as $ngo) {
 					$ngo_meta = $this->get_meta_box_values($ngo->ID);
 
+					$coords = $this->normalize_geojson_coords($ngo_meta['coords']);
+
+					if (count($coords) != 2)
+						continue;
+
 					$data['features'][] = array(
 						'type'       => 'Feature',
 						'properties' => array(
@@ -231,7 +236,7 @@ class Post_Type_NGO extends Post_Type_Framework {
 						),
 						'geometry'   => array(
 							'type'        => 'Point',
-							'coordinates' => $this->normalize_geojson_coords($ngo_meta['coords']),
+							'coordinates' => $coords,
 						),
 					);
 				}

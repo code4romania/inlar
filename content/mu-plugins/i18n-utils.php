@@ -64,10 +64,9 @@ class i18n_utils {
 	 * @param   string   $nolang     Flag for language-independent content
 	 * @return  mixed                Value of transient or false.
 	 */
-	public static function get_transient($transient,  $nolang = false) {
+	public static function get_transient($transient, $nolang = false) {
 		if (!self::is_i18n_plugin_installed())
 			return false;
-
 
 		if (empty($transient))
 			return false;
@@ -90,17 +89,15 @@ class i18n_utils {
 		if (empty($transient))
 			return false;
 
-		if ($nolang) {
+		if ($nolang)
 			return delete_transient("{$transient}_nolang");
-		}
 
-		$result = true;
 		$languages = qtranxf_getSortedLanguages();
+		$result = true;
 
-		foreach ($languages as $lang) {
+		foreach ($languages as $lang)
 			if (!delete_transient("{$transient}_{$lang}"))
 				$result = false;
-		}
 
 		return $result;
 	}

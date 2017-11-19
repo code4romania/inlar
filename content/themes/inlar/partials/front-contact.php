@@ -37,7 +37,7 @@
 					__('Social media', 'inlar')
 				);
 
-				$media = array('facebook', 'twitter', 'instagram', 'medium');
+				$media = array('facebook', 'twitter', 'instagram', 'linkedin');
 
 				$tpl = '<li><a href="%1$s" target="_blank">';
 				$tpl.= '<span class="icon"><i class="icon-%2$s"></i><i class="icon-%2$s-green alt"></i></span>';
