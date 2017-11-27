@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: INLAR\n"
-"POT-Creation-Date: 2017-09-27 18:20+0300\n"
-"PO-Revision-Date: 2017-09-27 18:20+0300\n"
+"POT-Creation-Date: 2017-11-27 17:03+0200\n"
+"PO-Revision-Date: 2017-11-27 17:04+0200\n"
 "Last-Translator: Andrei Ioniță <hi@andrei.io>\n"
 "Language-Team: Andrei Ioniță <hi@andrei.io>\n"
 "Language: pl\n"
@@ -240,7 +240,7 @@ msgstr ""
 msgid "Social media"
 msgstr ""
 
-#: partials/front-member.php:17
+#: partials/front-member.php:12
 msgid "Members"
 msgstr ""
 
@@ -258,10 +258,6 @@ msgstr ""
 
 #: partials/loop-partner.php:19
 msgid "Visit website"
-msgstr ""
-
-#: partials/template-map_card.php:14
-msgid "Find us"
 msgstr ""
 
 #: partials/template-map_control.php:14

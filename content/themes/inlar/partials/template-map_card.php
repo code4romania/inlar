@@ -10,8 +10,8 @@
 		{{#if email}}
 			<p><i class="icon-email"></i><a href="mailto:{{email}}" class="email">{{email}}</a></p>
 		{{/if}}
-		{{#if coords}}
-			<p><i class="icon-map"></i><a target="_blank" href="https://maps.google.com/?q={{coords}}" class="map"><?php _e('Find us', 'inlar'); ?></a></p>
+		{{#if url}}
+			<p><i class="icon-link"></i><a target="_blank" href="{{url}}" class="map">{{url}}</a></p>
 		{{/if}}
 	{{/with}}
 </div>

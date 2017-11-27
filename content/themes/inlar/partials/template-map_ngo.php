@@ -17,6 +17,9 @@
 								{{#if email}}
 									<li><i class="icon-email"></i><a href="mailto:{{email}}" class="email">{{email}}</a></li>
 								{{/if}}
+								{{#if url}}
+									<li><i class="icon-link"></i><a target="_blank" href="{{url}}" class="map">{{url}}</a></li>
+								{{/if}}
 								{{#if address}}
 									<li><i class="icon-map"></i><address>{{address}}</address></li>
 								{{/if}}

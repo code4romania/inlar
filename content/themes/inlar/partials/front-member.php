@@ -1,36 +1,32 @@
 <?php
-	$members_page = (int) get_option('inlar_partners')['members'];
-
-	$subpages = new WP_Query(array(
-		'post_type'      => 'page',
-		'post_parent'    => $members_page,
-		'posts_per_page' => -1,
-		'orderby'        => 'menu_order',
-		'order'          => 'ASC',
+	$orgtypes = get_terms( array(
+		'taxonomy'   => 'orgtype',
+		'hide_empty' => true,
 	));
 
-	if (!$subpages->have_posts())
+	if (!$orgtypes)
 		return;
 ?>
 <section id="members" class="partners-container">
 	<div class="container">
 		<?php inlar_header_raw(__('Members', 'inlar'), '', 'section'); ?>
 		<div class="entry-news"><?php
-			while ($subpages->have_posts()) : $subpages->the_post(); ?>
+			foreach ($orgtypes as $orgtype): ?>
 				<article class="entry" itemscope itemprop="member">
-					<a href="<?php the_permalink(); ?>"><?php
-						if (has_post_thumbnail()) {
-							the_post_thumbnail('medium', array(
-								'itemprop' => 'image'
-							));
+					<a href="<?php echo get_term_link($orgtype); ?>"><?php
+						$icon = get_term_meta($orgtype->term_id, 'orgtype_icon', true);
+						if ($icon) {
+							printf('<img src="%s" alt="" itemprop="image">',
+								esc_attr($icon)
+							);
 						}
 
 						printf('<div class="entry-meta"><h1 class="entry-title" itemprop="name">%s</h1></div>',
-							get_the_title()
+							__($orgtype->name)
 						);
 					?></a>
 				</article>
-			<?php endwhile;
+			<?php endforeach;
 		?></div>
 	</div>
 </section>

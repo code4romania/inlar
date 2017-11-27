@@ -203,8 +203,12 @@ input[type="submit"] {
 			color: inherit;
 		}
 
-		+ li {
+		& + li {
 			border-top: 1px solid $light-gray;
+		}
+
+		&[hidden]:first-child + li {
+			border-top: 0;
 		}
 	}
 }

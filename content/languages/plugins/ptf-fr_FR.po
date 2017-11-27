@@ -1,61 +1,63 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Project-Id-Version: Post Type Framework Plugin\n"
-"POT-Creation-Date: 2017-06-19 09:57+0300\n"
-"PO-Revision-Date: 2017-06-19 09:57+0300\n"
+"POT-Creation-Date: 2017-11-27 17:07+0200\n"
+"PO-Revision-Date: 2017-11-27 17:08+0200\n"
+"Last-Translator: Andrei Ioniță <hi@andrei.io>\n"
 "Language-Team: Andrei Ioniță <hi@andrei.io>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: post-type-framework.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: Andrei Ioniță <hi@andrei.io>\n"
-"Language: fr\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: post-type-framework.php:137
+#: post-type-framework.php:139
 msgid "Activity"
 msgstr ""
 
-#: post-type-framework.php:168
+#: post-type-framework.php:170
 msgid "Publishing Soon"
 msgstr ""
 
-#: post-type-framework.php:178
+#: post-type-framework.php:180
 msgid "Recently Published"
 msgstr ""
 
-#: post-type-framework.php:187
+#: post-type-framework.php:189
 msgid "No activity yet!"
 msgstr ""
 
-#: post-type-framework.php:224
+#: post-type-framework.php:226
 msgid "Today"
 msgstr ""
 
-#: post-type-framework.php:226
+#: post-type-framework.php:228
 msgid "Tomorrow"
 msgstr ""
 
 #. translators: date and time format for recent posts on the dashboard, see http://php.net/date
-#: post-type-framework.php:229
+#: post-type-framework.php:231
 msgid "M jS"
 msgstr ""
 
 #. translators: 1: relative date, 2: time, 3: post edit link, 4: post title
-#: post-type-framework.php:235
+#: post-type-framework.php:237
 #, php-format
 msgid "<span>%1$s, %2$s</span> <a href=\"%3$s\">%4$s</a> (%5$s)"
 msgstr ""
 
 #. translators: 1: relative date, 2: time, 3: post title
-#: post-type-framework.php:244
+#: post-type-framework.php:246
 #, php-format
 msgid "<span>%1$s, %2$s</span> %3$s"
 msgstr ""
@@ -144,46 +146,42 @@ msgstr ""
 msgid "Invalid request key"
 msgstr ""
 
-#: post-type-framework/post-type-framework-01-ngo.php:254
+#: post-type-framework/post-type-framework-01-ngo.php:261
 #: post-type-framework/post-type-framework-02-partner.php:78
 #: post-type-framework/post-type-framework-03-team.php:78
 msgid "Additional Information"
 msgstr ""
 
-#: post-type-framework/post-type-framework-01-ngo.php:265
+#: post-type-framework/post-type-framework-01-ngo.php:272
 msgid "Coordinates"
 msgstr ""
 
-#: post-type-framework/post-type-framework-01-ngo.php:270
+#: post-type-framework/post-type-framework-01-ngo.php:277
 msgid "Address"
 msgstr ""
 
-#: post-type-framework/post-type-framework-01-ngo.php:276
+#: post-type-framework/post-type-framework-01-ngo.php:283
 #: post-type-framework/post-type-framework-02-partner.php:89
 msgid "URL"
 msgstr ""
 
-#: post-type-framework/post-type-framework-01-ngo.php:281
-msgid "Keywords"
-msgstr ""
-
-#: post-type-framework/post-type-framework-01-ngo.php:286
+#: post-type-framework/post-type-framework-01-ngo.php:288
 msgid "Phone"
 msgstr ""
 
-#: post-type-framework/post-type-framework-01-ngo.php:291
+#: post-type-framework/post-type-framework-01-ngo.php:293
 #: post-type-framework/post-type-framework-03-team.php:94
 msgid "Email"
 msgstr ""
 
-#: post-type-framework/post-type-framework-01-ngo.php:403
+#: post-type-framework/post-type-framework-01-ngo.php:404
 #: post-type-framework/post-type-framework-02-partner.php:185
 #: post-type-framework/post-type-framework-03-team.php:191
 msgid "Flag"
 msgstr ""
 
-#: post-type-framework/post-type-framework-01-ngo.php:423
-#: post-type-framework/post-type-framework-01-ngo.php:450
+#: post-type-framework/post-type-framework-01-ngo.php:424
+#: post-type-framework/post-type-framework-01-ngo.php:451
 #: post-type-framework/post-type-framework-02-partner.php:205
 #: post-type-framework/post-type-framework-02-partner.php:232
 #: post-type-framework/post-type-framework-03-team.php:211
@@ -280,10 +278,59 @@ msgstr ""
 msgid "Add to Menu"
 msgstr ""
 
+#: post-type-framework/post-type-framework-ngo-type.php:27
+#: post-type-framework/post-type-framework-ngo-type.php:36
+msgid "Types"
+msgstr ""
+
+#: post-type-framework/post-type-framework-ngo-type.php:28
+msgid "Type"
+msgstr ""
+
+#: post-type-framework/post-type-framework-ngo-type.php:29
+msgid "Search Types"
+msgstr ""
+
+#: post-type-framework/post-type-framework-ngo-type.php:30
+msgid "All Types"
+msgstr ""
+
+#: post-type-framework/post-type-framework-ngo-type.php:31
+msgid "Edit Type"
+msgstr ""
+
+#: post-type-framework/post-type-framework-ngo-type.php:32
+msgid "Update Type"
+msgstr ""
+
+#: post-type-framework/post-type-framework-ngo-type.php:33
+msgid "Add new Type"
+msgstr ""
+
+#: post-type-framework/post-type-framework-ngo-type.php:34
+msgid "New Type"
+msgstr ""
+
+#: post-type-framework/post-type-framework-ngo-type.php:35
+msgid "No types found."
+msgstr ""
+
+#: post-type-framework/post-type-framework-ngo-type.php:59
+msgid "Icon URL"
+msgstr ""
+
 #. Plugin Name of the plugin/theme
 msgid "Post Type Framework Plugin"
 msgstr ""
 
 #. Description of the plugin/theme
 msgid "Creates the required post types in a theme-independent way."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Andrei Ioniță"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://andrei.io/"
 msgstr ""

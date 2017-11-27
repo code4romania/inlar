@@ -66,6 +66,22 @@
 	.button {
 		margin-top: 3rem;
 	}
+
+	.country {
+		text-align: right;
+		margin: 0 0 1em 1em;
+
+		.flag {
+			border: 1px solid $gray90;
+			margin: 0 0 0 1rem;
+			width: 3rem;
+		}
+
+		.flag, .name {
+			vertical-align: middle;
+			display: inline-block;
+		}
+	}
 }
 
 @media (min-width: map-get($breakpoints, small)) {
@@ -73,6 +89,13 @@
 	.entry-news {
 		.entry {
 			width: 45.5%;
+		}
+	}
+
+	.entry-partners .entry,
+	.entry-news .entry {
+		.country {
+			float: right;
 		}
 	}
 }
