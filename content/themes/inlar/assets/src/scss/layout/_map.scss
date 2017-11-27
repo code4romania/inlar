@@ -271,6 +271,9 @@
 			font-size: 1em;
 
 			p {
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
 				margin: 0 0 .67em;
 				font-size: 1em;
 				opacity: 1;

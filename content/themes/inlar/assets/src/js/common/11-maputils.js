@@ -6,6 +6,7 @@ function maputils() {
 	this.textlayer = false;
 	this.map       = false;
 	this.markers   = false;
+	this.geolayer  = false;
 }
 
 maputils.prototype.get_coords = function() {
@@ -43,7 +44,32 @@ maputils.prototype.control_dropdown = function() {
 
 maputils.prototype.add_markers = function(geojson, country_id) {
 	this.map.removeLayer(this.markers);
-	this.markers = L.geoJson(geojson, {
+
+	this.markers = L.markerClusterGroup({
+		showCoverageOnHover:	false,
+		maxClusterRadius:		50,
+		iconCreateFunction:		function(cluster) {
+			return new L.DivIcon({
+				html:		'<div><span>' + cluster.getChildCount() + '</span></div>',
+				className:	'marker-cluster',
+				iconSize:	new L.Point(40, 40)
+			});
+		},
+		filter: function(feature, layer) {
+			if (feature.properties.country_id == country_id) {
+				window.mapconfig.current = {
+					'id':   feature.properties.country_id,
+					'flag': feature.properties.country_flag,
+					'name': feature.properties.country_name,
+				};
+
+				return true;
+			}
+			return false;
+		}
+	});
+	
+	this.geolayer = L.geoJson(geojson, {
 		pointToLayer: function(geoJsonPoint, latlng) {
 			return L.marker(latlng, {
 				icon: L.divIcon({
@@ -70,7 +96,11 @@ maputils.prototype.add_markers = function(geojson, country_id) {
 			}
 			return false;
 		}
-	}).addTo(this.map);
+	});
+
+	this.markers.addLayer(this.geolayer);
+
+	this.map.addLayer(this.markers);
 };
 
 maputils.prototype.enable_map = function() {
