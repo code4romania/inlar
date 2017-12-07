@@ -2,291 +2,289 @@ msgid ""
 msgstr ""
 "Project-Id-Version: INLAR\n"
 "POT-Creation-Date: 2017-11-27 17:03+0200\n"
-"PO-Revision-Date: 2017-11-27 17:04+0200\n"
+"PO-Revision-Date: 2017-12-07 21:47+0200\n"
 "Last-Translator: Andrei Ioniță <hi@andrei.io>\n"
 "Language-Team: Andrei Ioniță <hi@andrei.io>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n"
+"%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 2.0.4\n"
 "X-Poedit-Basepath: ../../themes/inlar\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;"
+"esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;"
+"__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: 404.php:2 404.php:5
 msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
+msgstr "К сожалению! Эта страница не найдена."
 
 #. translators: %s will be replaced with the current year
 #: footer.php:9
 #, php-format
 msgid "&copy; %s INLAR. All Rights Reserved"
-msgstr ""
+msgstr "&copy; %s INLAR. Все права защищены"
 
 #: footer.php:18
 msgid "In collaboration with Code for Romania."
-msgstr ""
+msgstr "В сотрудничестве с Кодексом для Румынии."
 
 #: footer.php:20
-msgid ""
-"An independent, non-partisan, non-political, non-govermental organization."
-msgstr ""
+msgid "An independent, non-partisan, non-political, non-govermental organization."
+msgstr "Независимая, беспартийная, неполитическая, неправительственная организация."
 
 #: functions.php:42
 msgid "Primary menu"
-msgstr ""
+msgstr "Основное меню"
 
 #: functions.php:181
 #, php-format
 msgid "Page %s"
-msgstr ""
+msgstr "Страница %s"
 
 #: includes/class-contact-form.php:9
 msgid "Your name"
-msgstr ""
+msgstr "Ваше имя"
 
 #: includes/class-contact-form.php:16
 msgid "Your email"
-msgstr ""
+msgstr "Ваш электронный адрес"
 
 #: includes/class-contact-form.php:22
 msgid "Subject"
-msgstr ""
+msgstr "Предмет"
 
 #: includes/class-contact-form.php:23
 msgid "How can we help you?"
-msgstr ""
+msgstr "Как мы Вам можем помочь?"
 
 #: includes/class-contact-form.php:30
 msgid "Message"
-msgstr ""
+msgstr "Сообщение"
 
 #: includes/class-contact-form.php:31
 msgid "Detail your story here"
-msgstr ""
+msgstr "Опишите свою историю здесь"
 
 #: includes/class-contact-form.php:38 includes/class-contact-form.php:78
 msgid "Send now"
-msgstr ""
+msgstr "Отправить сейчас"
 
 #: includes/class-contact-form.php:106 includes/class-contact-form.php:112
 #: includes/class-contact-form.php:146
 msgid "Error"
-msgstr ""
+msgstr "Ошибка"
 
 #: includes/class-contact-form.php:107 includes/class-contact-form.php:147
 msgid "An unexpected error has occured. Please try again later."
-msgstr ""
+msgstr "Произошла непредвиденная ошибка. Пожалуйста, повторите попытку позже."
 
 #: includes/class-contact-form.php:108 includes/class-contact-form.php:114
 #: includes/class-contact-form.php:148
 msgid "Back"
-msgstr ""
+msgstr "Назад"
 
 #: includes/class-contact-form.php:113
 msgid "Your email doesn't seem to be valid. Please check it and try again."
-msgstr ""
+msgstr "Ваш адрес электронной почты не является действительным. Проверьте его и повторите попытку."
 
 #: includes/class-contact-form.php:123
 #, php-format
 msgctxt "contact mail subject prefix"
 msgid "[INLAR] %s"
-msgstr ""
+msgstr "[INLAR] %s"
 
 #: includes/class-contact-form.php:137
 msgid "Message Sent"
-msgstr ""
+msgstr "Сообщение отправлено"
 
 #: includes/class-contact-form.php:139
 #, php-format
-msgid ""
-"Thank you, %s! Your message was sent and we will try to reply in short time."
-msgstr ""
+msgid "Thank you, %s! Your message was sent and we will try to reply in short time."
+msgstr "Спасибо, %s! Ваше сообщение было отправлено, и мы постараемся ответить в ближайшее время."
 
 #: includes/class-contact-form.php:142
 msgid "Done"
-msgstr ""
+msgstr "Готово"
 
 #: includes/class-contact-form.php:156
 msgctxt "form validation message"
 msgid "This field is required."
-msgstr ""
+msgstr "Это поле обязательно к заполнению."
 
 #: includes/class-contact-form.php:157
 msgctxt "form validation message"
 msgid "Please enter a valid email address."
-msgstr ""
+msgstr "Пожалуйста, введите действительный адрес электронной почты."
 
 #: includes/class-contact-form.php:158
 msgctxt "form validation message"
 msgid "Please enter at least {0} characters."
-msgstr ""
+msgstr "Введите не менее {0} символов."
 
 #: includes/class-contact-form.php:159
 msgctxt "form validation message"
 msgid "Please enter no more than {0} characters."
-msgstr ""
+msgstr "Введите не более {0} символов."
 
 #: includes/class-theme-options.php:8
 msgid "Theme Options"
-msgstr ""
+msgstr "Параметры темы"
 
 #: includes/class-theme-options.php:26
 msgid "Intro"
-msgstr ""
+msgstr "Вступление"
 
 #: includes/class-theme-options.php:30
 msgid "Partners"
-msgstr ""
+msgstr "Партнеры"
 
 #: includes/class-theme-options.php:34
 msgid "News"
-msgstr ""
+msgstr "Новости"
 
 #: includes/class-theme-options.php:38
 msgid "Team"
-msgstr ""
+msgstr "Команда"
 
 #: includes/class-theme-options.php:42
 msgid "Contact"
-msgstr ""
+msgstr "Kонтакт"
 
 #: includes/class-theme-options.php:68 includes/class-theme-options.php:83
 #: includes/class-theme-options.php:111 includes/class-theme-options.php:126
 #: includes/class-theme-options.php:141
 msgid "Section title"
-msgstr ""
+msgstr "Название раздела"
 
 #: includes/class-theme-options.php:74 includes/class-theme-options.php:89
 #: includes/class-theme-options.php:117 includes/class-theme-options.php:132
 #: includes/class-theme-options.php:147
 msgid "Section text"
-msgstr ""
+msgstr "Текст раздела"
 
 #: includes/class-theme-options.php:95
 msgid "Featured on the front-page"
-msgstr ""
+msgstr "Избранные на главной странице"
 
 #: includes/class-theme-options.php:102
 msgid "Members page"
-msgstr ""
+msgstr "Члены страница"
 
 #: includes/class-theme-options.php:153 partials/front-contact.php:13
 msgid "Email address"
-msgstr ""
+msgstr "Электронная почта"
 
 #: includes/class-theme-options.php:159 partials/front-contact.php:21
 msgid "Phone"
-msgstr ""
+msgstr "Телефон"
 
 #: includes/class-theme-options.php:165 partials/front-contact.php:29
 msgid "Address"
-msgstr ""
+msgstr "Адрес"
 
 #: includes/class-theme-options.php:171
 msgid "Facebook profile"
-msgstr ""
+msgstr "Профиль пользователя Facebook"
 
 #: includes/class-theme-options.php:177
 msgid "Twitter profile"
-msgstr ""
+msgstr "Профиль Twitter"
 
 #: includes/class-theme-options.php:183
 msgid "Instagram profile"
-msgstr ""
+msgstr "Профиль Instagram"
 
 #: includes/class-theme-options.php:189
 msgid "Linkedin profile"
-msgstr ""
+msgstr "Профиль Linkedin"
 
 #: includes/class-theme-options.php:367 includes/class-theme-options.php:388
 msgid "None"
-msgstr ""
+msgstr "Никто"
 
 #: includes/class-theme-options.php:419
 msgid "Are you sure you want to do this?"
-msgstr ""
+msgstr "Вы уверены, что хотите это сделать?"
 
 #: includes/class-theme-options.php:441
 msgid "You cannot feature the same partner twice!"
-msgstr ""
+msgstr "Вы не можете использовать одного и того же партнера дважды!"
 
 #: includes/class-theme-options.php:465
 msgid "Settings saved."
-msgstr ""
+msgstr "Настройки сохранены."
 
 #: includes/map.php:15 includes/map.php:49
 msgid "Select a country"
-msgstr ""
+msgstr "Выберите страну"
 
 #: includes/map.php:43
 msgid "More countries"
-msgstr ""
+msgstr "Другие страны"
 
 #: includes/navigation.php:84
 msgid "Language"
-msgstr ""
+msgstr "Язык"
 
 #: partials/front-contact.php:37
 msgid "Social media"
-msgstr ""
+msgstr "Социальные сети"
 
 #: partials/front-member.php:12
 msgid "Members"
-msgstr ""
+msgstr "Члены"
 
 #: partials/front-news.php:16
 msgid "See more news"
-msgstr ""
+msgstr "Другие новости"
 
 #: partials/front-partner.php:39
 msgid "See all partners"
-msgstr ""
+msgstr "Посмотреть всех партнёров"
 
 #: partials/front-team.php:35
 msgid "See full team"
-msgstr ""
+msgstr "Посмотреть всю команду"
 
 #: partials/loop-partner.php:19
 msgid "Visit website"
-msgstr ""
+msgstr "Посетите вебсайт"
 
 #: partials/template-map_control.php:14
 msgid "Another country"
-msgstr ""
+msgstr "Другая страна"
 
 #: searchform.php:2
 msgctxt "label"
 msgid "Search for:"
-msgstr ""
+msgstr "Искать:"
 
 #: searchform.php:3
 msgctxt "placeholder"
 msgid "Search"
-msgstr ""
+msgstr "Поиск"
 
 #: searchform.php:4
 msgctxt "submit button"
 msgid "Search"
-msgstr ""
+msgstr "Поиск"
 
 #. Theme Name of the plugin/theme
 msgid "INLAR"
-msgstr ""
+msgstr "INLAR"
 
 #. Author of the plugin/theme
 msgid "Code for Romania"
-msgstr ""
+msgstr "Code for Romania"
 
 #. Author URI of the plugin/theme
 msgid "http://code4.ro/"
-msgstr ""
+msgstr "http://code4.ro/"
