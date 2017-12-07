@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Post Type Framework Plugin\n"
 "POT-Creation-Date: 2017-11-27 17:07+0200\n"
-"PO-Revision-Date: 2017-11-27 17:07+0200\n"
+"PO-Revision-Date: 2017-12-07 21:51+0200\n"
 "Last-Translator: Andrei Ioniță <hi@andrei.io>\n"
 "Language-Team: Andrei Ioniță <hi@andrei.io>\n"
 "Language: ru\n"
@@ -24,162 +24,162 @@ msgstr ""
 
 #: post-type-framework.php:139
 msgid "Activity"
-msgstr ""
+msgstr "Мероприятия"
 
 #: post-type-framework.php:170
 msgid "Publishing Soon"
-msgstr ""
+msgstr "Скоро в продаже"
 
 #: post-type-framework.php:180
 msgid "Recently Published"
-msgstr ""
+msgstr "Недавно опубликованные"
 
 #: post-type-framework.php:189
 msgid "No activity yet!"
-msgstr ""
+msgstr "Пока нет активности!"
 
 #: post-type-framework.php:226
 msgid "Today"
-msgstr ""
+msgstr "Cегодня"
 
 #: post-type-framework.php:228
 msgid "Tomorrow"
-msgstr ""
+msgstr "Завтра"
 
 #. translators: date and time format for recent posts on the dashboard, see http://php.net/date
 #: post-type-framework.php:231
 msgid "M jS"
-msgstr ""
+msgstr "M jS"
 
 #. translators: 1: relative date, 2: time, 3: post edit link, 4: post title
 #: post-type-framework.php:237
 #, php-format
 msgid "<span>%1$s, %2$s</span> <a href=\"%3$s\">%4$s</a> (%5$s)"
-msgstr ""
+msgstr "<span>%1$s, %2$s</span> <a href=\"%3$s\">%4$s</a> (%5$s)"
 
 #. translators: 1: relative date, 2: time, 3: post title
 #: post-type-framework.php:246
 #, php-format
 msgid "<span>%1$s, %2$s</span> %3$s"
-msgstr ""
+msgstr "<span>%1$s, %2$s</span> %3$s"
 
 #: post-type-framework/post-type-framework-01-ngo.php:46
 #: post-type-framework/post-type-framework-01-ngo.php:56
 msgid "NGOs"
-msgstr ""
+msgstr "НПО"
 
 #: post-type-framework/post-type-framework-01-ngo.php:47
 msgid "NGO"
-msgstr ""
+msgstr "НПО"
 
 #: post-type-framework/post-type-framework-01-ngo.php:48
 #: post-type-framework/post-type-framework-02-partner.php:34
 #: post-type-framework/post-type-framework-03-team.php:34
 msgid "Add New"
-msgstr ""
+msgstr "Добавить новое"
 
 #: post-type-framework/post-type-framework-01-ngo.php:49
 msgid "Add NGO"
-msgstr ""
+msgstr "Добавить НПО"
 
 #: post-type-framework/post-type-framework-01-ngo.php:50
 msgid "Edit NGO"
-msgstr ""
+msgstr "Редактировать НПО"
 
 #: post-type-framework/post-type-framework-01-ngo.php:51
 msgid "All NGOs"
-msgstr ""
+msgstr "Все НПО"
 
 #: post-type-framework/post-type-framework-01-ngo.php:52
 msgid "View NGO"
-msgstr ""
+msgstr "Просмотр НПО"
 
 #: post-type-framework/post-type-framework-01-ngo.php:53
 msgid "Search NGOs"
-msgstr ""
+msgstr "Поиск НПО"
 
 #: post-type-framework/post-type-framework-01-ngo.php:54
 msgid "No NGOs found"
-msgstr ""
+msgstr "Не найдено НПО"
 
 #: post-type-framework/post-type-framework-01-ngo.php:55
 msgid "No NGOs found in Trash"
-msgstr ""
+msgstr "Не найдено ни одной НПО"
 
 #: post-type-framework/post-type-framework-01-ngo.php:77
 #: post-type-framework/post-type-framework-01-ngo.php:86
 msgid "Countries"
-msgstr ""
+msgstr "Страны"
 
 #: post-type-framework/post-type-framework-01-ngo.php:78
 msgid "Country"
-msgstr ""
+msgstr "Cтраны"
 
 #: post-type-framework/post-type-framework-01-ngo.php:79
 msgid "Search Countries"
-msgstr ""
+msgstr "Поиск стран"
 
 #: post-type-framework/post-type-framework-01-ngo.php:80
 msgid "All Countries"
-msgstr ""
+msgstr "Все страны"
 
 #: post-type-framework/post-type-framework-01-ngo.php:81
 msgid "Edit Country"
-msgstr ""
+msgstr "Изменить страну"
 
 #: post-type-framework/post-type-framework-01-ngo.php:82
 msgid "Update Country"
-msgstr ""
+msgstr "Обновить страну"
 
 #: post-type-framework/post-type-framework-01-ngo.php:83
 msgid "Add new Country"
-msgstr ""
+msgstr "Добавить новую страну"
 
 #: post-type-framework/post-type-framework-01-ngo.php:84
 msgid "New Country"
-msgstr ""
+msgstr "Новая страна"
 
 #: post-type-framework/post-type-framework-01-ngo.php:85
 msgid "No categories found."
-msgstr ""
+msgstr "Категории не найдены."
 
 #: post-type-framework/post-type-framework-01-ngo.php:117
 msgid "Invalid request key"
-msgstr ""
+msgstr "Недопустимый ключ запроса"
 
 #: post-type-framework/post-type-framework-01-ngo.php:261
 #: post-type-framework/post-type-framework-02-partner.php:78
 #: post-type-framework/post-type-framework-03-team.php:78
 msgid "Additional Information"
-msgstr ""
+msgstr "Дополнительная информация"
 
 #: post-type-framework/post-type-framework-01-ngo.php:272
 msgid "Coordinates"
-msgstr ""
+msgstr "Координаты"
 
 #: post-type-framework/post-type-framework-01-ngo.php:277
 msgid "Address"
-msgstr ""
+msgstr "Адрес"
 
 #: post-type-framework/post-type-framework-01-ngo.php:283
 #: post-type-framework/post-type-framework-02-partner.php:89
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: post-type-framework/post-type-framework-01-ngo.php:288
 msgid "Phone"
-msgstr ""
+msgstr "Телефон"
 
 #: post-type-framework/post-type-framework-01-ngo.php:293
 #: post-type-framework/post-type-framework-03-team.php:94
 msgid "Email"
-msgstr ""
+msgstr "Aдрес электронной почты"
 
 #: post-type-framework/post-type-framework-01-ngo.php:404
 #: post-type-framework/post-type-framework-02-partner.php:185
 #: post-type-framework/post-type-framework-03-team.php:191
 msgid "Flag"
-msgstr ""
+msgstr "Флаг"
 
 #: post-type-framework/post-type-framework-01-ngo.php:424
 #: post-type-framework/post-type-framework-01-ngo.php:451
@@ -188,150 +188,150 @@ msgstr ""
 #: post-type-framework/post-type-framework-03-team.php:211
 #: post-type-framework/post-type-framework-03-team.php:238
 msgid "-- Select --"
-msgstr ""
+msgstr "-- Выбрать --"
 
 #: post-type-framework/post-type-framework-02-partner.php:32
 #: post-type-framework/post-type-framework-02-partner.php:42
 msgid "Partners"
-msgstr ""
+msgstr "Партнеры"
 
 #: post-type-framework/post-type-framework-02-partner.php:33
 msgid "Partner"
-msgstr ""
+msgstr "Партнер"
 
 #: post-type-framework/post-type-framework-02-partner.php:35
 msgid "Add Partner"
-msgstr ""
+msgstr "Добавить партнера"
 
 #: post-type-framework/post-type-framework-02-partner.php:36
 msgid "Edit Partner"
-msgstr ""
+msgstr "Изменить партнера"
 
 #: post-type-framework/post-type-framework-02-partner.php:37
 msgid "All Partners"
-msgstr ""
+msgstr "Все партнеры"
 
 #: post-type-framework/post-type-framework-02-partner.php:38
 msgid "View Partner"
-msgstr ""
+msgstr "Просмотреть партнера"
 
 #: post-type-framework/post-type-framework-02-partner.php:39
 msgid "Search Partners"
-msgstr ""
+msgstr "Поиск партнеров"
 
 #: post-type-framework/post-type-framework-02-partner.php:40
 msgid "No partners found"
-msgstr ""
+msgstr "Партнеры не найдены"
 
 #: post-type-framework/post-type-framework-02-partner.php:41
 msgid "No partners found in Trash"
-msgstr ""
+msgstr "В корзине партнеров не найдено"
 
 #: post-type-framework/post-type-framework-03-team.php:32
 msgid "Team members"
-msgstr ""
+msgstr "Члены команды"
 
 #: post-type-framework/post-type-framework-03-team.php:33
 msgid "Team member"
-msgstr ""
+msgstr "Участник команды"
 
 #: post-type-framework/post-type-framework-03-team.php:35
 msgid "Add Team member"
-msgstr ""
+msgstr "Добавить участника команды"
 
 #: post-type-framework/post-type-framework-03-team.php:36
 msgid "Edit Team member"
-msgstr ""
+msgstr "Изменить участника команды"
 
 #: post-type-framework/post-type-framework-03-team.php:37
 msgid "All Team members"
-msgstr ""
+msgstr "Все члены команды"
 
 #: post-type-framework/post-type-framework-03-team.php:38
 msgid "View Team member"
-msgstr ""
+msgstr "Просмотреть участника команды"
 
 #: post-type-framework/post-type-framework-03-team.php:39
 msgid "Search Team members"
-msgstr ""
+msgstr "Поиск членов команды"
 
 #: post-type-framework/post-type-framework-03-team.php:40
 msgid "No team members found"
-msgstr ""
+msgstr "Не найдено ни одной команды"
 
 #: post-type-framework/post-type-framework-03-team.php:41
 msgid "No team members found in Trash"
-msgstr ""
+msgstr "В корзине не найдено ни одной команды"
 
 #: post-type-framework/post-type-framework-03-team.php:42
 msgid "Team"
-msgstr ""
+msgstr "Команда"
 
 #: post-type-framework/post-type-framework-03-team.php:89
 msgid "Title"
-msgstr ""
+msgstr "Заглавие"
 
 #: post-type-framework/post-type-framework-menu-helper.php:15
 msgid "Archive links"
-msgstr ""
+msgstr "Архив ссылок"
 
 #: post-type-framework/post-type-framework-menu-helper.php:64
 msgid "Add to Menu"
-msgstr ""
+msgstr "Добавить в меню"
 
 #: post-type-framework/post-type-framework-ngo-type.php:27
 #: post-type-framework/post-type-framework-ngo-type.php:36
 msgid "Types"
-msgstr ""
+msgstr "Типы"
 
 #: post-type-framework/post-type-framework-ngo-type.php:28
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 #: post-type-framework/post-type-framework-ngo-type.php:29
 msgid "Search Types"
-msgstr ""
+msgstr "Типы поиска"
 
 #: post-type-framework/post-type-framework-ngo-type.php:30
 msgid "All Types"
-msgstr ""
+msgstr "Все типы"
 
 #: post-type-framework/post-type-framework-ngo-type.php:31
 msgid "Edit Type"
-msgstr ""
+msgstr "Изменить тип"
 
 #: post-type-framework/post-type-framework-ngo-type.php:32
 msgid "Update Type"
-msgstr ""
+msgstr "Тип обновления"
 
 #: post-type-framework/post-type-framework-ngo-type.php:33
 msgid "Add new Type"
-msgstr ""
+msgstr "Добавить новый тип"
 
 #: post-type-framework/post-type-framework-ngo-type.php:34
 msgid "New Type"
-msgstr ""
+msgstr "Новый тип"
 
 #: post-type-framework/post-type-framework-ngo-type.php:35
 msgid "No types found."
-msgstr ""
+msgstr "Не найдено ни одного типа."
 
 #: post-type-framework/post-type-framework-ngo-type.php:59
 msgid "Icon URL"
-msgstr ""
+msgstr "Значок URL"
 
 #. Plugin Name of the plugin/theme
 msgid "Post Type Framework Plugin"
-msgstr ""
+msgstr "Плагин Post Type Framework"
 
 #. Description of the plugin/theme
 msgid "Creates the required post types in a theme-independent way."
-msgstr ""
+msgstr "Создает требуемые типы сообщений независимо от темы."
 
 #. Author of the plugin/theme
 msgid "Andrei Ioniță"
-msgstr ""
+msgstr "Andrei Ionita"
 
 #. Author URI of the plugin/theme
 msgid "https://andrei.io/"
-msgstr ""
+msgstr "https://andrei.io/"

@@ -6,7 +6,7 @@
 
 		<p class="copy"><?php
 			/* translators: %s will be replaced with the current year */
-			printf(__('&copy; %s INLAR. All Rights Reserved'), date('Y'));
+			printf(__('&copy; %s INLAR. All Rights Reserved', 'inlar'), date('Y'));
 		?></p>
 	</div>
 
