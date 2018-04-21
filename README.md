@@ -1,4 +1,4 @@
-# INLAR 
+# International Network on Legal Assistance to Refugees (INLAR) 
 
 [![GitHub contributors](https://img.shields.io/github/contributors/code4romania/inlar.svg?style=for-the-badge)]() [![GitHub last commit](https://img.shields.io/github/last-commit/code4romania/inlar.svg?style=for-the-badge)]() [![License: MPL 2.0](https://img.shields.io/badge/license-MPL%202.0-brightgreen.svg?style=for-the-badge)](https://opensource.org/licenses/MPL-2.0)
 
