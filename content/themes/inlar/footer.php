@@ -12,7 +12,7 @@
 
 	<div class="footer-code container">
 		<a class="brand footer-logo" href="https://code4.ro/">
-			<img src="//code4.ro/wp-content/uploads/2017/08/logo-bw.png" alt="Code for Romania">
+			<img src="<?php printf('%s/assets/images/code4romania.png', get_template_directory_uri() ); ?>" alt="Code for Romania">
 		</a>
 		<p class="mono">
 			<?php _e('In collaboration with Code for Romania.', 'inlar'); ?>
