@@ -1,6 +1,6 @@
 # International Network on Legal Assistance to Refugees (INLAR) 
 
-[![GitHub contributors](https://img.shields.io/github/contributors/code4romania/inlar.svg?style=for-the-badge)]() [![GitHub last commit](https://img.shields.io/github/last-commit/code4romania/inlar.svg?style=for-the-badge)]() [![License: MPL 2.0](https://img.shields.io/badge/license-MPL%202.0-brightgreen.svg?style=for-the-badge)](https://opensource.org/licenses/MPL-2.0)
+[![GitHub contributors](https://img.shields.io/github/contributors/code4romania/inlar.svg?style=for-the-badge)](https://github.com/code4romania/inlar/graphs/contributors) [![GitHub last commit](https://img.shields.io/github/last-commit/code4romania/inlar.svg?style=for-the-badge)](https://github.com/code4romania/inlar/commits/master) [![License: MPL 2.0](https://img.shields.io/badge/license-MPL%202.0-brightgreen.svg?style=for-the-badge)](https://opensource.org/licenses/MPL-2.0)
 
 International Network on Legal Assistance to Refugees (INLAR), is the winning project of the 2016 Young Professionals “Europe Lab” Forum. The web app, developed by Code for Romania, maps NGOs offering legal support for refugees, facilitating knowledge exchange between these entities as well as access to their services and to relevant information for refugees and asylum seekers.
 
